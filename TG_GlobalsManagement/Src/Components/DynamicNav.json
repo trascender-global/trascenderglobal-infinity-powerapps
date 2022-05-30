@@ -924,14 +924,21 @@
       "X",
       "Y",
       "ZIndex",
-      "MenuItem"
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Table({Id: 0, \r\n        Name: \"Home\", \r\n        Icon:Icon.Home\r\n    },\r\n    {   \r\n        Name: \"New Project\", \r\n        Icon:Icon.Publish\r\n    },\r\n    {\r\n        Name: \"Edit Project\", \r\n        Icon:Icon.Edit\r\n    })",
+        "InvariantPropertyName": "MenuItem",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
-    "LastModifiedTimestamp": "637895440121393846",
+    "LastModifiedTimestamp": "637895434119270731",
     "Name": "DynamicNav",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\r\n    {Id: 0, \r\n        Name: \"Home\", \r\n        Icon:Icon.Home,\r\n        navLink:Home\r\n    },\r\n    {   \r\n        Name: \"New Project\", \r\n        Icon:Icon.Publish,\r\n        NavLink:App.ActiveScreen\r\n    },\r\n    {\r\n        Name: \"Edit Project\", \r\n        Icon:Icon.Edit,\r\n        NavLink:App.ActiveScreen\r\n    },\r\n    {\r\n        Name: \"Finance Management\", \r\n        Icon:Icon.Money,\r\n        NavLink:App.ActiveScreen\r\n    }\r\n    )",
+        "InvariantScript": "Table(\r\n    {Id: 0, \r\n        Name: \"Home\", \r\n        Icon:Icon.Home,\r\n        NavLink:App.ActiveScreen\r\n    },\r\n    {   \r\n        Name: \"New Project\", \r\n        Icon:Icon.Publish,\r\n        NavLink:App.ActiveScreen\r\n    },\r\n    {\r\n        Name: \"Edit Project\", \r\n        Icon:Icon.Edit,\r\n        NavLink:App.ActiveScreen\r\n    },\r\n    {\r\n        Name: \"Finance Management\", \r\n        Icon:Icon.Money,\r\n        NavLink:App.ActiveScreen\r\n    }\r\n    )",
         "Property": "MenuItem",
         "RuleProviderType": "System"
       },
@@ -1001,7 +1008,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637895440121393846",
+  "LastModifiedTimestamp": "637895434119270731",
   "Name": "51a4282aa30f4cc68c1ee62e75ae9939",
   "OverridableProperties": {},
   "Version": "637893486623742981"

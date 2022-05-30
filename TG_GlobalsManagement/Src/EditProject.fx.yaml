@@ -542,7 +542,7 @@ EditProject As screen:
         ZIndex: =119
 
     TextInput3_6 As text:
-        Default: =Epic.pokemon_master_id
+        Default: =Epic.neo_id
         Height: =30
         Size: =11
         Width: =427
