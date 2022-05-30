@@ -5,19 +5,23 @@ DynamicNav As CanvasComponent:
         =Table(
             {Id: 0, 
                 Name: "Home", 
-                Icon:Icon.Home
+                Icon:Icon.Home,
+                NavLink:App.ActiveScreen
             },
             {   
                 Name: "New Project", 
-                Icon:Icon.Publish
+                Icon:Icon.Publish,
+                NavLink:App.ActiveScreen
             },
             {
                 Name: "Edit Project", 
-                Icon:Icon.Edit
+                Icon:Icon.Edit,
+                NavLink:App.ActiveScreen
             },
             {
                 Name: "Finanace Management", 
-                Icon:Icon.Money
+                Icon:Icon.Money,
+                NavLink:App.ActiveScreen
             }
             )
     Width: =234

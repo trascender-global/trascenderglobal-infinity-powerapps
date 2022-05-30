@@ -26,7 +26,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table({Id: 0, \r\n        Name: \"Home\", \r\n        Icon:Icon.Home\r\n    },\r\n    {   \r\n        Name: \"New Project\", \r\n        Icon:Icon.Publish\r\n    },\r\n    {\r\n        Name: \"Edit Project\", \r\n        Icon:Icon.Edit\r\n    })",
+          "AutoRuleBindingString": "Table(\r\n    {Id: 0, \r\n        Name: \"Home\", \r\n        Icon:Icon.Home,\r\n        NavLink:App.ActiveScreen\r\n    },\r\n    {   \r\n        Name: \"New Project\", \r\n        Icon:Icon.Publish\r\n    },\r\n    {\r\n        Name: \"Edit Project\", \r\n        Icon:Icon.Edit\r\n    },\r\n    {\r\n        Name: \"Finanace Management\", \r\n        Icon:Icon.Money\r\n    }\r\n    )",
           "InvariantPropertyName": "MenuItem",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
