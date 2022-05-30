@@ -31,9 +31,6 @@
           },
           "GM_Payments": {
             "tableName": "[dbo].[GM_Payments]"
-          },
-          "VW_FM_Transactions": {
-            "tableName": "[dbo].[VW_FM_Transactions]"
           }
         }
       }
@@ -43,8 +40,7 @@
       "GM_GlobalGeneralInformation",
       "GM_Payments",
       "CRM_Deals",
-      "GM_Epics",
-      "VW_FM_Transactions"
+      "GM_Epics"
     ],
     "dependencies": {},
     "dependents": [],
