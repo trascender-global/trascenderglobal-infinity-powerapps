@@ -420,7 +420,14 @@
               "Width",
               "Height",
               "DisplayMode",
-              "OnSelect",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "Select(Parent)",
+                "InvariantPropertyName": "OnSelect",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "ZIndex",
               "PaddingTop",
               "PaddingRight",
@@ -650,7 +657,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Select(Parent)",
+                "InvariantScript": "ThisItem.NavLink",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -926,7 +933,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637895433598041625",
+    "LastModifiedTimestamp": "637895434119270731",
     "Name": "DynamicNav",
     "Rules": [
       {
@@ -1001,7 +1008,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637895433598041625",
+  "LastModifiedTimestamp": "637895434119270731",
   "Name": "51a4282aa30f4cc68c1ee62e75ae9939",
   "OverridableProperties": {},
   "Version": "637893486623742981"

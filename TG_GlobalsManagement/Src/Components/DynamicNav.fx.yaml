@@ -45,7 +45,7 @@ DynamicNav As CanvasComponent:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Normal
             Height: =63
-            OnSelect: =Select(Parent)
+            OnSelect: =ThisItem.NavLink
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
