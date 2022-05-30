@@ -6,7 +6,7 @@ DynamicNav As CanvasComponent:
             {Id: 0, 
                 Name: "Home", 
                 Icon:Icon.Home,
-                NavLink:App.ActiveScreen
+                navLink:Home
             },
             {   
                 Name: "New Project", 
