@@ -5,17 +5,17 @@
         Fill: =RGBA(56, 96, 178, 0)
         Height: =261
         Width: =465
-        X: =304
+        X: =302
         Y: =484
         ZIndex: =1
 
     Rectangle2_1 As rectangle:
         BorderThickness: =1
         Fill: =RGBA(56, 96, 178, 0)
-        Height: =198
+        Height: =201
         Width: =475
         X: =791
-        Y: =547
+        Y: =544
         ZIndex: =2
 
     HeaderTG_NewProjectView As HeaderTG:
@@ -444,7 +444,7 @@
         Icon: =Icon.Add
         Width: =27
         X: =726
-        Y: =492
+        Y: =490
         ZIndex: =43
 
     Toggle1 As toggleSwitch:
@@ -665,8 +665,8 @@
         Height: =24
         Text: ="General Information"
         Width: =344
-        X: =611
-        Y: =205
+        X: =608
+        Y: =212
         ZIndex: =72
 
     Dropdown3_5 As dropdown:

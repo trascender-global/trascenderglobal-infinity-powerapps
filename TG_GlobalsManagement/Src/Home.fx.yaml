@@ -2,25 +2,6 @@ Home As screen:
     Height: =Max(App.Height,700)
     Width: =Max(App.Width, 1366)
 
-    NewProject_Button_HomeView As button:
-        Fill: =RGBA(58, 87, 255, 1)
-        Height: =56
-        OnSelect: =Navigate(NewProject,ScreenTransition.Fade)
-        Text: ="Add New Project"
-        Width: =229
-        X: =657
-        Y: =496
-        ZIndex: =3
-
-    EditProject_Button_HomeView As button:
-        Fill: =RGBA(58, 87, 255, 1)
-        Height: =56
-        Text: ="Edit Existing Project"
-        Width: =229
-        X: =657
-        Y: =375
-        ZIndex: =4
-
     HeaderTG_HomeView As HeaderTG:
         ZIndex: =5
 
@@ -38,4 +19,19 @@ Home As screen:
         Width: =234
         Y: =75
         ZIndex: =7
+
+    ColumnChart1 As barChart:
+        Items: =ColumnChartSample
+        Width: =578
+        X: =271
+        Y: =276
+        ZIndex: =10
+
+    PieChart1 As pieChart:
+        Height: =474
+        Items: =PieChartSample
+        Width: =580
+        X: =765
+        Y: =239
+        ZIndex: =14
 
