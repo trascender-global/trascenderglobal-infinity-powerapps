@@ -51,7 +51,7 @@ EditProject As screen:
         Y: =40
         ZIndex: =76
 
-        Dropdown3 As dropdown:
+        EP_Dropdown_Segment As dropdown:
             Default: =""
             Items: =Distinct(GM_GlobalGeneralInformation,segment)
             Width: =91
@@ -94,15 +94,23 @@ EditProject As screen:
         Dropdown_ProjecName As dropdown:
             Default: =""
             Items: |
-                =
+                =If( !IsBlank(EP_Dropdown_Segment.Selected) && !IsBlank(EP_Dropdown_Status.Selected),
+                    Filter(GM_GlobalGeneralInformation,
+                    segment = EP_Dropdown_Segment.Selected.Result,
+                    status = EP_Dropdown_Status.Selected.Result
+                    ),
+                    If(!IsBlank(EP_Dropdown_Segment.Selected) && IsBlank(EP_Dropdown_Status.Selected),
+                    
+                    
             Width: =452
             X: =794
             Y: =129
             ZIndex: =73
 
-        Dropdown3_4 As dropdown:
+        EP_Dropdown_Status As dropdown:
             Default: =""
-            Items: =Distinct(GM_GlobalGeneralInformation,status)
+            Items: |
+                =Distinct(GM_GlobalGeneralInformation,status)
             Width: =192
             X: =445
             Y: =129
