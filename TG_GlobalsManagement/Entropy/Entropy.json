@@ -101,6 +101,7 @@
     "Label12_2": 25,
     "Label13": 126,
     "Label13_1": 123,
+    "Label2": 167,
     "Label3": 15,
     "Label3_1": 18,
     "Label3_12": 105,
@@ -172,7 +173,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/30/2022 23:14:55",
+  "HeaderLastSavedDateTimeUTC": "05/30/2022 23:28:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -182,7 +183,7 @@
     "Símbolo TG 4": "0001.png"
   },
   "LocalResourceRootPaths": {
-    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/abb70d57-e383-4c6b-88d6-14675ff7a2fd-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=cO7KTUjumbKIEqi198Ha2xOHN8Wf11YlZX%2FLrex7naE%3D&spr=https&se=2022-05-31T23%3A28%3A56Z&sp=r"
+    "Símbolo TG 4": "https://docserverpwaprodscus.blob.core.windows.net/88d27498-0fc6-4f65-b95d-b24dd4917e38-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=0lPzMas8Eb6%2FxeRO1DBw1KnO%2F%2FPezhk%2B5eByr4GhbJI%3D&spr=https&se=2022-05-31T23%3A30%3A49Z&sp=r"
   },
   "OrderComponentMetadata": {
     "3bd3cda16e6f498db1fa26e9f6ca986b": 1,
@@ -357,6 +358,7 @@
     "Label12_2": 24,
     "Label13": 124,
     "Label13_1": 121,
+    "Label2": 0,
     "Label3": 14,
     "Label3_1": 17,
     "Label3_12": 103,
@@ -433,7 +435,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.6341824,
+    "AnalysisLoadTime": 1.0731751,
     "ControlCount": {
       "3bd3cda16e6f498db1fa26e9f6ca986b": 5,
       "51a4282aa30f4cc68c1ee62e75ae9939": 5,
@@ -455,8 +457,8 @@
       "text": 19,
       "toggleSwitch": 1
     },
-    "DeserializationLoadTime": 1.0258201,
-    "ErrorCount": 12
+    "DeserializationLoadTime": 3.1702501,
+    "ErrorCount": 5
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
