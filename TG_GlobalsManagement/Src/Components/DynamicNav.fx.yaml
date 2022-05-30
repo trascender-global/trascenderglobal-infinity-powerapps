@@ -4,22 +4,22 @@ DynamicNav As CanvasComponent:
     MenuItem: |-
         =Table(
             {Id: 0, 
-                Name: "Home", 
+                Name: "      Home", 
                 Icon:Icon.Home,
                 NavLink:Home
             },
             {   
-                Name: "New Project", 
+                Name: "      New Project", 
                 Icon:Icon.Publish,
                 NavLink:NewProject
             },
             {
-                Name: "Edit Project", 
+                Name: "      Edit Project", 
                 Icon:Icon.Edit,
                 NavLink:EditProject
             },
             {
-                Name: "Finance Management", 
+                Name: "      Finances", 
                 Icon:Icon.Money,
                 NavLink:FinanceManagement
             }
@@ -45,6 +45,8 @@ DynamicNav As CanvasComponent:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Normal
             Height: =63
+            HoverColor: =RGBA(84, 84, 84, 1)
+            HoverFill: =Self.Color
             OnSelect: =Navigate(ThisItem.NavLink,Fade)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -53,8 +55,7 @@ DynamicNav As CanvasComponent:
             Size: =18
             Text: |
                 =ThisItem.Name
-            Width: =211
-            X: =64
+            Width: =234
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
