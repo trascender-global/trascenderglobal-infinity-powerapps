@@ -4834,7 +4834,7 @@
         {
           "Category": "Data",
           "PropertyName": "MenuItem",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

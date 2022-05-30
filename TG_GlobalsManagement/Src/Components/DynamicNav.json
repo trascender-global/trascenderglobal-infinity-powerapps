@@ -602,7 +602,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "63",
+                "InvariantScript": "26",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -814,7 +814,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "79",
+            "InvariantScript": "69",
             "Property": "TemplateSize",
             "RuleProviderType": "Unknown"
           },
@@ -926,12 +926,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637895424887729041",
+    "LastModifiedTimestamp": "637895422803474995",
     "Name": "DynamicNav",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\r\n    {Id: 0, \r\n        Name: \"Home\", \r\n        Icon:Icon.Home\r\n    },\r\n    {   \r\n        Name: \"New Project\", \r\n        Icon:Icon.Publish\r\n    },\r\n    {\r\n        Name: \"Edit Project\", \r\n        Icon:Icon.Edit\r\n    },\r\n    {\r\n        Name: \"Finanace Management\", \r\n        Icon:Icon.Money\r\n    }\r\n    )",
+        "InvariantScript": "Table(\r\n    {Id: 0, \r\n        Name: \"Home\", \r\n        Icon:Icon.Home\r\n    },\r\n    {   \r\n        Name: \"New Project\", \r\n        Icon:Icon.Publish\r\n    },\r\n    {\r\n        Name: \"Edit Project\", \r\n        Icon:Icon.Edit\r\n    })",
         "Property": "MenuItem",
         "RuleProviderType": "System"
       },
@@ -1001,7 +1001,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637895424887729041",
+  "LastModifiedTimestamp": "637895422803474995",
   "Name": "51a4282aa30f4cc68c1ee62e75ae9939",
   "OverridableProperties": {},
   "Version": "637893486623742981"
