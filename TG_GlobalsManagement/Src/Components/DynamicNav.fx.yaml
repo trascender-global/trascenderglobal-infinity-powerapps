@@ -14,7 +14,12 @@ DynamicNav As CanvasComponent:
             {
                 Name: "Edit Project", 
                 Icon:Icon.Edit
-            })
+            },
+            {
+                Name: "Finanace Management", 
+                Icon:Icon.Money
+            }
+            )
     Width: =234
     X: =0
     Y: =0
@@ -27,7 +32,7 @@ DynamicNav As CanvasComponent:
             =DynamicNav.MenuItem
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =69
+        TemplateSize: =79
         Width: =234
         ZIndex: =1
 
@@ -35,7 +40,7 @@ DynamicNav As CanvasComponent:
             Color: =RGBA(255, 255, 255, 1)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Normal
-            Height: =26
+            Height: =63
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
