@@ -101,6 +101,7 @@
   "ScreenOrder": [
     "Home",
     "NewProject",
-    "EditProject"
+    "EditProject",
+    "FinanceManagement"
   ]
 }

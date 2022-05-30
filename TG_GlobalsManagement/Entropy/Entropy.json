@@ -1,12 +1,14 @@
 {
   "ComponentIndexes": {
-    "DynamicNav": 4,
+    "DynamicNav": 5,
     "DynamicNav_EditProjectView": 4,
     "DynamicNav_HomeView": 4,
+    "DynamicNav_HomeView_1": 4,
     "DynamicNav_NewProjectView": 4,
-    "HeaderTG": 3,
+    "HeaderTG": 4,
     "HeaderTG_EditProjectView": 4,
     "HeaderTG_HomeView": 4,
+    "HeaderTG_HomeView_1": 4,
     "HeaderTG_NewProjectView": 5
   },
   "ControlUniqueIds": {
@@ -48,10 +50,12 @@
     "DynamicNav": 6,
     "DynamicNav_EditProjectView": 19,
     "DynamicNav_HomeView": 13,
+    "DynamicNav_HomeView_1": 167,
     "DynamicNav_NewProjectView": 81,
     "EditProject": 16,
     "EditProject_Button_HomeView": 14,
     "EditProjectView_TitleLabel": 18,
+    "FinanceManagement": 165,
     "Galery_Menu": 7,
     "Gallery_EpicsEdit": 46,
     "Gallery2": 90,
@@ -71,6 +75,7 @@
     "HeaderTG": 3,
     "HeaderTG_EditProjectView": 17,
     "HeaderTG_HomeView": 12,
+    "HeaderTG_HomeView_1": 166,
     "HeaderTG_NewProjectView": 79,
     "Home": 11,
     "Icon1": 34,
@@ -176,7 +181,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/30/2022 21:14:32",
+  "HeaderLastSavedDateTimeUTC": "05/30/2022 21:18:51",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -186,7 +191,7 @@
     "Símbolo TG 4": "eb8dfb25-0b26-44fb-a152-c757bacc4796.png"
   },
   "LocalResourceRootPaths": {
-    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/4e6980c9-53b1-4e6c-99d9-367aced1883b-1/resource/Assets0Images0eb8dfb25-0b26-44fb-a152-c757bacc4796.png?sv=2017-04-17&sr=b&sig=iXbyD19sW4LCve3gfwIwOgpFkl8pF6m0R2BAczBo0Xc%3D&spr=https&se=2022-05-31T21%3A23%3A14Z&sp=r"
+    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/abb70d57-e383-4c6b-88d6-14675ff7a2fd-1/resource/Assets0Images0eb8dfb25-0b26-44fb-a152-c757bacc4796.png?sv=2017-04-17&sr=b&sig=9vdE2867PIjruOGwW%2Bm99ughbWRFs6BuomX6Yv1n3c4%3D&spr=https&se=2022-05-31T21%3A33%3A00Z&sp=r"
   },
   "OrderComponentMetadata": {
     "3bd3cda16e6f498db1fa26e9f6ca986b": 0,
@@ -296,10 +301,12 @@
     "DynamicNav": 0,
     "DynamicNav_EditProjectView": 95,
     "DynamicNav_HomeView": 1,
+    "DynamicNav_HomeView_1": 1,
     "DynamicNav_NewProjectView": 6,
     "EditProject": 0,
     "EditProject_Button_HomeView": 2,
     "EditProjectView_TitleLabel": 91,
+    "FinanceManagement": 0,
     "Galery_Menu": 153,
     "Gallery_EpicsEdit": 122,
     "Gallery2": 16,
@@ -319,6 +326,7 @@
     "HeaderTG": 0,
     "HeaderTG_EditProjectView": 90,
     "HeaderTG_HomeView": 0,
+    "HeaderTG_HomeView_1": 0,
     "HeaderTG_NewProjectView": 4,
     "Home": 0,
     "Icon1": 110,
@@ -429,11 +437,11 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.0542292,
+    "AnalysisLoadTime": 1.1193102,
     "ControlCount": {
-      "3bd3cda16e6f498db1fa26e9f6ca986b": 4,
-      "51a4282aa30f4cc68c1ee62e75ae9939": 4,
-      "button": 8,
+      "3bd3cda16e6f498db1fa26e9f6ca986b": 5,
+      "51a4282aa30f4cc68c1ee62e75ae9939": 5,
+      "button": 10,
       "datepicker": 5,
       "dropdown": 20,
       "gallery": 6,
@@ -443,11 +451,11 @@
       "image": 1,
       "label": 63,
       "rectangle": 7,
-      "screen": 3,
+      "screen": 4,
       "text": 19,
       "toggleSwitch": 1
     },
-    "DeserializationLoadTime": 1.9114514,
+    "DeserializationLoadTime": 1.8473729,
     "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": true

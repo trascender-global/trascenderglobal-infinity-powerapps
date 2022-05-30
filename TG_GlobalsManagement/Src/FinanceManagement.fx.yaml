@@ -1,0 +1,12 @@
+FinanceManagement As screen:
+    Height: =Max(App.Height,700)
+    Width: =Max(App.Width, 1366)
+
+    HeaderTG_HomeView_1 As HeaderTG:
+        ZIndex: =5
+
+    DynamicNav_HomeView_1 As DynamicNav:
+        Width: =247
+        Y: =65
+        ZIndex: =6
+
