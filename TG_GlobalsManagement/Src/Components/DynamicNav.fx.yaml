@@ -36,7 +36,9 @@ DynamicNav As CanvasComponent:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Normal
             Height: =63
-            OnSelect: =ThisItem.NavLink
+            HoverColor: =RGBA(84, 84, 84, 1)
+            HoverFill: =Self.Color
+            OnSelect: =Navigate(ThisItem.NavLink,Fade)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -44,8 +46,7 @@ DynamicNav As CanvasComponent:
             Size: =18
             Text: |
                 =ThisItem.Name
-            Width: =211
-            X: =64
+            Width: =234
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
@@ -54,7 +55,7 @@ DynamicNav As CanvasComponent:
             Color: =RGBA(255, 255, 255, 1)
             Height: =Parent.TemplateHeight
             Icon: =ThisItem.Icon
-            OnSelect: =ThisItem.NavLink
+            OnSelect: =Navigate(ThisItem.NavLink,Fade)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10

@@ -326,7 +326,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "ThisItem.NavLink",
+                "InvariantScript": "",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -650,7 +650,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "ThisItem.NavLink",
+                "InvariantScript": "Select(Parent)",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -926,7 +926,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637895435508424251",
+    "LastModifiedTimestamp": "637895426363499053",
     "Name": "DynamicNav",
     "Rules": [
       {
@@ -1001,7 +1001,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637895435508424251",
+  "LastModifiedTimestamp": "637895426363499053",
   "Name": "51a4282aa30f4cc68c1ee62e75ae9939",
   "OverridableProperties": {},
   "Version": "637893486623742981"

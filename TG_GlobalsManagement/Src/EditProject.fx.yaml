@@ -32,7 +32,7 @@ EditProject As screen:
             )
         Height: =60
         Width: =234
-        Y: =211
+        Y: =233
         ZIndex: =23
 
     Rectangle2_6 As rectangle:
