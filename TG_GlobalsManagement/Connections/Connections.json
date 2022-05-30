@@ -1,0 +1,49 @@
+{
+  "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": {
+    "connectionParameters": {
+      "database": "TrascenderGlobal",
+      "server": "trascenderdatabases.database.windows.net",
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "displayName": "SQL Server",
+      "iconUri": "https://connectoricons-prod.azureedge.net/non_zr_connectors/1.0.1575.2789/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001"
+    },
+    "datasets": {
+      "trascenderdatabases.database.windows.net,TrascenderGlobal": {
+        "dataSources": {
+          "CRM_Deals": {
+            "tableName": "[dbo].[CRM_Deals]"
+          },
+          "GM_Epics": {
+            "tableName": "[dbo].[GM_Epics]"
+          },
+          "GM_Features": {
+            "tableName": "[dbo].[GM_Features]"
+          },
+          "GM_GlobalGeneralInformation": {
+            "tableName": "[dbo].[GM_GlobalGeneralInformation]"
+          },
+          "GM_Payments": {
+            "tableName": "[dbo].[GM_Payments]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "GM_Features",
+      "GM_GlobalGeneralInformation",
+      "GM_Payments",
+      "CRM_Deals",
+      "GM_Epics"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775"
+  }
+}

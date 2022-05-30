@@ -1,0 +1,35 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sql",
+    "CdpRevision": {
+      "BaseUrl": "/v2",
+      "LastChangedTimeString": "2022-04-26T20:49:09.6440000Z",
+      "RevisionNumber": 2
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "Amount": "Amount",
+      "CloseDate": "CloseDate",
+      "ContactID": "ContactID",
+      "CRMID": "CRMID",
+      "DealID": "DealID",
+      "Description": "Description",
+      "ForecastProbability": "ForecastProbability",
+      "GlobalInternalID": "GlobalInternalID",
+      "LineofBusiness": "LineofBusiness",
+      "Name": "Name",
+      "Owner": "Owner",
+      "OwnerName": "OwnerName",
+      "Priority": "Priority",
+      "ProjectId": "ProjectId",
+      "Segment": "Segment",
+      "Stage": "Stage",
+      "Type": "Type"
+    },
+    "DatasetName": "trascenderdatabases.database.windows.net,TrascenderGlobal",
+    "EncodeDataset": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "CRM_Deals",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

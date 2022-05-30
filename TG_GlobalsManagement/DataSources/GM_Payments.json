@@ -1,0 +1,40 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sql",
+    "CdpRevision": {
+      "BaseUrl": "/v2",
+      "LastChangedTimeString": "2022-04-26T20:49:09.6440000Z",
+      "RevisionNumber": 2
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "created_date": "created_date",
+      "currency_code": "currency_code",
+      "currency_to_usd_rate": "currency_to_usd_rate",
+      "epic_id": "epic_id",
+      "feature_id": "feature_id",
+      "fee_value": "fee_value",
+      "fm_delivery_date": "fm_delivery_date",
+      "fm_invoice_date": "fm_invoice_date",
+      "fm_payment_date": "fm_payment_date",
+      "gm_expected_date": "gm_expected_date",
+      "invoice_id": "invoice_id",
+      "master_chief_id": "master_chief_id",
+      "neo_id": "neo_id",
+      "paid_value_cop": "paid_value_cop",
+      "payment_method": "payment_method",
+      "payment_name": "payment_name",
+      "PaymentID": "PaymentID",
+      "pokemon_master_id": "pokemon_master_id",
+      "status": "status",
+      "trm_rate": "trm_rate",
+      "value_currency": "value_currency",
+      "withdrawal_id": "withdrawal_id"
+    },
+    "DatasetName": "trascenderdatabases.database.windows.net,TrascenderGlobal",
+    "EncodeDataset": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "GM_Payments",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

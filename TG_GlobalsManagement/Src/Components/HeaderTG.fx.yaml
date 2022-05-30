@@ -1,0 +1,24 @@
+HeaderTG As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =65
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    AppTitle As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =22
+        Text: ="           Globals Management"
+        Width: =1366
+        ZIndex: =1
+
+    TGLogo As image:
+        Height: =67
+        Image: ='Símbolo TG 4'
+        Width: =87
+        ZIndex: =2
+

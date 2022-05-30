@@ -1,0 +1,783 @@
+"NewProject As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    Rectangle2 As rectangle:
+        BorderThickness: =1
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =261
+        Width: =465
+        X: =304
+        Y: =484
+        ZIndex: =1
+
+    Rectangle2_1 As rectangle:
+        BorderThickness: =1
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =198
+        Width: =475
+        X: =791
+        Y: =547
+        ZIndex: =2
+
+    HeaderTG_NewProjectView As HeaderTG:
+        ZIndex: =3
+
+    DynamicNav_NewProjectView As DynamicNav:
+        Y: =65
+        ZIndex: =4
+
+    NewProjectView_TitleLabel As label:
+        Align: =Align.Right
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        FontWeight: =FontWeight.Bold
+        Height: =65
+        Size: =22
+        Text: ="Create a New Project "
+        Width: =505
+        X: =840
+        ZIndex: =5
+
+    Label1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =15
+        Text: ="Close Won Deals Information"
+        Width: =300
+        X: =298
+        Y: =65
+        ZIndex: =6
+
+    Gallery2 As gallery.galleryVertical:
+        Height: =69
+        Items: =CRM_Deals
+        Layout: =Layout.Vertical
+        OnSelect: =Set(Deal,ThisItem)
+        TemplateSize: =26
+        Width: =966
+        X: =297
+        Y: =125
+        ZIndex: =7
+
+        CloseDate_Val As label:
+            BorderThickness: =1
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.CloseDate
+            Width: =161
+            ZIndex: =1
+
+        LOB_val As label:
+            BorderThickness: =1
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.LineofBusiness
+            Width: =160
+            X: =161
+            ZIndex: =2
+
+        Segment_Val As label:
+            BorderThickness: =1
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Segment
+            Width: =161
+            X: =321
+            ZIndex: =3
+
+        OwnerName_Val As label:
+            BorderThickness: =1
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: |
+                =ThisItem.OwnerName
+            Width: =158
+            X: =482
+            ZIndex: =4
+
+        Name_Val As label:
+            BorderThickness: =1
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Name
+            Width: =161
+            X: =640
+            ZIndex: =5
+
+        Type_Val As label:
+            BorderThickness: =1
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: |
+                =ThisItem.Type
+            Width: =154
+            X: =801
+            ZIndex: =6
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: |-
+            =RGBA(255, 255, 255, 0.2
+            )
+        Height: =60
+        Width: =234
+        Y: =137
+        ZIndex: =14
+
+    Icon3 As icon.Reload:
+        Color: =RGBA(58, 87, 255, 1)
+        Height: =54
+        Icon: =Icon.Reload
+        Width: =49
+        X: =1296
+        Y: =99
+        ZIndex: =15
+
+    Label12 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        Text: ="Epics"
+        X: =317
+        Y: =484
+        ZIndex: =19
+
+    TextInput2 As text:
+        Default: ="Name"
+        Height: =25
+        Size: =11
+        Width: =428
+        X: =318
+        Y: =515
+        ZIndex: =20
+
+    TextInput3 As text:
+        Default: ="Entrada de texto"
+        Height: =25
+        Size: =11
+        Width: =150
+        X: =317
+        Y: =549
+        ZIndex: =21
+
+    DatePicker1 As datepicker:
+        Height: =25
+        Size: =11
+        Width: =137
+        X: =608
+        Y: =549
+        ZIndex: =22
+
+    Dropdown1 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: |
+            =["USD"]
+        Size: =11
+        Width: =102
+        X: =489
+        Y: =549
+        ZIndex: =23
+
+    Dropdown2 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: |
+            =["Pokemon"]
+        Size: =11
+        Width: =128
+        X: =317
+        Y: =585
+        ZIndex: =24
+
+    Dropdown2_1 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: =["Masterchief"]
+        Size: =11
+        Width: =128
+        X: =618
+        Y: =585
+        ZIndex: =25
+
+    Dropdown2_2 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: =["NEO"]
+        Size: =11
+        Width: =128
+        X: =467
+        Y: =585
+        ZIndex: =26
+
+    Label10_2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Close Date"
+        Width: =117
+        X: =317
+        Y: =618
+        ZIndex: =27
+
+    Label10_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Expected Date"
+        Width: =156
+        X: =589
+        Y: =618
+        ZIndex: =28
+
+    Label10_8 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="LOB"
+        Width: =81
+        X: =434
+        Y: =618
+        ZIndex: =29
+
+    Gallery2_2 As gallery.galleryVertical:
+        Height: =91
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =26
+        Width: =432
+        X: =313
+        Y: =643
+        ZIndex: =30
+
+        Label4_2 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.SampleHeading
+            Width: =117
+            ZIndex: =1
+
+        Label5_2 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: |-
+                ="#####
+                "
+            Width: =81
+            X: =117
+            ZIndex: =2
+
+        Label6_2 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: |-
+                ="XXXXX
+                "
+            X: =272
+            ZIndex: =3
+
+        Label5_4 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: |-
+                ="#####
+                "
+            Width: =74
+            X: =198
+            ZIndex: =4
+
+    TextInput2_2 As text:
+        Default: ="Name"
+        Height: =25
+        Size: =11
+        Width: =428
+        X: =805
+        Y: =552
+        ZIndex: =32
+
+    TextInput3_2 As text:
+        Default: ="Entrada de texto"
+        Height: =25
+        Size: =11
+        Width: =150
+        X: =805
+        Y: =585
+        ZIndex: =33
+
+    DatePicker1_2 As datepicker:
+        Color: =RGBA(0,0,0,1)
+        Height: =25
+        Size: =11
+        Width: =137
+        X: =1096
+        Y: =585
+        ZIndex: =34
+
+    Dropdown1_2 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: |
+            =["USD"]
+        Size: =11
+        Width: =102
+        X: =977
+        Y: =585
+        ZIndex: =35
+
+    Dropdown2_6 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: |
+            =["Pokemon"]
+        Size: =11
+        Width: =128
+        X: =805
+        Y: =622
+        ZIndex: =36
+
+    Dropdown2_7 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: =["Masterchief"]
+        Size: =11
+        Width: =128
+        X: =1106
+        Y: =622
+        ZIndex: =37
+
+    Dropdown2_8 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: =["NEO"]
+        Size: =11
+        Width: =128
+        X: =955
+        Y: =622
+        ZIndex: =38
+
+    Label10_18 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Close Date"
+        Width: =136
+        X: =806
+        Y: =652
+        ZIndex: =39
+
+    Label10_19 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Texto"
+        Width: =156
+        X: =1078
+        Y: =652
+        ZIndex: =40
+
+    Label10_20 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Texto"
+        Width: =136
+        X: =942
+        Y: =652
+        ZIndex: =41
+
+    Gallery2_3 As gallery.galleryVertical:
+        Height: =57
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =26
+        Width: =432
+        X: =802
+        Y: =677
+        ZIndex: =42
+
+        Label4_3 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.SampleHeading
+            Width: =136
+            ZIndex: =1
+
+        Label5_3 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: |-
+                ="#####
+                "
+            Width: =136
+            X: =136
+            ZIndex: =2
+
+        Label6_3 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: |-
+                ="XXXXX
+                "
+            X: =272
+            ZIndex: =3
+
+    Icon5 As icon.Add:
+        Height: =22
+        Icon: =Icon.Add
+        Width: =27
+        X: =726
+        Y: =492
+        ZIndex: =43
+
+    Toggle1 As toggleSwitch:
+        Height: =19
+        Width: =42
+        X: =990
+        Y: =487
+        ZIndex: =44
+
+    Label13 As label:
+        Height: =25
+        Text: ="FIT"
+        Width: =80
+        X: =878
+        Y: =484
+        ZIndex: =45
+
+    Label13_1 As label:
+        Align: =Align.Right
+        Height: =25
+        Text: ="FAT"
+        Width: =80
+        X: =1064
+        Y: =481
+        ZIndex: =46
+
+    Button2 As button:
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Size: =12
+        Text: ="Payments"
+        Width: =90
+        X: =805
+        Y: =512
+        ZIndex: =47
+
+    Button2_1 As button:
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Size: =12
+        Text: ="Features"
+        Width: =90
+        X: =934
+        Y: =512
+        ZIndex: =48
+
+    Button2_2 As button:
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Size: =12
+        Text: ="Resource Estimation"
+        Width: =170
+        X: =1064
+        Y: =512
+        ZIndex: =49
+
+    Label10_21 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Value "
+        Width: =75
+        X: =514
+        Y: =618
+        ZIndex: =50
+
+    Icon5_1 As icon.Add:
+        Height: =22
+        Icon: =Icon.Add
+        Width: =27
+        X: =1238
+        Y: =555
+        ZIndex: =51
+
+    Rectangle2_5 As rectangle:
+        BorderThickness: =1
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =272
+        Width: =961
+        X: =302
+        Y: =205
+        ZIndex: =52
+
+    Label3_12 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="Line of Business"
+        Width: =172
+        X: =625
+        Y: =239
+        ZIndex: =54
+
+    TextInput5_6 As text:
+        Default: =Deal.Name
+        Height: =24
+        Width: =259
+        X: =316
+        Y: =261
+        ZIndex: =55
+
+    Label3_13 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="Name"
+        Width: =143
+        X: =312
+        Y: =236
+        ZIndex: =56
+
+    TextInput5_7 As text:
+        Default: =""
+        Height: =24
+        Width: =259
+        X: =940
+        Y: =265
+        ZIndex: =57
+
+    Label3_14 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="Segment"
+        Width: =143
+        X: =940
+        Y: =239
+        ZIndex: =58
+
+    Label3_15 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =22
+        Text: ="Create"
+        Width: =143
+        X: =314
+        Y: =292
+        ZIndex: =60
+
+    DatePicker1_8 As datepicker:
+        Height: =24
+        Size: =11
+        Width: =259
+        X: =626
+        Y: =315
+        ZIndex: =61
+
+    Label3_16 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =22
+        Text: ="Initial Date"
+        Width: =143
+        X: =624
+        Y: =292
+        ZIndex: =62
+
+    Label3_17 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =22
+        Text: ="Currency Code"
+        Width: =143
+        X: =940
+        Y: =290
+        ZIndex: =64
+
+    TextInput5_8 As text:
+        Default: =""
+        Height: =24
+        Width: =259
+        X: =318
+        Y: =367
+        ZIndex: =65
+
+    Label3_18 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="Total Price Currency"
+        Width: =186
+        X: =314
+        Y: =343
+        ZIndex: =66
+
+    Label3_19 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="Status"
+        Width: =143
+        X: =940
+        Y: =341
+        ZIndex: =68
+
+    TextInput5_10 As text:
+        Default: =""
+        Height: =47
+        Width: =889
+        X: =318
+        Y: =419
+        ZIndex: =69
+
+    Label3_20 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="Observations    "
+        Width: =186
+        X: =317
+        Y: =396
+        ZIndex: =70
+
+    Icon4_2 As icon.Save:
+        Color: =RGBA(58, 87, 255, 1)
+        Height: =32
+        Icon: =Icon.Save
+        Width: =36
+        X: =1208
+        Y: =225
+        ZIndex: =71
+
+    Label3_21 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="General Information"
+        Width: =344
+        X: =611
+        Y: =205
+        ZIndex: =72
+
+    Dropdown3_5 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Default: =""
+        Height: =24
+        Items: =["Aproved"]
+        Width: =259
+        X: =941
+        Y: =367
+        ZIndex: =73
+
+    TextInput5_9 As text:
+        Default: =Today()
+        Height: =24
+        Width: =259
+        X: =317
+        Y: =313
+        ZIndex: =74
+
+    TextInput5_11 As text:
+        Default: =""
+        Height: =24
+        Width: =259
+        X: =940
+        Y: =315
+        ZIndex: =75
+
+    TextInput5_12 As text:
+        Default: =""
+        Height: =24
+        Width: =259
+        X: =627
+        Y: =369
+        ZIndex: =76
+
+    Label3_24 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Text: ="Project Link "
+        Width: =186
+        X: =623
+        Y: =344
+        ZIndex: =77
+
+    Group9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =78
+
+        "'Close Date' As label":
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Close Date"
+            Width: =160
+            X: =302
+            Y: =99
+            ZIndex: =8
+
+        LOB As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="LOB "
+            Width: =160
+            X: =462
+            Y: =99
+            ZIndex: =9
+
+        "'Owner Name' As label":
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Owner Name"
+            Width: =160
+            X: =782
+            Y: =99
+            ZIndex: =10
+
+        Segment As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Segment "
+            Width: =160
+            X: =622
+            Y: =99
+            ZIndex: =11
+
+        Name As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Name"
+            Width: =160
+            X: =942
+            Y: =99
+            ZIndex: =12
+
+        Type As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: |-
+                ="Type
+                "
+            Width: =161
+            X: =1102
+            Y: =99
+            ZIndex: =13
+

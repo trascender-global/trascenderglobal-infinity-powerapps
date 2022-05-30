@@ -1,0 +1,552 @@
+EditProject As screen:
+    Height: =Max(App.Height,700)
+    ImagePosition: =ImagePosition.Fill
+    Width: =Max(App.Width, 1366)
+
+    HeaderTG_EditProjectView As HeaderTG:
+        Height: =76
+        ZIndex: =19
+
+    EditProjectView_TitleLabel As label:
+        Align: =Align.Right
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        FontWeight: =FontWeight.Bold
+        Size: =22
+        Text: ="Edit Project"
+        Width: =253
+        X: =1069
+        Y: =12
+        ZIndex: =20
+
+    DynamicNav_EditProjectView As DynamicNav:
+        Height: =692
+        Y: |
+            =65
+        ZIndex: =22
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: |-
+            =RGBA(255, 255, 255, 0.2
+            )
+        Height: =60
+        Width: =234
+        Y: =211
+        ZIndex: =23
+
+    Rectangle2_6 As rectangle:
+        BorderThickness: =1
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =326
+        Width: =465
+        X: =269
+        Y: =216
+        ZIndex: =76
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =76
+
+        Dropdown3 As dropdown:
+            Default: =""
+            Items: =["IDA","CAD","IVA"]
+            Width: =91
+            X: =318
+            Y: =129
+            ZIndex: =31
+
+        Label3 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="Segments"
+            Width: =178
+            X: =318
+            Y: =91
+            ZIndex: =32
+
+        Label3_1 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="Name"
+            Width: =338
+            X: =798
+            Y: =91
+            ZIndex: =34
+
+        Label3_22 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="ID"
+            Width: =78
+            X: =680
+            Y: =91
+            ZIndex: =70
+
+        Label3_23 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="Status"
+            Width: =78
+            X: =445
+            Y: =91
+            ZIndex: =72
+
+        Dropdown_ProjecName As dropdown:
+            Default: =""
+            Items: |
+                =GM_GlobalGeneralInformation.project_name
+            Width: =452
+            X: =794
+            Y: =129
+            ZIndex: =73
+
+        Dropdown3_4 As dropdown:
+            Default: =""
+            Items: =["In Progress","Closed"]
+            Width: =192
+            X: =445
+            Y: =131
+            ZIndex: =75
+
+    Rectangle2_7 As rectangle:
+        BorderThickness: =1
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =276
+        Width: =490
+        X: =804
+        Y: =263
+        ZIndex: =77
+
+    Label12_2 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Epics"
+        X: =288
+        Y: =216
+        ZIndex: =78
+
+    TextInput3_4 As text:
+        Default: =Epic.value_currency
+        Height: =30
+        Size: =11
+        Width: =150
+        X: =288
+        Y: =456
+        ZIndex: =80
+
+    DatePicker1_10 As datepicker:
+        Height: =30
+        Size: =11
+        Width: =137
+        X: =579
+        Y: =456
+        ZIndex: =81
+
+    Dropdown1_4 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Items: |
+            =["USD"]
+        Size: =11
+        Width: =102
+        X: =460
+        Y: =456
+        ZIndex: =82
+
+    Dropdown2_12 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Items: |
+            =["Pokemon"]
+        Size: =11
+        Width: =128
+        X: =288
+        Y: =499
+        ZIndex: =83
+
+    Dropdown2_13 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Items: =["Masterchief"]
+        Size: =11
+        Width: =128
+        X: =589
+        Y: =499
+        ZIndex: =84
+
+    Dropdown2_14 As dropdown:
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Items: =["NEO"]
+        Size: =11
+        Width: =128
+        X: =438
+        Y: =499
+        ZIndex: =85
+
+    Gallery_EpicsEdit As gallery.galleryVertical:
+        DisplayMode: =DisplayMode.View
+        Height: =118
+        Items: =Filter(GM_Epics,project_id = Label_IdProject.Text) 
+        Layout: =Layout.Vertical
+        OnSelect: =Set(Epic,ThisItem)
+        TemplateSize: =26
+        Width: =432
+        X: =283
+        Y: =283
+        ZIndex: =89
+
+        TextInput_IdName As text:
+            Default: =ThisItem.epic_name
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Width: =150
+            X: =47
+            ZIndex: =6
+
+        TextInput_IdValue As text:
+            Default: ="$" & Text(ThisItem.value_currency,"0,00")
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Width: =65
+            X: =197
+            ZIndex: =7
+
+        TextInput_IdCurrency As text:
+            Default: =ThisItem.currency_code
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Width: =50
+            X: =262
+            ZIndex: =8
+
+        TextInput_IdCurrency_1 As text:
+            Default: |
+                =ThisItem.expected_date
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Width: =110
+            X: =312
+            ZIndex: =9
+
+        Label4 As label:
+            BorderThickness: =1
+            Height: =26
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.epic_id
+            Width: =47
+            ZIndex: =10
+
+    Group2_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =93
+
+        Label10_9 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="ID"
+            Width: =48
+            X: =287
+            Y: =256
+            ZIndex: =86
+
+        Label10_10 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Ccy"
+            Width: =50
+            X: =550
+            Y: =256
+            ZIndex: =87
+
+        Label10_11 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Name"
+            X: =335
+            Y: =256
+            ZIndex: =88
+
+    Icon5_4 As icon.Add:
+        Height: =26
+        Icon: =Icon.Add
+        Width: =32
+        X: =689
+        Y: =224
+        ZIndex: =102
+
+    Button2_6 As button:
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Size: =12
+        Text: ="Payments"
+        Width: =90
+        X: =821
+        Y: =219
+        ZIndex: =106
+
+    Button2_7 As button:
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Size: =12
+        Text: ="Features"
+        Width: =90
+        X: =950
+        Y: =219
+        ZIndex: =107
+
+    Button2_8 As button:
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Size: =12
+        Text: ="Resource Estimation"
+        Width: =170
+        X: =1080
+        Y: =219
+        ZIndex: =109
+
+    Label10_26 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Size: =10
+        Text: ="Value "
+        Width: =65
+        X: =485
+        Y: =256
+        ZIndex: =110
+
+    Icon1 As icon.Trash:
+        Height: =28
+        Icon: =Icon.Trash
+        Width: =33
+        X: =653
+        Y: =223
+        ZIndex: =112
+
+    Icon5_5 As icon.Add:
+        Height: =26
+        Icon: =Icon.Add
+        Width: =32
+        X: =1249
+        Y: =270
+        ZIndex: =113
+
+    Icon1_1 As icon.Trash:
+        Height: =28
+        Icon: =Icon.Trash
+        Width: =33
+        X: =1213
+        Y: =269
+        ZIndex: =114
+
+    Icon2 As icon.Edit:
+        Height: =26
+        Icon: =Icon.Edit
+        OnSelect: =Gallery_EpicsEdit.DisplayMode.Edit
+        Width: =32
+        X: =615
+        Y: =224
+        ZIndex: =115
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =115
+
+        TextInput2_5 As text:
+            Default: ="Name"
+            Height: =30
+            Size: =11
+            Width: =462
+            X: =818
+            Y: =306
+            ZIndex: =90
+
+        TextInput3_5 As text:
+            Default: ="Entrada de texto"
+            Height: =30
+            Size: =11
+            Width: =162
+            X: =818
+            Y: =346
+            ZIndex: =91
+
+        DatePicker1_11 As datepicker:
+            Color: =RGBA(0,0,0,1)
+            Height: =30
+            Size: =11
+            Width: =148
+            X: =1132
+            Y: =346
+            ZIndex: =92
+
+        Dropdown1_5 As dropdown:
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Items: |
+                =["USD"]
+            Size: =11
+            Width: =110
+            X: =1004
+            Y: =346
+            ZIndex: =94
+
+        Dropdown2_15 As dropdown:
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Items: |
+                =["Pokemon"]
+            Size: =11
+            Width: =138
+            X: =818
+            Y: =389
+            ZIndex: =95
+
+        Dropdown2_16 As dropdown:
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Items: =["Masterchief"]
+            Size: =11
+            Width: =138
+            X: =1143
+            Y: =389
+            ZIndex: =96
+
+        Dropdown2_17 As dropdown:
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Items: =["NEO"]
+            Size: =11
+            Width: =138
+            X: =980
+            Y: =389
+            ZIndex: =97
+
+        Label10_27 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Close Date"
+            Width: =147
+            X: =818
+            Y: =429
+            ZIndex: =98
+
+        Label10_28 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Texto"
+            Width: =168
+            X: =1112
+            Y: =429
+            ZIndex: =99
+
+        Label10_29 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Texto"
+            Width: =147
+            X: =965
+            Y: =429
+            ZIndex: =100
+
+        Gallery2_7 As gallery.galleryVertical:
+            Height: =67
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            TemplateSize: =26
+            Width: =466
+            X: =814
+            Y: =459
+            ZIndex: =101
+
+            Label4_7 As label:
+                BorderThickness: =1
+                Height: =26
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.SampleHeading
+                Width: =147
+                ZIndex: =1
+
+            Label5_10 As label:
+                BorderThickness: =1
+                Height: =26
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="#####
+                    "
+                Width: =147
+                X: =147
+                ZIndex: =2
+
+            Label6_7 As label:
+                BorderThickness: =1
+                Height: =26
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="XXXXX
+                    "
+                Width: =162
+                X: =294
+                ZIndex: =3
+
+    Icon2_1 As icon.Edit:
+        Height: =26
+        Icon: =Icon.Edit
+        Width: =32
+        X: =1168
+        Y: =271
+        ZIndex: =116
+
+    Label_IdProject As label:
+        BorderColor: =RGBA(56, 96, 178, 1)
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Disabled
+        Text: |+
+            =LookUp(GM_GlobalGeneralInformation,project_name=Dropdown_ProjecName.SelectedText.Value,id)
+            
+        Width: =68
+        X: =685
+        Y: =131
+        ZIndex: =117
+
+    Label10_12 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Size: =10
+        Text: ="Expected"
+        Width: =115
+        X: =600
+        Y: =256
+        ZIndex: =119
+
+    TextInput3_6 As text:
+        Default: =Epic.pokemon_master_id
+        Height: =30
+        Size: =11
+        Width: =427
+        X: =288
+        Y: =413
+        ZIndex: =120
+
