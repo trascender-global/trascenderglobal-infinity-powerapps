@@ -53,7 +53,7 @@ EditProject As screen:
 
         Dropdown3 As dropdown:
             Default: =""
-            Items: =["IDA","CAD","IVA"]
+            Items: =Distinct(GM_GlobalGeneralInformation,segment)
             Width: =91
             X: =318
             Y: =129
@@ -94,7 +94,7 @@ EditProject As screen:
         Dropdown_ProjecName As dropdown:
             Default: =""
             Items: |
-                =GM_GlobalGeneralInformation.project_name
+                =
             Width: =452
             X: =794
             Y: =129
@@ -102,10 +102,10 @@ EditProject As screen:
 
         Dropdown3_4 As dropdown:
             Default: =""
-            Items: =["In Progress","Closed"]
+            Items: =Distinct(GM_GlobalGeneralInformation,status)
             Width: =192
             X: =445
-            Y: =131
+            Y: =129
             ZIndex: =75
 
     Rectangle2_7 As rectangle:
