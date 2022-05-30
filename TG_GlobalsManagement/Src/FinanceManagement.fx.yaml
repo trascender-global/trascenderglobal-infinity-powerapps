@@ -22,6 +22,8 @@ FinanceManagement As screen:
 
     Main As groupContainer.manualLayoutContainer:
         Height: =703
+        LayoutDirection: =LayoutDirection.Manual
+        LayoutMode: =LayoutMode.Auto
         Width: =1131
         X: =235
         Y: =65
