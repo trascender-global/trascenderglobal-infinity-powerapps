@@ -326,7 +326,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "",
+                "InvariantScript": "Navigate(ThisItem.NavLink,Fade)",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -470,7 +470,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "64",
+                "InvariantScript": "0",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -548,7 +548,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "211",
+                "InvariantScript": "234",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -614,7 +614,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Fill",
+                "InvariantScript": "Self.Color",
                 "Property": "HoverFill",
                 "RuleProviderType": "Unknown"
               },
@@ -638,7 +638,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Color",
+                "InvariantScript": "RGBA(84, 84, 84, 1)",
                 "Property": "HoverColor",
                 "RuleProviderType": "Unknown"
               },
@@ -650,7 +650,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Select(Parent)",
+                "InvariantScript": "Navigate(ThisItem.NavLink,Fade)",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -926,7 +926,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637895426363499053",
+    "LastModifiedTimestamp": "637895453686380548",
     "Name": "DynamicNav",
     "Rules": [
       {
@@ -1001,7 +1001,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637895426363499053",
+  "LastModifiedTimestamp": "637895453686380548",
   "Name": "51a4282aa30f4cc68c1ee62e75ae9939",
   "OverridableProperties": {},
   "Version": "637893486623742981"

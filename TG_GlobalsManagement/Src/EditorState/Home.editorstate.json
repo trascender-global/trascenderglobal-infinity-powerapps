@@ -47,7 +47,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "DynamicNav_HomeView",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -152,7 +152,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EditProject_Button_HomeView",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -577,7 +577,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NewProject_Button_HomeView",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -821,7 +821,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1_3",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
