@@ -110,7 +110,7 @@
         "Name": "AppTitle",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7,
+        "PublishOrderIndex": 169,
         "Rules": [
           {
             "Category": "Data",
@@ -431,7 +431,7 @@
         "Name": "TGLogo",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 8,
+        "PublishOrderIndex": 170,
         "Rules": [
           {
             "Category": "Data",
@@ -647,7 +647,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637895456193200810",
+    "LastModifiedTimestamp": "637895460522785791",
     "Name": "HeaderTG",
     "Rules": [
       {
@@ -706,7 +706,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637895456193200810",
+  "LastModifiedTimestamp": "637895460522785791",
   "Name": "3bd3cda16e6f498db1fa26e9f6ca986b",
   "OverridableProperties": {},
   "Version": "637805439354025725"
