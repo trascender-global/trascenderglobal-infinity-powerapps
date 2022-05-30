@@ -63,6 +63,7 @@ DynamicNav As CanvasComponent:
             AccessibleLabel: =Self.Tooltip
             Color: =RGBA(255, 255, 255, 1)
             Height: =Parent.TemplateHeight
+            HoverColor: =RGBA(0, 0, 0, 0)
             Icon: =ThisItem.Icon
             OnSelect: =Navigate(ThisItem.NavLink,Fade)
             PaddingBottom: =10
