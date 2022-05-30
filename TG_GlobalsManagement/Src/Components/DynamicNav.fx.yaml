@@ -19,7 +19,7 @@ DynamicNav As CanvasComponent:
                 NavLink:App.ActiveScreen
             },
             {
-                Name: "Finanace Management", 
+                Name: "Finance Management", 
                 Icon:Icon.Money,
                 NavLink:App.ActiveScreen
             }
@@ -63,7 +63,7 @@ DynamicNav As CanvasComponent:
             Color: =RGBA(255, 255, 255, 1)
             Height: =Parent.TemplateHeight
             Icon: =ThisItem.Icon
-            OnSelect: =
+            OnSelect: =ThisItem.NavLink
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10

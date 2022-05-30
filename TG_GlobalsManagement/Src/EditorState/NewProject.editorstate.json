@@ -5143,7 +5143,7 @@
         {
           "Category": "Data",
           "PropertyName": "MenuItem",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
