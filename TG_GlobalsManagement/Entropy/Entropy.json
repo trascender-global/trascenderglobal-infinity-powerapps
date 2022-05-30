@@ -140,6 +140,8 @@
     "OwnerName_Val": 98,
     "Rectangle1": 101,
     "Rectangle1_1": 23,
+    "Rectangle1_2": 168,
+    "Rectangle1_3": 169,
     "Rectangle2": 125,
     "Rectangle2_1": 134,
     "Rectangle2_5": 102,
@@ -173,7 +175,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/30/2022 21:59:12",
+  "HeaderLastSavedDateTimeUTC": "05/30/2022 22:00:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -391,6 +393,8 @@
     "OwnerName_Val": 155,
     "Rectangle1": 93,
     "Rectangle1_1": 22,
+    "Rectangle1_2": 22,
+    "Rectangle1_3": 22,
     "Rectangle2": 117,
     "Rectangle2_1": 126,
     "Rectangle2_5": 94,
@@ -442,7 +446,7 @@
       "icon": 11,
       "image": 1,
       "label": 63,
-      "rectangle": 7,
+      "rectangle": 9,
       "screen": 4,
       "text": 19,
       "toggleSwitch": 1
