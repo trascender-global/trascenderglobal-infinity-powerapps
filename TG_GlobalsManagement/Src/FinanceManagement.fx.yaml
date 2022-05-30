@@ -10,6 +10,16 @@ FinanceManagement As screen:
         Y: =65
         ZIndex: =6
 
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: |-
+            =RGBA(255, 255, 255, 0.2
+            )
+        Height: =60
+        Width: =234
+        Y: =314
+        ZIndex: =7
+
     Main As groupContainer.manualLayoutContainer:
         Height: =703
         LayoutDirection: =LayoutDirection.Manual
@@ -137,14 +147,4 @@ FinanceManagement As screen:
             X: =222
             Y: =38
             ZIndex: =12
-
-    Rectangle1_2 As rectangle:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        Fill: |-
-            =RGBA(255, 255, 255, 0.2
-            )
-        Height: =60
-        Width: =234
-        Y: =314
-        ZIndex: =7
 

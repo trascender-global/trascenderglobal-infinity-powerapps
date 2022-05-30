@@ -110,7 +110,7 @@
         "Name": "AppTitle",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 176,
+        "PublishOrderIndex": 7,
         "Rules": [
           {
             "Category": "Data",
@@ -431,7 +431,7 @@
         "Name": "TGLogo",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 177,
+        "PublishOrderIndex": 8,
         "Rules": [
           {
             "Category": "Data",
