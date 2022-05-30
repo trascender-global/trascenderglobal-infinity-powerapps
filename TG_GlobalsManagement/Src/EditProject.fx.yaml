@@ -487,7 +487,9 @@ EditProject As screen:
 
         Gallery2_7 As gallery.galleryVertical:
             Height: =67
-            Items: =CustomGallerySample
+            Items: |
+                =Filter(GM_Features,epic_id = Epic.epic_id)
+                 
             Layout: =Layout.Vertical
             TemplateSize: =26
             Width: =466
@@ -500,7 +502,7 @@ EditProject As screen:
                 Height: =26
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.SampleHeading
+                Text: =ThisItem.currency_code
                 Width: =147
                 ZIndex: =1
 
