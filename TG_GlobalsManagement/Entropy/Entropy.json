@@ -52,6 +52,7 @@
     "EditProject": 11,
     "EditProjectView_TitleLabel": 13,
     "epic_id_Columna1": 183,
+    "epic_name_Columna1": 192,
     "FinanceManagement": 73,
     "Galery_Menu": 4,
     "Gallery_EpicsEdit": 41,
@@ -147,6 +148,7 @@
     "payment_name_Columna1": 184,
     "PaymentID_Columna1": 182,
     "PieChart1": 92,
+    "project_name_Columna1": 191,
     "Rectangle1": 114,
     "Rectangle1_1": 23,
     "Rectangle1_2": 74,
@@ -185,7 +187,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/30/2022 22:28:18",
+  "HeaderLastSavedDateTimeUTC": "05/30/2022 22:49:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -216,7 +218,8 @@
     "GM_Payments": 7,
     "LegendSample": 8,
     "PieChartSample": 9,
-    "RadioSample": 10
+    "RadioSample": 10,
+    "VW_FM_Transactions": 11
   },
   "OrderGroupControls": {
     "Group1": {
@@ -320,6 +323,7 @@
     "EditProject": 10,
     "EditProjectView_TitleLabel": 12,
     "epic_id_Columna1": 82,
+    "epic_name_Columna1": 0,
     "FinanceManagement": 72,
     "Galery_Menu": 2,
     "Gallery_EpicsEdit": 40,
@@ -415,6 +419,7 @@
     "payment_name_Columna1": 83,
     "PaymentID_Columna1": 81,
     "PieChart1": 91,
+    "project_name_Columna1": 0,
     "Rectangle1": 106,
     "Rectangle1_1": 22,
     "Rectangle1_2": 73,
