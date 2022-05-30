@@ -10,134 +10,6 @@ FinanceManagement As screen:
         Y: =65
         ZIndex: =6
 
-    Main As groupContainer.manualLayoutContainer:
-        Height: =703
-        LayoutDirection: =LayoutDirection.Manual
-        LayoutMode: =LayoutMode.Auto
-        Width: =1131
-        X: =235
-        Y: =65
-        ZIndex: =7
-
-        DataTable1 As dataTable.datatable:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =240
-            Items: =Filter(Filter(GM_Payments,status<>""),gm_expected_date >= DatePicker_FM_Min && gm_expected_date <= DatePicker_FM_Max )
-            Width: =1095
-            X: =15
-            Y: =158
-            ZIndex: =8
-
-            PaymentID_Columna1 As dataTableColumn.numberColumn:
-                DisplayMode: =DisplayMode.Edit
-                FieldDisplayName: ="PaymentID"
-                FieldName: ="PaymentID"
-                FieldVariantName: ="numberColumn"
-                Height: =Parent.Height
-                LayoutHeight: =Parent.Height
-                Order: =1
-                Text: =ThisItem.PaymentID
-                Width: =100
-                X: =0
-                Y: =0
-                ZIndex: =9
-
-            payment_name_Columna1 As dataTableColumn.textualColumn:
-                DisplayMode: =DisplayMode.Edit
-                FieldDisplayName: ="payment_name"
-                FieldName: ="payment_name"
-                FieldVariantName: ="textualColumn"
-                Height: =Parent.Height
-                LayoutHeight: =Parent.Height
-                Order: =3
-                Text: =ThisItem.payment_name
-                Width: =100
-                X: =0
-                Y: =0
-                ZIndex: =10
-
-            status_Columna1 As dataTableColumn.textualColumn:
-                DisplayMode: =DisplayMode.Edit
-                FieldDisplayName: ="status"
-                FieldName: ="status"
-                FieldVariantName: ="textualColumn"
-                Height: =Parent.Height
-                LayoutHeight: =Parent.Height
-                Order: =4
-                Text: =ThisItem.status
-                Width: =100
-                X: =0
-                Y: =0
-                ZIndex: =11
-
-            epic_id_Columna1 As dataTableColumn.numberColumn:
-                DisplayMode: =DisplayMode.Edit
-                FieldDisplayName: ="epic_id"
-                FieldName: ="epic_id"
-                FieldVariantName: ="numberColumn"
-                Height: =Parent.Height
-                LayoutHeight: =Parent.Height
-                Order: =2
-                Text: =ThisItem.epic_id
-                Width: =100
-                X: =0
-                Y: =0
-                ZIndex: =12
-
-            currency_code_Columna1 As dataTableColumn.textualColumn:
-                DisplayMode: =DisplayMode.Edit
-                FieldDisplayName: ="currency_code"
-                FieldName: ="currency_code"
-                FieldVariantName: ="textualColumn"
-                Height: =Parent.Height
-                LayoutHeight: =Parent.Height
-                Order: =5
-                Text: =ThisItem.currency_code
-                Width: =100
-                X: =0
-                Y: =0
-                ZIndex: =13
-
-            gm_expected_date_Columna1 As dataTableColumn.textualColumn:
-                DisplayMode: =DisplayMode.Edit
-                FieldDisplayName: ="gm_expected_date"
-                FieldName: ="gm_expected_date"
-                FieldVariantName: ="textualColumn"
-                Height: =Parent.Height
-                LayoutHeight: =Parent.Height
-                Order: =6
-                Text: =ThisItem.gm_expected_date
-                Width: =100
-                X: =0
-                Y: =0
-                ZIndex: =14
-
-        DatePicker_FM_Min As datepicker:
-            DefaultDate: =Today()-30  
-            Height: =28
-            Width: =193
-            X: =16
-            Y: =38
-            ZIndex: =10
-
-        Label3_4 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Text: ="Expected Date Range GM"
-            Width: =251
-            X: =15
-            Y: =10
-            ZIndex: =11
-
-        DatePicker_FM_Max As datepicker:
-            Height: =28
-            Width: =193
-            X: =222
-            Y: =38
-            ZIndex: =12
-
     Rectangle1_2 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 1)
         Fill: |-
@@ -147,4 +19,54 @@ FinanceManagement As screen:
         Width: =234
         Y: =314
         ZIndex: =7
+
+    DataTable_Payments_FM As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =240
+        Items: =Filter(Filter(VW_FM_Transactions,status<>""),gm_expected_date >= DatePicker_FM_Min.SelectedDate && gm_expected_date <= DatePicker_FM_Max.SelectedDate )
+        Size: =10
+        Width: =1095
+        X: =249
+        Y: =156
+        ZIndex: =8
+
+        project_name_Columna1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="project_name"
+            FieldName: ="project_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.project_name
+            Width: =290
+            X: =0
+            Y: =0
+            ZIndex: =15
+
+        epic_name_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="epic_name"
+            FieldName: ="epic_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.epic_name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =16
+
+    Label3_FM As label:
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Text: ="Expected Date Range GM"
+        Width: =251
+        X: =247
+        Y: =72
+        ZIndex: =11
 

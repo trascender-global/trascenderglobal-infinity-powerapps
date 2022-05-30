@@ -4,18 +4,18 @@
         BorderThickness: =1
         Fill: =RGBA(56, 96, 178, 0)
         Height: =261
-        Width: =465
-        X: =304
+        Width: =509
+        X: =258
         Y: =484
         ZIndex: =1
 
     Rectangle2_1 As rectangle:
         BorderThickness: =1
         Fill: =RGBA(56, 96, 178, 0)
-        Height: =198
+        Height: =201
         Width: =475
         X: =791
-        Y: =547
+        Y: =544
         ZIndex: =2
 
     HeaderTG_NewProjectView As HeaderTG:
@@ -48,75 +48,75 @@
         ZIndex: =6
 
     Gallery2 As gallery.galleryVertical:
-        Height: =69
+        Height: =117
         Items: =CRM_Deals
         Layout: =Layout.Vertical
         OnSelect: =Set(Deal,ThisItem)
         TemplateSize: =26
-        Width: =966
-        X: =297
+        Width: =1026
+        X: =254
         Y: =125
         ZIndex: =7
 
         CloseDate_Val As label:
             BorderThickness: =1
-            Height: =30
+            Height: =31
             OnSelect: =Select(Parent)
             Size: =10
             Text: =ThisItem.CloseDate
-            Width: =161
+            Width: =167
             ZIndex: =1
 
         LOB_val As label:
             BorderThickness: =1
-            Height: =30
+            Height: =31
             OnSelect: =Select(Parent)
             Size: =10
             Text: =ThisItem.LineofBusiness
-            Width: =160
-            X: =161
+            Width: =167
+            X: =167
             ZIndex: =2
 
         Segment_Val As label:
             BorderThickness: =1
-            Height: =30
+            Height: =31
             OnSelect: =Select(Parent)
             Size: =10
             Text: =ThisItem.Segment
-            Width: =161
-            X: =321
+            Width: =167
+            X: =334
             ZIndex: =3
 
         OwnerName_Val As label:
             BorderThickness: =1
-            Height: =30
+            Height: =31
             OnSelect: =Select(Parent)
             Size: =10
             Text: |
                 =ThisItem.OwnerName
-            Width: =158
-            X: =482
+            Width: =167
+            X: =501
             ZIndex: =4
 
         Name_Val As label:
             BorderThickness: =1
-            Height: =30
+            Height: =31
             OnSelect: =Select(Parent)
             Size: =10
             Text: =ThisItem.Name
-            Width: =161
-            X: =640
+            Width: =167
+            X: =668
             ZIndex: =5
 
         Type_Val As label:
             BorderThickness: =1
-            Height: =30
+            Height: =31
             OnSelect: =Select(Parent)
             Size: =10
             Text: |
                 =ThisItem.Type
-            Width: =154
-            X: =801
+            Width: =167
+            X: =835
             ZIndex: =6
 
     Rectangle1 As rectangle:
@@ -444,7 +444,7 @@
         Icon: =Icon.Add
         Width: =27
         X: =726
-        Y: =492
+        Y: =490
         ZIndex: =43
 
     Toggle1 As toggleSwitch:
@@ -522,10 +522,10 @@
     Rectangle2_5 As rectangle:
         BorderThickness: =1
         Fill: =RGBA(56, 96, 178, 0)
-        Height: =272
-        Width: =961
-        X: =302
-        Y: =205
+        Height: =223
+        Width: =1005
+        X: =258
+        Y: =254
         ZIndex: =52
 
     Label3_12 As label:
@@ -533,25 +533,25 @@
         Height: =24
         Text: ="Line of Business"
         Width: =172
-        X: =625
-        Y: =239
+        X: =612
+        Y: =259
         ZIndex: =54
 
     TextInput5_6 As text:
         Default: =Deal.Name
         Height: =24
-        Width: =259
-        X: =316
-        Y: =261
+        Width: =270
+        X: =272
+        Y: =281
         ZIndex: =55
 
     Label3_13 As label:
         FontWeight: =FontWeight.Bold
         Height: =24
         Text: ="Name"
-        Width: =143
-        X: =312
-        Y: =236
+        Width: =149
+        X: =277
+        Y: =258
         ZIndex: =56
 
     TextInput5_7 As text:
@@ -559,7 +559,7 @@
         Height: =24
         Width: =259
         X: =940
-        Y: =265
+        Y: =282
         ZIndex: =57
 
     Label3_14 As label:
@@ -568,24 +568,24 @@
         Text: ="Segment"
         Width: =143
         X: =940
-        Y: =239
+        Y: =259
         ZIndex: =58
 
     Label3_15 As label:
         FontWeight: =FontWeight.Bold
         Height: =22
         Text: ="Create"
-        Width: =143
-        X: =314
-        Y: =292
+        Width: =149
+        X: =277
+        Y: =306
         ZIndex: =60
 
     DatePicker1_8 As datepicker:
         Height: =24
         Size: =11
         Width: =259
-        X: =626
-        Y: =315
+        X: =612
+        Y: =329
         ZIndex: =61
 
     Label3_16 As label:
@@ -593,8 +593,8 @@
         Height: =22
         Text: ="Initial Date"
         Width: =143
-        X: =624
-        Y: =292
+        X: =612
+        Y: =307
         ZIndex: =62
 
     Label3_17 As label:
@@ -603,24 +603,24 @@
         Text: ="Currency Code"
         Width: =143
         X: =940
-        Y: =290
+        Y: =307
         ZIndex: =64
 
     TextInput5_8 As text:
         Default: =""
         Height: =24
-        Width: =259
-        X: =318
-        Y: =367
+        Width: =270
+        X: =272
+        Y: =375
         ZIndex: =65
 
     Label3_18 As label:
         FontWeight: =FontWeight.Bold
         Height: =24
         Text: ="Total Price Currency"
-        Width: =186
-        X: =314
-        Y: =343
+        Width: =194
+        X: =275
+        Y: =353
         ZIndex: =66
 
     Label3_19 As label:
@@ -629,14 +629,14 @@
         Text: ="Status"
         Width: =143
         X: =940
-        Y: =341
+        Y: =354
         ZIndex: =68
 
     TextInput5_10 As text:
         Default: =""
         Height: =47
-        Width: =889
-        X: =318
+        Width: =930
+        X: =272
         Y: =419
         ZIndex: =69
 
@@ -644,9 +644,9 @@
         FontWeight: =FontWeight.Bold
         Height: =24
         Text: ="Observations    "
-        Width: =186
-        X: =317
-        Y: =396
+        Width: =194
+        X: =275
+        Y: =395
         ZIndex: =70
 
     Icon4_2 As icon.Save:
@@ -654,20 +654,9 @@
         Height: =32
         Icon: =Icon.Save
         Width: =36
-        X: =1208
-        Y: =225
+        X: =1219
+        Y: =265
         ZIndex: =71
-
-    Label3_21 As label:
-        Align: =Align.Center
-        Color: =RGBA(0, 18, 107, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =24
-        Text: ="General Information"
-        Width: =344
-        X: =611
-        Y: =205
-        ZIndex: =72
 
     Dropdown3_5 As dropdown:
         ChevronBackground: =RGBA(58, 87, 255, 1)
@@ -675,16 +664,16 @@
         Height: =24
         Items: =["Aproved"]
         Width: =259
-        X: =941
-        Y: =367
+        X: =940
+        Y: =376
         ZIndex: =73
 
     TextInput5_9 As text:
         Default: =Today()
         Height: =24
-        Width: =259
-        X: =317
-        Y: =313
+        Width: =270
+        X: =272
+        Y: =328
         ZIndex: =74
 
     TextInput5_11 As text:
@@ -692,15 +681,15 @@
         Height: =24
         Width: =259
         X: =940
-        Y: =315
+        Y: =329
         ZIndex: =75
 
     TextInput5_12 As text:
         Default: =""
         Height: =24
         Width: =259
-        X: =627
-        Y: =369
+        X: =612
+        Y: =376
         ZIndex: =76
 
     Label3_24 As label:
@@ -708,8 +697,8 @@
         Height: =24
         Text: ="Project Link "
         Width: =186
-        X: =623
-        Y: =344
+        X: =612
+        Y: =354
         ZIndex: =77
 
     Group9 As group:
@@ -724,8 +713,8 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="Close Date"
-            Width: =160
-            X: =302
+            Width: =167
+            X: =258
             Y: =99
             ZIndex: =8
 
@@ -734,8 +723,8 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="LOB "
-            Width: =160
-            X: =462
+            Width: =167
+            X: =425
             Y: =99
             ZIndex: =9
 
@@ -744,8 +733,8 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="Owner Name"
-            Width: =160
-            X: =782
+            Width: =167
+            X: =760
             Y: =99
             ZIndex: =10
 
@@ -754,8 +743,8 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="Segment "
-            Width: =160
-            X: =622
+            Width: =167
+            X: =593
             Y: =99
             ZIndex: =11
 
@@ -764,8 +753,8 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="Name"
-            Width: =160
-            X: =942
+            Width: =167
+            X: =927
             Y: =99
             ZIndex: =12
 
@@ -776,8 +765,8 @@
             Text: |-
                 ="Type
                 "
-            Width: =161
-            X: =1102
+            Width: =168
+            X: =1095
             Y: =99
             ZIndex: =13
 
