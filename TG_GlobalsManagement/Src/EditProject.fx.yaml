@@ -32,7 +32,7 @@ EditProject As screen:
             )
         Height: =60
         Width: =234
-        Y: =211
+        Y: =233
         ZIndex: =23
 
     Rectangle2_6 As rectangle:
@@ -53,7 +53,7 @@ EditProject As screen:
 
         Dropdown3 As dropdown:
             Default: =""
-            Items: =["IDA","CAD","IVA"]
+            Items: =Distinct(GM_GlobalGeneralInformation,segment)
             Width: =91
             X: =318
             Y: =129
@@ -94,7 +94,7 @@ EditProject As screen:
         Dropdown_ProjecName As dropdown:
             Default: =""
             Items: |
-                =GM_GlobalGeneralInformation.project_name
+                =
             Width: =452
             X: =794
             Y: =129
@@ -102,10 +102,10 @@ EditProject As screen:
 
         Dropdown3_4 As dropdown:
             Default: =""
-            Items: =["In Progress","Closed"]
+            Items: =Distinct(GM_GlobalGeneralInformation,status)
             Width: =192
             X: =445
-            Y: =131
+            Y: =129
             ZIndex: =75
 
     Rectangle2_7 As rectangle:
@@ -542,7 +542,7 @@ EditProject As screen:
         ZIndex: =119
 
     TextInput3_6 As text:
-        Default: =Epic.pokemon_master_id
+        Default: =Epic.neo_id
         Height: =30
         Size: =11
         Width: =427

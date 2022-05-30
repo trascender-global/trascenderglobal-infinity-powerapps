@@ -126,7 +126,7 @@
             )
         Height: =60
         Width: =234
-        Y: =137
+        Y: =150
         ZIndex: =14
 
     Icon3 As icon.Reload:

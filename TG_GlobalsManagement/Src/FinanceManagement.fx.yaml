@@ -136,3 +136,13 @@ FinanceManagement As screen:
             Y: =38
             ZIndex: =12
 
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: |-
+            =RGBA(255, 255, 255, 0.2
+            )
+        Height: =60
+        Width: =234
+        Y: =314
+        ZIndex: =7
+
