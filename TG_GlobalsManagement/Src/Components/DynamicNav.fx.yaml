@@ -11,17 +11,17 @@ DynamicNav As CanvasComponent:
             {   
                 Name: "New Project", 
                 Icon:Icon.Publish,
-                NavLink:App.ActiveScreen
+                NavLink:NewProject
             },
             {
                 Name: "Edit Project", 
                 Icon:Icon.Edit,
-                NavLink:App.ActiveScreen
+                NavLink:EditProject
             },
             {
                 Name: "Finance Management", 
                 Icon:Icon.Money,
-                NavLink:App.ActiveScreen
+                NavLink:FinanceManagement
             }
             )
     Width: =234
