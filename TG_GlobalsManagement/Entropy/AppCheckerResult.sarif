@@ -479,19 +479,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Dropdown_ProjecName.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_Dropdown_Status.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Dropdown_ProjecName.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_Dropdown_Status.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Dropdown_ProjecName"
+                "type": "EditProject.EP_Dropdown_Status"
               }
             }
           ],
@@ -509,19 +509,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_Dropdown_Status.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Dropdown_ProjecName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_Dropdown_Status.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Dropdown_ProjecName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_Dropdown_Status"
+                "type": "EditProject.Dropdown_ProjecName"
               }
             }
           ],
@@ -1379,6 +1379,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NewProject.Dropdown3_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.Dropdown3_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NewProject",
+                "type": "NewProject.Dropdown3_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "NewProject.TextInput5_7.AccessibleLabel"
                 }
               ],
@@ -1529,19 +1559,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown3_5.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.TextInput5_12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown3_5.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.TextInput5_12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown3_5"
+                "type": "NewProject.TextInput5_12"
               }
             }
           ],
@@ -1559,19 +1589,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_12.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.Dropdown3_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_12.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.Dropdown3_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.TextInput5_12"
+                "type": "NewProject.Dropdown3_5"
               }
             }
           ],
@@ -1632,6 +1662,36 @@
                 "member": "AccessibleLabel",
                 "module": "NewProject",
                 "type": "NewProject.TextInput2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewProject.TextInput2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.TextInput2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NewProject",
+                "type": "NewProject.TextInput2_2"
               }
             }
           ],
@@ -1722,36 +1782,6 @@
                 "member": "AccessibleLabel",
                 "module": "NewProject",
                 "type": "NewProject.DatePicker1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewProject.TextInput2_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewProject.TextInput2_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput2_2"
               }
             }
           ],
@@ -2159,19 +2189,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown3_6.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.Icon4_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown3_6.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.Icon4_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown3_6"
+                "type": "NewProject.Icon4_2"
               }
             }
           ],
@@ -2183,6 +2213,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewProject.Icon4_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.Icon4_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NewProject",
+                "type": "NewProject.Icon4_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
         }
       ],
       "tool": {

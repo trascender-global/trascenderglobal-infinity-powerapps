@@ -18,6 +18,7 @@
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
             Height: =247
+            Visible: =false
             Width: =1068
             X: =259
             Y: =233
@@ -27,6 +28,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Line of Business"
+            Visible: =false
             Width: =172
             X: =612
             Y: =245
@@ -37,6 +39,7 @@
             Default: =Deal.Name
             Height: =25
             Size: =12
+            Visible: =false
             Width: =325
             X: =272
             Y: =274
@@ -46,6 +49,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Name"
+            Visible: =false
             Width: =149
             X: =272
             Y: =245
@@ -56,6 +60,7 @@
             Default: =Deal.Segment
             Height: =24
             Size: =12
+            Visible: =false
             Width: =259
             X: =940
             Y: =274
@@ -65,6 +70,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Segment"
+            Visible: =false
             Width: =143
             X: =940
             Y: =245
@@ -74,6 +80,7 @@
             FontWeight: =FontWeight.Bold
             Height: =22
             Text: ="Create Date"
+            Visible: =false
             Width: =149
             X: =272
             Y: =300
@@ -86,6 +93,7 @@
             IconBackground: =RGBA(58, 87, 255, 1)
             Size: =12
             StartOfWeek: =StartOfWeek.Monday
+            Visible: =false
             Width: =259
             X: =612
             Y: =325
@@ -95,6 +103,7 @@
             FontWeight: =FontWeight.Bold
             Height: =22
             Text: ="Initial Date"
+            Visible: =false
             Width: =143
             X: =612
             Y: =300
@@ -104,6 +113,7 @@
             FontWeight: =FontWeight.Bold
             Height: =22
             Text: ="Currency Code"
+            Visible: =false
             Width: =143
             X: =940
             Y: =300
@@ -114,6 +124,7 @@
             Default: ="$ " & Deal.Amount
             Height: =24
             Size: =12
+            Visible: =false
             Width: =270
             X: =272
             Y: =375
@@ -123,6 +134,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Total Price Currency"
+            Visible: =false
             Width: =194
             X: =272
             Y: =353
@@ -132,6 +144,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Status"
+            Visible: =false
             Width: =143
             X: =940
             Y: =354
@@ -142,6 +155,7 @@
             Default: =""
             Height: =47
             Size: =12
+            Visible: =false
             Width: =930
             X: =272
             Y: =419
@@ -151,6 +165,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Observations    "
+            Visible: =false
             Width: =194
             X: =272
             Y: =395
@@ -158,9 +173,11 @@
 
         Icon4_2 As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
-            Height: =32
+            Height: =35
             Icon: =Icon.Save
-            Width: =36
+            OnSelect: =Set(varShowPopup,true)
+            Visible: =false
+            Width: =56
             X: =1219
             Y: =265
             ZIndex: =57
@@ -172,6 +189,7 @@
             Height: =24
             Items: =["Normal", "Delayed", "Disputed", "Finished"]
             Size: =12
+            Visible: =false
             Width: =259
             X: =940
             Y: =376
@@ -182,6 +200,7 @@
             Default: =Today()
             Height: =24
             Size: =12
+            Visible: =false
             Width: =270
             X: =272
             Y: =325
@@ -193,6 +212,7 @@
             Height: =24
             Size: =12
             Tooltip: =
+            Visible: =false
             Width: =259
             X: =940
             Y: =325
@@ -203,6 +223,7 @@
             Default: =""
             Height: =24
             Size: =12
+            Visible: =false
             Width: =259
             X: =612
             Y: =376
@@ -212,6 +233,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Project Link "
+            Visible: =false
             Width: =186
             X: =612
             Y: =354
@@ -224,6 +246,7 @@
             Height: =24
             Items: =["Globals Fit", "Globals Fat"]
             Size: =12
+            Visible: =false
             Width: =259
             X: =613
             Y: =274
@@ -402,21 +425,93 @@
             Y: =150
             ZIndex: =12
 
+    NP_PopUpNewProjectGroup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =73
+
+        Rectangle3 As rectangle:
+            Fill: =RGBA(56, 96, 178, 0.7)
+            Height: =768
+            Visible: =varShowPopup
+            Width: =1366
+            ZIndex: =66
+
+        Rectangle4 As rectangle:
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =56
+            Visible: =varShowPopup
+            Width: =699
+            X: =355
+            Y: =218
+            ZIndex: =67
+
+        Rectangle5 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =210
+            Visible: =varShowPopup
+            Width: =699
+            X: =355
+            Y: =274
+            ZIndex: =68
+
+        Label5 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: ="Add New Project"
+            Visible: =varShowPopup
+            Width: =244
+            X: =575
+            Y: =226
+            ZIndex: =69
+
+        Label5_1 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =90
+            Size: =20
+            Text: ="You are about to add a new project, do you want to continue?"
+            Visible: =varShowPopup
+            Width: =462
+            X: =479
+            Y: =294
+            ZIndex: =70
+
+        Button3 As button:
+            Fill: =RGBA(41, 41, 41, 1)
+            Height: =46
+            OnSelect: =Set(varShowPopup,false)
+            Text: ="Cancel"
+            Visible: =varShowPopup
+            Width: =215
+            X: =460
+            Y: =406
+            ZIndex: =71
+
+        Button3_1 As button:
+            Fill: =RGBA(0, 182, 125, 1)
+            Height: =46
+            OnSelect: |-
+                =Set(varShowPopup,false);
+                Set(varShowPopupDetails,true);
+            Text: ="Continue"
+            Visible: =varShowPopup
+            Width: =215
+            X: =750
+            Y: =406
+            ZIndex: =72
+
     NP_PFRTableGroup As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =80
-
-        Rectangle2_1 As rectangle:
-            BorderThickness: =1
-            Fill: =RGBA(56, 96, 178, 0)
-            Height: =220
-            Width: =546
-            X: =780
-            Y: =525
-            ZIndex: =3
 
         TextInput2_2 As text:
             Default: ="Name"
@@ -569,8 +664,8 @@
             Size: =12
             Text: ="Payments"
             Width: =170
-            X: =784
-            Y: =492
+            X: =787
+            Y: =300
             ZIndex: =37
 
         Button2_1 As button:
@@ -583,8 +678,8 @@
             Size: =12
             Text: ="Features"
             Width: =170
-            X: =965
-            Y: =492
+            X: =968
+            Y: =300
             ZIndex: =38
 
         Button2_2 As button:
@@ -597,8 +692,8 @@
             Size: =12
             Text: ="Resource Estimation"
             Width: =170
-            X: =1145
-            Y: =492
+            X: =1148
+            Y: =300
             ZIndex: =39
 
         Icon5_1 As icon.Add:
@@ -619,140 +714,140 @@
         Rectangle2 As rectangle:
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
-            Height: =261
-            Visible: =false
-            Width: =509
+            Height: =500
+            Visible: =varShowEpicsTable
+            Width: =1067
             X: =259
-            Y: =484
+            Y: =245
             ZIndex: =1
 
         Label12 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =33
+            Height: =31
             Text: ="Epics"
-            Visible: =false
-            X: =268
-            Y: =484
+            Visible: =varShowEpicsTable
+            X: =269
+            Y: =345
             ZIndex: =13
 
         TextInput2 As text:
             Default: ="Name"
-            Height: =25
+            Height: =30
             Size: =11
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =428
             X: =269
-            Y: =515
+            Y: =387
             ZIndex: =14
 
         TextInput3 As text:
             Default: ="Entrada de texto"
-            Height: =25
+            Height: =30
             Size: =11
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =150
-            X: =268
-            Y: =549
+            X: =269
+            Y: =429
             ZIndex: =15
 
         DatePicker1 As datepicker:
-            Height: =25
+            Height: =30
             IconBackground: =RGBA(58, 87, 255, 1)
             Size: =11
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =137
-            X: =559
-            Y: =549
+            X: =560
+            Y: =429
             ZIndex: =16
 
         Dropdown1 As dropdown:
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =30
             Items: |
                 =["USD"]
             Size: =11
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =102
-            X: =440
-            Y: =549
+            X: =441
+            Y: =429
             ZIndex: =17
 
         Dropdown2 As dropdown:
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =30
             Items: |
                 =["Pokemon"]
             Size: =11
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =128
-            X: =268
-            Y: =585
+            X: =272
+            Y: =472
             ZIndex: =18
 
         Dropdown2_1 As dropdown:
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =30
             Items: =["Masterchief"]
             Size: =11
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =128
-            X: =569
-            Y: =585
+            X: =561
+            Y: =477
             ZIndex: =19
 
         Dropdown2_2 As dropdown:
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =30
             Items: =["NEO"]
             Size: =11
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =128
-            X: =418
-            Y: =585
+            X: =419
+            Y: =477
             ZIndex: =20
 
         Label10_2 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =48
             Text: ="Close Date"
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =117
-            X: =268
-            Y: =618
+            X: =266
+            Y: =533
             ZIndex: =21
 
         Label10_3 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =48
             Text: ="Expected Date"
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =156
-            X: =540
-            Y: =618
+            X: =538
+            Y: =533
             ZIndex: =22
 
         Label10_8 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =48
             Text: ="LOB"
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =81
-            X: =385
-            Y: =618
+            X: =383
+            Y: =533
             ZIndex: =23
 
         Gallery2_2 As gallery.galleryVertical:
-            Height: =91
+            Height: =145
             Items: =CustomGallerySample
             Layout: =Layout.Vertical
             TemplateSize: =26
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =432
             X: =264
-            Y: =643
+            Y: =578
             ZIndex: =24
 
             Label4_2 As label:
@@ -800,22 +895,112 @@
                 ZIndex: =4
 
         Icon5 As icon.Add:
-            Height: =50
+            Height: =96
             Icon: =Icon.Add
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =42
             X: =717
-            Y: =490
+            Y: =256
             ZIndex: =36
 
         Label10_21 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =48
             Text: ="Value "
-            Visible: =false
+            Visible: =varShowEpicsTable
             Width: =75
-            X: =465
-            Y: =618
+            X: =463
+            Y: =533
             ZIndex: =40
+
+    Label12_1 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Text: ="Project Name"
+        Visible: =varShowEpicsTable
+        X: =266
+        Y: =255
+        ZIndex: =82
+
+    NP_PopUpAddDetailsGroup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =82
+
+        Rectangle3_2 As rectangle:
+            Fill: =RGBA(56, 96, 178, 0.7)
+            Height: =768
+            Visible: =varShowPopupDetails
+            Width: =1366
+            ZIndex: =75
+
+        Rectangle4_2 As rectangle:
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =56
+            Visible: =varShowPopupDetails
+            Width: =699
+            X: =355
+            Y: =218
+            ZIndex: =76
+
+        Rectangle5_1 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =210
+            Visible: =varShowPopupDetails
+            Width: =699
+            X: =355
+            Y: =274
+            ZIndex: =77
+
+        Label5_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: ="Add Details"
+            Visible: =varShowPopupDetails
+            Width: =244
+            X: =575
+            Y: =226
+            ZIndex: =78
+
+        Label5_5 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =90
+            Size: =20
+            Text: ="Information successfully saved.  Do you want to continue adding the detailed information"
+            Visible: =varShowPopupDetails
+            Width: =462
+            X: =479
+            Y: =294
+            ZIndex: =79
+
+        Button3_3 As button:
+            Fill: =RGBA(41, 41, 41, 1)
+            Height: =46
+            OnSelect: =Set(varShowPopupDetails,false)
+            Text: ="Cancel"
+            Visible: =varShowPopupDetails
+            Width: =215
+            X: =460
+            Y: =406
+            ZIndex: =80
+
+        Button3_2 As button:
+            Fill: =RGBA(0, 182, 125, 1)
+            Height: =46
+            OnSelect: |-
+                =Set(varShowPopupDetails,false);
+                Set(varShowEpicsTable,true);
+            Text: ="Continue"
+            Visible: =varShowPopupDetails
+            Width: =215
+            X: =750
+            Y: =406
+            ZIndex: =81
 
