@@ -2,7 +2,7 @@
 
     NP_ClosedWonDeals_Galery As gallery.galleryVertical:
         Height: =117
-        Items: =Filter(CRM_Deals,Stage= "Closed Won" && GlobalInternalID = "")
+        Items: =Filter(CRM_Deals,IsBlank(GlobalInternalID) && Stage = "Closed won")
         Layout: =Layout.Vertical
         OnSelect: =Set(Deal,ThisItem)
         TemplateSize: =20
@@ -13,9 +13,11 @@
 
         NP_ClosedDate As label:
             BorderThickness: =0.5
-            Height: =26
+            Height: =25
             OnSelect: =Select(Parent)
-            Text: =ThisItem.CloseDate
+            PressedColor: =RGBA(25,25,25,1)
+            Text: =ThisItem.Name
+            Width: =391
             ZIndex: =1
 
         Label5 As label:
@@ -23,8 +25,8 @@
             Height: =25
             OnSelect: =Select(Parent)
             Text: =ThisItem.LineofBusiness
-            Width: =178
-            X: =150
+            Width: =106
+            X: =390
             ZIndex: =2
 
         Label6 As label:
@@ -33,7 +35,7 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.Segment
             Width: =178
-            X: =328
+            X: =496
             ZIndex: =3
 
         Label6_1 As label:
@@ -42,26 +44,17 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.OwnerName
             Width: =178
-            X: =506
+            X: =674
             ZIndex: =4
 
         Label6_4 As label:
             BorderThickness: =1
             Height: =25
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Name
-            Width: =245
-            X: =684
+            Text: =ThisItem.CloseDate
+            Width: =215
+            X: =852
             ZIndex: =5
-
-        Label6_5 As label:
-            BorderThickness: =1
-            Height: =25
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.GlobalInternalID
-            Width: =140
-            X: =929
-            ZIndex: =6
 
     Rectangle2 As rectangle:
         BorderThickness: =1
@@ -530,8 +523,9 @@
 
     TextInput5_6 As text:
         Default: =Deal.Name
-        Height: =24
-        Width: =270
+        Height: =25
+        Size: =12
+        Width: =325
         X: =272
         Y: =281
         ZIndex: =55
@@ -548,6 +542,7 @@
     TextInput5_7 As text:
         Default: =""
         Height: =24
+        Size: =12
         Width: =259
         X: =940
         Y: =282
@@ -573,7 +568,7 @@
 
     DatePicker1_8 As datepicker:
         Height: =24
-        Size: =11
+        Size: =12
         Width: =259
         X: =612
         Y: =329
@@ -600,6 +595,7 @@
     TextInput5_8 As text:
         Default: =""
         Height: =24
+        Size: =12
         Width: =270
         X: =272
         Y: =375
@@ -626,6 +622,7 @@
     TextInput5_10 As text:
         Default: =""
         Height: =47
+        Size: =12
         Width: =930
         X: =272
         Y: =419
@@ -654,6 +651,7 @@
         Default: =""
         Height: =24
         Items: =["Aproved"]
+        Size: =12
         Width: =259
         X: =940
         Y: =376
@@ -662,6 +660,7 @@
     TextInput5_9 As text:
         Default: =Today()
         Height: =24
+        Size: =12
         Width: =270
         X: =272
         Y: =328
@@ -670,6 +669,7 @@
     TextInput5_11 As text:
         Default: =""
         Height: =24
+        Size: =12
         Width: =259
         X: =940
         Y: =329
@@ -678,6 +678,7 @@
     TextInput5_12 As text:
         Default: =""
         Height: =24
+        Size: =12
         Width: =259
         X: =612
         Y: =376
@@ -692,6 +693,17 @@
         Y: =354
         ZIndex: =77
 
+    "'Owner Name_1' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =30
+        Text: ="Close Date"
+        Width: =213
+        X: =1113
+        Y: =100
+        ZIndex: =78
+
     Group9 As group:
         Height: =5
         Width: =5
@@ -700,63 +712,46 @@
         ZIndex: =78
 
         "'Close Date' As label":
+            Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
-            Text: ="Close Date"
+            Text: ="Deal Name"
+            Width: =392
             X: =258
             Y: =99
             ZIndex: =8
 
         LOB As label:
+            Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="LOB "
-            Width: =178
-            X: =409
+            Width: =103
+            X: =651
             Y: =99
             ZIndex: =9
 
         "'Owner Name' As label":
+            Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="Owner Name"
             Width: =178
-            X: =767
-            Y: =99
+            X: =934
+            Y: =100
             ZIndex: =10
 
         Segment As label:
+            Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
             Text: ="Segment "
             Width: =178
-            X: =588
-            Y: =99
+            X: =755
+            Y: =100
             ZIndex: =11
-
-        Name As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Name"
-            Width: =245
-            X: =946
-            Y: =99
-            ZIndex: =12
-
-        Type As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: |-
-                ="Type
-                "
-            Width: =138
-            X: =1191
-            Y: =99
-            ZIndex: =13
 
