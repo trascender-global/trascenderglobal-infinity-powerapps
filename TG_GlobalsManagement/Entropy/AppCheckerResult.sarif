@@ -209,6 +209,47 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 57,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "NewProject",
+                "type": "NewProject.NP_ClosedWonDeals_Galery"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "DynamicNav.Galery_Menu.AccessibleLabel"
                 }
               ],

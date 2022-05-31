@@ -131,6 +131,7 @@
     "Label6_2": 163,
     "Label6_3": 171,
     "Label6_4": 106,
+    "Label6_5": 173,
     "Label6_7": 67,
     "LOB": 94,
     "MenuItemIcon": 6,
@@ -178,7 +179,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/31/2022 00:06:01",
+  "HeaderLastSavedDateTimeUTC": "05/31/2022 00:14:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -188,7 +189,7 @@
     "Símbolo TG 4": "0001.png"
   },
   "LocalResourceRootPaths": {
-    "Símbolo TG 4": "https://docserverpwaprodscus.blob.core.windows.net/cc62b13e-44f5-4797-aa6b-f656c97897a5-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=D9kuEJO7rHGe50iYUU20J1usKqNCpdLVFL%2BSqjzolro%3D&spr=https&se=2022-06-01T00%3A19%3A24Z&sp=r"
+    "Símbolo TG 4": "https://docserverpwaprodscus.blob.core.windows.net/0f344263-250a-4452-8057-c86726e95905-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=G6ZY17%2F3EnKLp4nTyLwXZxPkyfd7X69dBs9XHzAoVdU%3D&spr=https&se=2022-06-01T00%3A21%3A39Z&sp=r"
   },
   "OrderComponentMetadata": {
     "3bd3cda16e6f498db1fa26e9f6ca986b": 1,
@@ -394,6 +395,7 @@
     "Label6_2": 167,
     "Label6_3": 171,
     "Label6_4": 162,
+    "Label6_5": 161,
     "Label6_7": 72,
     "LOB": 93,
     "MenuItemIcon": 4,
@@ -446,7 +448,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.8441366,
+    "AnalysisLoadTime": 1.1942458,
     "ControlCount": {
       "3bd3cda16e6f498db1fa26e9f6ca986b": 5,
       "51a4282aa30f4cc68c1ee62e75ae9939": 5,
@@ -461,15 +463,15 @@
       "group": 4,
       "icon": 11,
       "image": 1,
-      "label": 63,
+      "label": 64,
       "pieChart": 1,
       "rectangle": 9,
       "screen": 4,
       "text": 19,
       "toggleSwitch": 1
     },
-    "DeserializationLoadTime": 1.0439065,
-    "ErrorCount": 5
+    "DeserializationLoadTime": 4.3931247,
+    "ErrorCount": 6
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
