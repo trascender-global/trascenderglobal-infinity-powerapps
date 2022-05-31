@@ -96,10 +96,20 @@ EditProject As screen:
             Items: |
                 =If( !IsBlank(EP_Dropdown_Segment.Selected) && !IsBlank(EP_Dropdown_Status.Selected),
                     Filter(GM_GlobalGeneralInformation,
-                    segment = EP_Dropdown_Segment.Selected.Result,
-                    status = EP_Dropdown_Status.Selected.Result
+                        segment = EP_Dropdown_Segment.Selected.Result,
+                        status = EP_Dropdown_Status.Selected.Result
                     ),
-                    If(!IsBlank(EP_Dropdown_Segment.Selected) && IsBlank(EP_Dropdown_Status.Selected),
+                    !IsBlank(EP_Dropdown_Segment.Selected) && IsBlank(EP_Dropdown_Status.Selected),
+                    Filter(GM_GlobalGeneralInformation,
+                        segment =  EP_Dropdown_Segment.Selected.Result
+                    ),
+                    IsBlank(EP_Dropdown_Segment.Selected) && !IsBlank(EP_Dropdown_Status.Selected),
+                    Filter(GM_GlobalGeneralInformation,
+                        status =   EP_Dropdown_Status.Selected.Result
+                    ),
+                    GM_GlobalGeneralInformation)
+                    
+                
                     
                     
             Width: =452
@@ -477,7 +487,9 @@ EditProject As screen:
 
         Gallery2_7 As gallery.galleryVertical:
             Height: =67
-            Items: =CustomGallerySample
+            Items: |
+                =Filter(GM_Features,epic_id = Epic.epic_id)
+                 
             Layout: =Layout.Vertical
             TemplateSize: =26
             Width: =466
@@ -490,7 +502,7 @@ EditProject As screen:
                 Height: =26
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.SampleHeading
+                Text: =ThisItem.currency_code
                 Width: =147
                 ZIndex: =1
 
@@ -550,11 +562,18 @@ EditProject As screen:
         ZIndex: =119
 
     TextInput3_6 As text:
-        Default: =Epic.neo_id
+        Default: =
         Height: =30
         Size: =11
         Width: =427
         X: =288
         Y: =413
         ZIndex: =120
+
+    Label2 As label:
+        BorderThickness: =1
+        Text: =Epic.epic_name
+        X: =474
+        Y: =636
+        ZIndex: =121
 

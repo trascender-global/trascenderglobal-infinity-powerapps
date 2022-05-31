@@ -1,5 +1,14 @@
 "NewProject As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
+    Rectangle2 As rectangle:
+        BorderThickness: =1
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =261
+        Width: =509
+        X: =258
+        Y: =484
+        ZIndex: =1
+
     NP_ClosedWonDeals_Galery As gallery.galleryVertical:
         Height: =117
         Items: =VW_CRM_PreProjects
@@ -53,15 +62,6 @@
             Width: =245
             X: =684
             ZIndex: =5
-
-    Rectangle2 As rectangle:
-        BorderThickness: =1
-        Fill: =RGBA(56, 96, 178, 0)
-        Height: =261
-        Width: =509
-        X: =258
-        Y: =484
-        ZIndex: =1
 
     Rectangle2_1 As rectangle:
         BorderThickness: =1
