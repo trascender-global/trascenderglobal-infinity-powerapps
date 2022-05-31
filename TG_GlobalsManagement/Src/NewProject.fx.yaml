@@ -587,7 +587,7 @@
             Height: =420
             Visible: |
                 =Not(varShowInit)
-            Width: =595
+            Width: =513
             X: =259
             Y: =325
             ZIndex: =32
@@ -740,7 +740,7 @@
             TemplateSize: =18
             Visible: |
                 =Not(varShowInit)
-            Width: =432
+            Width: =491
             X: =267
             Y: =582
             ZIndex: =48
@@ -798,18 +798,18 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =112
+                Width: =87
                 X: =394
                 ZIndex: =5
 
         NP_AddEpicButton As icon.Add:
-            Height: =55
+            Height: =46
             Icon: =Icon.Add
             Visible: |
                 =Not(varShowInit)
-            Width: =48
-            X: =746
-            Y: =459
+            Width: =43
+            X: =715
+            Y: =385
             ZIndex: =60
 
         Label10_21 As label:
@@ -1486,19 +1486,6 @@
         X: =666
         Y: =562
         ZIndex: =114
-
-    Label10_5 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(58, 87, 255, 1)
-        Height: =25
-        Text: ="Neo"
-        Visible: |
-            =Not(varShowInit)
-        Width: =89
-        X: =756
-        Y: =562
-        ZIndex: =115
 
     Label3_39 As label:
         FontWeight: =FontWeight.Semibold
