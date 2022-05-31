@@ -138,9 +138,11 @@
     "NewProject": 88,
     "NewProjectView_TitleLabel": 90,
     "NP_ClosedWonDeals_Galery": 100,
-    "NP_DealsTableHeaderes": 177,
+    "NP_DealsTableGroup": 180,
     "NP_EpicsTableGroup": 178,
     "NP_PFRTableGroup": 179,
+    "NP_ProjectGeneralInfoGroup": 182,
+    "NP_TitlesGroup": 183,
     "Owner Name": 96,
     "PieChart1": 86,
     "project_name_Columna1": 80,
@@ -177,7 +179,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/31/2022 02:07:49",
+  "HeaderLastSavedDateTimeUTC": "05/31/2022 02:11:17",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -240,10 +242,12 @@
       "TextInput2_5": 0,
       "TextInput3_5": 1
     },
-    "NP_DealsTableHeaderes": {
+    "NP_DealsTableGroup": {
       "CloseDate": 0,
       "DealName": 1,
+      "Icon3": 5,
       "LOB": 2,
+      "NP_ClosedWonDeals_Galery": 6,
       "Owner Name": 3,
       "Segment": 4
     },
@@ -281,6 +285,35 @@
       "Rectangle2_1": 12,
       "TextInput2_2": 1,
       "TextInput3_2": 4
+    },
+    "NP_ProjectGeneralInfoGroup": {
+      "DatePicker1_8": 12,
+      "Dropdown3_5": 18,
+      "Dropdown3_6": 4,
+      "Icon4_2": 20,
+      "Label3_12": 3,
+      "Label3_13": 1,
+      "Label3_14": 14,
+      "Label3_15": 5,
+      "Label3_16": 13,
+      "Label3_17": 16,
+      "Label3_18": 7,
+      "Label3_19": 19,
+      "Label3_20": 8,
+      "Label3_24": 11,
+      "Rectangle2_5": 21,
+      "TextInput5_10": 9,
+      "TextInput5_11": 17,
+      "TextInput5_12": 10,
+      "TextInput5_6": 2,
+      "TextInput5_7": 15,
+      "TextInput5_8": 0,
+      "TextInput5_9": 6
+    },
+    "NP_TitlesGroup": {
+      "Label1": 1,
+      "NewProjectView_TitleLabel": 0,
+      "Rectangle1": 2
     }
   },
   "OrderPcfTemplate": {},
@@ -315,7 +348,7 @@
     "DatePicker1_11": 130,
     "DatePicker1_2": 66,
     "DatePicker1_8": 36,
-    "DealName": 9,
+    "DealName": 10,
     "Dropdown_ProjecName": 98,
     "Dropdown1": 59,
     "Dropdown1_2": 65,
@@ -433,9 +466,11 @@
     "NewProject": 87,
     "NewProjectView_TitleLabel": 6,
     "NP_ClosedWonDeals_Galery": 16,
-    "NP_DealsTableHeaderes": 10,
+    "NP_DealsTableGroup": 9,
     "NP_EpicsTableGroup": 47,
     "NP_PFRTableGroup": 50,
+    "NP_ProjectGeneralInfoGroup": 0,
+    "NP_TitlesGroup": 0,
     "Owner Name": 13,
     "PieChart1": 3,
     "project_name_Columna1": 154,
