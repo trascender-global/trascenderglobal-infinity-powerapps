@@ -30657,7 +30657,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "NP_ExtraDetailsGroup": {
+    "NP_PaymentsInfoGroup": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -30675,7 +30675,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "NP_ExtraDetailsGroup",
+      "Name": "NP_PaymentsInfoGroup",
       "ParentIndex": 125,
       "PersistMetaDataIDKey": false,
       "Properties": [
