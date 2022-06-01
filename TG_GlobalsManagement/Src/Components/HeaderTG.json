@@ -110,7 +110,7 @@
         "Name": "AppTitle",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 228,
+        "PublishOrderIndex": 252,
         "Rules": [
           {
             "Category": "Data",
@@ -120,7 +120,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "\"           Globals Management\"",
+            "InvariantScript": "\"               Globals Management\"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -132,7 +132,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "22",
+            "InvariantScript": "18",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -180,7 +180,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "67",
+            "InvariantScript": "50",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -431,7 +431,7 @@
         "Name": "TGLogo",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 229,
+        "PublishOrderIndex": 253,
         "Rules": [
           {
             "Category": "Data",
@@ -543,13 +543,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "67",
+            "InvariantScript": "50",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "87",
+            "InvariantScript": "70",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -647,7 +647,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637896480945686607",
+    "LastModifiedTimestamp": "637897106716930083",
     "Name": "HeaderTG",
     "Rules": [
       {
@@ -676,9 +676,9 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "65",
+        "InvariantScript": "50",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -706,7 +706,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637896480945686607",
+  "LastModifiedTimestamp": "637897106716930083",
   "Name": "3bd3cda16e6f498db1fa26e9f6ca986b",
   "OverridableProperties": {},
   "Version": "637805439354025725"
