@@ -1242,8 +1242,8 @@
             Height: =25
             Text: ="Value"
             Visible: =varShowPayments
-            Width: =126
-            X: =1033
+            Width: =110
+            X: =1000
             Y: =559
             ZIndex: =11
 
@@ -1400,8 +1400,8 @@
             Height: =25
             Text: ="Currency"
             Visible: =varShowPayments
-            Width: =126
-            X: =1160
+            Width: =114
+            X: =1111
             Y: =559
             ZIndex: =126
 
@@ -1639,6 +1639,18 @@
             Y: =113
             ZIndex: =118
 
+    Label10_31 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Currency"
+        Visible: =varShowPayments
+        Width: =100
+        X: =1227
+        Y: =559
+        ZIndex: =148
+
     NP_FeaturesGroup As group:
         Height: =5
         Width: =5
@@ -1654,8 +1666,8 @@
                 =["EPIC"]
             Size: =11
             Visible: =varShowFeatures
-            Width: =143
-            X: =1103
+            Width: =160
+            X: =1079
             Y: =393
             ZIndex: =127
 
@@ -1665,8 +1677,8 @@
             Height: =25
             Size: =11
             Visible: =varShowFeatures
-            Width: =261
-            X: =802
+            Width: =292
+            X: =739
             Y: =398
             ZIndex: =128
 
@@ -1678,8 +1690,8 @@
                 =["Pokemon"]
             Size: =11
             Visible: =varShowFeatures
-            Width: =128
-            X: =802
+            Width: =143
+            X: =739
             Y: =467
             ZIndex: =132
 
@@ -1690,8 +1702,8 @@
             Items: =["Masterchief"]
             Size: =11
             Visible: =varShowFeatures
-            Width: =128
-            X: =1127
+            Width: =143
+            X: =1105
             Y: =467
             ZIndex: =133
 
@@ -1702,8 +1714,8 @@
             Items: =["NEO"]
             Size: =11
             Visible: =varShowFeatures
-            Width: =128
-            X: =975
+            Width: =143
+            X: =936
             Y: =467
             ZIndex: =134
 
@@ -1714,8 +1726,8 @@
             Height: =25
             Text: ="Name"
             Visible: =varShowFeatures
-            Width: =138
-            X: =802
+            Width: =136
+            X: =742
             Y: =515
             ZIndex: =135
 
@@ -1726,8 +1738,8 @@
             Height: =25
             Text: ="Value"
             Visible: =varShowFeatures
-            Width: =112
-            X: =1061
+            Width: =114
+            X: =1000
             Y: =515
             ZIndex: =136
 
@@ -1739,7 +1751,7 @@
             Text: ="Epic"
             Visible: =varShowFeatures
             Width: =120
-            X: =940
+            X: =879
             Y: =515
             ZIndex: =137
 
@@ -1749,8 +1761,8 @@
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =varShowFeatures
-            Width: =497
-            X: =799
+            Width: =555
+            X: =739
             Y: =536
             ZIndex: =138
 
@@ -1802,8 +1814,8 @@
             Height: =42
             Icon: =Icon.Add
             Visible: =varShowFeatures
-            Width: =47
-            X: =1264
+            Width: =53
+            X: =1258
             Y: =383
             ZIndex: =139
 
@@ -1812,8 +1824,8 @@
             Height: =25
             Text: ="Pokemon"
             Visible: =varShowFeatures
-            Width: =100
-            X: =802
+            Width: =112
+            X: =739
             Y: =440
             ZIndex: =142
 
@@ -1822,9 +1834,9 @@
             Height: =25
             Text: ="Neo"
             Visible: =varShowFeatures
-            Width: =100
-            X: =974
-            Y: =439
+            Width: =112
+            X: =935
+            Y: =440
             ZIndex: =143
 
         Label3_52 As label:
@@ -1832,9 +1844,9 @@
             Height: =25
             Text: ="Neo"
             Visible: =varShowFeatures
-            Width: =100
-            X: =1127
-            Y: =439
+            Width: =112
+            X: =1105
+            Y: =440
             ZIndex: =144
 
         Label3_48 As label:
@@ -1842,8 +1854,8 @@
             Height: =25
             Text: ="Feature Name"
             Visible: =varShowFeatures
-            Width: =149
-            X: =802
+            Width: =166
+            X: =739
             Y: =370
             ZIndex: =145
 
@@ -1854,8 +1866,8 @@
             Height: =25
             Text: ="Currency"
             Visible: =varShowFeatures
-            Width: =112
-            X: =1174
+            Width: =110
+            X: =1115
             Y: =515
             ZIndex: =147
 

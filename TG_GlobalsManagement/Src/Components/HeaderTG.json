@@ -647,7 +647,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637897106716930083",
+    "LastModifiedTimestamp": "637898770133911656",
     "Name": "HeaderTG",
     "Rules": [
       {
@@ -678,7 +678,7 @@
         "Category": "Design",
         "InvariantScript": "50",
         "Property": "Height",
-        "RuleProviderType": "System"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -706,7 +706,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637897106716930083",
+  "LastModifiedTimestamp": "637898770133911656",
   "Name": "3bd3cda16e6f498db1fa26e9f6ca986b",
   "OverridableProperties": {},
   "Version": "637805439354025725"
