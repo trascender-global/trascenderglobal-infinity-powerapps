@@ -1,271 +1,5 @@
 "NewProject As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    NP_ProjectGeneralInfoGroup As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =66
-
-        Rectangle2_5 As rectangle:
-            BorderThickness: =1
-            Fill: =RGBA(56, 96, 178, 0)
-            Height: =247
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =1068
-            X: =251
-            Y: =350
-            ZIndex: =48
-
-        Label3_12 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Line of Business"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =172
-            X: =600
-            Y: =362
-            ZIndex: =49
-
-        TextInput5_6 As text:
-            BorderThickness: =1
-            Default: =Deal.Name
-            Height: =25
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =324
-            X: =260
-            Y: =391
-            ZIndex: =50
-
-        Label3_13 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Name"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =149
-            X: =260
-            Y: =362
-            ZIndex: =51
-
-        TextInput5_7 As text:
-            BorderThickness: =1
-            Default: =Deal.Segment
-            Height: =24
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =259
-            X: =928
-            Y: =391
-            ZIndex: =52
-
-        Label3_14 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Segment"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =143
-            X: =928
-            Y: =362
-            ZIndex: =53
-
-        Label3_15 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =22
-            Text: ="Create Date"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =149
-            X: =260
-            Y: =417
-            ZIndex: =54
-
-        DatePicker1_8 As datepicker:
-            BorderColor: =RGBA(0, 13, 75, 1)
-            BorderThickness: =1
-            Height: =24
-            IconBackground: =RGBA(58, 87, 255, 1)
-            Size: =12
-            StartOfWeek: =StartOfWeek.Monday
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =259
-            X: =600
-            Y: =442
-            ZIndex: =55
-
-        Label3_16 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =22
-            Text: ="Initial Date"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =143
-            X: =600
-            Y: =417
-            ZIndex: =56
-
-        Label3_17 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =22
-            Text: ="Currency Code"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =143
-            X: =928
-            Y: =417
-            ZIndex: =57
-
-        TextInput5_8 As text:
-            BorderThickness: =1
-            Default: ="$ " & Deal.Amount
-            Height: =24
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =270
-            X: =260
-            Y: =492
-            ZIndex: =58
-
-        Label3_18 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Total Price Currency"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =194
-            X: =260
-            Y: =470
-            ZIndex: =59
-
-        Label3_19 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Status"
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =143
-            X: =928
-            Y: =471
-            ZIndex: =60
-
-        TextInput5_10 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =47
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =930
-            X: =260
-            Y: =536
-            ZIndex: =61
-
-        Label3_20 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Observations    "
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =194
-            X: =260
-            Y: =512
-            ZIndex: =62
-
-        Icon4_2 As icon.Save:
-            Color: =RGBA(58, 87, 255, 1)
-            Height: =35
-            Icon: =Icon.Save
-            OnSelect: =Set(varShowPopup,true)
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =56
-            X: =1207
-            Y: =382
-            ZIndex: =63
-
-        Dropdown3_5 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Default: ="Normal"
-            Height: =24
-            Items: =["Normal", "Delayed", "Disputed", "Finished"]
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =259
-            X: =928
-            Y: =493
-            ZIndex: =64
-
-        TextInput5_9 As text:
-            BorderThickness: =1
-            Default: =Today()
-            Height: =24
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =270
-            X: =260
-            Y: =442
-            ZIndex: =65
-
-        TextInput5_11 As text:
-            BorderThickness: =1
-            Default: ="USD"
-            Height: =24
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =259
-            X: =928
-            Y: =442
-            ZIndex: =66
-
-        TextInput5_12 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =24
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =259
-            X: =600
-            Y: =493
-            ZIndex: =67
-
-        Label3_24 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Project Link "
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =186
-            X: =600
-            Y: =471
-            ZIndex: =68
-
-        Dropdown3_6 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Default: =Deal.LineofBusiness
-            Height: =24
-            Items: =["Globals Fit", "Globals Fat"]
-            Size: =12
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =259
-            X: =601
-            Y: =391
-            ZIndex: =69
-
     HeaderTG_NewProjectView As HeaderTG:
         ZIndex: =70
 
@@ -286,7 +20,7 @@
             Height: =768
             Visible: =varShowPopup
             Width: =1366
-            ZIndex: =157
+            ZIndex: =143
 
         Rectangle4 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
@@ -295,7 +29,7 @@
             Width: =699
             X: =355
             Y: =218
-            ZIndex: =158
+            ZIndex: =144
 
         Rectangle5 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -305,7 +39,7 @@
             Width: =699
             X: =355
             Y: =274
-            ZIndex: =159
+            ZIndex: =145
 
         Label5 As label:
             Align: =Align.Center
@@ -317,7 +51,7 @@
             Width: =244
             X: =575
             Y: =226
-            ZIndex: =160
+            ZIndex: =146
 
         Label5_1 As label:
             Align: =Align.Center
@@ -329,7 +63,7 @@
             Width: =462
             X: =479
             Y: =294
-            ZIndex: =161
+            ZIndex: =147
 
         Button3 As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -340,20 +74,38 @@
             Width: =215
             X: =460
             Y: =406
-            ZIndex: =162
+            ZIndex: =148
 
         Button3_1 As button:
             Fill: =RGBA(0, 182, 125, 1)
             Height: =46
             OnSelect: |-
-                =Set(varShowPopup,false);
+                =If(NP_GeneralInfo_ProjectLinkInput.Text=""||NP_GeneralInfo_CurrencyInput.Text=""||NP_GeneralInfo_CreatedDateInput.Text=""||NP_GeneralInfo_PriceInput.Text=""||NP_GeneralInfo_SegmentInput.Text ="" || NP_GeneralInfo_NameInput.Text = "",Notify("Fill in all entries before proceeding",NotificationType.Warning),
+                Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
+                {
+                    id:Last(GM_GlobalGeneralInformation).id+1,
+                    global_internal_id:Last(GM_GlobalGeneralInformation).id+1,
+                    line_of_business:NP_GeneralInfo_LOBDropdown.Value,    
+                    segment: NP_GeneralInfo_SegmentInput.Text,
+                    start_date:Text(DateTimeValue(NP_GeneralInfo_ÏnitialDateInput.Value), "yyyy-mm-dd"),
+                    project_name:NP_GeneralInfo_NameInput.Text,
+                    project_link:NP_GeneralInfo_ProjectLinkInput.Text,
+                    currency_code:NP_GeneralInfo_CurrencyInput.Text,
+                    total_price_currency:NP_GeneralInfo_PriceInput.Text,
+                    status:NP_GeneralInfo_StatusDropdown.Value,
+                    observations:NP_GeneralInfo_ObservationsInput.Text,
+                    created_date:Text(DateTimeValue(NP_GeneralInfo_CreatedDateInput.Value), "yyyy-mm-dd")
+                }
+                ));
+                
+                Set(varShowPopup,false);
                 Set(varShowPopupDetails,true);
             Text: ="Continue"
             Visible: =varShowPopup
             Width: =215
             X: =750
             Y: =406
-            ZIndex: =163
+            ZIndex: =149
 
     NP_PopUpAddDetailsGroup As group:
         Height: =5
@@ -495,7 +247,7 @@
             Height: =768
             Visible: =varShowPopupSaveDetails
             Width: =1366
-            ZIndex: =143
+            ZIndex: =157
 
         Rectangle4_3 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
@@ -504,7 +256,7 @@
             Width: =699
             X: =355
             Y: =218
-            ZIndex: =144
+            ZIndex: =158
 
         Rectangle5_2 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -514,7 +266,7 @@
             Width: =699
             X: =355
             Y: =274
-            ZIndex: =145
+            ZIndex: =159
 
         Label5_8 As label:
             Align: =Align.Center
@@ -526,7 +278,7 @@
             Width: =244
             X: =575
             Y: =226
-            ZIndex: =146
+            ZIndex: =160
 
         Label5_7 As label:
             Align: =Align.Center
@@ -538,7 +290,7 @@
             Width: =462
             X: =479
             Y: =294
-            ZIndex: =147
+            ZIndex: =161
 
         Button3_5 As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -549,7 +301,7 @@
             Width: =215
             X: =460
             Y: =406
-            ZIndex: =148
+            ZIndex: =162
 
         Button3_4 As button:
             Fill: =RGBA(0, 182, 125, 1)
@@ -562,106 +314,7 @@
             Width: =215
             X: =750
             Y: =406
-            ZIndex: =149
-
-    NP_DealsTableGroup As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =109
-
-        Label1 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =34
-            Size: =15
-            Text: ="Close Won Deals Information"
-            Visible: =varShowInit
-            Width: =300
-            X: =252
-            Y: =88
-            ZIndex: =134
-
-        DealName As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Deal Name"
-            Visible: =varShowInit
-            Width: =392
-            X: =251
-            Y: =122
-            ZIndex: =135
-
-        LOB As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="LOB "
-            Visible: =varShowInit
-            Width: =103
-            X: =644
-            Y: =122
-            ZIndex: =136
-
-        "'Owner Name' As label":
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Owner Name"
-            Visible: =varShowInit
-            Width: =178
-            X: =927
-            Y: =122
-            ZIndex: =137
-
-        Segment As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Segment "
-            Visible: =varShowInit
-            Width: =178
-            X: =748
-            Y: =122
-            ZIndex: =138
-
-        CloseDate As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Close Date"
-            Visible: =varShowInit
-            Width: =213
-            X: =1106
-            Y: =122
-            ZIndex: =139
-
-        Icon3 As icon.Reload:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =25
-            Icon: =Icon.Reload
-            Visible: =varShowInit
-            Width: =25
-            X: =1294
-            Y: =125
-            ZIndex: =140
-
-        Rectangle2_9 As rectangle:
-            BorderThickness: =1
-            Fill: =RGBA(56, 96, 178, 0)
-            Height: =247
-            Tooltip: =
-            Visible: =varShowInit
-            Width: =1068
-            X: =251
-            Y: =85
-            ZIndex: =142
+            ZIndex: =163
 
     NP_EpicsTableGroup As group:
         Height: =5
@@ -1867,71 +1520,438 @@
             Y: =576
             ZIndex: =115
 
-    NP_ClosedWonDeals_Galery As gallery.galleryVertical:
-        Height: =185
-        Items: =Filter(CRM_Deals,IsBlank(GlobalInternalID) && Stage = "Closed won")
-        Layout: =Layout.Vertical
-        OnSelect: =Set(Deal,ThisItem)
-        Selectable: |
-            =true
-        TemplateSize: =20
-        Visible: =varShowInit
-        Width: =1091
-        X: =247
-        Y: =147
-        ZIndex: =164
+    NP_GlobalsGeneralInfoGroup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =165
 
-        GalleryDeals_Name As label:
-            BorderThickness: =0.5
-            Height: =26
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(58, 87, 255, 1)
-            PressedColor: =RGBA(25,25,25,1)
-            PressedFill: =Self.DisabledColor
-            Text: =ThisItem.Name
-            Width: =391
-            ZIndex: =1
-
-        GalleryDeals_LOB As label:
+        NP_GeneralInfo_Rectangle As rectangle:
             BorderThickness: =1
-            Height: =25
-            OnSelect: =Select(Parent)
-            PressedFill: =Self.DisabledColor
-            Text: =ThisItem.LineofBusiness
-            Width: =106
-            X: =390
-            ZIndex: =2
+            Fill: =RGBA(56, 96, 178, 0)
+            Height: =247
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =1068
+            X: =251
+            Y: =350
+            ZIndex: =48
 
-        GalleryDeals_Segments As label:
+        Label3_12 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Line of Business"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =172
+            X: =600
+            Y: =362
+            ZIndex: =49
+
+        NP_GeneralInfo_NameInput As text:
             BorderThickness: =1
+            Default: =Deal.Name
             Height: =25
-            OnSelect: =Select(Parent)
-            PressedFill: =Self.DisabledColor
-            Text: =ThisItem.Segment
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =324
+            X: =260
+            Y: =391
+            ZIndex: =50
+
+        Label3_13 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Name"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =149
+            X: =260
+            Y: =362
+            ZIndex: =51
+
+        NP_GeneralInfo_SegmentInput As text:
+            BorderThickness: =1
+            Default: =Deal.Segment
+            Height: =24
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =259
+            X: =928
+            Y: =391
+            ZIndex: =52
+
+        Label3_14 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Segment"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =143
+            X: =928
+            Y: =362
+            ZIndex: =53
+
+        Label3_15 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =22
+            Text: ="Create Date"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =149
+            X: =260
+            Y: =417
+            ZIndex: =54
+
+        NP_GeneralInfo_ÏnitialDateInput As datepicker:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =24
+            IconBackground: =RGBA(58, 87, 255, 1)
+            Size: =12
+            StartOfWeek: =StartOfWeek.Monday
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =259
+            X: =600
+            Y: =442
+            ZIndex: =55
+
+        Label3_16 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =22
+            Text: ="Initial Date"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =143
+            X: =600
+            Y: =417
+            ZIndex: =56
+
+        Label3_17 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =22
+            Text: ="Currency Code"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =143
+            X: =928
+            Y: =417
+            ZIndex: =57
+
+        NP_GeneralInfo_PriceInput As text:
+            BorderThickness: =1
+            Default: ="$ " & Deal.Amount
+            Height: =24
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =270
+            X: =260
+            Y: =492
+            ZIndex: =58
+
+        Label3_18 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Total Price Currency"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =194
+            X: =260
+            Y: =470
+            ZIndex: =59
+
+        Label3_19 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Status"
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =143
+            X: =928
+            Y: =471
+            ZIndex: =60
+
+        NP_GeneralInfo_ObservationsInput As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =47
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =930
+            X: =260
+            Y: =536
+            ZIndex: =61
+
+        Label3_20 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Observations    "
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =194
+            X: =260
+            Y: =512
+            ZIndex: =62
+
+        NP_GeneralInfo_SaveButton As icon.Save:
+            Color: =RGBA(58, 87, 255, 1)
+            Height: =35
+            Icon: =Icon.Save
+            OnSelect: =Set(varShowPopup,true)
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =56
+            X: =1207
+            Y: =382
+            ZIndex: =63
+
+        NP_GeneralInfo_StatusDropdown As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: ="Normal"
+            Height: =24
+            Items: =["Normal", "Delayed", "Disputed", "Finished"]
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =259
+            X: =928
+            Y: =493
+            ZIndex: =64
+
+        NP_GeneralInfo_CurrencyInput As text:
+            BorderThickness: =1
+            Default: ="USD"
+            Height: =24
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =259
+            X: =928
+            Y: =442
+            ZIndex: =66
+
+        NP_GeneralInfo_ProjectLinkInput As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =24
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =259
+            X: =600
+            Y: =493
+            ZIndex: =67
+
+        Label3_24 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Project Link "
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =186
+            X: =600
+            Y: =471
+            ZIndex: =68
+
+        NP_GeneralInfo_LOBDropdown As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: =Deal.LineofBusiness
+            Height: =24
+            Items: =["Globals Fit", "Globals Fat"]
+            Size: =12
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =259
+            X: =601
+            Y: =391
+            ZIndex: =69
+
+        NP_GeneralInfo_CreatedDateInput As datepicker:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =24
+            IconBackground: =RGBA(58, 87, 255, 1)
+            Size: =12
+            StartOfWeek: =StartOfWeek.Monday
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =259
+            X: =260
+            Y: =442
+            ZIndex: =164
+
+    NP_DealsTableGroup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =165
+
+        Label1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =15
+            Text: ="Close Won Deals Information"
+            Visible: =varShowInit
+            Width: =300
+            X: =252
+            Y: =88
+            ZIndex: =134
+
+        DealName As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Deal Name"
+            Visible: =varShowInit
+            Width: =392
+            X: =251
+            Y: =122
+            ZIndex: =135
+
+        LOB As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="LOB "
+            Visible: =varShowInit
+            Width: =103
+            X: =644
+            Y: =122
+            ZIndex: =136
+
+        "'Owner Name' As label":
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Owner Name"
+            Visible: =varShowInit
             Width: =178
-            X: =496
-            ZIndex: =3
+            X: =927
+            Y: =122
+            ZIndex: =137
 
-        GalleryDeals_Owner As label:
-            BorderThickness: =1
-            Height: =25
-            OnSelect: =Select(Parent)
-            PressedFill: =Self.DisabledColor
-            Text: =ThisItem.OwnerName
+        Segment As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Segment "
+            Visible: =varShowInit
             Width: =178
-            X: =674
-            ZIndex: =4
+            X: =748
+            Y: =122
+            ZIndex: =138
 
-        GalleryDeals_CloseDate As label:
-            BorderThickness: =1
+        CloseDate As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Text: ="Close Date"
+            Visible: =varShowInit
+            Width: =213
+            X: =1106
+            Y: =122
+            ZIndex: =139
+
+        Icon3 As icon.Reload:
+            Color: =RGBA(255, 255, 255, 1)
             Height: =25
-            OnSelect: =Select(Parent)
-            PressedFill: |
-                =Self.DisabledColor
-            Text: =ThisItem.CloseDate
-            Width: =215
-            X: =852
-            ZIndex: =5
+            Icon: =Icon.Reload
+            Visible: =varShowInit
+            Width: =25
+            X: =1294
+            Y: =125
+            ZIndex: =140
+
+        Rectangle2_9 As rectangle:
+            BorderThickness: =1
+            Fill: =RGBA(56, 96, 178, 0)
+            Height: =247
+            Tooltip: =
+            Visible: =varShowInit
+            Width: =1068
+            X: =251
+            Y: =85
+            ZIndex: =141
+
+        NP_ClosedWonDeals_Galery As gallery.galleryVertical:
+            Height: =185
+            Items: =Filter(CRM_Deals,IsBlank(GlobalInternalID) && Stage = "Closed won")
+            Layout: =Layout.Vertical
+            OnSelect: =Set(Deal,ThisItem)
+            Selectable: |
+                =true
+            TemplateSize: =20
+            Visible: =varShowInit
+            Width: =1091
+            X: =247
+            Y: =147
+            ZIndex: =142
+
+            GalleryDeals_Name As label:
+                BorderThickness: =0.5
+                Height: =26
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =RGBA(58, 87, 255, 1)
+                PressedColor: =RGBA(25,25,25,1)
+                PressedFill: =Self.DisabledColor
+                Text: =ThisItem.Name
+                Width: =391
+                ZIndex: =1
+
+            GalleryDeals_LOB As label:
+                BorderThickness: =1
+                Height: =25
+                OnSelect: =Select(Parent)
+                PressedFill: =Self.DisabledColor
+                Text: =ThisItem.LineofBusiness
+                Width: =106
+                X: =390
+                ZIndex: =2
+
+            GalleryDeals_Segments As label:
+                BorderThickness: =1
+                Height: =25
+                OnSelect: =Select(Parent)
+                PressedFill: =Self.DisabledColor
+                Text: =ThisItem.Segment
+                Width: =178
+                X: =496
+                ZIndex: =3
+
+            GalleryDeals_Owner As label:
+                BorderThickness: =1
+                Height: =25
+                OnSelect: =Select(Parent)
+                PressedFill: =Self.DisabledColor
+                Text: =ThisItem.OwnerName
+                Width: =178
+                X: =674
+                ZIndex: =4
+
+            GalleryDeals_CloseDate As label:
+                BorderThickness: =1
+                Height: =25
+                OnSelect: =Select(Parent)
+                PressedFill: |
+                    =Self.DisabledColor
+                Text: =ThisItem.CloseDate
+                Width: =215
+                X: =852
+                ZIndex: =5
 
     NP_ResourcesGroup As group:
         Height: =5
