@@ -80,7 +80,7 @@
             Fill: =RGBA(0, 182, 125, 1)
             Height: =46
             OnSelect: |-
-                =If(NP_GeneralInfo_ProjectLinkInput.Text=""||NP_GeneralInfo_CurrencyInput.Text=""||NP_GeneralInfo_CreatedDateInput.Text=""||NP_GeneralInfo_PriceInput.Text=""||NP_GeneralInfo_SegmentInput.Text ="" || NP_GeneralInfo_NameInput.Text = "",Notify("Fill in all entries before proceeding",NotificationType.Warning),
+                =If(NP_GeneralInfo_ProjectLinkInput.Text=""||NP_GeneralInfo_CurrencyInput.Text=""||NP_GeneralInfo_CreatedDateInput.Value=""||NP_GeneralInfo_PriceInput.Text=""||NP_GeneralInfo_SegmentInput.Text ="" || NP_GeneralInfo_NameInput.Text = "",Notify("Fill in all entries before proceeding",NotificationType.Warning),
                 Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
                 {
                     id:Last(GM_GlobalGeneralInformation).id+1,

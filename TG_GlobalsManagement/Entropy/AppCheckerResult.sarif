@@ -209,6 +209,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": "GlobalInternalID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "NewProject",
+                "type": "NewProject.NP_ClosedWonDeals_Galery"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GlobalInternalID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 17,
+                  "snippet": {
+                    "text": "IsBlank(GlobalInternalID)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "NewProject",
+                "type": "NewProject.NP_ClosedWonDeals_Galery"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "NewProject",
+                "type": "NewProject.NP_ClosedWonDeals_Galery"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "NewProject.Button3_1.OnSelect"
                 }
               ],
@@ -218,10 +338,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5,
+                  "charLength": 6,
                   "charOffset": 113,
                   "snippet": {
-                    "text": ".Text"
+                    "text": ".Value"
                   }
                 }
               },
@@ -234,7 +354,7 @@
           ],
           "message": {
             "arguments": [
-              "Text"
+              "Value"
             ],
             "id": "issue"
           },
@@ -259,7 +379,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 118,
+                  "charOffset": 119,
                   "snippet": {
                     "text": "="
                   }
@@ -300,7 +420,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 544,
+                  "charOffset": 545,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -340,7 +460,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 670,
+                  "charOffset": 671,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -380,7 +500,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 952,
+                  "charOffset": 953,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -420,7 +540,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 1085,
+                  "charOffset": 1086,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -460,7 +580,7 @@
                 },
                 "region": {
                   "charLength": 805,
-                  "charOffset": 308,
+                  "charOffset": 309,
                   "snippet": {
                     "text": "Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),\r\n{\r\n    id:Last(GM_GlobalGeneralInformation).id+1,\r\n    global_internal_id:Last(GM_GlobalGeneralInformation).id+1,\r\n    line_of_business:NP_GeneralInfo_LOBDropdown.Value,    \r\n    segment: NP_GeneralInfo_SegmentInput.Text,\r\n    start_date:Text(DateTimeValue(NP_GeneralInfo_ÏnitialDateInput.Value), \"yyyy-mm-dd\"),\r\n    project_name:NP_GeneralInfo_NameInput.Text,\r\n    project_link:NP_GeneralInfo_ProjectLinkInput.Text,\r\n    currency_code:NP_GeneralInfo_CurrencyInput.Text,\r\n    total_price_currency:NP_GeneralInfo_PriceInput.Text,\r\n    status:NP_GeneralInfo_StatusDropdown.Value,\r\n    observations:NP_GeneralInfo_ObservationsInput.Text,\r\n    created_date:Text(DateTimeValue(NP_GeneralInfo_CreatedDateInput.Value), \"yyyy-mm-dd\")\r\n}\r\n)"
                   }
@@ -483,7 +603,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -500,7 +620,7 @@
                 },
                 "region": {
                   "charLength": 728,
-                  "charOffset": 382,
+                  "charOffset": 383,
                   "snippet": {
                     "text": "{\r\n    id:Last(GM_GlobalGeneralInformation).id+1,\r\n    global_internal_id:Last(GM_GlobalGeneralInformation).id+1,\r\n    line_of_business:NP_GeneralInfo_LOBDropdown.Value,    \r\n    segment: NP_GeneralInfo_SegmentInput.Text,\r\n    start_date:Text(DateTimeValue(NP_GeneralInfo_ÏnitialDateInput.Value), \"yyyy-mm-dd\"),\r\n    project_name:NP_GeneralInfo_NameInput.Text,\r\n    project_link:NP_GeneralInfo_ProjectLinkInput.Text,\r\n    currency_code:NP_GeneralInfo_CurrencyInput.Text,\r\n    total_price_currency:NP_GeneralInfo_PriceInput.Text,\r\n    status:NP_GeneralInfo_StatusDropdown.Value,\r\n    observations:NP_GeneralInfo_ObservationsInput.Text,\r\n    created_date:Text(DateTimeValue(NP_GeneralInfo_CreatedDateInput.Value), \"yyyy-mm-dd\")\r\n}"
                   }
@@ -525,126 +645,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 25,
-                  "snippet": {
-                    "text": "GlobalInternalID"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "NewProject",
-                "type": "NewProject.NP_ClosedWonDeals_Galery"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "GlobalInternalID"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 25,
-                  "charOffset": 17,
-                  "snippet": {
-                    "text": "IsBlank(GlobalInternalID)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "NewProject",
-                "type": "NewProject.NP_ClosedWonDeals_Galery"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 43,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "NewProject",
-                "type": "NewProject.NP_ClosedWonDeals_Galery"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 6
         },
         {
@@ -1702,36 +1702,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NewProject",
-                "type": "NewProject.NP_ClosedWonDeals_Galery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.AccessibleLabel"
                 }
               ],
@@ -1756,6 +1726,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NewProject",
+                "type": "NewProject.NP_ClosedWonDeals_Galery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3522,34 +3522,6 @@
               }
             },
             {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrTypeError-Arg-Expected-Found",
-              "messageStrings": {
-                "issue": {
-                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
                 "issue": {
@@ -3583,6 +3555,34 @@
                   "Try moving your data to a different data source."
                 ],
                 "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidArgs-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "The function '{0}' has some invalid arguments."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrTypeError-Arg-Expected-Found",
+              "messageStrings": {
+                "issue": {
+                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
