@@ -92,7 +92,7 @@
                         start_date:NP_GeneralInfo_ÏnitialDateInput.SelectedDate,
                         project_name:NP_GeneralInfo_NameInput.Text,
                         project_link:NP_GeneralInfo_ProjectLinkInput.Text,
-                        //currency_code:NP_GeneralInfo_CurrencyInput.Text,
+                        currency_code:NP_GeneralInfo_CurrencyInput.Text,,
                         total_price_currency:Value(NP_GeneralInfo_PriceInput.Text),
                         status:NP_GeneralInfo_StatusDropdown.SelectedText.Value,
                         observations:NP_GeneralInfo_ObservationsInput.Text,
