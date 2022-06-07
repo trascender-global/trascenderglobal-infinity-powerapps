@@ -83,7 +83,7 @@
                 =If(NP_GeneralInfo_ProjectLinkInput.Text=""|| NP_GeneralInfo_CurrencyInput.Text=""|| NP_GeneralInfo_PriceInput.Text=""||NP_GeneralInfo_SegmentInput.Text ="" ||                 NP_GeneralInfo_NameInput.Text = "",
                     Notify("Fill in all entries before proceeding",NotificationType.Warning);
                     Set(varShowPopup,false);,
-                    Patch( CRM_Deals, First( Filter( CRM_Deals, DealID = Deal.DealID) ), { ProjectId: Last(GM_GlobalGeneralInformation).id+1});
+                    
                     Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
                     {
                         id:Last(GM_GlobalGeneralInformation).id+1,
@@ -100,7 +100,10 @@
                         created_date:NP_GeneralInfo_CreatedDateInput.SelectedDate
                     }
                     );
-                    
+                    Patch( CRM_Deals, First( Filter( CRM_Deals, DealID = Deal.DealID) ), 
+                    { ProjectId: Last(GM_GlobalGeneralInformation).id,
+                      GlobalInternalID:Last(GM_GlobalGeneralInformation).id
+                    });
                     Set(varShowPopup,false);
                     Set(varShowPopupDetails,true);
                 );
