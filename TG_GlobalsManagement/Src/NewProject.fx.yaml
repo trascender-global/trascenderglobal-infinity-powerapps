@@ -83,7 +83,7 @@
                 =If(NP_GeneralInfo_ProjectLinkInput.Text=""|| NP_GeneralInfo_CurrencyInput.Text=""|| NP_GeneralInfo_PriceInput.Text=""||NP_GeneralInfo_SegmentInput.Text ="" ||                 NP_GeneralInfo_NameInput.Text = "",
                     Notify("Fill in all entries before proceeding",NotificationType.Warning);
                     Set(varShowPopup,false);,
-                    
+                    Refresh(GM_GlobalGeneralInformation);
                     Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
                     {
                         id:Last(GM_GlobalGeneralInformation).id+1,
