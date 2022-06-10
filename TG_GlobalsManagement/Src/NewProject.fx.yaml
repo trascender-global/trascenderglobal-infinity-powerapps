@@ -2315,7 +2315,7 @@
             Size: =11
             Visible: =varShowResources
             Width: =250
-            X: =537
+            X: =561
             Y: =569
             ZIndex: =236
 
@@ -2328,7 +2328,7 @@
             Size: =11
             Visible: =varShowResources
             Width: =250
-            X: =537
+            X: =561
             Y: =504
             ZIndex: =239
 
@@ -2489,7 +2489,7 @@
             Text: ="Feature"
             Visible: =varShowResources
             Width: =250
-            X: =537
+            X: =561
             Y: =477
             ZIndex: =248
 
@@ -2511,7 +2511,7 @@
             Text: ="Estimated Value"
             Visible: =varShowResources
             Width: =250
-            X: =537
+            X: =561
             Y: =544
             ZIndex: =252
 
@@ -2625,7 +2625,7 @@
             Default: =""
             Format: =TextFormat.Number
             Height: =25
-            HintText: ="Input value"
+            HintText: ="Input currency"
             Size: =11
             Visible: =varShowResources
             Width: =250
