@@ -2263,10 +2263,10 @@
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
             Items: |
-                =["USD"]
+                =["Normal"]
             Size: =11
             Visible: =varShowPayments
-            Width: =150
+            Width: =156
             X: =1074
             Y: =507
             ZIndex: =201
