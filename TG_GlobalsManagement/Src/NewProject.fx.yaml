@@ -646,9 +646,9 @@
             Height: =25
             Size: =11
             Visible: =varShowPayments
-            Width: =293
-            X: =227
-            Y: =512
+            Width: =428
+            X: =217
+            Y: =507
             ZIndex: =4
 
         TextInput3_2 As text:
@@ -657,9 +657,9 @@
             Height: =25
             Size: =11
             Visible: =varShowPayments
-            Width: =169
-            X: =227
-            Y: =566
+            Width: =250
+            X: =685
+            Y: =507
             ZIndex: =5
 
         DatePicker1_2 As datepicker:
@@ -669,8 +669,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =154
-            X: =592
-            Y: =566
+            X: =217
+            Y: =563
             ZIndex: =6
 
         Dropdown1_2 As dropdown:
@@ -681,9 +681,9 @@
                 =["USD"]
             Size: =11
             Visible: =varShowPayments
-            Width: =115
-            X: =439
-            Y: =566
+            Width: =250
+            X: =993
+            Y: =507
             ZIndex: =7
 
         Dropdown2_6 As dropdown:
@@ -694,9 +694,9 @@
                 =["Pokemon"]
             Size: =11
             Visible: =varShowPayments
-            Width: =144
-            X: =776
-            Y: =566
+            Width: =250
+            X: =409
+            Y: =563
             ZIndex: =8
 
         Dropdown2_7 As dropdown:
@@ -706,9 +706,9 @@
             Items: =["Masterchief"]
             Size: =11
             Visible: =varShowPayments
-            Width: =144
-            X: =1141
-            Y: =566
+            Width: =250
+            X: =996
+            Y: =563
             ZIndex: =9
 
         Dropdown2_8 As dropdown:
@@ -718,9 +718,9 @@
             Items: =["NEO"]
             Size: =11
             Visible: =varShowPayments
-            Width: =144
-            X: =970
-            Y: =566
+            Width: =250
+            X: =692
+            Y: =563
             ZIndex: =10
 
         Label10_18 As label:
@@ -730,8 +730,8 @@
             Height: =25
             Text: ="Name"
             Visible: =varShowPayments
-            Width: =136
-            X: =227
+            Width: =250
+            X: =217
             Y: =610
             ZIndex: =11
 
@@ -743,8 +743,8 @@
             Text: ="Value"
             Visible: =varShowPayments
             Width: =110
-            X: =485
-            Y: =610
+            X: =591
+            Y: =612
             ZIndex: =12
 
         Label10_20 As label:
@@ -755,8 +755,8 @@
             Text: ="Epic"
             Visible: =varShowPayments
             Width: =120
-            X: =364
-            Y: =610
+            X: =470
+            Y: =612
             ZIndex: =13
 
         Gallery2_3 As gallery.galleryVertical:
@@ -766,8 +766,8 @@
             TemplateSize: =18
             Visible: =varShowPayments
             Width: =1048
-            X: =222
-            Y: =635
+            X: =213
+            Y: =630
             ZIndex: =14
 
             Label4_3 As label:
@@ -776,7 +776,7 @@
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.SampleHeading
-                Width: =136
+                Width: =250
                 ZIndex: =1
 
             Label5_3 As label:
@@ -787,7 +787,7 @@
                 Text: |-
                     ="#####"
                 Width: =120
-                X: =136
+                X: =252
                 ZIndex: =2
 
             Label6_3 As label:
@@ -799,7 +799,7 @@
                     ="XXXXX
                     "
                 Width: =112
-                X: =256
+                X: =372
                 ZIndex: =3
 
             Label6_5 As label:
@@ -811,7 +811,7 @@
                     ="XXXXX
                     "
                 Width: =106
-                X: =368
+                X: =484
                 ZIndex: =4
 
             Label6_9 As label:
@@ -823,7 +823,7 @@
                     ="XXXXX
                     "
                 Width: =109
-                X: =475
+                X: =591
                 ZIndex: =5
 
         Icon5_1 As icon.Add:
@@ -831,8 +831,8 @@
             Icon: =Icon.Add
             Visible: =varShowPayments
             Width: =53
-            X: =746
-            Y: =497
+            X: =1242
+            Y: =482
             ZIndex: =18
 
         Label3_43 As label:
@@ -841,8 +841,8 @@
             Text: ="Currency"
             Visible: =varShowPayments
             Width: =110
-            X: =434
-            Y: =540
+            X: =988
+            Y: =479
             ZIndex: =19
 
         Label3_44 As label:
@@ -851,8 +851,8 @@
             Text: ="Expected Date"
             Visible: =varShowPayments
             Width: =157
-            X: =592
-            Y: =540
+            X: =217
+            Y: =536
             ZIndex: =20
 
         Label3_45 As label:
@@ -861,8 +861,8 @@
             Text: ="Pokemon"
             Visible: =varShowPayments
             Width: =112
-            X: =776
-            Y: =539
+            X: =409
+            Y: =536
             ZIndex: =21
 
         Label3_46 As label:
@@ -871,8 +871,8 @@
             Text: ="Neo"
             Visible: =varShowPayments
             Width: =112
-            X: =969
-            Y: =538
+            X: =691
+            Y: =536
             ZIndex: =22
 
         Label3_47 As label:
@@ -881,8 +881,8 @@
             Text: ="Neo"
             Visible: =varShowPayments
             Width: =112
-            X: =1141
-            Y: =538
+            X: =996
+            Y: =536
             ZIndex: =23
 
         Label3_41 As label:
@@ -891,8 +891,8 @@
             Text: ="Payment Name"
             Visible: =varShowPayments
             Width: =167
-            X: =227
-            Y: =484
+            X: =217
+            Y: =479
             ZIndex: =24
 
         Label3_42 As label:
@@ -901,8 +901,8 @@
             Text: ="Value"
             Visible: =varShowPayments
             Width: =167
-            X: =227
-            Y: =544
+            X: =685
+            Y: =479
             ZIndex: =25
 
         Label10_22 As label:
@@ -913,8 +913,8 @@
             Text: ="Currency"
             Visible: =varShowPayments
             Width: =107
-            X: =596
-            Y: =610
+            X: =702
+            Y: =612
             ZIndex: =96
 
         Label10_31 As label:
@@ -925,8 +925,8 @@
             Text: ="Expctd Date"
             Visible: =varShowPayments
             Width: =110
-            X: =704
-            Y: =610
+            X: =810
+            Y: =612
             ZIndex: =112
 
     NP_FeaturesGroup As group:
