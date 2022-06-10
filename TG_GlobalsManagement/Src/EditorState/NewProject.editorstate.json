@@ -12460,7 +12460,14 @@
         "PressedFill",
         "HoverFill",
         "DisplayMode",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
         "Width",
         "Height",
@@ -23723,7 +23730,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_26",
-      "ParentIndex": 21,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24921,7 +24928,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_30",
-      "ParentIndex": 22,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25527,7 +25534,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_32",
-      "ParentIndex": 23,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -42498,7 +42505,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ClosedWonDeals_Galery",
-      "ParentIndex": 24,
+      "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -47832,7 +47839,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1",
-      "ParentIndex": 25,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
