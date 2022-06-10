@@ -633,302 +633,6 @@
             Y: =113
             ZIndex: =95
 
-    NP_PaymentsGroup As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =156
-
-        TextInput2_2 As text:
-            BorderThickness: =1
-            Default: ="Name"
-            Height: =25
-            Size: =11
-            Visible: =varShowPayments
-            Width: =428
-            X: =217
-            Y: =507
-            ZIndex: =4
-
-        TextInput3_2 As text:
-            BorderThickness: =1
-            Default: ="Entrada de texto"
-            Height: =25
-            Size: =11
-            Visible: =varShowPayments
-            Width: =250
-            X: =680
-            Y: =507
-            ZIndex: =5
-
-        DatePicker1_2 As datepicker:
-            BorderThickness: =1
-            Color: =RGBA(0,0,0,1)
-            Height: =25
-            Size: =11
-            Visible: =varShowPayments
-            Width: =154
-            X: =217
-            Y: =563
-            ZIndex: =6
-
-        Dropdown1_2 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["USD"]
-            Size: =11
-            Visible: =varShowPayments
-            Width: =250
-            X: =980
-            Y: =507
-            ZIndex: =7
-
-        Dropdown2_6 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["Pokemon"]
-            Size: =11
-            Visible: =varShowPayments
-            Width: =250
-            X: =409
-            Y: =563
-            ZIndex: =8
-
-        Dropdown2_7 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["Masterchief"]
-            Size: =11
-            Visible: =varShowPayments
-            Width: =250
-            X: =980
-            Y: =563
-            ZIndex: =9
-
-        Dropdown2_8 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["NEO"]
-            Size: =11
-            Visible: =varShowPayments
-            Width: =250
-            X: =680
-            Y: =563
-            ZIndex: =10
-
-        Label10_18 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Name"
-            Visible: =varShowPayments
-            Width: =250
-            X: =218
-            Y: =610
-            ZIndex: =11
-
-        Label10_19 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Value"
-            Visible: =varShowPayments
-            Width: =140
-            X: =590
-            Y: =610
-            ZIndex: =12
-
-        Label10_20 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Epic"
-            Visible: =varShowPayments
-            Width: =118
-            X: =470
-            Y: =610
-            ZIndex: =13
-
-        Gallery2_3 As gallery.galleryVertical:
-            Height: =68
-            Items: =CustomGallerySample
-            Layout: =Layout.Vertical
-            TemplateSize: =18
-            Visible: =varShowPayments
-            Width: =1048
-            X: =213
-            Y: =630
-            ZIndex: =14
-
-            Label4_3 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.SampleHeading
-                Width: =250
-                ZIndex: =1
-
-            Label5_3 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    ="#####"
-                Width: =120
-                X: =250
-                ZIndex: =2
-
-            Label6_3 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
-                Width: =140
-                X: =372
-                ZIndex: =3
-
-            Label6_5 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
-                Width: =106
-                X: =512
-                ZIndex: =4
-
-            Label6_9 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
-                Width: =109
-                X: =618
-                ZIndex: =5
-
-        Icon5_1 As icon.Add:
-            Height: =42
-            Icon: =Icon.Add
-            Visible: =varShowPayments
-            Width: =53
-            X: =1242
-            Y: =482
-            ZIndex: =18
-
-        Label3_43 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Text: ="Currency"
-            Visible: =varShowPayments
-            Width: =110
-            X: =980
-            Y: =479
-            ZIndex: =19
-
-        Label3_44 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Text: ="Expected Date"
-            Visible: =varShowPayments
-            Width: =157
-            X: =217
-            Y: =536
-            ZIndex: =20
-
-        Label3_45 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Text: ="Pokemon"
-            Visible: =varShowPayments
-            Width: =112
-            X: =409
-            Y: =536
-            ZIndex: =21
-
-        Label3_46 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Text: ="Neo"
-            Visible: =varShowPayments
-            Width: =112
-            X: =680
-            Y: =536
-            ZIndex: =22
-
-        Label3_47 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Text: ="Masterchief"
-            Visible: =varShowPayments
-            Width: =112
-            X: =980
-            Y: =536
-            ZIndex: =23
-
-        Label3_41 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Text: ="Payment Name"
-            Visible: =varShowPayments
-            Width: =167
-            X: =217
-            Y: =479
-            ZIndex: =24
-
-        Label3_42 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Text: ="Value"
-            Visible: =varShowPayments
-            Width: =167
-            X: =680
-            Y: =479
-            ZIndex: =25
-
-        Label10_22 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Currency"
-            Visible: =varShowPayments
-            Width: =107
-            X: =730
-            Y: =610
-            ZIndex: =96
-
-        Label10_31 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Expctd Date"
-            Visible: =varShowPayments
-            Width: =110
-            X: =840
-            Y: =612
-            ZIndex: =112
-
     NP_FeaturesGroup As group:
         Height: =5
         Width: =5
@@ -2051,6 +1755,374 @@
             X: =1136
             Y: =326
             ZIndex: =171
+
+    Label10_40 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Text: ="Masterchief"
+        Visible: =varShowPayments
+        Width: =140
+        X: =1157
+        Y: =610
+        ZIndex: =174
+
+    NP_PaymentsTableGroup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =174
+
+        TextInput2_2 As text:
+            BorderThickness: =1
+            Default: ="Name"
+            Height: =25
+            Size: =11
+            Visible: =varShowPayments
+            Width: =428
+            X: =217
+            Y: =507
+            ZIndex: =4
+
+        TextInput3_2 As text:
+            BorderThickness: =1
+            Default: ="Entrada de texto"
+            Height: =25
+            Size: =11
+            Visible: =varShowPayments
+            Width: =250
+            X: =680
+            Y: =507
+            ZIndex: =5
+
+        DatePicker1_2 As datepicker:
+            BorderThickness: =1
+            Color: =RGBA(0,0,0,1)
+            Height: =25
+            Size: =11
+            Visible: =varShowPayments
+            Width: =154
+            X: =217
+            Y: =563
+            ZIndex: =6
+
+        Dropdown1_2 As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["USD"]
+            Size: =11
+            Visible: =varShowPayments
+            Width: =250
+            X: =980
+            Y: =507
+            ZIndex: =7
+
+        Dropdown2_6 As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["Pokemon"]
+            Size: =11
+            Visible: =varShowPayments
+            Width: =250
+            X: =409
+            Y: =563
+            ZIndex: =8
+
+        Dropdown2_7 As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: =["Masterchief"]
+            Size: =11
+            Visible: =varShowPayments
+            Width: =250
+            X: =980
+            Y: =563
+            ZIndex: =9
+
+        Dropdown2_8 As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: =["NEO"]
+            Size: =11
+            Visible: =varShowPayments
+            Width: =250
+            X: =680
+            Y: =563
+            ZIndex: =10
+
+        Label10_18 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Name"
+            Visible: =varShowPayments
+            Width: =200
+            X: =218
+            Y: =610
+            ZIndex: =11
+
+        Label10_19 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Value"
+            Visible: =varShowPayments
+            Width: =110
+            X: =540
+            Y: =610
+            ZIndex: =12
+
+        Label10_20 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Epic"
+            Visible: =varShowPayments
+            Width: =119
+            X: =420
+            Y: =610
+            ZIndex: =13
+
+        Gallery2_3 As gallery.galleryVertical:
+            Height: =99
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            TemplateSize: =18
+            Visible: =varShowPayments
+            Width: =1105
+            X: =213
+            Y: =630
+            ZIndex: =14
+
+            Label4_3 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.SampleHeading
+                Width: =200
+                ZIndex: =1
+
+            Label5_3 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="#####"
+                Width: =120
+                X: =200
+                ZIndex: =2
+
+            Label6_3 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="XXXXX
+                    "
+                Width: =110
+                X: =320
+                ZIndex: =3
+
+            Label6_5 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="XXXXX
+                    "
+                Width: =106
+                X: =430
+                ZIndex: =4
+
+            Label6_9 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="XXXXX
+                    "
+                Width: =120
+                X: =536
+                ZIndex: =5
+
+            Label6_16 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="XXXXX
+                    "
+                Width: =140
+                X: =656
+                ZIndex: =6
+
+            Label6_17 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="XXXXX
+                    "
+                Width: =140
+                X: =796
+                ZIndex: =7
+
+            Label6_18 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    ="XXXXX
+                    "
+                Width: =142
+                X: =936
+                ZIndex: =8
+
+        Icon5_1 As icon.Add:
+            Height: =42
+            Icon: =Icon.Add
+            Visible: =varShowPayments
+            Width: =53
+            X: =1242
+            Y: =482
+            ZIndex: =18
+
+        Label3_43 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Currency"
+            Visible: =varShowPayments
+            Width: =110
+            X: =980
+            Y: =479
+            ZIndex: =19
+
+        Label3_44 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Expected Date"
+            Visible: =varShowPayments
+            Width: =157
+            X: =217
+            Y: =536
+            ZIndex: =20
+
+        Label3_45 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Pokemon"
+            Visible: =varShowPayments
+            Width: =112
+            X: =409
+            Y: =536
+            ZIndex: =21
+
+        Label3_46 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Neo"
+            Visible: =varShowPayments
+            Width: =112
+            X: =680
+            Y: =536
+            ZIndex: =22
+
+        Label3_47 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Masterchief"
+            Visible: =varShowPayments
+            Width: =112
+            X: =980
+            Y: =536
+            ZIndex: =23
+
+        Label3_41 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Payment Name"
+            Visible: =varShowPayments
+            Width: =167
+            X: =217
+            Y: =479
+            ZIndex: =24
+
+        Label3_42 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Value"
+            Visible: =varShowPayments
+            Width: =167
+            X: =680
+            Y: =479
+            ZIndex: =25
+
+        Label10_22 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Currency"
+            Visible: =varShowPayments
+            Width: =104
+            X: =651
+            Y: =610
+            ZIndex: =96
+
+        Label10_31 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Expected"
+            Visible: =varShowPayments
+            Width: =119
+            X: =756
+            Y: =610
+            ZIndex: =112
+
+        Label10_38 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Pokemon"
+            Visible: =varShowPayments
+            Width: =139
+            X: =876
+            Y: =610
+            ZIndex: =172
+
+        Label10_39 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Neo"
+            Visible: =varShowPayments
+            Width: =140
+            X: =1016
+            Y: =610
+            ZIndex: =173
 
     NP_ResourcesGroup As group:
         Height: =5
