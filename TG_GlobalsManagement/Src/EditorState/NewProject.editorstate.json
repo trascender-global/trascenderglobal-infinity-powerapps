@@ -5059,7 +5059,14 @@
         "HoverFill",
         "Font",
         "FontWeight",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
         {
           "AFDDataSourceName": "",
@@ -8524,7 +8531,14 @@
         "HoverFill",
         "Font",
         "FontWeight",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -13817,7 +13831,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_18",
-      "ParentIndex": 166,
+      "ParentIndex": 162,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14141,7 +14155,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_19",
-      "ParentIndex": 163,
+      "ParentIndex": 164,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14782,7 +14796,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_20",
-      "ParentIndex": 162,
+      "ParentIndex": 163,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15430,7 +15444,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_22",
-      "ParentIndex": 164,
+      "ParentIndex": 165,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17367,7 +17381,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_31",
-      "ParentIndex": 165,
+      "ParentIndex": 166,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -37014,7 +37028,14 @@
         "FontWeight",
         "Align",
         "VerticalAlign",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
         {
           "AFDDataSourceName": "",

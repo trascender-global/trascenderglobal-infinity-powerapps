@@ -658,7 +658,7 @@
             Size: =11
             Visible: =varShowPayments
             Width: =250
-            X: =685
+            X: =680
             Y: =507
             ZIndex: =5
 
@@ -682,7 +682,7 @@
             Size: =11
             Visible: =varShowPayments
             Width: =250
-            X: =993
+            X: =980
             Y: =507
             ZIndex: =7
 
@@ -707,7 +707,7 @@
             Size: =11
             Visible: =varShowPayments
             Width: =250
-            X: =996
+            X: =980
             Y: =563
             ZIndex: =9
 
@@ -719,7 +719,7 @@
             Size: =11
             Visible: =varShowPayments
             Width: =250
-            X: =692
+            X: =680
             Y: =563
             ZIndex: =10
 
@@ -731,7 +731,7 @@
             Text: ="Name"
             Visible: =varShowPayments
             Width: =250
-            X: =217
+            X: =218
             Y: =610
             ZIndex: =11
 
@@ -742,9 +742,9 @@
             Height: =25
             Text: ="Value"
             Visible: =varShowPayments
-            Width: =110
-            X: =591
-            Y: =612
+            Width: =140
+            X: =590
+            Y: =610
             ZIndex: =12
 
         Label10_20 As label:
@@ -754,9 +754,9 @@
             Height: =25
             Text: ="Epic"
             Visible: =varShowPayments
-            Width: =120
+            Width: =118
             X: =470
-            Y: =612
+            Y: =610
             ZIndex: =13
 
         Gallery2_3 As gallery.galleryVertical:
@@ -787,7 +787,7 @@
                 Text: |-
                     ="#####"
                 Width: =120
-                X: =252
+                X: =250
                 ZIndex: =2
 
             Label6_3 As label:
@@ -798,7 +798,7 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =112
+                Width: =140
                 X: =372
                 ZIndex: =3
 
@@ -811,7 +811,7 @@
                     ="XXXXX
                     "
                 Width: =106
-                X: =484
+                X: =512
                 ZIndex: =4
 
             Label6_9 As label:
@@ -823,7 +823,7 @@
                     ="XXXXX
                     "
                 Width: =109
-                X: =591
+                X: =618
                 ZIndex: =5
 
         Icon5_1 As icon.Add:
@@ -841,7 +841,7 @@
             Text: ="Currency"
             Visible: =varShowPayments
             Width: =110
-            X: =988
+            X: =980
             Y: =479
             ZIndex: =19
 
@@ -871,17 +871,17 @@
             Text: ="Neo"
             Visible: =varShowPayments
             Width: =112
-            X: =691
+            X: =680
             Y: =536
             ZIndex: =22
 
         Label3_47 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
-            Text: ="Neo"
+            Text: ="Masterchief"
             Visible: =varShowPayments
             Width: =112
-            X: =996
+            X: =980
             Y: =536
             ZIndex: =23
 
@@ -901,7 +901,7 @@
             Text: ="Value"
             Visible: =varShowPayments
             Width: =167
-            X: =685
+            X: =680
             Y: =479
             ZIndex: =25
 
@@ -913,8 +913,8 @@
             Text: ="Currency"
             Visible: =varShowPayments
             Width: =107
-            X: =702
-            Y: =612
+            X: =730
+            Y: =610
             ZIndex: =96
 
         Label10_31 As label:
@@ -925,7 +925,7 @@
             Text: ="Expctd Date"
             Visible: =varShowPayments
             Width: =110
-            X: =810
+            X: =840
             Y: =612
             ZIndex: =112
 
