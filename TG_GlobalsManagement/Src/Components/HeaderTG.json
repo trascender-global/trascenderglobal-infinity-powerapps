@@ -117,7 +117,7 @@
         "Name": "AppTitle",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 295,
+        "PublishOrderIndex": 247,
         "Rules": [
           {
             "Category": "Data",
@@ -438,7 +438,7 @@
         "Name": "TGLogo",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 296,
+        "PublishOrderIndex": 248,
         "Rules": [
           {
             "Category": "Data",
@@ -692,7 +692,7 @@
         "Name": "Rectangle6",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 297,
+        "PublishOrderIndex": 249,
         "Rules": [
           {
             "Category": "Design",
