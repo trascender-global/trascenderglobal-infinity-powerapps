@@ -958,19 +958,6 @@
         Y: =40
         ZIndex: =156
 
-        Dropdown1_3 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =24
-            Items: |
-                =["EPIC"]
-            Size: =11
-            Visible: =varShowPayments
-            Width: =161
-            X: =1063
-            Y: =393
-            ZIndex: =3
-
         TextInput2_2 As text:
             BorderThickness: =1
             Default: ="Name"
@@ -978,8 +965,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =293
-            X: =725
-            Y: =398
+            X: =723
+            Y: =445
             ZIndex: =4
 
         TextInput3_2 As text:
@@ -989,8 +976,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =169
-            X: =725
-            Y: =452
+            X: =723
+            Y: =499
             ZIndex: =5
 
         DatePicker1_2 As datepicker:
@@ -1000,8 +987,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =154
-            X: =1090
-            Y: =452
+            X: =1088
+            Y: =499
             ZIndex: =6
 
         Dropdown1_2 As dropdown:
@@ -1013,8 +1000,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =115
-            X: =937
-            Y: =452
+            X: =935
+            Y: =499
             ZIndex: =7
 
         Dropdown2_6 As dropdown:
@@ -1026,8 +1013,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =144
-            X: =725
-            Y: =510
+            X: =723
+            Y: =557
             ZIndex: =8
 
         Dropdown2_7 As dropdown:
@@ -1038,8 +1025,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =144
-            X: =1090
-            Y: =510
+            X: =1088
+            Y: =557
             ZIndex: =9
 
         Dropdown2_8 As dropdown:
@@ -1050,8 +1037,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =144
-            X: =919
-            Y: =510
+            X: =917
+            Y: =557
             ZIndex: =10
 
         Label10_18 As label:
@@ -1062,8 +1049,8 @@
             Text: ="Name"
             Visible: =varShowPayments
             Width: =136
-            X: =728
-            Y: =559
+            X: =726
+            Y: =606
             ZIndex: =11
 
         Label10_19 As label:
@@ -1074,8 +1061,8 @@
             Text: ="Value"
             Visible: =varShowPayments
             Width: =110
-            X: =986
-            Y: =559
+            X: =984
+            Y: =606
             ZIndex: =12
 
         Label10_20 As label:
@@ -1086,8 +1073,8 @@
             Text: ="Epic"
             Visible: =varShowPayments
             Width: =120
-            X: =865
-            Y: =559
+            X: =863
+            Y: =606
             ZIndex: =13
 
         Gallery2_3 As gallery.galleryVertical:
@@ -1097,8 +1084,8 @@
             TemplateSize: =18
             Visible: =varShowPayments
             Width: =600
-            X: =725
-            Y: =580
+            X: =723
+            Y: =627
             ZIndex: =14
 
             Label4_3 As label:
@@ -1162,8 +1149,8 @@
             Icon: =Icon.Add
             Visible: =varShowPayments
             Width: =53
-            X: =1244
-            Y: =383
+            X: =1242
+            Y: =430
             ZIndex: =18
 
         Label3_43 As label:
@@ -1172,8 +1159,8 @@
             Text: ="Currency"
             Visible: =varShowPayments
             Width: =110
-            X: =932
-            Y: =426
+            X: =930
+            Y: =473
             ZIndex: =19
 
         Label3_44 As label:
@@ -1182,8 +1169,8 @@
             Text: ="Expected Date"
             Visible: =varShowPayments
             Width: =157
-            X: =1090
-            Y: =426
+            X: =1088
+            Y: =473
             ZIndex: =20
 
         Label3_45 As label:
@@ -1192,8 +1179,8 @@
             Text: ="Pokemon"
             Visible: =varShowPayments
             Width: =112
-            X: =725
-            Y: =483
+            X: =723
+            Y: =530
             ZIndex: =21
 
         Label3_46 As label:
@@ -1202,8 +1189,8 @@
             Text: ="Neo"
             Visible: =varShowPayments
             Width: =112
-            X: =918
-            Y: =482
+            X: =916
+            Y: =529
             ZIndex: =22
 
         Label3_47 As label:
@@ -1212,8 +1199,8 @@
             Text: ="Neo"
             Visible: =varShowPayments
             Width: =112
-            X: =1090
-            Y: =482
+            X: =1088
+            Y: =529
             ZIndex: =23
 
         Label3_41 As label:
@@ -1222,8 +1209,8 @@
             Text: ="Payment Name"
             Visible: =varShowPayments
             Width: =167
-            X: =725
-            Y: =370
+            X: =723
+            Y: =417
             ZIndex: =24
 
         Label3_42 As label:
@@ -1232,8 +1219,8 @@
             Text: ="Value"
             Visible: =varShowPayments
             Width: =167
-            X: =725
-            Y: =430
+            X: =723
+            Y: =477
             ZIndex: =25
 
         Label10_22 As label:
@@ -1244,8 +1231,8 @@
             Text: ="Currency"
             Visible: =varShowPayments
             Width: =107
-            X: =1097
-            Y: =559
+            X: =1095
+            Y: =606
             ZIndex: =96
 
         Label10_31 As label:
@@ -1256,8 +1243,8 @@
             Text: ="Expctd Date"
             Visible: =varShowPayments
             Width: =110
-            X: =1205
-            Y: =559
+            X: =1203
+            Y: =606
             ZIndex: =112
 
     NP_FeaturesGroup As group:
@@ -1528,6 +1515,18 @@
             Y: =576
             ZIndex: =115
 
+    Label3_50 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =25
+        Size: =15
+        Text: |-
+            ="Epic: Epic Name"
+        Visible: =varShowPayments
+        Width: =167
+        X: =723
+        Y: =380
+        ZIndex: =164
+
     NP_GlobalsGeneralInfoGroup As group:
         Height: =5
         Width: =5
@@ -1723,6 +1722,10 @@
 
         NP_GeneralInfo_SaveButton As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
+            DisabledBorderColor: =RGBA(0, 18, 107, 1)
+            DisabledColor: =RGBA(50, 50, 50, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If( NP_GeneralInfo_CurrencyInput.Text=""|| NP_GeneralInfo_PriceInput.Text=""||NP_GeneralInfo_SegmentInput.Text ="" ||                 NP_GeneralInfo_NameInput.Text,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =35
             Icon: =Icon.Save
             OnSelect: =Set(varShowPopup,true)
@@ -1968,19 +1971,6 @@
         X: =40
         Y: =40
         ZIndex: =182
-
-        Dropdown1_7 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =24
-            Items: |
-                =["EPIC"]
-            Size: =11
-            Visible: =varShowResources
-            Width: =160
-            X: =1043
-            Y: =406
-            ZIndex: =116
 
         TextInput2_4 As text:
             BorderThickness: =1

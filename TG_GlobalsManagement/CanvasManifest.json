@@ -20,6 +20,7 @@
       "componentauthoring": true,
       "copyandmerge": true,
       "datatablev2control": true,
+      "dataverseactionsenabled": false,
       "delaycontrolrendering": false,
       "delayloadscreens": true,
       "disablecdsfileandlargeimage": false,
