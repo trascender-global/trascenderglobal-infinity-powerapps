@@ -1396,6 +1396,7 @@
         Label3_34 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Epic Name"
             Visible: =Not(varShowInit)
             Width: =149
@@ -1406,6 +1407,7 @@
         Label3_35 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Value"
             Visible: =Not(varShowInit)
             Width: =149
@@ -1416,6 +1418,7 @@
         Label3_36 As label:
             FontWeight: =FontWeight.Semibold
             Height: =27
+            Size: =11
             Text: ="Currency"
             Visible: =Not(varShowInit)
             Width: =92
@@ -1426,6 +1429,7 @@
         Label3_37 As label:
             FontWeight: =FontWeight.Semibold
             Height: =27
+            Size: =11
             Text: ="Expected Date"
             Visible: =Not(varShowInit)
             Width: =140
@@ -1436,6 +1440,7 @@
         Label3_38 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Pokemon"
             Visible: =Not(varShowInit)
             Width: =100
@@ -1457,6 +1462,7 @@
         Label3_39 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Neo"
             Visible: =Not(varShowInit)
             Width: =100
@@ -1467,6 +1473,7 @@
         Label3_40 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Masterchief"
             Visible: =Not(varShowInit)
             Width: =110
@@ -1694,6 +1701,7 @@
         Label3_54 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Pokemon"
             Visible: =varShowFeatures
             Width: =112
@@ -1704,6 +1712,7 @@
         Label3_53 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Neo"
             Visible: =varShowFeatures
             Width: =112
@@ -1714,6 +1723,7 @@
         Label3_52 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Masterchief"
             Visible: =varShowFeatures
             Width: =112
@@ -1724,6 +1734,7 @@
         Label3_48 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Feature Name"
             Visible: =varShowFeatures
             Width: =167
@@ -1819,6 +1830,7 @@
         Label3_57 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Status"
             Visible: =varShowFeatures
             Width: =110
@@ -2071,6 +2083,7 @@
         Label3_43 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Currency"
             Visible: =varShowPayments 
             Width: =110
@@ -2081,6 +2094,7 @@
         Label3_44 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Expected Date"
             Visible: =varShowPayments 
             Width: =157
@@ -2102,6 +2116,7 @@
         Label3_46 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Neo"
             Visible: =varShowPayments 
             Width: =112
@@ -2112,6 +2127,7 @@
         Label3_47 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Masterchief"
             Visible: =varShowPayments 
             Width: =112
@@ -2133,6 +2149,7 @@
         Label3_42 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Value"
             Visible: =varShowPayments 
             Width: =167
@@ -2228,6 +2245,7 @@
         Label3_55 As label:
             FontWeight: =FontWeight.Semibold
             Height: =27
+            Size: =11
             Text: ="Fee"
             Visible: =varShowPayments 
             Width: =109
@@ -2251,6 +2269,7 @@
         Label3_56 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Status"
             Visible: =varShowPayments 
             Width: =110
@@ -2503,6 +2522,7 @@
         Label3_51 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Currency"
             Visible: =varShowResources
             Width: =110
@@ -2513,6 +2533,7 @@
         Label3_58 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Expected Date"
             Visible: =varShowResources
             Width: =157
@@ -2534,6 +2555,7 @@
         Label3_60 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Neo"
             Visible: =varShowResources
             Width: =112
@@ -2544,6 +2566,7 @@
         Label3_59 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Masterchief"
             Visible: =varShowResources
             Width: =112
@@ -2555,7 +2578,7 @@
             FontWeight: =FontWeight.Semibold
             Height: =25
             Size: =11
-            Text: ="Payment Name"
+            Text: ="Tegecito Name"
             Visible: =varShowResources
             Width: =167
             X: =217
@@ -2565,6 +2588,7 @@
         Label3_50 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Value"
             Visible: =varShowResources
             Width: =167
@@ -2660,6 +2684,7 @@
         Label3_63 As label:
             FontWeight: =FontWeight.Semibold
             Height: =27
+            Size: =11
             Text: ="Fee"
             Visible: =varShowResources
             Width: =109
@@ -2683,6 +2708,7 @@
         Label3_62 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            Size: =11
             Text: ="Status"
             Visible: =varShowResources
             Width: =110
