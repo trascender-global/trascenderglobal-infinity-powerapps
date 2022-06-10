@@ -2289,9 +2289,9 @@
     NP_ResourcesTableGroup As group:
         Height: =5
         Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =264
+        X: =40
+        Y: =40
+        ZIndex: =265
 
         TextInput2_4 As text:
             BorderThickness: =1
@@ -2314,71 +2314,23 @@
             HintText: ="Input value"
             Size: =11
             Visible: =varShowResources
-            Width: =150
-            X: =503
-            Y: =508
-            ZIndex: =236
-
-        DatePicker1_3 As datepicker:
-            BorderThickness: =1
-            Color: =RGBA(0,0,0,1)
-            Height: =25
-            Size: =11
-            Visible: =varShowResources
-            Width: =154
-            X: =1141
+            Width: =250
+            X: =537
             Y: =569
-            ZIndex: =237
-
-        Dropdown1_3 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["USD"]
-            Size: =11
-            Visible: =varShowResources
-            Width: =100
-            X: =683
-            Y: =508
-            ZIndex: =238
+            ZIndex: =236
 
         Dropdown2_20 As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
             Items: |
-                =["Pokemon"]
+                =["Feature 1"]
             Size: =11
             Visible: =varShowResources
             Width: =250
-            X: =217
-            Y: =572
+            X: =537
+            Y: =504
             ZIndex: =239
-
-        Dropdown2_18 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["Masterchief"]
-            Size: =11
-            Visible: =varShowResources
-            Width: =265
-            X: =812
-            Y: =571
-            ZIndex: =240
-
-        Dropdown2_19 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["NEO"]
-            Size: =11
-            Visible: =varShowResources
-            Width: =278
-            X: =504
-            Y: =571
-            ZIndex: =241
 
         Label10_35 As label:
             Align: =Align.Center
@@ -2525,54 +2477,21 @@
             Size: =11
             Text: ="Currency"
             Visible: =varShowResources
-            Width: =110
-            X: =683
-            Y: =480
+            Width: =250
+            X: =905
+            Y: =544
             ZIndex: =246
-
-        Label3_58 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Expected Date"
-            Visible: =varShowResources
-            Width: =157
-            X: =1141
-            Y: =542
-            ZIndex: =247
 
         Label3_61 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
             Size: =11
-            Text: ="Pokemon"
+            Text: ="Feature"
             Visible: =varShowResources
-            Width: =112
-            X: =217
-            Y: =545
+            Width: =250
+            X: =537
+            Y: =477
             ZIndex: =248
-
-        Label3_60 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Neo"
-            Visible: =varShowResources
-            Width: =112
-            X: =504
-            Y: =544
-            ZIndex: =249
-
-        Label3_59 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Masterchief"
-            Visible: =varShowResources
-            Width: =112
-            X: =812
-            Y: =544
-            ZIndex: =250
 
         Label3_49 As label:
             FontWeight: =FontWeight.Semibold
@@ -2589,11 +2508,11 @@
             FontWeight: =FontWeight.Semibold
             Height: =25
             Size: =11
-            Text: ="Value"
+            Text: ="Estimated Value"
             Visible: =varShowResources
-            Width: =167
-            X: =503
-            Y: =480
+            Width: =250
+            X: =537
+            Y: =544
             ZIndex: =252
 
         Label10_34 As label:
@@ -2676,45 +2595,21 @@
             HintText: ="Input Fee"
             Size: =11
             Visible: =varShowResources
-            Width: =100
-            X: =808
-            Y: =508
+            Width: =250
+            X: =217
+            Y: =569
             ZIndex: =259
 
         Label3_63 As label:
             FontWeight: =FontWeight.Semibold
             Height: =27
             Size: =11
-            Text: ="Fee"
+            Text: ="Estimated Time"
             Visible: =varShowResources
-            Width: =109
-            X: =808
-            Y: =478
+            Width: =250
+            X: =217
+            Y: =542
             ZIndex: =260
-
-        Dropdown1_8 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["Normal"]
-            Size: =11
-            Visible: =varShowResources
-            Width: =156
-            X: =919
-            Y: =508
-            ZIndex: =261
-
-        Label3_62 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Status"
-            Visible: =varShowResources
-            Width: =110
-            X: =919
-            Y: =480
-            ZIndex: =262
 
         Button1_2 As button:
             Height: =32
@@ -2724,4 +2619,17 @@
             X: =1141
             Y: =495
             ZIndex: =263
+
+        TextInput3_9 As text:
+            BorderThickness: =1
+            Default: =""
+            Format: =TextFormat.Number
+            Height: =25
+            HintText: ="Input value"
+            Size: =11
+            Visible: =varShowResources
+            Width: =250
+            X: =905
+            Y: =569
+            ZIndex: =264
 
