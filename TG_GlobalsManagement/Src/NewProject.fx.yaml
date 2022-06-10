@@ -1826,22 +1826,13 @@
             Y: =479
             ZIndex: =231
 
-        Checkbox1 As checkbox:
-            Height: =34
-            Text: ="Create Payment"
-            Visible: =varShowFeatures
-            Width: =180
-            X: =950
-            Y: =496
-            ZIndex: =232
-
         Button1 As button:
             Height: =32
             Text: ="Create"
             Visible: =varShowFeatures
-            Width: =120
-            X: =1199
-            Y: =496
+            Width: =154
+            X: =1141
+            Y: =494
             ZIndex: =233
 
     NP_PaymentsTableGroup As group:
@@ -1884,7 +1875,7 @@
             Size: =11
             Visible: =varShowPayments 
             Width: =154
-            X: =1127
+            X: =1141
             Y: =568
             ZIndex: =6
 
@@ -2093,7 +2084,7 @@
             Text: ="Expected Date"
             Visible: =varShowPayments 
             Width: =157
-            X: =1127
+            X: =1141
             Y: =541
             ZIndex: =20
 
@@ -2271,8 +2262,8 @@
             Height: =32
             Text: ="Create"
             Visible: =varShowPayments 
-            Width: =120
-            X: =1127
+            Width: =154
+            X: =1141
             Y: =494
             ZIndex: =234
 
