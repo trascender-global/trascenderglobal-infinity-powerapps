@@ -1925,20 +1925,12 @@
             Y: =479
             ZIndex: =202
 
-    Button1 As button:
-        Height: =32
-        Text: ="Create"
-        Width: =120
-        X: =1199
-        Y: =496
-        ZIndex: =233
-
     NP_FeaturesTableGroup As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =233
+        ZIndex: =234
 
         TextInput2_3 As text:
             BorderThickness: =1
@@ -2266,8 +2258,18 @@
         Checkbox1 As checkbox:
             Height: =34
             Text: ="Create Payment"
+            Visible: =varShowFeatures
             Width: =180
             X: =950
             Y: =496
             ZIndex: =232
+
+        Button1 As button:
+            Height: =32
+            Text: ="Create"
+            Visible: =varShowFeatures
+            Width: =120
+            X: =1199
+            Y: =496
+            ZIndex: =233
 
