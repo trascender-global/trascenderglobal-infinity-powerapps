@@ -2592,7 +2592,7 @@
             Default: =""
             Format: =TextFormat.Number
             Height: =25
-            HintText: ="Input Fee"
+            HintText: ="Input time estimation"
             Size: =11
             Visible: =varShowResources
             Width: =250
