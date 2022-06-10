@@ -1496,18 +1496,6 @@
             Y: =312
             ZIndex: =171
 
-    Label10_43 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(58, 87, 255, 1)
-        Height: =25
-        Text: ="Masterchief"
-        Visible: =varShowFeatures
-        Width: =140
-        X: =1158
-        Y: =610
-        ZIndex: =198
-
     NP_FeaturesTableGroup As group:
         Height: =5
         Width: =5
@@ -1742,8 +1730,8 @@
             Icon: =Icon.Add
             Visible: =varShowFeatures
             Width: =53
-            X: =1243
-            Y: =482
+            X: =1251
+            Y: =490
             ZIndex: =186
 
         Label3_50 As label:
@@ -1799,7 +1787,7 @@
         Label3_48 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
-            Text: ="Payment Name"
+            Text: ="Feature Name"
             Visible: =varShowFeatures
             Width: =167
             X: =218
@@ -1869,27 +1857,30 @@
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =198
+        ZIndex: =203
 
         TextInput2_2 As text:
             BorderThickness: =1
-            Default: ="Name"
+            Default: =""
             Height: =25
+            HintText: ="Input Name"
             Size: =11
             Visible: =varShowPayments
-            Width: =428
+            Width: =300
             X: =217
             Y: =507
             ZIndex: =4
 
         TextInput3_2 As text:
             BorderThickness: =1
-            Default: ="Entrada de texto"
+            Default: =""
+            Format: =TextFormat.Number
             Height: =25
+            HintText: ="Input value"
             Size: =11
             Visible: =varShowPayments
-            Width: =250
-            X: =680
+            Width: =150
+            X: =556
             Y: =507
             ZIndex: =5
 
@@ -1901,7 +1892,7 @@
             Visible: =varShowPayments
             Width: =154
             X: =217
-            Y: =563
+            Y: =570
             ZIndex: =6
 
         Dropdown1_2 As dropdown:
@@ -1912,8 +1903,8 @@
                 =["USD"]
             Size: =11
             Visible: =varShowPayments
-            Width: =250
-            X: =980
+            Width: =100
+            X: =745
             Y: =507
             ZIndex: =7
 
@@ -1926,8 +1917,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =250
-            X: =409
-            Y: =563
+            X: =407
+            Y: =570
             ZIndex: =8
 
         Dropdown2_7 As dropdown:
@@ -1939,7 +1930,7 @@
             Visible: =varShowPayments
             Width: =250
             X: =980
-            Y: =563
+            Y: =570
             ZIndex: =9
 
         Dropdown2_8 As dropdown:
@@ -1950,8 +1941,8 @@
             Size: =11
             Visible: =varShowPayments
             Width: =250
-            X: =680
-            Y: =563
+            X: =693
+            Y: =570
             ZIndex: =10
 
         Label10_18 As label:
@@ -2098,8 +2089,8 @@
             Icon: =Icon.Add
             Visible: =varShowPayments
             Width: =53
-            X: =1242
-            Y: =482
+            X: =1251
+            Y: =490
             ZIndex: =18
 
         Label3_43 As label:
@@ -2108,7 +2099,7 @@
             Text: ="Currency"
             Visible: =varShowPayments
             Width: =110
-            X: =980
+            X: =745
             Y: =479
             ZIndex: =19
 
@@ -2119,7 +2110,7 @@
             Visible: =varShowPayments
             Width: =157
             X: =217
-            Y: =536
+            Y: =543
             ZIndex: =20
 
         Label3_45 As label:
@@ -2128,8 +2119,8 @@
             Text: ="Pokemon"
             Visible: =varShowPayments
             Width: =112
-            X: =409
-            Y: =536
+            X: =407
+            Y: =543
             ZIndex: =21
 
         Label3_46 As label:
@@ -2138,8 +2129,8 @@
             Text: ="Neo"
             Visible: =varShowPayments
             Width: =112
-            X: =680
-            Y: =536
+            X: =693
+            Y: =543
             ZIndex: =22
 
         Label3_47 As label:
@@ -2149,7 +2140,7 @@
             Visible: =varShowPayments
             Width: =112
             X: =980
-            Y: =536
+            Y: =543
             ZIndex: =23
 
         Label3_41 As label:
@@ -2168,7 +2159,7 @@
             Text: ="Value"
             Visible: =varShowPayments
             Width: =167
-            X: =680
+            X: =556
             Y: =479
             ZIndex: =25
 
@@ -2231,4 +2222,62 @@
             X: =1157
             Y: =610
             ZIndex: =174
+
+        Label10_43 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Masterchief"
+            Visible: =varShowFeatures
+            Width: =140
+            X: =1158
+            Y: =610
+            ZIndex: =198
+
+        TextInput3_7 As text:
+            BorderThickness: =1
+            Default: =""
+            Format: =TextFormat.Number
+            Height: =25
+            HintText: ="Input Fee"
+            Size: =11
+            Visible: =varShowPayments
+            Width: =150
+            X: =884
+            Y: =507
+            ZIndex: =199
+
+        Label3_55 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            Text: ="Fee"
+            Visible: =varShowPayments
+            Width: =109
+            X: =884
+            Y: =477
+            ZIndex: =200
+
+        Dropdown1_6 As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["USD"]
+            Size: =11
+            Visible: =varShowPayments
+            Width: =150
+            X: =1074
+            Y: =507
+            ZIndex: =201
+
+        Label3_56 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Status"
+            Visible: =varShowPayments
+            Width: =110
+            X: =1074
+            Y: =479
+            ZIndex: =202
 
