@@ -2238,12 +2238,12 @@
             Y: =507
             ZIndex: =267
 
-    NP_ResourcesTableGroup As group:
+    NP_GroupResourcesTableGroup As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =270
+        ZIndex: =272
 
         TextInput2_4 As text:
             BorderThickness: =1
@@ -2300,11 +2300,11 @@
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Value"
+            Height: =24
+            Text: ="Type"
             Visible: =varShowResources
-            Width: =110
-            X: =540
+            Width: =141
+            X: =735
             Y: =611
             ZIndex: =243
 
@@ -2315,8 +2315,8 @@
             Height: =25
             Text: ="Epic"
             Visible: =varShowResources
-            Width: =119
-            X: =420
+            Width: =172
+            X: =419
             Y: =611
             ZIndex: =244
 
@@ -2347,21 +2347,9 @@
                 Size: =10
                 Text: |-
                     ="#####"
-                Width: =120
+                Width: =172
                 X: =200
                 ZIndex: =2
-
-            Label6_11 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
-                Width: =110
-                X: =320
-                ZIndex: =3
 
             Label6_12 As label:
                 BorderThickness: =1
@@ -2371,8 +2359,8 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =106
-                X: =430
+                Width: =145
+                X: =372
                 ZIndex: =4
 
             Label6_13 As label:
@@ -2383,8 +2371,8 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =120
-                X: =536
+                Width: =139
+                X: =517
                 ZIndex: =5
 
             Label6_22 As label:
@@ -2407,7 +2395,7 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =140
+                Width: =151
                 X: =796
                 ZIndex: =7
 
@@ -2419,8 +2407,8 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =142
-                X: =936
+                Width: =130
+                X: =947
                 ZIndex: =8
 
         Label3_51 As label:
@@ -2472,10 +2460,10 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
-            Text: ="Currency"
+            Text: ="Estimated Time"
             Visible: =varShowResources
-            Width: =104
-            X: =651
+            Width: =137
+            X: =877
             Y: =611
             ZIndex: =253
 
@@ -2484,60 +2472,12 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
-            Text: ="Expected"
+            Text: ="Currency"
             Visible: =varShowResources
-            Width: =119
-            X: =756
+            Width: =136
+            X: =1162
             Y: =611
             ZIndex: =254
-
-        Label10_48 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Pokemon"
-            Visible: =varShowResources
-            Width: =139
-            X: =876
-            Y: =611
-            ZIndex: =255
-
-        Label10_47 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Neo"
-            Visible: =varShowResources
-            Width: =140
-            X: =1016
-            Y: =611
-            ZIndex: =256
-
-        Label10_46 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Masterchief"
-            Visible: =varShowResources
-            Width: =140
-            X: =1157
-            Y: =611
-            ZIndex: =257
-
-        Label10_49 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Masterchief"
-            Visible: =varShowResources
-            Width: =140
-            X: =1158
-            Y: =611
-            ZIndex: =258
 
         TextInput3_8 As text:
             BorderThickness: =1
@@ -2588,9 +2528,10 @@
         Dropdown2_21 As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: ="TGcito"
             Height: =25
             Items: |
-                =["Feature 1"]
+                =["Tegecito", "Hosting", "Cloud"]
             Size: =11
             Visible: =varShowResources
             Width: =250
@@ -2608,4 +2549,28 @@
             X: =524
             Y: =481
             ZIndex: =269
+
+        Label10_44 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Estimated Value"
+            Visible: =varShowResources
+            Width: =145
+            X: =1016
+            Y: =611
+            ZIndex: =270
+
+        Label10_46 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Feature"
+            Visible: =varShowResources
+            Width: =142
+            X: =592
+            Y: =611
+            ZIndex: =271
 
