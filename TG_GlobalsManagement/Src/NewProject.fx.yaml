@@ -20,7 +20,7 @@
             Height: =768
             Visible: =varShowPopup
             Width: =1366
-            ZIndex: =142
+            ZIndex: =106
 
         Rectangle4 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
@@ -29,7 +29,7 @@
             Width: =699
             X: =355
             Y: =218
-            ZIndex: =143
+            ZIndex: =107
 
         Rectangle5 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -39,7 +39,7 @@
             Width: =699
             X: =355
             Y: =274
-            ZIndex: =144
+            ZIndex: =108
 
         Label5 As label:
             Align: =Align.Center
@@ -51,7 +51,7 @@
             Width: =244
             X: =575
             Y: =226
-            ZIndex: =145
+            ZIndex: =109
 
         Label5_1 As label:
             Align: =Align.Center
@@ -63,7 +63,7 @@
             Width: =462
             X: =479
             Y: =294
-            ZIndex: =146
+            ZIndex: =110
 
         Button3 As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -74,7 +74,7 @@
             Width: =215
             X: =460
             Y: =406
-            ZIndex: =147
+            ZIndex: =111
 
         Button3_1 As button:
             Fill: =RGBA(0, 182, 125, 1)
@@ -113,7 +113,7 @@
             Width: =215
             X: =750
             Y: =406
-            ZIndex: =148
+            ZIndex: =112
 
     NP_PopUpAddDetailsGroup As group:
         Height: =5
@@ -127,7 +127,7 @@
             Height: =768
             Visible: =varShowPopupDetails
             Width: =1366
-            ZIndex: =149
+            ZIndex: =113
 
         Rectangle4_2 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
@@ -136,7 +136,7 @@
             Width: =699
             X: =355
             Y: =218
-            ZIndex: =150
+            ZIndex: =114
 
         Rectangle5_1 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -146,7 +146,7 @@
             Width: =699
             X: =355
             Y: =274
-            ZIndex: =151
+            ZIndex: =115
 
         Label5_6 As label:
             Align: =Align.Center
@@ -158,7 +158,7 @@
             Width: =244
             X: =575
             Y: =226
-            ZIndex: =152
+            ZIndex: =116
 
         Label5_5 As label:
             Align: =Align.Center
@@ -170,7 +170,7 @@
             Width: =462
             X: =479
             Y: =325
-            ZIndex: =153
+            ZIndex: =117
 
         Button3_3 As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -181,7 +181,7 @@
             Width: =215
             X: =460
             Y: =406
-            ZIndex: =154
+            ZIndex: =118
 
         Button3_2 As button:
             Fill: =RGBA(0, 182, 125, 1)
@@ -197,7 +197,7 @@
             Width: =215
             X: =750
             Y: =406
-            ZIndex: =155
+            ZIndex: =119
 
     NP_TitlesGroup As group:
         Height: =5
@@ -240,7 +240,7 @@
             Height: =768
             Visible: =varShowPopupSaveDetails
             Width: =1366
-            ZIndex: =156
+            ZIndex: =120
 
         Rectangle4_3 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
@@ -249,7 +249,7 @@
             Width: =699
             X: =355
             Y: =218
-            ZIndex: =157
+            ZIndex: =121
 
         Rectangle5_2 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -259,7 +259,7 @@
             Width: =699
             X: =355
             Y: =274
-            ZIndex: =158
+            ZIndex: =122
 
         Label5_8 As label:
             Align: =Align.Center
@@ -271,7 +271,7 @@
             Width: =244
             X: =575
             Y: =226
-            ZIndex: =159
+            ZIndex: =123
 
         Label5_7 As label:
             Align: =Align.Center
@@ -283,7 +283,7 @@
             Width: =462
             X: =479
             Y: =294
-            ZIndex: =160
+            ZIndex: =124
 
         Button3_5 As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -294,7 +294,7 @@
             Width: =215
             X: =460
             Y: =406
-            ZIndex: =161
+            ZIndex: =125
 
         Button3_4 As button:
             Fill: =RGBA(0, 182, 125, 1)
@@ -307,7 +307,7 @@
             Width: =215
             X: =750
             Y: =406
-            ZIndex: =162
+            ZIndex: =126
 
     NP_PFRSectionGroup As group:
         Height: =5
@@ -326,7 +326,7 @@
             Width: =1120
             X: =206
             Y: =425
-            ZIndex: =2
+            ZIndex: =4
 
         Button2 As button:
             BorderThickness: =0
@@ -347,7 +347,7 @@
             Width: =370
             X: =209
             Y: =438
-            ZIndex: =15
+            ZIndex: =16
 
         Button2_1 As button:
             BorderThickness: =0
@@ -368,7 +368,7 @@
             Width: =370
             X: =581
             Y: =438
-            ZIndex: =16
+            ZIndex: =17
 
         Button2_2 As button:
             BorderThickness: =0
@@ -389,7 +389,7 @@
             Width: =370
             X: =953
             Y: =438
-            ZIndex: =17
+            ZIndex: =18
 
     Label5_12 As label:
         Align: =Align.Center
@@ -401,7 +401,7 @@
         Width: =462
         X: =480
         Y: =276
-        ZIndex: =165
+        ZIndex: =128
 
     NP_GlobalsGeneralInfoGroup As group:
         Height: =5
@@ -422,7 +422,7 @@
             Width: =263
             X: =243
             Y: =453
-            ZIndex: =1
+            ZIndex: =3
 
         NP_GeneralInfo_Rectangle As rectangle:
             BorderThickness: =1
@@ -691,7 +691,7 @@
             Width: =300
             X: =252
             Y: =88
-            ZIndex: =134
+            ZIndex: =98
 
         DealName As label:
             Align: =Align.Center
@@ -703,7 +703,7 @@
             Width: =392
             X: =231
             Y: =123
-            ZIndex: =135
+            ZIndex: =99
 
         LOB As label:
             Align: =Align.Center
@@ -715,7 +715,7 @@
             Width: =103
             X: =624
             Y: =123
-            ZIndex: =136
+            ZIndex: =100
 
         "'Owner Name' As label":
             Align: =Align.Center
@@ -727,7 +727,7 @@
             Width: =178
             X: =907
             Y: =123
-            ZIndex: =137
+            ZIndex: =101
 
         Segment As label:
             Align: =Align.Center
@@ -739,7 +739,7 @@
             Width: =178
             X: =728
             Y: =123
-            ZIndex: =138
+            ZIndex: =102
 
         CloseDate As label:
             Align: =Align.Center
@@ -751,7 +751,7 @@
             Width: =213
             X: =1086
             Y: =123
-            ZIndex: =139
+            ZIndex: =103
 
         Rectangle2_9 As rectangle:
             BorderThickness: =1
@@ -762,7 +762,7 @@
             Width: =1108
             X: =211
             Y: =85
-            ZIndex: =140
+            ZIndex: =104
 
         NP_ClosedWonDeals_Galery As gallery.galleryVertical:
             Height: =185
@@ -776,7 +776,7 @@
             Width: =1091
             X: =227
             Y: =147
-            ZIndex: =141
+            ZIndex: =105
 
             GalleryDeals_Name As label:
                 BorderThickness: =0.5
@@ -839,7 +839,7 @@
             Width: =25
             X: =1270
             Y: =127
-            ZIndex: =163
+            ZIndex: =127
 
     NP_PaymentsTableGroup As group:
         Height: =5
@@ -859,7 +859,7 @@
             Width: =250
             X: =217
             Y: =507
-            ZIndex: =4
+            ZIndex: =5
 
         TextInput3_2 As text:
             BorderThickness: =1
@@ -872,7 +872,7 @@
             Width: =150
             X: =503
             Y: =507
-            ZIndex: =5
+            ZIndex: =6
 
         DatePicker1_2 As datepicker:
             BorderThickness: =1
@@ -883,7 +883,7 @@
             Width: =154
             X: =1141
             Y: =568
-            ZIndex: =6
+            ZIndex: =7
 
         Dropdown1_2 As dropdown:
             BorderThickness: =1
@@ -896,7 +896,7 @@
             Width: =100
             X: =683
             Y: =507
-            ZIndex: =7
+            ZIndex: =8
 
         Dropdown2_6 As dropdown:
             BorderThickness: =1
@@ -909,7 +909,7 @@
             Width: =250
             X: =217
             Y: =571
-            ZIndex: =8
+            ZIndex: =9
 
         Dropdown2_7 As dropdown:
             BorderThickness: =1
@@ -921,7 +921,7 @@
             Width: =265
             X: =812
             Y: =570
-            ZIndex: =9
+            ZIndex: =10
 
         Dropdown2_8 As dropdown:
             BorderThickness: =1
@@ -933,7 +933,7 @@
             Width: =278
             X: =504
             Y: =570
-            ZIndex: =10
+            ZIndex: =11
 
         Label10_18 As label:
             Align: =Align.Center
@@ -945,7 +945,7 @@
             Width: =200
             X: =218
             Y: =610
-            ZIndex: =11
+            ZIndex: =12
 
         Label10_19 As label:
             Align: =Align.Center
@@ -957,7 +957,7 @@
             Width: =110
             X: =540
             Y: =610
-            ZIndex: =12
+            ZIndex: =13
 
         Label10_20 As label:
             Align: =Align.Center
@@ -969,7 +969,7 @@
             Width: =119
             X: =420
             Y: =610
-            ZIndex: =13
+            ZIndex: =14
 
         Gallery2_3 As gallery.galleryVertical:
             Height: =99
@@ -980,7 +980,7 @@
             Width: =1105
             X: =213
             Y: =630
-            ZIndex: =14
+            ZIndex: =15
 
             Label4_3 As label:
                 BorderThickness: =1
@@ -1173,7 +1173,7 @@
             Width: =119
             X: =756
             Y: =610
-            ZIndex: =112
+            ZIndex: =97
 
         Label10_38 As label:
             Align: =Align.Center
@@ -1185,7 +1185,7 @@
             Width: =139
             X: =876
             Y: =610
-            ZIndex: =172
+            ZIndex: =133
 
         Label10_39 As label:
             Align: =Align.Center
@@ -1197,7 +1197,7 @@
             Width: =140
             X: =1016
             Y: =610
-            ZIndex: =173
+            ZIndex: =134
 
         Label10_40 As label:
             Align: =Align.Center
@@ -1209,7 +1209,7 @@
             Width: =140
             X: =1157
             Y: =610
-            ZIndex: =174
+            ZIndex: =135
 
         Label10_43 As label:
             Align: =Align.Center
@@ -1221,7 +1221,7 @@
             Width: =140
             X: =1158
             Y: =610
-            ZIndex: =198
+            ZIndex: =136
 
         TextInput3_7 As text:
             BorderThickness: =1
@@ -1234,7 +1234,7 @@
             Width: =100
             X: =808
             Y: =507
-            ZIndex: =199
+            ZIndex: =137
 
         Label3_55 As label:
             FontWeight: =FontWeight.Semibold
@@ -1245,7 +1245,7 @@
             Width: =109
             X: =808
             Y: =477
-            ZIndex: =200
+            ZIndex: =138
 
         Dropdown1_6 As dropdown:
             BorderThickness: =1
@@ -1258,7 +1258,7 @@
             Width: =156
             X: =919
             Y: =507
-            ZIndex: =201
+            ZIndex: =139
 
         Label3_56 As label:
             FontWeight: =FontWeight.Semibold
@@ -1269,7 +1269,7 @@
             Width: =110
             X: =919
             Y: =479
-            ZIndex: =202
+            ZIndex: =140
 
         Button1_1 As button:
             Height: =32
@@ -1278,7 +1278,7 @@
             Width: =154
             X: =1141
             Y: =494
-            ZIndex: =234
+            ZIndex: =157
 
     NP_FeaturesTableGroup As group:
         Height: =5
@@ -1297,7 +1297,7 @@
             Width: =251
             X: =221
             Y: =507
-            ZIndex: =203
+            ZIndex: =141
 
         Dropdown2_10 As dropdown:
             BorderThickness: =1
@@ -1309,7 +1309,7 @@
             Width: =250
             X: =221
             Y: =572
-            ZIndex: =209
+            ZIndex: =142
 
         Label10_24 As label:
             Align: =Align.Center
@@ -1321,7 +1321,7 @@
             Width: =200
             X: =222
             Y: =610
-            ZIndex: =210
+            ZIndex: =143
 
         Label10_30 As label:
             Align: =Align.Center
@@ -1333,7 +1333,7 @@
             Width: =164
             X: =617
             Y: =610
-            ZIndex: =211
+            ZIndex: =144
 
         Label10_25 As label:
             Align: =Align.Center
@@ -1345,7 +1345,7 @@
             Width: =193
             X: =423
             Y: =610
-            ZIndex: =212
+            ZIndex: =145
 
         Gallery2_4 As gallery.galleryVertical:
             Height: =99
@@ -1356,7 +1356,7 @@
             Width: =1105
             X: =217
             Y: =630
-            ZIndex: =213
+            ZIndex: =146
 
             Label4_4 As label:
                 BorderThickness: =1
@@ -1435,7 +1435,7 @@
             Width: =112
             X: =221
             Y: =545
-            ZIndex: =218
+            ZIndex: =147
 
         Label3_52 As label:
             FontWeight: =FontWeight.Semibold
@@ -1446,7 +1446,7 @@
             Width: =112
             X: =835
             Y: =479
-            ZIndex: =219
+            ZIndex: =148
 
         Label3_48 As label:
             FontWeight: =FontWeight.Semibold
@@ -1457,7 +1457,7 @@
             Width: =167
             X: =221
             Y: =479
-            ZIndex: =220
+            ZIndex: =149
 
         Label10_23 As label:
             Align: =Align.Center
@@ -1469,7 +1469,7 @@
             Width: =139
             X: =782
             Y: =610
-            ZIndex: =222
+            ZIndex: =150
 
         Label10_42 As label:
             Align: =Align.Center
@@ -1481,7 +1481,7 @@
             Width: =164
             X: =922
             Y: =610
-            ZIndex: =225
+            ZIndex: =151
 
         Label10_41 As label:
             Align: =Align.Center
@@ -1493,7 +1493,7 @@
             Width: =140
             X: =1161
             Y: =610
-            ZIndex: =226
+            ZIndex: =152
 
         Label10_45 As label:
             Align: =Align.Center
@@ -1505,7 +1505,7 @@
             Width: =215
             X: =1087
             Y: =610
-            ZIndex: =227
+            ZIndex: =153
 
         Dropdown1_7 As dropdown:
             BorderThickness: =1
@@ -1518,7 +1518,7 @@
             Width: =250
             X: =528
             Y: =507
-            ZIndex: =230
+            ZIndex: =154
 
         Label3_57 As label:
             FontWeight: =FontWeight.Semibold
@@ -1529,7 +1529,7 @@
             Width: =110
             X: =528
             Y: =479
-            ZIndex: =231
+            ZIndex: =155
 
         Button1 As button:
             Height: =32
@@ -1538,7 +1538,7 @@
             Width: =154
             X: =1141
             Y: =494
-            ZIndex: =233
+            ZIndex: =156
 
         Dropdown1_8 As dropdown:
             BorderThickness: =1
@@ -1551,7 +1551,7 @@
             Width: =250
             X: =528
             Y: =567
-            ZIndex: =265
+            ZIndex: =175
 
         Label3_58 As label:
             FontWeight: =FontWeight.Semibold
@@ -1562,7 +1562,7 @@
             Width: =110
             X: =528
             Y: =539
-            ZIndex: =266
+            ZIndex: =176
 
         DatePicker1_1 As datepicker:
             BorderThickness: =1
@@ -1574,7 +1574,7 @@
             Width: =189
             X: =840
             Y: =507
-            ZIndex: =267
+            ZIndex: =177
 
     NP_EpicsTableGroup As group:
         Height: =5
@@ -1582,6 +1582,28 @@
         X: =40
         Y: =40
         ZIndex: =272
+
+        Label10_5 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Neo"
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
+            X: =986
+            Y: =312
+            ZIndex: =1
+
+        Label10_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Masterchief"
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
+            X: =1136
+            Y: =312
+            ZIndex: =2
 
         Rectangle2 As rectangle:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -1944,7 +1966,7 @@
             Width: =39
             X: =1270
             Y: =85
-            ZIndex: =166
+            ZIndex: =129
 
         NP_EpicSectionTitleLabel_1 As label:
             FontWeight: =FontWeight.Bold
@@ -1955,7 +1977,7 @@
             Width: =314
             X: =284
             Y: =76
-            ZIndex: =167
+            ZIndex: =130
 
         NP_EpicSectionTitleLabel_2 As label:
             Color: =RGBA(58, 203, 137, 1)
@@ -1968,7 +1990,7 @@
             Width: =174
             X: =596
             Y: =73
-            ZIndex: =168
+            ZIndex: =131
 
         NP_EpicSectionTitleLabel_3 As label:
             Color: =RGBA(58, 203, 137, 1)
@@ -1981,29 +2003,7 @@
             Width: =294
             X: =788
             Y: =73
-            ZIndex: =169
-
-        Label10_5 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Neo"
-            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            X: =986
-            Y: =312
-            ZIndex: =170
-
-        Label10_6 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Masterchief"
-            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            X: =1136
-            Y: =312
-            ZIndex: =171
+            ZIndex: =132
 
     NP_GroupResourcesTableGroup As group:
         Height: =5
@@ -2023,7 +2023,7 @@
             Width: =223
             X: =217
             Y: =506
-            ZIndex: =235
+            ZIndex: =158
 
         TextInput3_3 As text:
             BorderThickness: =1
@@ -2036,7 +2036,7 @@
             Width: =250
             X: =524
             Y: =569
-            ZIndex: =236
+            ZIndex: =159
 
         Dropdown2_20 As dropdown:
             BorderThickness: =1
@@ -2049,7 +2049,7 @@
             Width: =252
             X: =838
             Y: =506
-            ZIndex: =239
+            ZIndex: =160
 
         Label10_35 As label:
             Align: =Align.Center
@@ -2061,7 +2061,7 @@
             Width: =200
             X: =218
             Y: =611
-            ZIndex: =242
+            ZIndex: =161
 
         Label10_37 As label:
             Align: =Align.Center
@@ -2073,7 +2073,7 @@
             Width: =141
             X: =735
             Y: =611
-            ZIndex: =243
+            ZIndex: =162
 
         Label10_36 As label:
             Align: =Align.Center
@@ -2085,7 +2085,7 @@
             Width: =172
             X: =419
             Y: =611
-            ZIndex: =244
+            ZIndex: =163
 
         Gallery2_5 As gallery.galleryVertical:
             Height: =99
@@ -2096,7 +2096,7 @@
             Width: =1105
             X: =213
             Y: =631
-            ZIndex: =245
+            ZIndex: =164
 
             Label4_5 As label:
                 BorderThickness: =1
@@ -2187,7 +2187,7 @@
             Width: =250
             X: =838
             Y: =544
-            ZIndex: =246
+            ZIndex: =165
 
         Label3_61 As label:
             FontWeight: =FontWeight.Semibold
@@ -2198,7 +2198,7 @@
             Width: =250
             X: =838
             Y: =479
-            ZIndex: =248
+            ZIndex: =166
 
         Label3_49 As label:
             FontWeight: =FontWeight.Semibold
@@ -2209,7 +2209,7 @@
             Width: =167
             X: =217
             Y: =480
-            ZIndex: =251
+            ZIndex: =167
 
         Label3_50 As label:
             FontWeight: =FontWeight.Semibold
@@ -2220,7 +2220,7 @@
             Width: =250
             X: =524
             Y: =545
-            ZIndex: =252
+            ZIndex: =168
 
         Label10_34 As label:
             Align: =Align.Center
@@ -2232,7 +2232,7 @@
             Width: =137
             X: =877
             Y: =611
-            ZIndex: =253
+            ZIndex: =169
 
         Label10_33 As label:
             Align: =Align.Center
@@ -2244,7 +2244,7 @@
             Width: =136
             X: =1162
             Y: =611
-            ZIndex: =254
+            ZIndex: =170
 
         TextInput3_8 As text:
             BorderThickness: =1
@@ -2257,7 +2257,7 @@
             Width: =223
             X: =217
             Y: =569
-            ZIndex: =259
+            ZIndex: =171
 
         Label3_63 As label:
             FontWeight: =FontWeight.Semibold
@@ -2268,7 +2268,7 @@
             Width: =250
             X: =217
             Y: =542
-            ZIndex: =260
+            ZIndex: =172
 
         Button1_2 As button:
             Height: =32
@@ -2277,7 +2277,7 @@
             Width: =154
             X: =1141
             Y: =495
-            ZIndex: =263
+            ZIndex: =173
 
         TextInput3_9 As text:
             BorderThickness: =1
@@ -2290,7 +2290,7 @@
             Width: =250
             X: =838
             Y: =569
-            ZIndex: =264
+            ZIndex: =174
 
         Dropdown2_21 As dropdown:
             BorderThickness: =1
@@ -2304,7 +2304,7 @@
             Width: =250
             X: =524
             Y: =506
-            ZIndex: =268
+            ZIndex: =178
 
         Label3_62 As label:
             FontWeight: =FontWeight.Semibold
@@ -2315,7 +2315,7 @@
             Width: =250
             X: =524
             Y: =481
-            ZIndex: =269
+            ZIndex: =179
 
         Label10_44 As label:
             Align: =Align.Center
@@ -2327,7 +2327,7 @@
             Width: =145
             X: =1016
             Y: =611
-            ZIndex: =270
+            ZIndex: =180
 
         Label10_46 As label:
             Align: =Align.Center
@@ -2339,7 +2339,7 @@
             Width: =142
             X: =592
             Y: =611
-            ZIndex: =271
+            ZIndex: =181
 
     NP_EditProjectGeneralGroup As group:
         Height: =5
@@ -2583,7 +2583,7 @@
             Width: =300
             X: =217
             Y: =99
-            ZIndex: =272
+            ZIndex: =182
 
         Icon4 As icon.Save:
             Height: =54
@@ -2593,5 +2593,5 @@
             Width: =58
             X: =1240
             Y: =88
-            ZIndex: =273
+            ZIndex: =183
 
