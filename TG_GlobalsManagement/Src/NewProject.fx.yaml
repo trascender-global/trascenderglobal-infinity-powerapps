@@ -210,8 +210,8 @@
             Set(varShowPayments,false);
         Visible: =Not(varShowInit)
         Width: =65
-        X: =1194
-        Y: =71
+        X: =1195
+        Y: =87
         ZIndex: =89
 
     NP_TitlesGroup As group:
@@ -416,10 +416,10 @@
         Rectangle2_8 As rectangle:
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
-            Height: =240
+            Height: =318
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =1130
-            X: =196
+            Width: =1119
+            X: =207
             Y: =78
             ZIndex: =74
 
@@ -429,8 +429,8 @@
             Text: ="Line of Business"
             Visible: =varShowEditProjectDetailsPopUp
             Width: =182
-            X: =569
-            Y: =86
+            X: =580
+            Y: =146
             ZIndex: =75
 
         TextInput5_14 As text:
@@ -440,8 +440,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =344
-            X: =210
-            Y: =113
+            X: =221
+            Y: =185
             ZIndex: =76
 
         Label3_21 As label:
@@ -450,8 +450,8 @@
             Text: ="Name"
             Visible: =varShowEditProjectDetailsPopUp
             Width: =158
-            X: =210
-            Y: =86
+            X: =221
+            Y: =149
             ZIndex: =77
 
         TextInput5_18 As text:
@@ -461,8 +461,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =274
-            X: =917
-            Y: =113
+            X: =928
+            Y: =185
             ZIndex: =78
 
         Label3_31 As label:
@@ -481,8 +481,8 @@
             Text: ="Created Date"
             Visible: =varShowEditProjectDetailsPopUp
             Width: =158
-            X: =210
-            Y: =140
+            X: =221
+            Y: =212
             ZIndex: =80
 
         DatePicker1_9 As datepicker:
@@ -494,8 +494,8 @@
             StartOfWeek: =StartOfWeek.Monday
             Visible: =varShowEditProjectDetailsPopUp
             Width: =274
-            X: =569
-            Y: =165
+            X: =580
+            Y: =237
             ZIndex: =81
 
         Label3_30 As label:
@@ -504,8 +504,8 @@
             Text: ="Initial Date"
             Visible: =varShowEditProjectDetailsPopUp
             Width: =151
-            X: =569
-            Y: =140
+            X: =580
+            Y: =212
             ZIndex: =82
 
         Label3_32 As label:
@@ -514,8 +514,8 @@
             Text: ="Currency Code"
             Visible: =varShowEditProjectDetailsPopUp
             Width: =151
-            X: =917
-            Y: =140
+            X: =928
+            Y: =212
             ZIndex: =83
 
         TextInput5_13 As text:
@@ -525,8 +525,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =286
-            X: =211
-            Y: =218
+            X: =221
+            Y: =290
             ZIndex: =84
 
         Label3_27 As label:
@@ -535,8 +535,8 @@
             Text: ="Total Price Currency"
             Visible: =varShowEditProjectDetailsPopUp
             Width: =205
-            X: =211
-            Y: =195
+            X: =221
+            Y: =267
             ZIndex: =85
 
         Label3_33 As label:
@@ -545,8 +545,8 @@
             Text: ="Status"
             Visible: =varShowEditProjectDetailsPopUp
             Width: =151
-            X: =918
-            Y: =195
+            X: =929
+            Y: =267
             ZIndex: =86
 
         TextInput5_16 As text:
@@ -556,8 +556,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =984
-            X: =210
-            Y: =268
+            X: =221
+            Y: =340
             ZIndex: =87
 
         Label3_28 As label:
@@ -566,8 +566,8 @@
             Text: ="Observations    "
             Visible: =varShowEditProjectDetailsPopUp
             Width: =205
-            X: =210
-            Y: =247
+            X: =221
+            Y: =319
             ZIndex: =88
 
         Dropdown3_8 As dropdown:
@@ -579,8 +579,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =274
-            X: =918
-            Y: =218
+            X: =929
+            Y: =290
             ZIndex: =90
 
         TextInput5_15 As text:
@@ -590,8 +590,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =286
-            X: =210
-            Y: =165
+            X: =221
+            Y: =237
             ZIndex: =91
 
         TextInput5_19 As text:
@@ -602,8 +602,8 @@
             Tooltip: =
             Visible: =varShowEditProjectDetailsPopUp
             Width: =274
-            X: =917
-            Y: =165
+            X: =928
+            Y: =237
             ZIndex: =92
 
         TextInput5_17 As text:
@@ -613,8 +613,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =274
-            X: =572
-            Y: =218
+            X: =580
+            Y: =290
             ZIndex: =93
 
         Label3_29 As label:
@@ -623,8 +623,8 @@
             Text: ="Project Link "
             Visible: =varShowEditProjectDetailsPopUp
             Width: =197
-            X: =571
-            Y: =195
+            X: =580
+            Y: =267
             ZIndex: =94
 
         Dropdown3_7 As dropdown:
@@ -636,8 +636,8 @@
             Size: =12
             Visible: =varShowEditProjectDetailsPopUp
             Width: =274
-            X: =571
-            Y: =113
+            X: =580
+            Y: =185
             ZIndex: =95
 
     Label5_12 As label:
@@ -927,10 +927,10 @@
     Icon3 As icon.Edit:
         Height: =52
         Icon: =Icon.Edit
-        OnSelect: =Set(varShowEditProjectDetailsPopUp,true)
+        OnSelect: =Set(varShowEditProjectDetailsPopUp,false)
         Width: =39
-        X: =1279
-        Y: =68
+        X: =1270
+        Y: =85
         ZIndex: =166
 
     NP_DealsTableGroup As group:
@@ -1106,7 +1106,7 @@
         Text: ="Project Name"
         Visible: =Not(varShowInit)
         Width: =314
-        X: =206
+        X: =261
         Y: =69
         ZIndex: =167
 
@@ -1119,8 +1119,8 @@
             ="LOB: Fit"
         Visible: =Not(varShowInit)
         Width: =174
-        X: =518
-        Y: =69
+        X: =521
+        Y: =67
         ZIndex: =168
 
     NP_EpicSectionTitleLabel_3 As label:
@@ -1148,7 +1148,7 @@
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
             Height: =273
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =1119
             X: =207
             Y: =144
@@ -1158,7 +1158,7 @@
             FontWeight: =FontWeight.Bold
             Height: =24
             Text: ="Project Epics"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =156
             X: =208
             Y: =145
@@ -1169,7 +1169,7 @@
             Default: ="Name"
             Height: =25
             Size: =11
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =428
             X: =213
             Y: =203
@@ -1180,7 +1180,7 @@
             Default: ="Value"
             Height: =25
             Size: =11
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =680
             Y: =203
@@ -1192,7 +1192,7 @@
             IconBackground: =RGBA(58, 87, 255, 1)
             PaddingTop: =4
             Size: =11
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =150
             X: =213
             Y: =267
@@ -1205,7 +1205,7 @@
             Items: |
                 =["USD"]
             Size: =11
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =980
             Y: =201
@@ -1218,7 +1218,7 @@
             Items: |
                 =["Pokemon"]
             Size: =11
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =402
             Y: =269
@@ -1230,7 +1230,7 @@
             Height: =25
             Items: =["Masterchief"]
             Size: =11
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =980
             Y: =263
@@ -1242,7 +1242,7 @@
             Height: =25
             Items: =["NEO"]
             Size: =11
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =680
             Y: =265
@@ -1254,7 +1254,7 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
             Text: ="Name"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =217
             Y: =312
@@ -1266,7 +1266,7 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
             Text: ="Expected Date"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =130
             X: =704
             Y: =312
@@ -1278,7 +1278,7 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
             Text: ="Value"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             X: =468
             Y: =312
             ZIndex: =37
@@ -1288,7 +1288,7 @@
             Items: =CustomGallerySample
             Layout: =Layout.Vertical
             TemplateSize: =18
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =1098
             X: =212
             Y: =332
@@ -1375,7 +1375,7 @@
         NP_AddEpicButton As icon.Add:
             Height: =46
             Icon: =Icon.Add
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =43
             X: =1261
             Y: =168
@@ -1387,7 +1387,7 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
             Text: ="Currency"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =84
             X: =619
             Y: =312
@@ -1398,7 +1398,7 @@
             Height: =25
             Size: =11
             Text: ="Epic Name"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =149
             X: =213
             Y: =178
@@ -1409,7 +1409,7 @@
             Height: =25
             Size: =11
             Text: ="Value"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =149
             X: =680
             Y: =178
@@ -1420,7 +1420,7 @@
             Height: =27
             Size: =11
             Text: ="Currency"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =92
             X: =980
             Y: =176
@@ -1431,7 +1431,7 @@
             Height: =27
             Size: =11
             Text: ="Expected Date"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =140
             X: =213
             Y: =242
@@ -1442,7 +1442,7 @@
             Height: =25
             Size: =11
             Text: ="Pokemon"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =100
             X: =402
             Y: =244
@@ -1454,7 +1454,7 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
             Text: ="Pokemon"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             X: =835
             Y: =312
             ZIndex: =46
@@ -1464,7 +1464,7 @@
             Height: =25
             Size: =11
             Text: ="Neo"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =100
             X: =680
             Y: =240
@@ -1475,7 +1475,7 @@
             Height: =25
             Size: =11
             Text: ="Masterchief"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =110
             X: =980
             Y: =238
@@ -1487,7 +1487,7 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
             Text: ="Neo"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             X: =986
             Y: =312
             ZIndex: =170
@@ -1498,7 +1498,7 @@
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
             Text: ="Masterchief"
-            Visible: =Not(varShowInit)
+            Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             X: =1136
             Y: =312
             ZIndex: =171
