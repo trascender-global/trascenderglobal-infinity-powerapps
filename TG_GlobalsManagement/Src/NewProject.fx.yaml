@@ -1513,39 +1513,14 @@
         TextInput2_3 As text:
             BorderThickness: =1
             Default: =""
-            Height: =25
+            Height: =26
             HintText: ="Input Name"
             Size: =11
             Visible: =varShowFeatures
-            Width: =300
+            Width: =251
             X: =221
             Y: =507
             ZIndex: =203
-
-        Dropdown2_11 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["Pokemon"]
-            Size: =11
-            Visible: =varShowFeatures
-            Width: =250
-            X: =221
-            Y: =570
-            ZIndex: =207
-
-        Dropdown2_9 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["Masterchief"]
-            Size: =11
-            Visible: =varShowFeatures
-            Width: =280
-            X: =950
-            Y: =570
-            ZIndex: =208
 
         Dropdown2_10 As dropdown:
             BorderThickness: =1
@@ -1555,8 +1530,8 @@
             Size: =11
             Visible: =varShowFeatures
             Width: =250
-            X: =580
-            Y: =570
+            X: =221
+            Y: =572
             ZIndex: =209
 
         Label10_24 As label:
@@ -1564,7 +1539,7 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
-            Text: ="Name"
+            Text: ="Feature Name"
             Visible: =varShowFeatures
             Width: =200
             X: =222
@@ -1576,10 +1551,10 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
-            Text: ="Value"
+            Text: ="Status"
             Visible: =varShowFeatures
-            Width: =110
-            X: =544
+            Width: =164
+            X: =617
             Y: =610
             ZIndex: =211
 
@@ -1590,8 +1565,8 @@
             Height: =25
             Text: ="Epic"
             Visible: =varShowFeatures
-            Width: =119
-            X: =424
+            Width: =193
+            X: =423
             Y: =610
             ZIndex: =212
 
@@ -1622,21 +1597,9 @@
                 Size: =10
                 Text: |-
                     ="#####"
-                Width: =120
+                Width: =193
                 X: =200
                 ZIndex: =2
-
-            Label6_6 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
-                Width: =110
-                X: =320
-                ZIndex: =3
 
             Label6_8 As label:
                 BorderThickness: =1
@@ -1646,21 +1609,9 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =106
-                X: =430
+                Width: =164
+                X: =393
                 ZIndex: =4
-
-            Label6_10 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
-                Width: =120
-                X: =536
-                ZIndex: =5
 
             Label6_19 As label:
                 BorderThickness: =1
@@ -1671,7 +1622,7 @@
                     ="XXXXX
                     "
                 Width: =140
-                X: =656
+                X: =557
                 ZIndex: =6
 
             Label6_20 As label:
@@ -1682,8 +1633,8 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =140
-                X: =796
+                Width: =166
+                X: =697
                 ZIndex: =7
 
             Label6_21 As label:
@@ -1694,20 +1645,9 @@
                 Text: |-
                     ="XXXXX
                     "
-                Width: =142
-                X: =936
+                Width: =215
+                X: =863
                 ZIndex: =8
-
-        Label3_54 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Pokemon"
-            Visible: =varShowFeatures
-            Width: =112
-            X: =221
-            Y: =543
-            ZIndex: =217
 
         Label3_53 As label:
             FontWeight: =FontWeight.Semibold
@@ -1716,19 +1656,19 @@
             Text: ="Neo"
             Visible: =varShowFeatures
             Width: =112
-            X: =580
-            Y: =543
+            X: =221
+            Y: =545
             ZIndex: =218
 
         Label3_52 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
             Size: =11
-            Text: ="Masterchief"
+            Text: ="Expected Date"
             Visible: =varShowFeatures
             Width: =112
-            X: =950
-            Y: =543
+            X: =835
+            Y: =479
             ZIndex: =219
 
         Label3_48 As label:
@@ -1747,36 +1687,12 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
-            Text: ="Currency"
-            Visible: =varShowFeatures
-            Width: =104
-            X: =655
-            Y: =610
-            ZIndex: =222
-
-        Label10_32 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Expected"
-            Visible: =varShowFeatures
-            Width: =119
-            X: =760
-            Y: =610
-            ZIndex: =223
-
-        Label10_44 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Pokemon"
+            Text: ="Expected Date"
             Visible: =varShowFeatures
             Width: =139
-            X: =880
+            X: =782
             Y: =610
-            ZIndex: =224
+            ZIndex: =222
 
         Label10_42 As label:
             Align: =Align.Center
@@ -1785,8 +1701,8 @@
             Height: =25
             Text: ="Neo"
             Visible: =varShowFeatures
-            Width: =140
-            X: =1020
+            Width: =164
+            X: =922
             Y: =610
             ZIndex: =225
 
@@ -1806,11 +1722,11 @@
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =26
             Text: ="Masterchief"
             Visible: =varShowFeatures
-            Width: =140
-            X: =1162
+            Width: =215
+            X: =1087
             Y: =610
             ZIndex: =227
 
@@ -1823,7 +1739,7 @@
             Size: =11
             Visible: =varShowFeatures
             Width: =250
-            X: =580
+            X: =528
             Y: =507
             ZIndex: =230
 
@@ -1834,7 +1750,7 @@
             Text: ="Status"
             Visible: =varShowFeatures
             Width: =110
-            X: =580
+            X: =528
             Y: =479
             ZIndex: =231
 
@@ -1946,7 +1862,7 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =25
-            Text: ="Name"
+            Text: ="Payment Name"
             Visible: =varShowPayments 
             Width: =200
             X: =218
@@ -2285,6 +2201,19 @@
             X: =1141
             Y: =494
             ZIndex: =234
+
+    Dropdown1_8 As dropdown:
+        BorderThickness: =1
+        ChevronBackground: =RGBA(58, 87, 255, 1)
+        Height: =25
+        Items: |
+            =["Masterchief"]
+        Size: =11
+        Visible: =varShowFeatures
+        Width: =250
+        X: =528
+        Y: =567
+        ZIndex: =265
 
     NP_ResourcesTableGroup As group:
         Height: =5
@@ -2632,4 +2561,27 @@
             X: =905
             Y: =569
             ZIndex: =264
+
+    Label3_58 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =11
+        Text: ="Masterchief"
+        Visible: =varShowFeatures
+        Width: =110
+        X: =528
+        Y: =539
+        ZIndex: =266
+
+    DatePicker1_1 As datepicker:
+        BorderThickness: =1
+        Height: =25
+        IconBackground: =RGBA(58, 87, 255, 1)
+        PaddingTop: =4
+        Size: =11
+        Visible: =Not(varShowInit)
+        Width: =189
+        X: =840
+        Y: =507
+        ZIndex: =267
 
