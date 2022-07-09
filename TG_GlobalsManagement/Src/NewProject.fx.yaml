@@ -99,15 +99,15 @@
                         observations:NP_GeneralInfo_ObservationsInput.Text,
                         created_date:NP_GeneralInfo_CreatedDateInput.SelectedDate
                     });
-                    Set(varEpics,
+                    ClearCollect(EpicsCollection,
                     {
-                        epic_name: "",
-                        value: "",
-                        currency: "",
-                        expected_date: "",
-                        pokemon: "",
-                        neo: "",
-                        masterchief: ""
+                        epic_name: Blank(),
+                        value: Blank(),
+                        currency: Blank(),
+                        expected_date: Blank(),
+                        pokemon: Blank(),
+                        neo: Blank(),
+                        masterchief: Blank()
                     });
                     Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
                     {
@@ -1772,7 +1772,7 @@
 
         Gallery2_2 As gallery.galleryVertical:
             Height: =76
-            Items: =varEpics
+            Items: =EpicsCollection
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
@@ -1850,6 +1850,17 @@
         NP_AddEpicButton As icon.Add:
             Height: =46
             Icon: =Icon.Add
+            OnSelect: |-
+                =Collect(EpicsCollection,
+                    {
+                        epic_name: NP_EpicsSection_EpicName.Text,
+                        value: NP_EpicsSection_Value.Text,
+                        currency: NP_EpicsSection_Currency.Selected.Value,
+                        expected_date: NP_EpicsSection_ExpectedDate.SelectedDate,
+                        pokemon:NP_EpicsSection_Pokemon.Selected.Value,
+                        neo:NP_EpicsSection_Neo.Selected.Value,
+                        masterchief:NP_EpicsSection_Masterchief.Selected.Value
+                     })
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =43
             X: =1261

@@ -328,7 +328,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/09/2022 21:40:52",
+  "HeaderLastSavedDateTimeUTC": "07/09/2022 21:59:43",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -353,6 +353,7 @@
     "CRM_Deals": 1,
     "CustomGallerySample": 2,
     "DropDownSample": 3,
+    "EpicsCollection": 12,
     "GM_Epics": 4,
     "GM_Features": 5,
     "GM_GlobalGeneralInformation": 6,
