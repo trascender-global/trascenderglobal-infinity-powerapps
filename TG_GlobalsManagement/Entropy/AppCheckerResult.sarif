@@ -1679,19 +1679,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown1.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Currency.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown1.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Currency.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown1"
+                "type": "NewProject.NP_EpicsSection_Currency"
               }
             }
           ],
@@ -1709,19 +1709,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_EpicName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_EpicName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.TextInput2"
+                "type": "NewProject.NP_EpicsSection_EpicName"
               }
             }
           ],
@@ -1739,19 +1739,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput3.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Value.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput3.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Value.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.TextInput3"
+                "type": "NewProject.NP_EpicsSection_Value"
               }
             }
           ],
@@ -1859,19 +1859,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown2_1.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Masterchief.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown2_1.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Masterchief.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown2_1"
+                "type": "NewProject.NP_EpicsSection_Masterchief"
               }
             }
           ],
@@ -1889,19 +1889,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown2_2.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Neo.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown2_2.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Neo.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown2_2"
+                "type": "NewProject.NP_EpicsSection_Neo"
               }
             }
           ],
@@ -1919,19 +1919,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.DatePicker1.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_ExpectedDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.DatePicker1.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_ExpectedDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.DatePicker1"
+                "type": "NewProject.NP_EpicsSection_ExpectedDate"
               }
             }
           ],
@@ -1949,19 +1949,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown2.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Pokemon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown2.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_EpicsSection_Pokemon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown2"
+                "type": "NewProject.NP_EpicsSection_Pokemon"
               }
             }
           ],

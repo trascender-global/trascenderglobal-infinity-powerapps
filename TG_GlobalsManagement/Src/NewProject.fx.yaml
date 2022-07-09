@@ -1651,7 +1651,7 @@
             Y: =145
             ZIndex: =27
 
-        TextInput2 As text:
+        NP_EpicsSection_EpicName As text:
             BorderThickness: =1
             Default: ="Name"
             Height: =25
@@ -1662,7 +1662,7 @@
             Y: =203
             ZIndex: =28
 
-        TextInput3 As text:
+        NP_EpicsSection_Value As text:
             BorderThickness: =1
             Default: ="Value"
             Height: =25
@@ -1673,7 +1673,7 @@
             Y: =203
             ZIndex: =29
 
-        DatePicker1 As datepicker:
+        NP_EpicsSection_ExpectedDate As datepicker:
             BorderThickness: =1
             Height: =25
             IconBackground: =RGBA(58, 87, 255, 1)
@@ -1685,7 +1685,7 @@
             Y: =267
             ZIndex: =30
 
-        Dropdown1 As dropdown:
+        NP_EpicsSection_Currency As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1698,7 +1698,7 @@
             Y: =201
             ZIndex: =31
 
-        Dropdown2 As dropdown:
+        NP_EpicsSection_Pokemon As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1711,7 +1711,7 @@
             Y: =269
             ZIndex: =32
 
-        Dropdown2_1 As dropdown:
+        NP_EpicsSection_Masterchief As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1723,7 +1723,7 @@
             Y: =263
             ZIndex: =33
 
-        Dropdown2_2 As dropdown:
+        NP_EpicsSection_Neo As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1843,9 +1843,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.masterchief
                 X: =917
                 ZIndex: =7
 
