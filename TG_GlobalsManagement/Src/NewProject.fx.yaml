@@ -106,6 +106,7 @@
                     });
                     Set(varShowPopup,false);
                     Set(varShowPopupDetails,true);
+                    Set(varCurrentProjectID,Last(GM_GlobalGeneralInformation).id+1);
                 );
                 
             Text: ="Continue"
@@ -1972,7 +1973,7 @@
             FontWeight: =FontWeight.Bold
             Height: =42
             Size: =25
-            Text: ="Project Name"
+            Text: =LookUp(GM_GlobalGeneralInformation,id=varCurrentProjectID,project_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =314
             X: =284

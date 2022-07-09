@@ -3,20 +3,19 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sql",
     "CdpRevision": {
       "BaseUrl": "/v2",
-      "LastChangedTimeString": "2022-04-26T20:49:09.6440000Z",
+      "LastChangedTimeString": "2022-06-09T16:55:20.0870000Z",
       "RevisionNumber": 2
     },
     "ConnectedDataSourceInfoNameMapping": {
       "created_date": "created_date",
       "currency_code": "currency_code",
+      "delivery_date": "delivery_date",
       "epic_id": "epic_id",
-      "estimation_time_hrs": "estimation_time_hrs",
-      "Estimation_Value": "Estimation_Value",
+      "estimation_Value": "estimation_Value",
       "feature_name": "feature_name",
       "FeatureID": "FeatureID",
       "master_chief_id": "master_chief_id",
       "neo_id": "neo_id",
-      "pokemon_master_id": "pokemon_master_id",
       "Status": "Status"
     },
     "DatasetName": "trascenderdatabases.database.windows.net,TrascenderGlobal",
