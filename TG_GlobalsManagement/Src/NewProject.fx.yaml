@@ -84,6 +84,21 @@
                     Notify("Fill in all entries before proceeding",NotificationType.Warning);
                     Set(varShowPopup,false);,
                     Refresh(GM_GlobalGeneralInformation);
+                    Set(varProjectDetails,
+                    {
+                        id:Last(GM_GlobalGeneralInformation).id+1,
+                        global_internal_id:Last(GM_GlobalGeneralInformation).id+1,
+                        line_of_business:NP_GeneralInfo_LOBDropdown.SelectedText.Value,    
+                        segment: NP_GeneralInfo_SegmentInput.Text,
+                        start_date:NP_GeneralInfo_ÏnitialDateInput.SelectedDate,
+                        project_name:NP_GeneralInfo_NameInput.Text,
+                        project_link:NP_GeneralInfo_ProjectLinkInput.Text,
+                        currency_code:NP_GeneralInfo_CurrencyInput.Text,
+                        total_price_currency:Value(NP_GeneralInfo_PriceInput.Text),
+                        status:NP_GeneralInfo_StatusDropdown.SelectedText.Value,
+                        observations:NP_GeneralInfo_ObservationsInput.Text,
+                        created_date:NP_GeneralInfo_CreatedDateInput.SelectedDate
+                    });
                     Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
                     {
                         id:Last(GM_GlobalGeneralInformation).id+1,
@@ -106,7 +121,6 @@
                     });
                     Set(varShowPopup,false);
                     Set(varShowPopupDetails,true);
-                    Set(varCurrentProjectID,Last(GM_GlobalGeneralInformation).id+1);
                 );
                 
             Text: ="Continue"
@@ -1971,12 +1985,12 @@
 
         NP_EpicSectionTitleLabel_1 As label:
             FontWeight: =FontWeight.Bold
-            Height: =42
+            Height: =41
             Size: =25
             Text: =LookUp(GM_GlobalGeneralInformation,id=varCurrentProjectID,project_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =314
-            X: =284
+            Width: =389
+            X: =209
             Y: =76
             ZIndex: =130
 
