@@ -328,7 +328,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/09/2022 21:20:09",
+  "HeaderLastSavedDateTimeUTC": "07/09/2022 21:22:34",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -667,7 +667,7 @@
     "DynamicNav_EditProjectView": 243,
     "DynamicNav_HomeView": 1,
     "DynamicNav_HomeView_1": 301,
-    "DynamicNav_NewProjectView": 22,
+    "DynamicNav_NewProjectView": 21,
     "EditProject": 10,
     "EditProjectView_TitleLabel": 239,
     "EP_Dropdown_Segment": 248,
@@ -854,12 +854,12 @@
     "NP_AddEpicButton": 52,
     "NP_ClosedWonDeals_Galery": 45,
     "NP_DealsTableGroup": 16,
-    "NP_EditProjectGeneralGroup": 21,
+    "NP_EditProjectGeneralGroup": 20,
     "NP_EpicSectionTitleLabel": 44,
     "NP_EpicSectionTitleLabel_1": 25,
     "NP_EpicSectionTitleLabel_2": 23,
     "NP_EpicSectionTitleLabel_3": 24,
-    "NP_EpicsTableGroup": 19,
+    "NP_EpicsTableGroup": 22,
     "NP_FeaturesTableGroup": 18,
     "NP_GeneralInfo_CreatedDateInput": 134,
     "NP_GeneralInfo_CurrencyInput": 136,
@@ -874,7 +874,7 @@
     "NP_GeneralInfo_SegmentInput": 120,
     "NP_GeneralInfo_StatusDropdown": 167,
     "NP_GlobalsGeneralInfoGroup": 15,
-    "NP_GroupResourcesTableGroup": 20,
+    "NP_GroupResourcesTableGroup": 19,
     "NP_PaymentsTableGroup": 17,
     "NP_PFRSectionGroup": 14,
     "NP_PopUpAddDetailsGroup": 11,
@@ -962,7 +962,7 @@
       "text": 31
     },
     "DeserializationLoadTime": 2.6853495,
-    "ErrorCount": 10
+    "ErrorCount": 8
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

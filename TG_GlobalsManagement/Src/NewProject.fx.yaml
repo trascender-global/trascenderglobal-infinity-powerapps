@@ -1987,11 +1987,11 @@
             FontWeight: =FontWeight.Bold
             Height: =41
             Size: =25
-            Text: =LookUp(GM_GlobalGeneralInformation,id=varCurrentProjectID,project_name)
+            Text: =varProjectDetails.project_name
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =389
+            Width: =461
             X: =209
-            Y: =76
+            Y: =77
             ZIndex: =130
 
         NP_EpicSectionTitleLabel_2 As label:
@@ -1999,12 +1999,11 @@
             FontWeight: =FontWeight.Bold
             Height: =44
             Size: =25
-            Text: |-
-                ="LOB: Fit"
+            Text: =varProjectDetails.line_of_business
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =174
-            X: =596
-            Y: =73
+            Width: =187
+            X: =670
+            Y: =74
             ZIndex: =131
 
         NP_EpicSectionTitleLabel_3 As label:
@@ -2013,11 +2012,11 @@
             Height: =44
             Size: =25
             Text: |-
-                ="Value: 1000 USD"
+                ="Value: $"&varProjectDetails.total_price_currency&" "&varProjectDetails.currency_code
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =294
-            X: =788
-            Y: =73
+            X: =888
+            Y: =74
             ZIndex: =132
 
     NP_GroupResourcesTableGroup As group:
