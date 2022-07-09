@@ -1653,8 +1653,9 @@
 
         NP_EpicsSection_EpicName As text:
             BorderThickness: =1
-            Default: ="Name"
+            Default: =""
             Height: =25
+            HintText: ="Insert Epic Name"
             Size: =11
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =428
@@ -1664,8 +1665,9 @@
 
         NP_EpicsSection_Value As text:
             BorderThickness: =1
-            Default: ="Value"
+            Default: =
             Height: =25
+            HintText: ="Price"
             Size: =11
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =250
