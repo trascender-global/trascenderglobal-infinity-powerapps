@@ -99,6 +99,16 @@
                         observations:NP_GeneralInfo_ObservationsInput.Text,
                         created_date:NP_GeneralInfo_CreatedDateInput.SelectedDate
                     });
+                    Set(varEpics,
+                    {
+                        epic_name: "",
+                        value: "",
+                        currency: "",
+                        expected_date: "",
+                        pokemon: "",
+                        neo: "",
+                        masterchief: ""
+                    });
                     Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
                     {
                         id:Last(GM_GlobalGeneralInformation).id+1,
@@ -1762,7 +1772,7 @@
 
         Gallery2_2 As gallery.galleryVertical:
             Height: =76
-            Items: =CustomGallerySample
+            Items: =varEpics
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
@@ -1776,7 +1786,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.SampleHeading
+                Text: =ThisItem.epic_name
                 Width: =250
                 ZIndex: =1
 
@@ -1785,9 +1795,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="#####
-                    "
+                Text: =ThisItem.value
                 Width: =152
                 X: =250
                 ZIndex: =2
@@ -1797,9 +1805,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.expected_date
                 Width: =132
                 X: =485
                 ZIndex: =3
@@ -1809,9 +1815,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="#####
-                    "
+                Text: =ThisItem.currency
                 Width: =83
                 X: =402
                 ZIndex: =4
@@ -1821,9 +1825,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.pokemon
                 X: =617
                 ZIndex: =5
 
@@ -1832,9 +1834,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.neo
                 X: =767
                 ZIndex: =6
 

@@ -328,7 +328,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/09/2022 21:22:34",
+  "HeaderLastSavedDateTimeUTC": "07/09/2022 21:36:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -857,9 +857,9 @@
     "NP_EditProjectGeneralGroup": 20,
     "NP_EpicSectionTitleLabel": 44,
     "NP_EpicSectionTitleLabel_1": 25,
-    "NP_EpicSectionTitleLabel_2": 23,
-    "NP_EpicSectionTitleLabel_3": 24,
-    "NP_EpicsTableGroup": 22,
+    "NP_EpicSectionTitleLabel_2": 22,
+    "NP_EpicSectionTitleLabel_3": 23,
+    "NP_EpicsTableGroup": 24,
     "NP_FeaturesTableGroup": 18,
     "NP_GeneralInfo_CreatedDateInput": 134,
     "NP_GeneralInfo_CurrencyInput": 136,
