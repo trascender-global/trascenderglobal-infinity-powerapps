@@ -328,7 +328,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/09/2022 22:05:37",
+  "HeaderLastSavedDateTimeUTC": "07/11/2022 15:42:48",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -338,7 +338,7 @@
     "Símbolo TG 4": "0001.png"
   },
   "LocalResourceRootPaths": {
-    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/22ed83ce-a154-456c-b534-8b32b9a61d6d-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=%2BvL0lKnnf50QVgpUeubbEftEWnuXWRcnQQL%2FsL8Gcag%3D&spr=https&se=2022-07-10T21%3A12%3A49Z&sp=r"
+    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/9930596a-6062-4cee-86f4-eaa9d46c3104-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=U6Zl83a3XdzKVhlNqRPVd1Brefo5nUYrkZgcl%2Fpov20%3D&spr=https&se=2022-07-12T15%3A28%3A33Z&sp=r"
   },
   "OrderComponentMetadata": {
     "3bd3cda16e6f498db1fa26e9f6ca986b": 1,
@@ -353,7 +353,7 @@
     "CRM_Deals": 1,
     "CustomGallerySample": 2,
     "DropDownSample": 3,
-    "EpicsCollection": 12,
+    "EpicsCollection": 13,
     "GM_Epics": 4,
     "GM_Features": 5,
     "GM_GlobalGeneralInformation": 6,
@@ -361,6 +361,7 @@
     "LegendSample": 8,
     "PieChartSample": 9,
     "RadioSample": 10,
+    "TD_Trascendentales": 12,
     "VW_FM_Transactions": 11
   },
   "OrderGroupControls": {
@@ -663,7 +664,7 @@
     "DynamicNav_EditProjectView": 243,
     "DynamicNav_HomeView": 1,
     "DynamicNav_HomeView_1": 301,
-    "DynamicNav_NewProjectView": 21,
+    "DynamicNav_NewProjectView": 22,
     "EditProject": 10,
     "EditProjectView_TitleLabel": 239,
     "EP_Dropdown_Segment": 248,
@@ -850,7 +851,7 @@
     "NP_AddEpicButton": 52,
     "NP_ClosedWonDeals_Galery": 45,
     "NP_DealsTableGroup": 16,
-    "NP_EditProjectGeneralGroup": 20,
+    "NP_EditProjectGeneralGroup": 21,
     "NP_EpicSectionTitleLabel": 44,
     "NP_EpicSectionTitleLabel_1": 25,
     "NP_EpicSectionTitleLabel_2": 23,
@@ -862,7 +863,7 @@
     "NP_EpicsSection_Neo": 82,
     "NP_EpicsSection_Pokemon": 84,
     "NP_EpicsSection_Value": 64,
-    "NP_EpicsTableGroup": 22,
+    "NP_EpicsTableGroup": 19,
     "NP_FeaturesTableGroup": 18,
     "NP_GeneralInfo_CreatedDateInput": 134,
     "NP_GeneralInfo_CurrencyInput": 136,
@@ -877,7 +878,7 @@
     "NP_GeneralInfo_SegmentInput": 120,
     "NP_GeneralInfo_StatusDropdown": 167,
     "NP_GlobalsGeneralInfoGroup": 15,
-    "NP_GroupResourcesTableGroup": 19,
+    "NP_GroupResourcesTableGroup": 20,
     "NP_PaymentsTableGroup": 17,
     "NP_PFRSectionGroup": 14,
     "NP_PopUpAddDetailsGroup": 11,
@@ -941,7 +942,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.8776418,
+    "AnalysisLoadTime": 2.2015554,
     "ControlCount": {
       "3bd3cda16e6f498db1fa26e9f6ca986b": 5,
       "51a4282aa30f4cc68c1ee62e75ae9939": 5,
@@ -962,7 +963,7 @@
       "screen": 4,
       "text": 31
     },
-    "DeserializationLoadTime": 2.6853495,
+    "DeserializationLoadTime": 3.2368654,
     "ErrorCount": 8
   },
   "WasLocalDatabaseReferencesEmpty": true

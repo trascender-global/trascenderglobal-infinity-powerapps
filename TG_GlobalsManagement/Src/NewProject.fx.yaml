@@ -131,6 +131,16 @@
                     });
                     Set(varShowPopup,false);
                     Set(varShowPopupDetails,true);
+                    Reset(NP_GeneralInfo_LOBDropdown);
+                    Reset(NP_GeneralInfo_SegmentInput);
+                    Reset(NP_GeneralInfo_ÏnitialDateInput);
+                    Reset(NP_GeneralInfo_NameInput);
+                    Reset(NP_GeneralInfo_ProjectLinkInput);
+                    Reset(NP_GeneralInfo_CurrencyInput);
+                    Reset(NP_GeneralInfo_PriceInput);
+                    Reset(NP_GeneralInfo_StatusDropdown);
+                    Reset(NP_GeneralInfo_ObservationsInput);
+                    Reset(NP_GeneralInfo_CreatedDateInput);
                 );
                 
             Text: ="Continue"
@@ -303,7 +313,7 @@
             FontWeight: =FontWeight.Semibold
             Height: =90
             Size: =20
-            Text: ="You are about to save the project details, do you wnat to continue?"
+            Text: ="You are about to save the project details, do you want to continue?"
             Visible: =varShowPopupSaveDetails
             Width: =462
             X: =479
