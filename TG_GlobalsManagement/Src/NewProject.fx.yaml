@@ -916,7 +916,7 @@
         Y: =40
         ZIndex: =235
 
-        TextInput2_2 As text:
+        NP_PaymentsSection_Name As text:
             BorderThickness: =1
             Default: =""
             Height: =25
@@ -929,7 +929,7 @@
             Y: =507
             ZIndex: =5
 
-        TextInput3_2 As text:
+        NP_PaymentsSection_Value As text:
             BorderThickness: =1
             Default: =""
             Format: =TextFormat.Number
@@ -942,7 +942,7 @@
             Y: =507
             ZIndex: =6
 
-        DatePicker1_2 As datepicker:
+        NP_PaymentsSection_ExpectedDate As datepicker:
             BorderThickness: =1
             Color: =RGBA(0,0,0,1)
             Height: =25
@@ -953,7 +953,7 @@
             Y: =568
             ZIndex: =7
 
-        Dropdown1_2 As dropdown:
+        NP_PaymentsSection_Currency As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -966,7 +966,7 @@
             Y: =507
             ZIndex: =8
 
-        Dropdown2_6 As dropdown:
+        NP_PaymentsSection_Pokemon As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -979,7 +979,7 @@
             Y: =571
             ZIndex: =9
 
-        Dropdown2_7 As dropdown:
+        NP_PaymentsSection_Masterchief As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -991,7 +991,7 @@
             Y: =570
             ZIndex: =10
 
-        Dropdown2_8 As dropdown:
+        NP_PaymentsSection_Neo As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1278,7 +1278,7 @@
             Y: =610
             ZIndex: =136
 
-        TextInput3_7 As text:
+        NP_PaymentsSection_Fee As text:
             BorderThickness: =1
             Default: =""
             Format: =TextFormat.Number
@@ -1302,7 +1302,7 @@
             Y: =477
             ZIndex: =138
 
-        Dropdown1_6 As dropdown:
+        NP_PaymentsSection_Status As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1328,6 +1328,30 @@
 
         Button1_1 As button:
             Height: =32
+            OnSelect: |-
+                =Collect(PaymentsCollection,
+                    {
+                        payment_name: NP_PaymentsSection_Name.Text,
+                        epic: varSelectedEpic,
+                        value: NP_PaymentsSection_Value.Text,
+                        currency: NP_PaymentsSection_Currency.Selected.Value,
+                        expected_date: NP_PaymentsSection_ExpectedDate.SelectedDate,
+                        pokemon:NP_PaymentsSection_Pokemon.Selected.Value,
+                        neo:NP_PaymentsSection_Neo.Selected.Value,
+                        masterchief:NP_PaymentsSection_Masterchief.Selected.Value,
+                        status:NP_PaymentsSection_Status.Selected.Value,
+                        fee: NP_PaymentsSection_Fee.Text
+                     });
+                
+                Reset(NP_PaymentsSection_Name);
+                Reset(NP_PaymentsSection_Value);
+                Reset(NP_PaymentsSection_Currency);
+                Reset(NP_PaymentsSection_ExpectedDate);
+                Reset(NP_PaymentsSection_Pokemon);
+                Reset(NP_PaymentsSection_Neo);
+                Reset(NP_PaymentsSection_Masterchief);
+                Reset(NP_PaymentsSection_Status);
+                Reset(NP_PaymentsSection_Fee);
             Text: ="Create"
             Visible: =varShowPayments 
             Width: =154
