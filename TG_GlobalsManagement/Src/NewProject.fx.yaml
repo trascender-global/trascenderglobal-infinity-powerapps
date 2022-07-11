@@ -109,6 +109,38 @@
                         neo: Blank(),
                         masterchief: Blank()
                     });
+                    ClearCollect(PaymentsCollection,
+                    {
+                        payment_name: Blank(),
+                        epic: Blank(),
+                        value: Blank(),
+                        currency: Blank(),
+                        expected_date: Blank(),
+                        pokemon : Blank(),
+                        neo: Blank(),
+                        masterchief: Blank(),
+                        status: Blank(),
+                        fee: Blank()
+                    });
+                    ClearCollect(FeaturesCollection,
+                    {
+                        feature_name: Blank(),
+                        epic: Blank(),
+                        status: Blank(),
+                        neo: Blank(),
+                        masterchief: Blank(),
+                        expected_date: Blank()
+                    });
+                    ClearCollect(ResourcesCollection,
+                    {
+                        resource_name: Blank(),
+                        epic: Blank(),
+                        feature: Blank(),
+                        type: Blank(),
+                        estimated_time: Blank(),
+                        estimated_value: Blank(),
+                        currency: Blank()
+                    });
                     Patch(GM_GlobalGeneralInformation,Defaults(GM_GlobalGeneralInformation),
                     {
                         id:Last(GM_GlobalGeneralInformation).id+1,
@@ -1813,6 +1845,7 @@
                 ZIndex: =2
 
             Label6_2 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Height: =23
                 OnSelect: =Select(Parent)
@@ -1823,6 +1856,7 @@
                 ZIndex: =3
 
             Label5_4 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Height: =23
                 OnSelect: =Select(Parent)

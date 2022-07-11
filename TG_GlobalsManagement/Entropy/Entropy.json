@@ -328,7 +328,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/11/2022 18:25:52",
+  "HeaderLastSavedDateTimeUTC": "07/11/2022 23:34:04",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -354,13 +354,16 @@
     "CustomGallerySample": 2,
     "DropDownSample": 3,
     "EpicsCollection": 13,
+    "FeaturesCollection": 14,
     "GM_Epics": 4,
     "GM_Features": 5,
     "GM_GlobalGeneralInformation": 6,
     "GM_Payments": 7,
     "LegendSample": 8,
+    "PaymentsCollection": 15,
     "PieChartSample": 9,
     "RadioSample": 10,
+    "ResourcesCollection": 16,
     "TD_Trascendentales": 12,
     "VW_FM_Transactions": 11
   },
