@@ -361,7 +361,7 @@
             Width: =215
             X: =460
             Y: =406
-            ZIndex: =125
+            ZIndex: =126
 
         Button3_4 As button:
             Fill: =RGBA(0, 182, 125, 1)
@@ -374,7 +374,7 @@
             Width: =215
             X: =750
             Y: =406
-            ZIndex: =126
+            ZIndex: =127
 
     NP_PFRSectionGroup As group:
         Height: =5
@@ -388,6 +388,7 @@
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
             Height: =323
+            OnSelect: =ThisItem.expected_date
             Visible: |
                 =Not(varShowInit)
             Width: =1120
@@ -400,10 +401,7 @@
             Fill: =If(varShowPayments,RGBA(58, 203, 137, 1),RGBA(41, 41, 41, 1))
             Height: =32
             HoverFill: =ColorFade(RGBA(58, 203, 137, 0.6), -20%)
-            OnSelect: |
-                =Set(varShowPayments,true);
-                Set(varShowResources,false);
-                Set(varShowFeatures,false);
+            OnSelect: =ThisItem.expected_date
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
@@ -421,10 +419,7 @@
             Fill: =If(varShowFeatures,RGBA(58, 203, 137, 1),RGBA(41, 41, 41, 1))
             Height: =32
             HoverFill: =ColorFade(RGBA(58, 203, 137, 0.6), -20%)
-            OnSelect: |-
-                =Set(varShowFeatures,true);
-                Set(varShowResources,false);
-                Set(varShowPayments,false);
+            OnSelect: =ThisItem.expected_date
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
@@ -442,10 +437,7 @@
             Fill: =If(varShowResources,RGBA(58, 203, 137, 1),RGBA(41, 41, 41, 1))
             Height: =32
             HoverFill: =ColorFade(RGBA(58, 203, 137, 0.6), -20%)
-            OnSelect: |-
-                =Set(varShowResources,true);
-                Set(varShowFeatures,false);
-                Set(varShowPayments,false);
+            OnSelect: =ThisItem.expected_date
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
@@ -906,7 +898,7 @@
             Width: =25
             X: =1270
             Y: =127
-            ZIndex: =127
+            ZIndex: =125
 
     NP_PaymentsTableGroup As group:
         Height: =5
@@ -1040,7 +1032,7 @@
 
         Gallery2_3 As gallery.galleryVertical:
             Height: =99
-            Items: =CustomGallerySample
+            Items: =Filter(PaymentsCollection,Not(IsBlank(payment_name)))
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =varShowPayments 
@@ -1054,7 +1046,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.SampleHeading
+                Text: =ThisItem.payment_name
                 Width: =200
                 ZIndex: =1
 
@@ -1063,8 +1055,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="#####"
+                Text: =ThisItem.epic
                 Width: =120
                 X: =200
                 ZIndex: =2
@@ -1074,9 +1065,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.value
                 Width: =110
                 X: =320
                 ZIndex: =3
@@ -1086,9 +1075,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.currency
                 Width: =106
                 X: =430
                 ZIndex: =4
@@ -1098,9 +1085,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =
                 Width: =120
                 X: =536
                 ZIndex: =5
@@ -1110,9 +1095,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.pokemon
                 Width: =140
                 X: =656
                 ZIndex: =6
@@ -1122,9 +1105,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.neo
                 Width: =140
                 X: =796
                 ZIndex: =7
@@ -1134,9 +1115,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.mas
                 Width: =142
                 X: =936
                 ZIndex: =8
