@@ -1872,7 +1872,15 @@
                         pokemon:NP_EpicsSection_Pokemon.Selected.Value,
                         neo:NP_EpicsSection_Neo.Selected.Value,
                         masterchief:NP_EpicsSection_Masterchief.Selected.Value
-                     })
+                     });
+                
+                Reset(NP_EpicsSection_EpicName);
+                Reset(NP_EpicsSection_Value);
+                Reset(NP_EpicsSection_Currency);
+                Reset(NP_EpicsSection_ExpectedDate);
+                Reset(NP_EpicsSection_Pokemon);
+                Reset(NP_EpicsSection_Neo);
+                Reset(NP_EpicsSection_Masterchief);
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =43
             X: =1261
