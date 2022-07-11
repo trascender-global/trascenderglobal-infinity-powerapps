@@ -1784,7 +1784,7 @@
 
         Gallery2_2 As gallery.galleryVertical:
             Height: =76
-            Items: =EpicsCollection
+            Items: =Filter(EpicsCollection,Not(IsBlank(epic_name)))
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
