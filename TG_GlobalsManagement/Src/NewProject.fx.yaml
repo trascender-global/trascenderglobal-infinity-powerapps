@@ -102,6 +102,7 @@
                     Set(varEpicsNumber,0);
                     ClearCollect(EpicsCollection,
                     {
+                        epic_id: Blank()
                         epic_name: Blank(),
                         value: Blank(),
                         currency: Blank(),
@@ -112,6 +113,7 @@
                     });
                     ClearCollect(PaymentsCollection,
                     {
+                        payment_id: Blank(),
                         payment_name: Blank(),
                         epic: Blank(),
                         value: Blank(),
@@ -125,6 +127,7 @@
                     });
                     ClearCollect(FeaturesCollection,
                     {
+                        feature_id: Blank(),
                         feature_name: Blank(),
                         epic: Blank(),
                         status: Blank(),
@@ -134,6 +137,7 @@
                     });
                     ClearCollect(ResourcesCollection,
                     {
+                        resource_id: Blank(),
                         resource_name: Blank(),
                         epic: Blank(),
                         feature: Blank(),
