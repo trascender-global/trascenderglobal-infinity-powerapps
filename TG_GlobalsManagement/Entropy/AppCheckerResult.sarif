@@ -2579,19 +2579,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput2_3.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Name.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput2_3.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Name.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.TextInput2_3"
+                "type": "NewProject.NP_FeaturesSection_Name"
               }
             }
           ],
@@ -2639,19 +2639,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown1_7.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Status.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown1_7.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Status.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown1_7"
+                "type": "NewProject.NP_FeaturesSection_Status"
               }
             }
           ],
@@ -2729,19 +2729,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.DatePicker1_1.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_ExpectedDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.DatePicker1_1.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_ExpectedDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.DatePicker1_1"
+                "type": "NewProject.NP_FeaturesSection_ExpectedDate"
               }
             }
           ],
@@ -2909,19 +2909,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown1_8.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Masterchief.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown1_8.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Masterchief.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown1_8"
+                "type": "NewProject.NP_FeaturesSection_Masterchief"
               }
             }
           ],
@@ -3149,19 +3149,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown2_10.AccessibleLabel"
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Neo.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown2_10.AccessibleLabel",
+                  "fullyQualifiedName": "NewProject.NP_FeaturesSection_Neo.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewProject",
-                "type": "NewProject.Dropdown2_10"
+                "type": "NewProject.NP_FeaturesSection_Neo"
               }
             }
           ],

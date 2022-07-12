@@ -1343,7 +1343,7 @@
             Y: =493
             ZIndex: =140
 
-        Button1_1 As button:
+        NP_PaymentsSection_CreateButton As button:
             Height: =32
             OnSelect: |-
                 =Collect(PaymentsCollection,
@@ -1383,7 +1383,7 @@
         Y: =40
         ZIndex: =268
 
-        TextInput2_3 As text:
+        NP_FeaturesSection_Name As text:
             BorderThickness: =1
             Default: =""
             Height: =26
@@ -1395,7 +1395,7 @@
             Y: =521
             ZIndex: =141
 
-        Dropdown2_10 As dropdown:
+        NP_FeaturesSection_Neo As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1582,7 +1582,7 @@
             Y: =624
             ZIndex: =153
 
-        Dropdown1_7 As dropdown:
+        NP_FeaturesSection_Status As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1606,8 +1606,25 @@
             Y: =493
             ZIndex: =155
 
-        Button1 As button:
+        NP_FeaturesSection_CreateButton As button:
             Height: =32
+            OnSelect: |+
+                =Collect(FeaturesCollection,
+                    {
+                        feature_name: NP_FeaturesSection_Name.Text,
+                        epic: varSelectedEpic,
+                        expected_date: NP_FeaturesSection_ExpectedDate.SelectedDate,
+                        neo:NP_FeaturesSection_Neo.Selected.Value,
+                        masterchief:NP_FeaturesSection_Masterchief.Selected.Value,
+                        status:NP_FeaturesSection_Status.Selected.Value
+                     });
+                
+                Reset(NP_FeaturesSection_Name);
+                Reset(NP_FeaturesSection_ExpectedDate);
+                Reset(NP_FeaturesSection_Neo);
+                Reset(NP_FeaturesSection_Masterchief);
+                Reset(NP_FeaturesSection_Status);
+                
             Text: ="Create"
             Visible: =varShowFeatures
             Width: =154
@@ -1615,7 +1632,7 @@
             Y: =508
             ZIndex: =156
 
-        Dropdown1_8 As dropdown:
+        NP_FeaturesSection_Masterchief As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =25
@@ -1639,7 +1656,7 @@
             Y: =553
             ZIndex: =176
 
-        DatePicker1_1 As datepicker:
+        NP_FeaturesSection_ExpectedDate As datepicker:
             BorderThickness: =1
             Height: =25
             IconBackground: =RGBA(58, 87, 255, 1)
