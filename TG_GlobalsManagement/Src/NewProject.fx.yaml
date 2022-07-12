@@ -1081,7 +1081,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.epic
+                Text: =LookUp(EpicsCollection,epic_id=ThisItem.epic,epic_name)
                 Width: =120
                 X: =200
                 ZIndex: =2
@@ -1111,7 +1111,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =
+                Text: =ThisItem.expected_date
                 Width: =120
                 X: =536
                 ZIndex: =5
