@@ -2196,7 +2196,7 @@
 
         Gallery2_5 As gallery.galleryVertical:
             Height: =99
-            Items: =CustomGallerySample
+            Items: =Filter(ResourcesCollection,varSelectedEpic=epic)
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =varShowResources
@@ -2210,7 +2210,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.SampleHeading
+                Text: =ThisItem.resource_name
                 Width: =200
                 ZIndex: =1
 
@@ -2219,8 +2219,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="#####"
+                Text: =LookUp(EpicsCollection,epic_id=ThisItem.epic,epic_name)
                 Width: =172
                 X: =200
                 ZIndex: =2
@@ -2230,9 +2229,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.feature
                 Width: =145
                 X: =372
                 ZIndex: =4
@@ -2242,9 +2239,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.feature
                 Width: =139
                 X: =517
                 ZIndex: =5
@@ -2254,9 +2249,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.estimated_time
                 Width: =140
                 X: =656
                 ZIndex: =6
@@ -2266,9 +2259,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.estimated_value
                 Width: =151
                 X: =796
                 ZIndex: =7
@@ -2278,9 +2269,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.currency
                 Width: =130
                 X: =947
                 ZIndex: =8
