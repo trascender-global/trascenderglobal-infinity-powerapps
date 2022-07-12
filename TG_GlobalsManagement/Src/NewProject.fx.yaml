@@ -926,6 +926,350 @@
             Y: =410
             ZIndex: =184
 
+    NP_ResourcesTableGroup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =186
+
+        NP_ResourcesSection_Name As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =25
+            HintText: ="Input Name"
+            Size: =11
+            Tooltip: ="Parrado perra"
+            Visible: =varShowResources
+            Width: =223
+            X: =217
+            Y: =520
+            ZIndex: =158
+
+        NP_ResourcesSection_EstimatedValue As text:
+            BorderThickness: =1
+            Default: =""
+            Format: =TextFormat.Number
+            Height: =25
+            HintText: ="Input value"
+            Size: =11
+            Visible: =varShowResources
+            Width: =250
+            X: =524
+            Y: =583
+            ZIndex: =159
+
+        NP_ResourcesSection_Feature As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["Feature 1"]
+            Size: =11
+            Visible: =varShowResources
+            Width: =252
+            X: =838
+            Y: =520
+            ZIndex: =160
+
+        Label10_35 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Name"
+            Visible: =varShowResources
+            Width: =200
+            X: =218
+            Y: =625
+            ZIndex: =161
+
+        Label10_37 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =24
+            Text: ="Type"
+            Visible: =varShowResources
+            Width: =141
+            X: =735
+            Y: =625
+            ZIndex: =162
+
+        Label10_36 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Epic"
+            Visible: =varShowResources
+            Width: =172
+            X: =419
+            Y: =625
+            ZIndex: =163
+
+        Gallery2_5 As gallery.galleryVertical:
+            Height: =99
+            Items: =Filter(ResourcesCollection,varSelectedEpic=epic)
+            Layout: =Layout.Vertical
+            TemplateSize: =18
+            Visible: =varShowResources
+            Width: =1105
+            X: =213
+            Y: =645
+            ZIndex: =164
+
+            Label4_5 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.resource_name
+                Width: =200
+                ZIndex: =1
+
+            Label5_11 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =LookUp(EpicsCollection,epic_id=ThisItem.epic,epic_name)
+                Width: =172
+                X: =200
+                ZIndex: =2
+
+            Label6_12 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.feature
+                Width: =145
+                X: =372
+                ZIndex: =4
+
+            Label6_13 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.feature
+                Width: =139
+                X: =517
+                ZIndex: =5
+
+            Label6_22 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.estimated_time
+                Width: =140
+                X: =656
+                ZIndex: =6
+
+            Label6_23 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.estimated_value
+                Width: =151
+                X: =796
+                ZIndex: =7
+
+            Label6_24 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.currency
+                Width: =130
+                X: =947
+                ZIndex: =8
+
+        Label3_51 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Currency"
+            Visible: =varShowResources
+            Width: =250
+            X: =838
+            Y: =558
+            ZIndex: =165
+
+        Label3_61 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Feature"
+            Visible: =varShowResources
+            Width: =250
+            X: =838
+            Y: =493
+            ZIndex: =166
+
+        Label3_49 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Name"
+            Visible: =varShowResources
+            Width: =167
+            X: =217
+            Y: =494
+            ZIndex: =167
+
+        Label3_50 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Estimated Value"
+            Visible: =varShowResources
+            Width: =250
+            X: =524
+            Y: =559
+            ZIndex: =168
+
+        Label10_34 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Estimated Time"
+            Visible: =varShowResources
+            Width: =137
+            X: =877
+            Y: =625
+            ZIndex: =169
+
+        Label10_33 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Currency"
+            Visible: =varShowResources
+            Width: =136
+            X: =1162
+            Y: =625
+            ZIndex: =170
+
+        NP_ResourcesSection_EstimatedTime As text:
+            BorderThickness: =1
+            Default: =""
+            Format: =TextFormat.Number
+            Height: =25
+            HintText: ="Input time estimation"
+            Size: =11
+            Visible: =varShowResources
+            Width: =223
+            X: =217
+            Y: =583
+            ZIndex: =171
+
+        Label3_63 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            Size: =11
+            Text: ="Estimated Time"
+            Visible: =varShowResources
+            Width: =250
+            X: =217
+            Y: =556
+            ZIndex: =172
+
+        NP_ResourcesSection_CreateButton As button:
+            Height: =32
+            OnSelect: |+
+                =Collect(ResourcesCollection,
+                    {
+                        feature_name: NP_ResourcesSection_Name.Text,
+                        epic: varSelectedEpic,
+                        type: NP_ResourcesSection_Type.Selected.Value,
+                        estimated_time:NP_ResourcesSection_EstimatedTime.Text,
+                        estimated_value:NP_ResourcesSection_EstimatedValue.Text,
+                        feature:NP_ResourcesSection_Feature.Selected.Value,
+                        currency:NP_ResourcesSection_Currency.Selected.Value
+                     });
+                
+                Reset(NP_ResourcesSection_Name);
+                Reset(NP_ResourcesSection_Type);
+                Reset(NP_ResourcesSection_EstimatedTime);
+                Reset(NP_ResourcesSection_EstimatedValue);
+                Reset(NP_ResourcesSection_Feature);
+                Reset(NP_ResourcesSection_Currency);
+                
+            Text: ="Create"
+            Visible: =varShowResources
+            Width: =154
+            X: =1141
+            Y: =509
+            ZIndex: =173
+
+        NP_ResourcesSection_Type As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: ="TGcito"
+            Height: =25
+            Items: |
+                =["Tegecito", "Hosting", "Cloud"]
+            Size: =11
+            Visible: =varShowResources
+            Width: =250
+            X: =524
+            Y: =520
+            ZIndex: =178
+
+        Label3_62 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Type"
+            Visible: =varShowResources
+            Width: =250
+            X: =524
+            Y: =495
+            ZIndex: =179
+
+        Label10_44 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Estimated Value"
+            Visible: =varShowResources
+            Width: =145
+            X: =1016
+            Y: =625
+            ZIndex: =180
+
+        Label10_46 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Feature"
+            Visible: =varShowResources
+            Width: =142
+            X: =592
+            Y: =625
+            ZIndex: =181
+
+        NP_ResourcesSection_Currency As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["COP","USD"]
+            Size: =11
+            Visible: =varShowResources
+            Width: =252
+            X: =840
+            Y: =583
+            ZIndex: =185
+
     NP_PaymentsTableGroup As group:
         Height: =5
         Width: =5
@@ -2111,331 +2455,6 @@
             X: =888
             Y: =74
             ZIndex: =132
-
-    NP_GroupResourcesTableGroup As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =272
-
-        TextInput2_4 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =25
-            HintText: ="Input Name"
-            Size: =11
-            Tooltip: ="Parrado perra"
-            Visible: =varShowResources
-            Width: =223
-            X: =217
-            Y: =520
-            ZIndex: =158
-
-        TextInput3_3 As text:
-            BorderThickness: =1
-            Default: =""
-            Format: =TextFormat.Number
-            Height: =25
-            HintText: ="Input value"
-            Size: =11
-            Visible: =varShowResources
-            Width: =250
-            X: =524
-            Y: =583
-            ZIndex: =159
-
-        Dropdown2_20 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["Feature 1"]
-            Size: =11
-            Visible: =varShowResources
-            Width: =252
-            X: =838
-            Y: =520
-            ZIndex: =160
-
-        Label10_35 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Name"
-            Visible: =varShowResources
-            Width: =200
-            X: =218
-            Y: =625
-            ZIndex: =161
-
-        Label10_37 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =24
-            Text: ="Type"
-            Visible: =varShowResources
-            Width: =141
-            X: =735
-            Y: =625
-            ZIndex: =162
-
-        Label10_36 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Epic"
-            Visible: =varShowResources
-            Width: =172
-            X: =419
-            Y: =625
-            ZIndex: =163
-
-        Gallery2_5 As gallery.galleryVertical:
-            Height: =99
-            Items: =Filter(ResourcesCollection,varSelectedEpic=epic)
-            Layout: =Layout.Vertical
-            TemplateSize: =18
-            Visible: =varShowResources
-            Width: =1105
-            X: =213
-            Y: =645
-            ZIndex: =164
-
-            Label4_5 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.resource_name
-                Width: =200
-                ZIndex: =1
-
-            Label5_11 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =LookUp(EpicsCollection,epic_id=ThisItem.epic,epic_name)
-                Width: =172
-                X: =200
-                ZIndex: =2
-
-            Label6_12 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.feature
-                Width: =145
-                X: =372
-                ZIndex: =4
-
-            Label6_13 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.feature
-                Width: =139
-                X: =517
-                ZIndex: =5
-
-            Label6_22 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.estimated_time
-                Width: =140
-                X: =656
-                ZIndex: =6
-
-            Label6_23 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.estimated_value
-                Width: =151
-                X: =796
-                ZIndex: =7
-
-            Label6_24 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.currency
-                Width: =130
-                X: =947
-                ZIndex: =8
-
-        Label3_51 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Currency"
-            Visible: =varShowResources
-            Width: =250
-            X: =838
-            Y: =558
-            ZIndex: =165
-
-        Label3_61 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Feature"
-            Visible: =varShowResources
-            Width: =250
-            X: =838
-            Y: =493
-            ZIndex: =166
-
-        Label3_49 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Name"
-            Visible: =varShowResources
-            Width: =167
-            X: =217
-            Y: =494
-            ZIndex: =167
-
-        Label3_50 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Estimated Value"
-            Visible: =varShowResources
-            Width: =250
-            X: =524
-            Y: =559
-            ZIndex: =168
-
-        Label10_34 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Estimated Time"
-            Visible: =varShowResources
-            Width: =137
-            X: =877
-            Y: =625
-            ZIndex: =169
-
-        Label10_33 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Currency"
-            Visible: =varShowResources
-            Width: =136
-            X: =1162
-            Y: =625
-            ZIndex: =170
-
-        TextInput3_8 As text:
-            BorderThickness: =1
-            Default: =""
-            Format: =TextFormat.Number
-            Height: =25
-            HintText: ="Input time estimation"
-            Size: =11
-            Visible: =varShowResources
-            Width: =223
-            X: =217
-            Y: =583
-            ZIndex: =171
-
-        Label3_63 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =27
-            Size: =11
-            Text: ="Estimated Time"
-            Visible: =varShowResources
-            Width: =250
-            X: =217
-            Y: =556
-            ZIndex: =172
-
-        Button1_2 As button:
-            Height: =32
-            Text: ="Create"
-            Visible: =varShowResources
-            Width: =154
-            X: =1141
-            Y: =509
-            ZIndex: =173
-
-        TextInput3_9 As text:
-            BorderThickness: =1
-            Default: =""
-            Format: =TextFormat.Number
-            Height: =25
-            HintText: ="Input currency"
-            Size: =11
-            Visible: =varShowResources
-            Width: =250
-            X: =838
-            Y: =583
-            ZIndex: =174
-
-        Dropdown2_21 As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Default: ="TGcito"
-            Height: =25
-            Items: |
-                =["Tegecito", "Hosting", "Cloud"]
-            Size: =11
-            Visible: =varShowResources
-            Width: =250
-            X: =524
-            Y: =520
-            ZIndex: =178
-
-        Label3_62 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Type"
-            Visible: =varShowResources
-            Width: =250
-            X: =524
-            Y: =495
-            ZIndex: =179
-
-        Label10_44 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Estimated Value"
-            Visible: =varShowResources
-            Width: =145
-            X: =1016
-            Y: =625
-            ZIndex: =180
-
-        Label10_46 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Feature"
-            Visible: =varShowResources
-            Width: =142
-            X: =592
-            Y: =625
-            ZIndex: =181
 
     NP_EditProjectGeneralGroup As group:
         Height: =5
