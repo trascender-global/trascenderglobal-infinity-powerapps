@@ -1445,7 +1445,7 @@
 
         Gallery2_4 As gallery.galleryVertical:
             Height: =99
-            Items: =CustomGallerySample
+            Items: =Filter(FeaturesCollection,varSelectedEpic=epic)
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =varShowFeatures
@@ -1459,7 +1459,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.SampleHeading
+                Text: =ThisItem.feature_name
                 Width: =200
                 ZIndex: =1
 
@@ -1468,8 +1468,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="#####"
+                Text: =ThisItem.epic
                 Width: =193
                 X: =200
                 ZIndex: =2
@@ -1479,9 +1478,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.status
                 Width: =164
                 X: =393
                 ZIndex: =4
@@ -1491,9 +1488,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.expected_date
                 Width: =140
                 X: =557
                 ZIndex: =6
@@ -1503,9 +1498,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.neo
                 Width: =166
                 X: =697
                 ZIndex: =7
@@ -1515,9 +1508,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: |-
-                    ="XXXXX
-                    "
+                Text: =ThisItem.masterchief
                 Width: =215
                 X: =863
                 ZIndex: =8
