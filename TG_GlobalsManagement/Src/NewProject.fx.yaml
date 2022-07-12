@@ -1185,7 +1185,7 @@
             OnSelect: |+
                 =Collect(ResourcesCollection,
                     {
-                        feature_name: NP_ResourcesSection_Name.Text,
+                        resource_name: NP_ResourcesSection_Name.Text,
                         epic: varSelectedEpic,
                         type: NP_ResourcesSection_Type.Selected.Value,
                         estimated_time:NP_ResourcesSection_EstimatedTime.Text,
@@ -2692,12 +2692,13 @@
 
         Label6 As label:
             FontWeight: =FontWeight.Bold
-            Size: =26
-            Text: ="Edit Project"
+            Height: =35
+            Size: =20
+            Text: ="Edit Project General Details"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =300
+            Width: =510
             X: =217
-            Y: =99
+            Y: =85
             ZIndex: =182
 
         Icon4 As icon.Save:
