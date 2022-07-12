@@ -99,6 +99,7 @@
                         observations:NP_GeneralInfo_ObservationsInput.Text,
                         created_date:NP_GeneralInfo_CreatedDateInput.SelectedDate
                     });
+                    Set(varEpicsNumber,0);
                     ClearCollect(EpicsCollection,
                     {
                         epic_name: Blank(),
@@ -1840,7 +1841,7 @@
             Label4_2 As label:
                 BorderThickness: =1
                 Height: =23
-                OnSelect: =Select(Parent)
+                OnSelect: =Set(varSelectedEpic,ThisItem.epic_id);
                 Size: =10
                 Text: =ThisItem.epic_name
                 Width: =250
@@ -1911,6 +1912,7 @@
             OnSelect: |-
                 =Collect(EpicsCollection,
                     {
+                        epic_id : varEpicsNumber+1,
                         epic_name: NP_EpicsSection_EpicName.Text,
                         value: NP_EpicsSection_Value.Text,
                         currency: NP_EpicsSection_Currency.Selected.Value,
@@ -1927,6 +1929,7 @@
                 Reset(NP_EpicsSection_Pokemon);
                 Reset(NP_EpicsSection_Neo);
                 Reset(NP_EpicsSection_Masterchief);
+                Set(varEpicsNumber,varEpicsNumber+1);
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =43
             X: =1261
