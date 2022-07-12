@@ -1468,7 +1468,7 @@
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.epic
+                Text: =LookUp(EpicsCollection,epic_id=ThisItem.epic,epic_name)
                 Width: =193
                 X: =200
                 ZIndex: =2
@@ -1484,6 +1484,7 @@
                 ZIndex: =4
 
             Label6_19 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Height: =23
                 OnSelect: =Select(Parent)
