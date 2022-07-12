@@ -102,7 +102,7 @@
                     Set(varEpicsNumber,0);
                     ClearCollect(EpicsCollection,
                     {
-                        epic_id: Blank()
+                        epic_id: Blank(),
                         epic_name: Blank(),
                         value: Blank(),
                         currency: Blank(),
