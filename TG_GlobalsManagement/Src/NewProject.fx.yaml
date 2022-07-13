@@ -1865,74 +1865,6 @@
             Y: =644
             ZIndex: =15
 
-            Label6_3 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: ="$" &ThisItem.value
-                Width: =110
-                X: =320
-                ZIndex: =3
-
-            Label6_5 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.currency
-                Width: =106
-                X: =430
-                ZIndex: =4
-
-            Label6_9 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.expected_date
-                Width: =120
-                X: =536
-                ZIndex: =5
-
-            Label6_16 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.pokemon
-                Width: =140
-                X: =656
-                ZIndex: =6
-
-            Label6_17 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.neo
-                Width: =140
-                X: =796
-                ZIndex: =7
-
-            Label6_18 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    =//First(Filter( PaymentsCollection, payment_name = ThisItem.payment_name)).payment_name
-                    ThisItem.masterchief
-                Width: =142
-                X: =936
-                ZIndex: =8
-
             Icon7 As icon.Trash:
                 Height: =16
                 Icon: =Icon.Trash
@@ -1992,6 +1924,84 @@
                 Width: =120
                 X: =200
                 ZIndex: =13
+
+            TextInput2_1 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: ="$" &ThisItem.value
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =110
+                X: =320
+                ZIndex: =14
+
+            TextInput2_2 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: =ThisItem.currency
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =103
+                X: =433
+                ZIndex: =15
+
+            TextInput2_3 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: =ThisItem.expected_date
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =120
+                X: =536
+                ZIndex: =16
+
+            TextInput2_4 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: =ThisItem.pokemon
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =140
+                X: =656
+                ZIndex: =17
+
+            TextInput2_6 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: =ThisItem.neo
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =140
+                X: =796
+                ZIndex: =18
+
+            TextInput2_7 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: =ThisItem.masterchief
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =140
+                X: =938
+                ZIndex: =19
 
         Label3_43 As label:
             FontWeight: =FontWeight.Semibold
