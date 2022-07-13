@@ -1854,7 +1854,7 @@
             Y: =624
             ZIndex: =14
 
-        Gallery2_3 As gallery.galleryVertical:
+        NP_PaymentsGallery As gallery.galleryVertical:
             Height: =99
             Items: =Filter(PaymentsCollection,varSelectedEpic=epic)
             Layout: =Layout.Vertical
@@ -1865,7 +1865,7 @@
             Y: =644
             ZIndex: =15
 
-            Icon7 As icon.Trash:
+            NP_PaymentsGallery_DeleteButton As icon.Trash:
                 Height: =16
                 Icon: =Icon.Trash
                 OnSelect: |-
@@ -1876,7 +1876,7 @@
                 Y: =5
                 ZIndex: =9
 
-            Icon8 As icon.Edit:
+            NP_PaymentsGallery_EditButton As icon.Edit:
                 Height: =16
                 Icon: =Icon.Edit
                 OnSelect: |-
@@ -1888,23 +1888,34 @@
                 Y: =5
                 ZIndex: =10
 
-            TextInput1 As text:
+            NP_PaymentsGallery_PaymentName As text:
                 BorderThickness: =1
                 Default: =ThisItem.payment_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =ThisItem.editable
+                DisplayMode: =Disabled
                 Height: =23
                 LineHeight: =1
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
                 Width: =200
                 ZIndex: =11
 
-            Icon5 As icon.Save:
+            NP_PaymentsGallery_SaveButton As icon.Save:
                 Height: =15
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_name = ThisItem.payment_name) ), { editable: DisplayMode.Disabled} );
+                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_name = ThisItem.payment_name) ), 
+                    {   value: NP_PaymentsGallery_Value.Text,
+                        currency: NP_PaymentsGallery_Currency.Text,
+                        pokemon: NP_PaymentsGallery_Pokemon.Text,
+                        neo: NP_PaymentsGallery_Neo.Text,
+                        masterchief: NP_PaymentsGallery_Masterchief.Text,
+                        editable: DisplayMode.Disabled
+                    } );
                     Set(VarEditPaymentRecord,true);
                 Visible: =Not(VarEditPaymentRecord)
                 Width: =20
@@ -1912,20 +1923,24 @@
                 Y: =5
                 ZIndex: =12
 
-            TextInput2 As text:
+            NP_PaymentsGallery_Epic As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =LookUp(EpicsCollection,epic_id=ThisItem.epic,epic_name)
                 DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =ThisItem.editable
+                DisplayMode: =Disabled
                 Height: =23
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
                 Width: =120
                 X: =200
                 ZIndex: =13
 
-            TextInput2_1 As text:
+            NP_PaymentsGallery_Value As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: ="$" &ThisItem.value
@@ -1933,12 +1948,16 @@
                 DisplayMode: =ThisItem.editable
                 Height: =23
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
                 Width: =110
                 X: =320
                 ZIndex: =14
 
-            TextInput2_2 As text:
+            NP_PaymentsGallery_Currency As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.currency
@@ -1946,12 +1965,16 @@
                 DisplayMode: =ThisItem.editable
                 Height: =23
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
-                Width: =103
-                X: =433
+                Width: =106
+                X: =430
                 ZIndex: =15
 
-            TextInput2_3 As text:
+            NP_PaymentsGallery_ExpectedDate As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.expected_date
@@ -1959,12 +1982,16 @@
                 DisplayMode: =ThisItem.editable
                 Height: =23
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
                 Width: =120
                 X: =536
                 ZIndex: =16
 
-            TextInput2_4 As text:
+            NP_PaymentsGallery_Pokemon As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.pokemon
@@ -1972,12 +1999,16 @@
                 DisplayMode: =ThisItem.editable
                 Height: =23
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
                 Width: =140
                 X: =656
                 ZIndex: =17
 
-            TextInput2_6 As text:
+            NP_PaymentsGallery_Neo As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.neo
@@ -1985,12 +2016,16 @@
                 DisplayMode: =ThisItem.editable
                 Height: =23
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
-                Width: =140
+                Width: =142
                 X: =796
                 ZIndex: =18
 
-            TextInput2_7 As text:
+            NP_PaymentsGallery_Masterchief As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.masterchief
@@ -1998,6 +2033,10 @@
                 DisplayMode: =ThisItem.editable
                 Height: =23
                 OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =11
                 Width: =140
                 X: =938
