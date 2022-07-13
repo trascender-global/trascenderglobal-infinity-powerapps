@@ -1406,7 +1406,7 @@
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =varShowPayments 
-            Width: =1128
+            Width: =1146
             X: =213
             Y: =644
             ZIndex: =15
@@ -1494,7 +1494,7 @@
                 Height: =16
                 Icon: =Icon.Edit
                 OnSelect: |-
-                    =Patch(PaymentsCollection,First(Filter(PaymentsCollection,payment_id=ThisItem.payment_id)),{editable:DisplayMode.Disabled});
+                    =Patch(PaymentsCollection,First(Filter(PaymentsCollection,payment_id=ThisItem.payment_id)),{editable:DisplayMode.Edit});
                 Width: =20
                 X: =1080
                 Y: =5
