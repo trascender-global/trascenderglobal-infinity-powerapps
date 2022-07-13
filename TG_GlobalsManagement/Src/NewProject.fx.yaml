@@ -1911,8 +1911,9 @@
                     =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_name = ThisItem.payment_name) ), 
                     {   value: NP_PaymentsGallery_Value.Text,
                         currency: NP_PaymentsGallery_Currency.Text,
-                        pokemon: NP_PaymentsGallery_Pokemon.Text,
-                        neo: NP_PaymentsGallery_Neo.Text,
+                        expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
+                        pokemon: NP_PaymentsGallery_Pokemon.Selected.Value,
+                        neo: NP_PaymentsGallery_Neo.Selected.Value,
                         masterchief: NP_PaymentsGallery_Masterchief.Text,
                         editable: DisplayMode.Disabled
                     } );
@@ -1943,7 +1944,7 @@
             NP_PaymentsGallery_Value As text:
                 Align: =Align.Center
                 BorderThickness: =1
-                Default: ="$" &ThisItem.value
+                Default: =ThisItem.value
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 Height: =23
@@ -1974,63 +1975,13 @@
                 X: =430
                 ZIndex: =15
 
-            NP_PaymentsGallery_ExpectedDate As text:
-                Align: =Align.Center
-                BorderThickness: =1
-                Default: =ThisItem.expected_date
-                DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =ThisItem.editable
-                Height: =23
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =11
-                Width: =120
-                X: =536
-                ZIndex: =16
-
-            NP_PaymentsGallery_Pokemon As text:
-                Align: =Align.Center
-                BorderThickness: =1
-                Default: =ThisItem.pokemon
-                DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =ThisItem.editable
-                Height: =23
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =11
-                Width: =140
-                X: =656
-                ZIndex: =17
-
-            NP_PaymentsGallery_Neo As text:
-                Align: =Align.Center
-                BorderThickness: =1
-                Default: =ThisItem.neo
-                DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =ThisItem.editable
-                Height: =23
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =11
-                Width: =142
-                X: =796
-                ZIndex: =18
-
             NP_PaymentsGallery_Masterchief As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.masterchief
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
                 Height: =23
                 OnSelect: =Select(Parent)
                 RadiusBottomLeft: =0
@@ -2041,6 +1992,47 @@
                 Width: =140
                 X: =938
                 ZIndex: =19
+
+            NP_PaymentsGallery_Neo As dropdown:
+                BorderThickness: =1
+                Default: =ThisItem.neo
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =23
+                Items: =["Parradito","Andresito"]
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =142
+                X: =796
+                ZIndex: =20
+
+            NP_PaymentsGallery_Pokemon As dropdown:
+                BorderThickness: =1
+                Default: =ThisItem.pokemon
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =23
+                Items: =["Parradito","Andresito"]
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =142
+                X: =656
+                ZIndex: =21
+
+            NP_PaymentsGallery_ExpectedDate As datepicker:
+                BorderThickness: =1
+                DefaultDate: =ThisItem.expected_date
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                PaddingTop: =5
+                Size: =11
+                Width: =120
+                X: =536
+                ZIndex: =22
 
         Label3_43 As label:
             FontWeight: =FontWeight.Semibold
