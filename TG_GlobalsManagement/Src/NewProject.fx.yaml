@@ -1710,7 +1710,7 @@
             Text: |-
                 ="Deal Value:      $"&varProjectDetails.total_price_currency&" "&varProjectDetails.currency_code
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =317
+            Width: =404
             X: =754
             Y: =70
             ZIndex: =133
@@ -1722,7 +1722,7 @@
             Text: |-
                 ="Project Value: $"&Sum(PaymentsCollection, value)&" "&varProjectDetails.currency_code
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =295
+            Width: =408
             X: =754
             Y: =107
             ZIndex: =184
