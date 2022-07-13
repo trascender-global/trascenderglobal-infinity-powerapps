@@ -1494,7 +1494,7 @@
                 Height: =16
                 Icon: =Icon.Edit
                 OnSelect: |-
-                    =Patch(PaymentsCollection,First(Filter(PaymentsCollection,payment_id=ThisItem.payment_id)),{editable:true});
+                    =Patch(PaymentsCollection,First(Filter(PaymentsCollection,payment_id=ThisItem.payment_id)),{editable:DisplayMode.Disabled});
                 Width: =20
                 X: =1080
                 Y: =5
@@ -1504,7 +1504,7 @@
                 BorderThickness: =1
                 Default: =ThisItem.payment_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =If(ThisItem.editable=true,DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =ThisItem.editable
                 Height: =23
                 LineHeight: =1
                 OnSelect: =Select(Parent)
@@ -1724,7 +1724,7 @@
                         masterchief:NP_PaymentsSection_Masterchief.Selected.Value,
                         status:NP_PaymentsSection_Status.Selected.Value,
                         fee: NP_PaymentsSection_Fee.Text,
-                        editable: false
+                        editable: DisplayMode.Disabled
                      });
                 
                 Reset(NP_PaymentsSection_Name);
