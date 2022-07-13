@@ -1912,7 +1912,7 @@
                 Icon: =Icon.Save
                 OnSelect: |-
                     =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_name = ThisItem.payment_name) ), 
-                    {   epic:NP_PaymentsGallery_Epic,
+                    {   epic:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
                         value: NP_PaymentsGallery_Value.Text,
                         currency: NP_PaymentsGallery_Currency.Text,
                         expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
