@@ -30,7 +30,7 @@ EditProject As screen:
             Text: |-
                 ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)&" "&varSelectedEpic
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =600
+            Width: =800
             X: =201
             Y: =400
             ZIndex: =40
