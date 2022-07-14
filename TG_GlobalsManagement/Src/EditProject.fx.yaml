@@ -2077,8 +2077,8 @@ EditProject As screen:
             FontWeight: =FontWeight.Bold
             Height: =27
             Size: =18
-            Text: |-
-                ="Deal Value:      $"&varProjectDetails.total_price_currency&" "&varProjectDetails.currency_code
+            Text: |
+                ="Deal Value:      "&Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =370
             X: =783
@@ -2089,8 +2089,8 @@ EditProject As screen:
             FontWeight: =FontWeight.Bold
             Height: =29
             Size: =18
-            Text: |-
-                ="Project Value: $"&Sum(PaymentsCollection, value)&" "&varProjectDetails.currency_code
+            Text: |
+                ="Project Value: $"&Text(Sum(PaymentsCollection, value), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =373
             X: =783
