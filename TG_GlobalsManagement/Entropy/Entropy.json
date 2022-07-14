@@ -276,7 +276,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/14/2022 20:48:33",
+  "HeaderLastSavedDateTimeUTC": "07/14/2022 20:54:18",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -297,6 +297,7 @@
     "51a4282aa30f4cc68c1ee62e75ae9939": 0
   },
   "OrderDataSource": {
+    "CollectionSQL_Epics": 18,
     "ColumnChartSample": 0,
     "ComboBoxSample": 13,
     "CRM_Deals": 1,
@@ -575,11 +576,11 @@
     "EP_FeaturesTableGroup": 66,
     "EP_GeneralSegment_Dropdown": 82,
     "EP_GeneralStatus_Dropdown": 80,
-    "EP_PaymentsTableGroup": 75,
+    "EP_PaymentsTableGroup": 76,
     "EP_PFRSection_Group": 68,
     "EP_PopUpSavingDetailsGroup": 74,
     "EP_ResourcesTableGroup": 67,
-    "EP_Titles": 76,
+    "EP_Titles": 75,
     "FinanceManagement": 73,
     "Galery_Menu": 255,
     "Gallery2_2": 140,
