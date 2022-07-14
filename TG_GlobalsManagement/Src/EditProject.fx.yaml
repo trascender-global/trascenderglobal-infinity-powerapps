@@ -118,7 +118,7 @@ EditProject As screen:
         ZIndex: =89
 
         NP_PaymentsGallery As gallery.galleryVertical:
-            Height: =99
+            Height: =113
             Items: |-
                 =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
                 //CollectionSQL_Payments
@@ -127,7 +127,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =1146
             X: =204
-            Y: =645
+            Y: =631
             ZIndex: =2
 
             NP_PaymentsGallery_DeleteButton As icon.Trash:
@@ -145,8 +145,7 @@ EditProject As screen:
                 Height: =16
                 Icon: =Icon.Edit
                 OnSelect: |-
-                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_id = ThisItem.PaymentID) ), { editable: DisplayMode.Edit} );
-                    Set(VarEditPaymentRecord,false);
+                    =Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), { editable: DisplayMode.Edit} );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
                 Width: =20
                 X: =1080
@@ -175,15 +174,15 @@ EditProject As screen:
                 Height: =15
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_id = ThisItem.PaymentID) ), 
+                    =Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), 
                     {   payment_name:NP_PaymentsGallery_PaymentName.Text,
-                        epic:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
-                        value: NP_PaymentsGallery_Value.Text,
-                        currency: NP_PaymentsGallery_Currency.Text,
-                        expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
-                        pokemon: NP_PaymentsGallery_Pokemon.Selected.Value,
-                        neo: NP_PaymentsGallery_Neo.Selected.Value,
-                        masterchief: NP_PaymentsGallery_Masterchief.Selected.Value,
+                        epic_id:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
+                        value_currency: NP_PaymentsGallery_Value,
+                        currency_code: NP_PaymentsGallery_Currency.Text,
+                        gm_expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
+                        pokemon_master_id: NP_PaymentsGallery_Pokemon.Selected.Value,
+                        neo_id: NP_PaymentsGallery_Neo.Selected.Value,
+                        master_chief_id: NP_PaymentsGallery_Masterchief.Selected.Value,
                         editable: DisplayMode.Disabled
                     } );
                     Set(VarEditPaymentRecord,true);
@@ -199,6 +198,7 @@ EditProject As screen:
                 Default: =ThisItem.value_currency
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
+                Format: =TextFormat.Number
                 Height: =23
                 OnSelect: =Select(Parent)
                 RadiusBottomLeft: =0
@@ -307,7 +307,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =250
             X: =207
-            Y: =521
+            Y: =514
             ZIndex: =45
 
         NP_PaymentsSection_Value As text:
@@ -320,7 +320,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =150
             X: =493
-            Y: =521
+            Y: =514
             ZIndex: =46
 
         NP_PaymentsSection_ExpectedDate As datepicker:
@@ -331,7 +331,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =154
             X: =1131
-            Y: =582
+            Y: =568
             ZIndex: =47
 
         NP_PaymentsSection_Currency As dropdown:
@@ -344,7 +344,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =100
             X: =673
-            Y: =521
+            Y: =514
             ZIndex: =48
 
         NP_PaymentsSection_Pokemon As dropdown:
@@ -357,7 +357,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =250
             X: =207
-            Y: =585
+            Y: =571
             ZIndex: =49
 
         NP_PaymentsSection_Masterchief As dropdown:
@@ -369,7 +369,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =265
             X: =802
-            Y: =584
+            Y: =570
             ZIndex: =50
 
         NP_PaymentsSection_Neo As dropdown:
@@ -381,7 +381,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =278
             X: =494
-            Y: =584
+            Y: =570
             ZIndex: =51
 
         Label10_18 As label:
@@ -393,7 +393,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =169
             X: =208
-            Y: =624
+            Y: =610
             ZIndex: =52
 
         Label10_19 As label:
@@ -405,7 +405,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =110
             X: =530
-            Y: =624
+            Y: =610
             ZIndex: =53
 
         Label10_20 As label:
@@ -417,7 +417,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =151
             X: =378
-            Y: =624
+            Y: =610
             ZIndex: =54
 
         Label3_43 As label:
@@ -428,7 +428,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =110
             X: =673
-            Y: =493
+            Y: =486
             ZIndex: =55
 
         Label3_44 As label:
@@ -439,7 +439,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =157
             X: =1131
-            Y: =555
+            Y: =541
             ZIndex: =56
 
         Label3_45 As label:
@@ -450,7 +450,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =112
             X: =207
-            Y: =558
+            Y: =544
             ZIndex: =57
 
         Label3_46 As label:
@@ -461,7 +461,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =112
             X: =494
-            Y: =557
+            Y: =543
             ZIndex: =58
 
         Label3_47 As label:
@@ -472,7 +472,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =112
             X: =802
-            Y: =557
+            Y: =543
             ZIndex: =59
 
         Label3_41 As label:
@@ -483,7 +483,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =167
             X: =207
-            Y: =493
+            Y: =486
             ZIndex: =60
 
         Label3_42 As label:
@@ -494,7 +494,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =167
             X: =493
-            Y: =493
+            Y: =486
             ZIndex: =61
 
         Label10_22 As label:
@@ -506,7 +506,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =104
             X: =641
-            Y: =624
+            Y: =610
             ZIndex: =62
 
         Label10_31 As label:
@@ -518,7 +518,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =119
             X: =746
-            Y: =624
+            Y: =610
             ZIndex: =63
 
         Label10_38 As label:
@@ -530,7 +530,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =139
             X: =866
-            Y: =624
+            Y: =610
             ZIndex: =64
 
         Label10_39 As label:
@@ -542,20 +542,8 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =140
             X: =1006
-            Y: =624
+            Y: =610
             ZIndex: =65
-
-        Label10_40 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Masterchief"
-            Visible: =varShowPayments 
-            Width: =140
-            X: =1147
-            Y: =624
-            ZIndex: =66
 
         Label10_43 As label:
             Align: =Align.Center
@@ -566,7 +554,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =140
             X: =1148
-            Y: =624
+            Y: =610
             ZIndex: =67
 
         NP_PaymentsSection_Fee As text:
@@ -579,7 +567,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =100
             X: =798
-            Y: =521
+            Y: =514
             ZIndex: =68
 
         Label3_55 As label:
@@ -590,7 +578,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =109
             X: =798
-            Y: =491
+            Y: =484
             ZIndex: =69
 
         NP_PaymentsSection_Status As dropdown:
@@ -603,7 +591,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =156
             X: =909
-            Y: =521
+            Y: =514
             ZIndex: =70
 
         Label3_56 As label:
@@ -614,7 +602,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =110
             X: =909
-            Y: =493
+            Y: =486
             ZIndex: =71
 
         NP_PaymentsSection_CreateButton As button:
@@ -649,7 +637,7 @@ EditProject As screen:
             Visible: =varShowPayments 
             Width: =154
             X: =1131
-            Y: =508
+            Y: =501
             ZIndex: =72
 
     EP_FeaturesTableGroup As group:
