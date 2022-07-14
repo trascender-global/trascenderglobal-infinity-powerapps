@@ -1684,6 +1684,7 @@ EditProject As screen:
             Height: =25
             Text: ="Neo"
             Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =177
             X: =980
             Y: =296
             ZIndex: =2
@@ -1695,7 +1696,8 @@ EditProject As screen:
             Height: =25
             Text: ="Masterchief"
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            X: =1130
+            Width: =151
+            X: =1158
             Y: =296
             ZIndex: =3
 
@@ -1836,7 +1838,7 @@ EditProject As screen:
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =1098
+            Width: =1129
             X: =206
             Y: =316
             ZIndex: =15
@@ -1853,11 +1855,13 @@ EditProject As screen:
                 ZIndex: =1
 
             Label5_2 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.value_currency
+                Text: |-
+                    =Text( ThisItem.value_currency, "[$-en-US]$ ###,##0 ")
                 Width: =152
                 X: =250
                 ZIndex: =2
@@ -1894,11 +1898,13 @@ EditProject As screen:
                 ZIndex: =5
 
             Label6_14 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.neo_id
+                Width: =180
                 X: =767
                 ZIndex: =6
 
@@ -1908,7 +1914,7 @@ EditProject As screen:
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.master_chief_id
-                X: =917
+                X: =947
                 ZIndex: =7
 
         NP_AddEpicButton As icon.Add:
