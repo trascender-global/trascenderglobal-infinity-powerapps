@@ -1686,7 +1686,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =177
             X: =980
-            Y: =296
+            Y: =289
             ZIndex: =2
 
         Label10_6 As label:
@@ -1698,7 +1698,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =151
             X: =1158
-            Y: =296
+            Y: =289
             ZIndex: =3
 
         NP_EpicSectionTitleLabel As label:
@@ -1744,7 +1744,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =150
             X: =207
-            Y: =258
+            Y: =251
             ZIndex: =7
 
         NP_EpicsSection_Currency As dropdown:
@@ -1770,7 +1770,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =396
-            Y: =260
+            Y: =253
             ZIndex: =9
 
         NP_EpicsSection_Masterchief As dropdown:
@@ -1782,7 +1782,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =974
-            Y: =254
+            Y: =247
             ZIndex: =10
 
         NP_EpicsSection_Neo As dropdown:
@@ -1794,7 +1794,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =674
-            Y: =256
+            Y: =249
             ZIndex: =11
 
         Label10_2 As label:
@@ -1806,7 +1806,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =211
-            Y: =296
+            Y: =289
             ZIndex: =12
 
         Label10_3 As label:
@@ -1818,7 +1818,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =130
             X: =698
-            Y: =296
+            Y: =289
             ZIndex: =13
 
         Label10_8 As label:
@@ -1829,18 +1829,18 @@ EditProject As screen:
             Text: ="Value"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =462
-            Y: =296
+            Y: =289
             ZIndex: =14
 
         Gallery2_2 As gallery.galleryVertical:
-            Height: =58
+            Height: =84
             Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name)))
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =1129
             X: =206
-            Y: =316
+            Y: =310
             ZIndex: =15
 
             Label4_2 As label:
@@ -1956,7 +1956,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =84
             X: =613
-            Y: =296
+            Y: =289
             ZIndex: =17
 
         Label3_34 As label:
@@ -2000,7 +2000,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =140
             X: =207
-            Y: =233
+            Y: =226
             ZIndex: =21
 
         Label3_38 As label:
@@ -2011,7 +2011,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =100
             X: =396
-            Y: =235
+            Y: =228
             ZIndex: =22
 
         Label10_4 As label:
@@ -2022,7 +2022,7 @@ EditProject As screen:
             Text: ="Pokemon"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =829
-            Y: =296
+            Y: =289
             ZIndex: =23
 
         Label3_39 As label:
@@ -2033,7 +2033,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =100
             X: =674
-            Y: =231
+            Y: =224
             ZIndex: =24
 
         Label3_40 As label:
@@ -2044,7 +2044,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =110
             X: =974
-            Y: =229
+            Y: =222
             ZIndex: =25
 
         NP_SaveProjectDetailsButton As icon.Save:
