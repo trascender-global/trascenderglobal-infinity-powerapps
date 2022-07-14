@@ -41394,6 +41394,14 @@
           "InvariantPropertyName": "Default",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "AllowEmptySelection",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -41411,13 +41419,18 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Value\"}",
+          "NameMap": "{\"Value\":\"FullName\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AllowEmptySelection",
           "RuleProviderType": "Unknown"
         },
         {
@@ -41730,6 +41743,14 @@
           "InvariantPropertyName": "Default",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "AllowEmptySelection",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -41747,13 +41768,18 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Value\"}",
+          "NameMap": "{\"Value\":\"FullName\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AllowEmptySelection",
           "RuleProviderType": "Unknown"
         },
         {
@@ -42424,6 +42450,14 @@
           "InvariantPropertyName": "Default",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "AllowEmptySelection",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -42441,13 +42475,18 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Value\"}",
+          "NameMap": "{\"Value\":\"FullName\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AllowEmptySelection",
           "RuleProviderType": "Unknown"
         },
         {

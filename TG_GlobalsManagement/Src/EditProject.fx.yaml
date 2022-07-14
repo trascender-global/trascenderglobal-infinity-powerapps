@@ -174,7 +174,7 @@ EditProject As screen:
                 Height: =15
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), 
+                    =/*Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), 
                     {   payment_name:NP_PaymentsGallery_PaymentName.Text,
                         epic_id:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
                         value_currency: NP_PaymentsGallery_Value,
@@ -184,8 +184,11 @@ EditProject As screen:
                         neo_id: NP_PaymentsGallery_Neo.Selected.Value,
                         master_chief_id: NP_PaymentsGallery_Masterchief.Selected.Value,
                         editable: DisplayMode.Disabled
+                    } );*/
+                    Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), 
+                    {   
+                        editable: DisplayMode.Disabled
                     } );
-                    Set(VarEditPaymentRecord,true);
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
                 Width: =20
                 X: =1080
@@ -213,7 +216,9 @@ EditProject As screen:
             NP_PaymentsGallery_Currency As text:
                 Align: =Align.Center
                 BorderThickness: =1
-                Default: =ThisItem.currency_code
+                Default: |-
+                    =ThisItem.currency_code
+                    //ThisItem.pokemon_master_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 Height: =23
@@ -228,13 +233,14 @@ EditProject As screen:
                 ZIndex: =15
 
             NP_PaymentsGallery_Neo As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.neo_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =23
-                Items: =["Parradito","Andresito"]
+                Items: =Filter(TD_Trascendentales,Status="Active").FullName
                 OnSelect: =Select(Parent)
                 Size: =11
                 Width: =142
@@ -242,13 +248,14 @@ EditProject As screen:
                 ZIndex: =20
 
             NP_PaymentsGallery_Pokemon As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.pokemon_master_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =23
-                Items: =["Parradito","Andresito"]
+                Items: =Filter(TD_Trascendentales,Status="Active").FullName
                 OnSelect: =Select(Parent)
                 Size: =11
                 Width: =142
@@ -269,13 +276,16 @@ EditProject As screen:
                 ZIndex: =22
 
             NP_PaymentsGallery_Masterchief As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.master_chief_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =23
-                Items: =["Parradito","Andresito"]
+                Items: |-
+                    =//Filter(TD_Trascendentales,Status="Active").FullName
+                    TD_Trascendentales
                 OnSelect: =Select(Parent)
                 Size: =11
                 Width: =142
