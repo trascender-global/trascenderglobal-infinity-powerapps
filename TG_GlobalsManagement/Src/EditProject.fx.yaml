@@ -33,7 +33,7 @@ EditProject As screen:
             Width: =800
             X: =201
             Y: =400
-            ZIndex: =40
+            ZIndex: =41
 
         Button2 As button:
             BorderThickness: =0
@@ -55,7 +55,7 @@ EditProject As screen:
             Width: =370
             X: =203
             Y: =442
-            ZIndex: =41
+            ZIndex: =42
 
         Button2_1 As button:
             BorderThickness: =0
@@ -77,7 +77,7 @@ EditProject As screen:
             Width: =370
             X: =575
             Y: =442
-            ZIndex: =42
+            ZIndex: =43
 
         Button2_2 As button:
             BorderThickness: =0
@@ -99,16 +99,16 @@ EditProject As screen:
             Width: =370
             X: =947
             Y: =442
-            ZIndex: =43
+            ZIndex: =44
 
     HeaderTG_EditProjectView As HeaderTG:
         Height: =76
-        ZIndex: =36
+        ZIndex: =37
 
     DynamicNav_EditProjectView As DynamicNav:
         Height: =716
         Y: =52
-        ZIndex: =38
+        ZIndex: =39
 
     EP_PaymentsTableGroup As group:
         Height: =5
@@ -117,139 +117,18 @@ EditProject As screen:
         Y: =40
         ZIndex: =89
 
-        NP_PaymentsSection_Name As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =25
-            HintText: ="Input Name"
-            Size: =11
-            Tooltip: ="Parrado perra"
-            Visible: =varShowPayments 
-            Width: =250
-            X: =207
-            Y: =521
-            ZIndex: =44
-
-        NP_PaymentsSection_Value As text:
-            BorderThickness: =1
-            Default: =""
-            Format: =TextFormat.Number
-            Height: =25
-            HintText: ="Input value"
-            Size: =11
-            Visible: =varShowPayments 
-            Width: =150
-            X: =493
-            Y: =521
-            ZIndex: =45
-
-        NP_PaymentsSection_ExpectedDate As datepicker:
-            BorderThickness: =1
-            Color: =RGBA(0,0,0,1)
-            Height: =25
-            Size: =11
-            Visible: =varShowPayments 
-            Width: =154
-            X: =1131
-            Y: =582
-            ZIndex: =46
-
-        NP_PaymentsSection_Currency As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["USD"]
-            Size: =11
-            Visible: =varShowPayments 
-            Width: =100
-            X: =673
-            Y: =521
-            ZIndex: =47
-
-        NP_PaymentsSection_Pokemon As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["Pokemon"]
-            Size: =11
-            Visible: =varShowPayments 
-            Width: =250
-            X: =207
-            Y: =585
-            ZIndex: =48
-
-        NP_PaymentsSection_Masterchief As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["Masterchief"]
-            Size: =11
-            Visible: =varShowPayments 
-            Width: =265
-            X: =802
-            Y: =584
-            ZIndex: =49
-
-        NP_PaymentsSection_Neo As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["NEO"]
-            Size: =11
-            Visible: =varShowPayments 
-            Width: =278
-            X: =494
-            Y: =584
-            ZIndex: =50
-
-        Label10_18 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Payment Name"
-            Visible: =varShowPayments 
-            Width: =169
-            X: =208
-            Y: =624
-            ZIndex: =51
-
-        Label10_19 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Value"
-            Visible: =varShowPayments 
-            Width: =110
-            X: =530
-            Y: =624
-            ZIndex: =52
-
-        Label10_20 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Epic"
-            Visible: =varShowPayments 
-            Width: =151
-            X: =378
-            Y: =624
-            ZIndex: =53
-
         NP_PaymentsGallery As gallery.galleryVertical:
             Height: =99
-            Items: =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id)
+            Items: |-
+                =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
+                //CollectionSQL_Payments
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =varShowPayments 
             Width: =1146
             X: =204
             Y: =645
-            ZIndex: =54
+            ZIndex: =2
 
             NP_PaymentsGallery_DeleteButton As icon.Trash:
                 Height: =16
@@ -405,17 +284,141 @@ EditProject As screen:
 
             NP_PaymentsGallery_Epic As dropdown:
                 BorderThickness: =1
-                Default: =LookUp(CollectionSQL_Epics,epic_id=ThisItem.epic_id,epic_name)
+                Default: |
+                    =LookUp(CollectionSQL_Epics,epic_id=ThisItem.epic_id,epic_name)
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =23
-                Items: =Filter(EpicsCollection,Not(IsBlank(epic_name))).epic_name
+                Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
                 OnSelect: =Select(Parent)
                 Size: =11
                 Width: =150
                 X: =170
                 ZIndex: =24
+
+        NP_PaymentsSection_Name As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =25
+            HintText: ="Input Name"
+            Size: =11
+            Tooltip: ="Parrado perra"
+            Visible: =varShowPayments 
+            Width: =250
+            X: =207
+            Y: =521
+            ZIndex: =45
+
+        NP_PaymentsSection_Value As text:
+            BorderThickness: =1
+            Default: =""
+            Format: =TextFormat.Number
+            Height: =25
+            HintText: ="Input value"
+            Size: =11
+            Visible: =varShowPayments 
+            Width: =150
+            X: =493
+            Y: =521
+            ZIndex: =46
+
+        NP_PaymentsSection_ExpectedDate As datepicker:
+            BorderThickness: =1
+            Color: =RGBA(0,0,0,1)
+            Height: =25
+            Size: =11
+            Visible: =varShowPayments 
+            Width: =154
+            X: =1131
+            Y: =582
+            ZIndex: =47
+
+        NP_PaymentsSection_Currency As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["USD"]
+            Size: =11
+            Visible: =varShowPayments 
+            Width: =100
+            X: =673
+            Y: =521
+            ZIndex: =48
+
+        NP_PaymentsSection_Pokemon As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["Pokemon"]
+            Size: =11
+            Visible: =varShowPayments 
+            Width: =250
+            X: =207
+            Y: =585
+            ZIndex: =49
+
+        NP_PaymentsSection_Masterchief As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: =["Masterchief"]
+            Size: =11
+            Visible: =varShowPayments 
+            Width: =265
+            X: =802
+            Y: =584
+            ZIndex: =50
+
+        NP_PaymentsSection_Neo As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: =["NEO"]
+            Size: =11
+            Visible: =varShowPayments 
+            Width: =278
+            X: =494
+            Y: =584
+            ZIndex: =51
+
+        Label10_18 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Payment Name"
+            Visible: =varShowPayments 
+            Width: =169
+            X: =208
+            Y: =624
+            ZIndex: =52
+
+        Label10_19 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Value"
+            Visible: =varShowPayments 
+            Width: =110
+            X: =530
+            Y: =624
+            ZIndex: =53
+
+        Label10_20 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Epic"
+            Visible: =varShowPayments 
+            Width: =151
+            X: =378
+            Y: =624
+            ZIndex: =54
 
         Label3_43 As label:
             FontWeight: =FontWeight.Semibold
@@ -1383,7 +1386,7 @@ EditProject As screen:
             Text: ="Edit Project"
             Width: =253
             X: =1071
-            ZIndex: =37
+            ZIndex: =38
 
         Rectangle1_1 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1393,13 +1396,16 @@ EditProject As screen:
             Height: =60
             Width: =176
             Y: =219
-            ZIndex: =39
+            ZIndex: =40
 
     Icon6 As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
         Height: =34
         Icon: =Icon.Reload
-        OnSelect: =Refresh(GM_GlobalGeneralInformation);
+        OnSelect: |-
+            =Refresh(GM_GlobalGeneralInformation);
+            Refresh(GM_Epics);
+            Refresh(GM_Payments);
         Width: =40
         X: =372
         Y: =8
@@ -1677,7 +1683,7 @@ EditProject As screen:
             Width: =1135
             X: =200
             Y: =135
-            ZIndex: =2
+            ZIndex: =3
 
         Label10_5 As label:
             Align: =Align.Center
@@ -1689,7 +1695,7 @@ EditProject As screen:
             Width: =177
             X: =980
             Y: =289
-            ZIndex: =3
+            ZIndex: =4
 
         Label10_6 As label:
             Align: =Align.Center
@@ -1701,7 +1707,7 @@ EditProject As screen:
             Width: =151
             X: =1158
             Y: =289
-            ZIndex: =4
+            ZIndex: =5
 
         NP_EpicSectionTitleLabel As label:
             FontWeight: =FontWeight.Bold
@@ -1711,7 +1717,7 @@ EditProject As screen:
             Width: =156
             X: =202
             Y: =136
-            ZIndex: =5
+            ZIndex: =6
 
         NP_EpicsSection_EpicName As text:
             BorderThickness: =1
@@ -1723,7 +1729,7 @@ EditProject As screen:
             Width: =428
             X: =207
             Y: =194
-            ZIndex: =6
+            ZIndex: =7
 
         NP_EpicsSection_Value As text:
             BorderThickness: =1
@@ -1735,7 +1741,7 @@ EditProject As screen:
             Width: =250
             X: =674
             Y: =194
-            ZIndex: =7
+            ZIndex: =8
 
         NP_EpicsSection_ExpectedDate As datepicker:
             BorderThickness: =1
@@ -1747,7 +1753,7 @@ EditProject As screen:
             Width: =150
             X: =207
             Y: =251
-            ZIndex: =8
+            ZIndex: =9
 
         NP_EpicsSection_Currency As dropdown:
             BorderThickness: =1
@@ -1760,7 +1766,7 @@ EditProject As screen:
             Width: =250
             X: =974
             Y: =192
-            ZIndex: =9
+            ZIndex: =10
 
         NP_EpicsSection_Pokemon As dropdown:
             BorderThickness: =1
@@ -1773,7 +1779,7 @@ EditProject As screen:
             Width: =250
             X: =396
             Y: =253
-            ZIndex: =10
+            ZIndex: =11
 
         NP_EpicsSection_Masterchief As dropdown:
             BorderThickness: =1
@@ -1785,7 +1791,7 @@ EditProject As screen:
             Width: =250
             X: =974
             Y: =247
-            ZIndex: =11
+            ZIndex: =12
 
         NP_EpicsSection_Neo As dropdown:
             BorderThickness: =1
@@ -1797,7 +1803,7 @@ EditProject As screen:
             Width: =250
             X: =674
             Y: =249
-            ZIndex: =12
+            ZIndex: =13
 
         Label10_2 As label:
             Align: =Align.Center
@@ -1809,7 +1815,7 @@ EditProject As screen:
             Width: =250
             X: =211
             Y: =289
-            ZIndex: =13
+            ZIndex: =14
 
         Label10_3 As label:
             Align: =Align.Center
@@ -1821,7 +1827,7 @@ EditProject As screen:
             Width: =130
             X: =698
             Y: =289
-            ZIndex: =14
+            ZIndex: =15
 
         Label10_8 As label:
             Align: =Align.Center
@@ -1832,7 +1838,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =462
             Y: =289
-            ZIndex: =15
+            ZIndex: =16
 
         Gallery2_2 As gallery.galleryVertical:
             Height: =84
@@ -1843,7 +1849,7 @@ EditProject As screen:
             Width: =1129
             X: =206
             Y: =310
-            ZIndex: =16
+            ZIndex: =17
 
             Label4_2 As label:
                 BorderThickness: =1
@@ -1947,7 +1953,7 @@ EditProject As screen:
             Width: =43
             X: =1255
             Y: =159
-            ZIndex: =17
+            ZIndex: =18
 
         Label10_21 As label:
             Align: =Align.Center
@@ -1959,7 +1965,7 @@ EditProject As screen:
             Width: =84
             X: =613
             Y: =289
-            ZIndex: =18
+            ZIndex: =19
 
         Label3_34 As label:
             FontWeight: =FontWeight.Semibold
@@ -1970,7 +1976,7 @@ EditProject As screen:
             Width: =149
             X: =207
             Y: =169
-            ZIndex: =19
+            ZIndex: =20
 
         Label3_35 As label:
             FontWeight: =FontWeight.Semibold
@@ -1981,7 +1987,7 @@ EditProject As screen:
             Width: =149
             X: =674
             Y: =169
-            ZIndex: =20
+            ZIndex: =21
 
         Label3_36 As label:
             FontWeight: =FontWeight.Semibold
@@ -1992,7 +1998,7 @@ EditProject As screen:
             Width: =92
             X: =974
             Y: =167
-            ZIndex: =21
+            ZIndex: =22
 
         Label3_37 As label:
             FontWeight: =FontWeight.Semibold
@@ -2003,7 +2009,7 @@ EditProject As screen:
             Width: =140
             X: =207
             Y: =226
-            ZIndex: =22
+            ZIndex: =23
 
         Label3_38 As label:
             FontWeight: =FontWeight.Semibold
@@ -2014,7 +2020,7 @@ EditProject As screen:
             Width: =100
             X: =396
             Y: =228
-            ZIndex: =23
+            ZIndex: =24
 
         Label10_4 As label:
             Align: =Align.Center
@@ -2025,7 +2031,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =829
             Y: =289
-            ZIndex: =24
+            ZIndex: =25
 
         Label3_39 As label:
             FontWeight: =FontWeight.Semibold
@@ -2036,7 +2042,7 @@ EditProject As screen:
             Width: =100
             X: =674
             Y: =224
-            ZIndex: =25
+            ZIndex: =26
 
         Label3_40 As label:
             FontWeight: =FontWeight.Semibold
@@ -2047,7 +2053,7 @@ EditProject As screen:
             Width: =110
             X: =974
             Y: =222
-            ZIndex: =26
+            ZIndex: =27
 
         NP_SaveProjectDetailsButton As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
@@ -2062,7 +2068,7 @@ EditProject As screen:
             Width: =65
             X: =1189
             Y: =78
-            ZIndex: =27
+            ZIndex: =28
 
         Icon3 As icon.Edit:
             Height: =52
@@ -2072,7 +2078,7 @@ EditProject As screen:
             Width: =39
             X: =1264
             Y: =76
-            ZIndex: =28
+            ZIndex: =29
 
         NP_EpicSectionTitleLabel_3 As label:
             Color: =RGBA(58, 203, 137, 1)
@@ -2085,7 +2091,7 @@ EditProject As screen:
             Width: =370
             X: =783
             Y: =68
-            ZIndex: =29
+            ZIndex: =30
 
         NP_EpicSectionTitleLabel_5 As label:
             FontWeight: =FontWeight.Bold
@@ -2097,7 +2103,7 @@ EditProject As screen:
             Width: =373
             X: =783
             Y: =98
-            ZIndex: =30
+            ZIndex: =31
 
         NP_SelectProject_ComboBox As combobox:
             BorderThickness: =1
@@ -2137,7 +2143,7 @@ EditProject As screen:
             Width: =564
             X: =200
             Y: =95
-            ZIndex: =31
+            ZIndex: =32
 
         EP_GeneralStatus_Dropdown As dropdown:
             BorderThickness: =1
@@ -2150,7 +2156,7 @@ EditProject As screen:
             Width: =185
             X: =276
             Y: =61
-            ZIndex: =32
+            ZIndex: =33
 
         NP_EpicSectionTitleLabel_6 As label:
             FontWeight: =FontWeight.Bold
@@ -2161,7 +2167,7 @@ EditProject As screen:
             Width: =94
             X: =201
             Y: =61
-            ZIndex: =33
+            ZIndex: =34
 
         EP_GeneralSegment_Dropdown As dropdown:
             BorderThickness: =1
@@ -2173,7 +2179,7 @@ EditProject As screen:
             Width: =185
             X: =579
             Y: =61
-            ZIndex: =34
+            ZIndex: =35
 
         NP_EpicSectionTitleLabel_7 As label:
             FontWeight: =FontWeight.Bold
@@ -2184,5 +2190,5 @@ EditProject As screen:
             Width: =109
             X: =473
             Y: =61
-            ZIndex: =35
+            ZIndex: =36
 
