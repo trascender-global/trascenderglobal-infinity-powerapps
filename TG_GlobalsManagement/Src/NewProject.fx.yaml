@@ -76,7 +76,7 @@
             Y: =406
             ZIndex: =112
 
-        Button3_1 As button:
+        NP_PopUpNewProject_AcceptButton As button:
             Fill: =RGBA(0, 182, 125, 1)
             Height: =46
             OnSelect: |+
@@ -1873,7 +1873,7 @@
                 Icon: =Icon.Trash
                 OnSelect: |-
                     =Remove( PaymentsCollection,
-                    First( Filter( PaymentsCollection, payment_name=ThisItem.payment_name ) ) );
+                    First( Filter( PaymentsCollection, payment_id=ThisItem.payment_id)));
                 Width: =20
                 X: =1098
                 Y: =5
@@ -1883,9 +1883,9 @@
                 Height: =16
                 Icon: =Icon.Edit
                 OnSelect: |-
-                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_name = ThisItem.payment_name) ), { editable: DisplayMode.Edit} );
+                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_id = ThisItem.payment_id) ), { editable: DisplayMode.Edit} );
                     Set(VarEditPaymentRecord,false);
-                Visible: =VarEditPaymentRecord
+                Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
                 Width: =20
                 X: =1080
                 Y: =5
@@ -1895,7 +1895,7 @@
                 BorderThickness: =1
                 Default: =ThisItem.payment_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =Disabled
+                DisplayMode: =ThisItem.editable
                 Height: =23
                 LineHeight: =1
                 OnSelect: =Select(Parent)
@@ -1911,8 +1911,9 @@
                 Height: =15
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_name = ThisItem.payment_name) ), 
-                    {   epic:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
+                    =Patch(PaymentsCollection,First( Filter( PaymentsCollection, payment_id = ThisItem.payment_id) ), 
+                    {   payment_name:NP_PaymentsGallery_PaymentName.Text,
+                        epic:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
                         value: NP_PaymentsGallery_Value.Text,
                         currency: NP_PaymentsGallery_Currency.Text,
                         expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
@@ -1922,7 +1923,7 @@
                         editable: DisplayMode.Disabled
                     } );
                     Set(VarEditPaymentRecord,true);
-                Visible: =Not(VarEditPaymentRecord)
+                Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
                 Width: =20
                 X: =1080
                 Y: =5
@@ -2233,6 +2234,7 @@
             OnSelect: |-
                 =Collect(PaymentsCollection,
                     {
+                        payment_id: Last(PaymentsCollection).payment_id+1,
                         payment_name: NP_PaymentsSection_Name.Text,
                         epic: varSelectedEpic,
                         value: NP_PaymentsSection_Value.Text,
