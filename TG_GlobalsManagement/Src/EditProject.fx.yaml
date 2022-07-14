@@ -524,8 +524,8 @@ EditProject As screen:
             Size: =18
             Text: =varProjectDetails.line_of_business
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            X: =556
-            Y: =61
+            X: =203
+            Y: =103
             ZIndex: =57
 
         NP_EpicSectionTitleLabel_3 As label:
@@ -1808,6 +1808,37 @@ EditProject As screen:
             Y: =426
             ZIndex: =135
 
+    NP_SelectProject_ComboBox As combobox:
+        BorderThickness: =1
+        DisplayFields: =["project_name"]
+        Height: =30
+        Items: =GM_GlobalGeneralInformation.project_name
+        OnSelect: |-
+            =
+            Set(varProjectDetails,
+                {
+                    id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
+                    global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
+                    line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,line_of_business),
+                    segment: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,segment),
+                    start_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,start_date),
+                    project_name: NP_SelectProject_ComboBox.Selected.project_name,
+                    project_link: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,project_link),
+                    currency_code: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,currency_code),
+                    total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
+                    status: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,status),
+                    observations: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,observations),
+                    created_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,created_date)
+                });
+        SearchFields: =["project_name"]
+        SearchItems: =Search(GM_GlobalGeneralInformation.project_name,NP_SelectProject_ComboBox.SearchText,"project_name")
+        SelectMultiple: =false
+        Underline: =true
+        Width: =392
+        X: =203
+        Y: =68
+        ZIndex: =136
+
     EP_Titles As group:
         Height: =5
         Width: =5
@@ -1835,4 +1866,259 @@ EditProject As screen:
             Width: =176
             Y: =219
             ZIndex: =23
+
+    NP_EditProjectGeneralGroup As group:
+        Height: =5
+        Width: =5
+        X: =-187
+        Y: =-58
+        ZIndex: =160
+
+        Rectangle2_8 As rectangle:
+            BorderThickness: =1
+            Fill: =RGBA(56, 96, 178, 0)
+            Height: =318
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =1119
+            X: =202
+            Y: =68
+            ZIndex: =137
+
+        Label3_25 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Line of Business"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =182
+            X: =575
+            Y: =132
+            ZIndex: =138
+
+        TextInput5_14 As text:
+            BorderThickness: =1
+            Default: =Deal.Name
+            Height: =25
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =344
+            X: =216
+            Y: =161
+            ZIndex: =139
+
+        Label3_21 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Name"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =158
+            X: =216
+            Y: =132
+            ZIndex: =140
+
+        TextInput5_18 As text:
+            BorderThickness: =1
+            Default: =Deal.Segment
+            Height: =25
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =274
+            X: =923
+            Y: =161
+            ZIndex: =141
+
+        Label3_31 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Segment"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =151
+            X: =929
+            Y: =132
+            ZIndex: =142
+
+        Label3_26 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Created Date"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =158
+            X: =216
+            Y: =188
+            ZIndex: =143
+
+        DatePicker1_9 As datepicker:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =25
+            IconBackground: =RGBA(58, 87, 255, 1)
+            Size: =12
+            StartOfWeek: =StartOfWeek.Monday
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =274
+            X: =575
+            Y: =213
+            ZIndex: =144
+
+        Label3_30 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =18
+            Text: ="Initial Date"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =151
+            X: =575
+            Y: =188
+            ZIndex: =145
+
+        Label3_32 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Currency Code"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =151
+            X: =923
+            Y: =188
+            ZIndex: =146
+
+        TextInput5_13 As text:
+            BorderThickness: =1
+            Default: ="$ " & Deal.Amount
+            Height: =25
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =286
+            X: =216
+            Y: =266
+            ZIndex: =147
+
+        Label3_27 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Total Price Currency"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =205
+            X: =216
+            Y: =243
+            ZIndex: =148
+
+        Label3_33 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Status"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =151
+            X: =924
+            Y: =243
+            ZIndex: =149
+
+        TextInput5_16 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =58
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =984
+            X: =216
+            Y: =316
+            ZIndex: =150
+
+        Label3_28 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            Text: ="Observations    "
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =205
+            X: =216
+            Y: =295
+            ZIndex: =151
+
+        Dropdown3_8 As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: ="Normal"
+            Height: =25
+            Items: =["Normal", "Delayed", "Disputed", "Finished"]
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =274
+            X: =924
+            Y: =266
+            ZIndex: =152
+
+        TextInput5_15 As text:
+            BorderThickness: =1
+            Default: =Today()
+            Height: =25
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =286
+            X: =216
+            Y: =213
+            ZIndex: =153
+
+        TextInput5_19 As text:
+            BorderThickness: =1
+            Default: ="USD"
+            Height: =25
+            Size: =12
+            Tooltip: =
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =274
+            X: =923
+            Y: =213
+            ZIndex: =154
+
+        TextInput5_17 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =25
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =274
+            X: =575
+            Y: =266
+            ZIndex: =155
+
+        Label3_29 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Text: ="Project Link "
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =197
+            X: =575
+            Y: =243
+            ZIndex: =156
+
+        Dropdown3_7 As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: =Deal.LineofBusiness
+            Height: =25
+            Items: =["Globals Fit", "Globals Fat"]
+            Size: =12
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =274
+            X: =575
+            Y: =161
+            ZIndex: =157
+
+        Label6 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =20
+            Text: ="Edit Project General Details"
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =510
+            X: =212
+            Y: =75
+            ZIndex: =158
+
+        Icon4 As icon.Save:
+            Height: =54
+            Icon: =Icon.Save
+            OnSelect: =Set(varShowEditProjectDetailsPopUp, false)
+            Visible: =varShowEditProjectDetailsPopUp
+            Width: =58
+            X: =1235
+            Y: =78
+            ZIndex: =159
 

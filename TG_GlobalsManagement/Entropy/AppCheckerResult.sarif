@@ -254,6 +254,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "EditProject.NP_SelectProject_ComboBox.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.NP_SelectProject_ComboBox.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.NP_SelectProject_ComboBox"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Home.ColumnChart1.AccessibleLabel"
                 }
               ],
@@ -404,19 +434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Icon4.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.DatePicker1_9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Icon4.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.DatePicker1_9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.Icon4"
+                "module": "EditProject",
+                "type": "EditProject.DatePicker1_9"
               }
             }
           ],
@@ -434,19 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Icon4.TabIndex"
+                  "fullyQualifiedName": "EditProject.TextInput5_19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Icon4.TabIndex",
+                  "fullyQualifiedName": "EditProject.TextInput5_19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "NewProject",
-                "type": "NewProject.Icon4"
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.TextInput5_19"
               }
             }
           ],
@@ -456,8 +486,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -644,19 +674,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_14.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.TextInput5_16.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_14.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.TextInput5_16.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput5_14"
+                "module": "EditProject",
+                "type": "EditProject.TextInput5_16"
               }
             }
           ],
@@ -674,19 +704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown3_7.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.TextInput5_17.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown3_7.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.TextInput5_17.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.Dropdown3_7"
+                "module": "EditProject",
+                "type": "EditProject.TextInput5_17"
               }
             }
           ],
@@ -704,19 +734,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_18.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Dropdown3_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_18.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Dropdown3_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput5_18"
+                "module": "EditProject",
+                "type": "EditProject.Dropdown3_8"
               }
             }
           ],
@@ -824,19 +854,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_15.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.TextInput5_13.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_15.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.TextInput5_13.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput5_15"
+                "module": "EditProject",
+                "type": "EditProject.TextInput5_13"
               }
             }
           ],
@@ -854,19 +884,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.DatePicker1_9.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Icon4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.DatePicker1_9.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Icon4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.DatePicker1_9"
+                "module": "EditProject",
+                "type": "EditProject.Icon4"
               }
             }
           ],
@@ -884,19 +914,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_19.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Icon4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_19.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Icon4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput5_19"
+                "member": "TabIndex",
+                "module": "EditProject",
+                "type": "EditProject.Icon4"
               }
             }
           ],
@@ -906,8 +936,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1034,19 +1064,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_13.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.TextInput5_15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_13.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.TextInput5_15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput5_13"
+                "module": "EditProject",
+                "type": "EditProject.TextInput5_15"
               }
             }
           ],
@@ -1064,19 +1094,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_17.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Dropdown3_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_17.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Dropdown3_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput5_17"
+                "module": "EditProject",
+                "type": "EditProject.Dropdown3_7"
               }
             }
           ],
@@ -1094,19 +1124,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.Dropdown3_8.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.TextInput5_18.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.Dropdown3_8.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.TextInput5_18.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.Dropdown3_8"
+                "module": "EditProject",
+                "type": "EditProject.TextInput5_18"
               }
             }
           ],
@@ -1124,19 +1154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewProject.TextInput5_16.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.TextInput5_14.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewProject.TextInput5_16.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.TextInput5_14.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewProject",
-                "type": "NewProject.TextInput5_16"
+                "module": "EditProject",
+                "type": "EditProject.TextInput5_14"
               }
             }
           ],
@@ -2858,6 +2888,35 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "EditProject",
+                "type": "EditProject"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -2969,6 +3028,27 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+              }
+            },
+            {
+              "id": "app-ScreenHasManyControls",
+              "messageStrings": {
+                "issue": {
+                  "text": "Too many controls on a screen"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Reduce the number of controls on the screen.",
+                  "Break the app into more screens to reduce the per-screen complexity.",
+                  "Use components to unify grouped controls that are identical across screens, reducing duplication.",
+                  "Use galleries to represent a series of repeated similar controls.",
+                  "Break the app into multiple apps so that each app is small and performant."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"EditProject\" is 321, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
