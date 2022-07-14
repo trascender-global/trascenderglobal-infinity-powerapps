@@ -1666,6 +1666,17 @@ EditProject As screen:
         Y: =40
         ZIndex: =165
 
+        Rectangle2 As rectangle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =1
+            Fill: =RGBA(56, 96, 178, 0)
+            Height: =258
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =1135
+            X: =200
+            Y: =135
+            ZIndex: =1
+
         Label10_5 As label:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
@@ -1674,8 +1685,8 @@ EditProject As screen:
             Text: ="Neo"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =980
-            Y: =303
-            ZIndex: =1
+            Y: =296
+            ZIndex: =2
 
         Label10_6 As label:
             Align: =Align.Center
@@ -1685,18 +1696,7 @@ EditProject As screen:
             Text: ="Masterchief"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =1130
-            Y: =303
-            ZIndex: =2
-
-        Rectangle2 As rectangle:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =1
-            Fill: =RGBA(56, 96, 178, 0)
-            Height: =252
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =1135
-            X: =200
-            Y: =135
+            Y: =296
             ZIndex: =3
 
         NP_EpicSectionTitleLabel As label:
@@ -1804,7 +1804,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =250
             X: =211
-            Y: =303
+            Y: =296
             ZIndex: =12
 
         Label10_3 As label:
@@ -1816,7 +1816,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =130
             X: =698
-            Y: =303
+            Y: =296
             ZIndex: =13
 
         Label10_8 As label:
@@ -1827,7 +1827,7 @@ EditProject As screen:
             Text: ="Value"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =462
-            Y: =303
+            Y: =296
             ZIndex: =14
 
         Gallery2_2 As gallery.galleryVertical:
@@ -1838,12 +1838,12 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =1098
             X: =206
-            Y: =323
+            Y: =316
             ZIndex: =15
 
             Label4_2 As label:
                 BorderThickness: =1
-                Height: =18
+                Height: =23
                 OnSelect: =Set(varSelectedEpic,ThisItem.epic_id);
                 PressedColor: =RGBA(166, 166, 166, 1)
                 PressedFill: =Self.DisabledFill
@@ -1854,7 +1854,7 @@ EditProject As screen:
 
             Label5_2 As label:
                 BorderThickness: =1
-                Height: =18
+                Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.value_currency
@@ -1865,7 +1865,7 @@ EditProject As screen:
             Label6_2 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =18
+                Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.expected_date
@@ -1876,7 +1876,7 @@ EditProject As screen:
             Label5_4 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =18
+                Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.currency_code
@@ -1886,7 +1886,7 @@ EditProject As screen:
 
             Label6_4 As label:
                 BorderThickness: =1
-                Height: =18
+                Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.pokemon_master_id
@@ -1895,7 +1895,7 @@ EditProject As screen:
 
             Label6_14 As label:
                 BorderThickness: =1
-                Height: =18
+                Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.neo_id
@@ -1904,7 +1904,7 @@ EditProject As screen:
 
             Label6_15 As label:
                 BorderThickness: =1
-                Height: =18
+                Height: =23
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.master_chief_id
@@ -1950,7 +1950,7 @@ EditProject As screen:
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =84
             X: =613
-            Y: =303
+            Y: =296
             ZIndex: =17
 
         Label3_34 As label:
@@ -2016,7 +2016,7 @@ EditProject As screen:
             Text: ="Pokemon"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             X: =829
-            Y: =303
+            Y: =296
             ZIndex: =23
 
         Label3_39 As label:
@@ -2117,7 +2117,7 @@ EditProject As screen:
                         created_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,created_date)
                     });
                 
-                ClearCollect(CollectionSQL_Epics, GM_Epics);
+                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
             SearchFields: =["project_name"]
             SearchItems: =[]
             SelectMultiple: =false
