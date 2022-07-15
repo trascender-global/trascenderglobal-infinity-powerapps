@@ -120,8 +120,9 @@ EditProject As screen:
         NP_PaymentsGallery As gallery.galleryVertical:
             Height: =113
             Items: |-
-                =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
-                //CollectionSQL_Payments
+                =//Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
+                CollectionSQL_Payments
+                //Filter(CollectionSQL_Payments,epic_id = varSelectedEpic)
             Layout: =Layout.Vertical
             TemplateSize: =18
             Visible: =varShowPayments 
@@ -1852,7 +1853,9 @@ EditProject As screen:
             Label4_2 As label:
                 BorderThickness: =1
                 Height: =23
-                OnSelect: =Set(varSelectedEpic,ThisItem.epic_id);
+                OnSelect: |-
+                    =Set(varSelectedEpic,ThisItem.epic_id);
+                    ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
                 PressedColor: =RGBA(166, 166, 166, 1)
                 PressedFill: =Self.DisabledFill
                 Size: =10
@@ -2096,7 +2099,7 @@ EditProject As screen:
             Height: =29
             Size: =18
             Text: |
-                ="Project Value: $"&Text(Sum(PaymentsCollection, value), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+                ="Project Value: "&Text(Sum(PaymentsCollection, value), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =373
             X: =783
@@ -2130,7 +2133,6 @@ EditProject As screen:
                     });
                 
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
-                ClearCollect(CollectionSQL_Payments, AddColumns(GM_Payments,"editable",DisplayMode.Disabled));
                 //ClearCollect(CollectionSQL_Features, GM_Features);
             SearchFields: =["project_name"]
             SearchItems: =[]

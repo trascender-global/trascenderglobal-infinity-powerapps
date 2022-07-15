@@ -17,7 +17,7 @@ FinanceManagement As screen:
             )
         Height: =60
         Width: =174
-        Y: =299
+        Y: =309
         ZIndex: =7
 
     Label3_FM As label:

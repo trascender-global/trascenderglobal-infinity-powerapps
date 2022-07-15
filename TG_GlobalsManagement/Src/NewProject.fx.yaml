@@ -603,6 +603,7 @@
                 ZIndex: =4
 
             GalleryDeals_CloseDate As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Height: =25
                 OnSelect: =Select(Parent)
