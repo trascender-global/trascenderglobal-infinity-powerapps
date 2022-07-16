@@ -374,19 +374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.IconEdidt.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Icon3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.IconEdidt.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Icon3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.IconEdidt"
+                "type": "EditProject.Icon3"
               }
             }
           ],
@@ -404,19 +404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.IconEdidt.TabIndex"
+                  "fullyQualifiedName": "EditProject.Icon3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.IconEdidt.TabIndex",
+                  "fullyQualifiedName": "EditProject.Icon3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.IconEdidt"
+                "type": "EditProject.Icon3"
               }
             }
           ],
@@ -2984,19 +2984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon1"
+                "type": "EditProject.Icon2"
               }
             }
           ],
@@ -3014,19 +3014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon1.TabIndex"
+                  "fullyQualifiedName": "EditProject.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon1.TabIndex",
+                  "fullyQualifiedName": "EditProject.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon1"
+                "type": "EditProject.Icon2"
               }
             }
           ],
@@ -3044,19 +3044,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon1_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.Icon5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon1_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.Icon5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "EditProject",
+                "type": "EditProject.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject.Icon5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.Icon5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon1_1"
+                "type": "EditProject.Icon5"
               }
             }
           ],
@@ -3068,66 +3098,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditProject.Icon1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.Icon1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "EditProject",
-                "type": "EditProject.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.varShowGI"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varShowGI",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varShowGI",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
         },
         {
           "locations": [
@@ -3156,7 +3126,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 6
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -3254,23 +3224,6 @@
               }
             },
             {
-              "id": "app-UnusedVariables",
-              "messageStrings": {
-                "issue": {
-                  "text": "Variable no utilizada"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Quite la variable no utilizada."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Esta variable está declarada, pero ningún control hace referencia a ella, por lo que no es necesaria."
-              }
-            },
-            {
               "id": "app-ScreenHasManyControls",
               "messageStrings": {
                 "issue": {
@@ -3288,7 +3241,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Los controles consumen recursos y, si una pantalla tiene demasiados controles, la aplicación puede dejar de responder o ralentizarse. La complejidad estimada de \"EditProject\" es 328, que es superior al umbral máximo recomendado (300)."
+                "whyFix": "Los controles consumen recursos y, si una pantalla tiene demasiados controles, la aplicación puede dejar de responder o ralentizarse. La complejidad estimada de \"EditProject\" es 330, que es superior al umbral máximo recomendado (300)."
               }
             }
           ],
