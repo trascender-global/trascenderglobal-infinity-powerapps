@@ -3,6 +3,17 @@ EditProject As screen:
     ImagePosition: =ImagePosition.Fill
     Width: =Max(App.Width, 1366)
 
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =258
+        Visible: =Not(varShowEditProjectDetailsPopUp)
+        Width: =1135
+        X: =200
+        Y: =135
+        ZIndex: =3
+
     EP_PFRSection_Group As group:
         Height: =5
         Width: =5
@@ -1410,6 +1421,570 @@ EditProject As screen:
         Y: =8
         ZIndex: =142
 
+    Icon1 As icon.Check:
+        Height: =50
+        Icon: =Icon.Check
+        OnSelect: |+
+            =Set(varShowEditProjectDetailsPopUp,false);
+            Set(varShowNE,true);
+            Set(varShowGI,false);
+            Set(varShowEL,false);
+            
+            
+        Width: =61
+        X: =900
+        Y: =2
+        ZIndex: =143
+
+    EP_General_Information As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =143
+
+        NP_SaveProjectDetailsButton As icon.Save:
+            Color: =RGBA(58, 87, 255, 1)
+            Height: =47
+            Icon: =Icon.Save
+            OnSelect: |-
+                =Set(varShowPopupSaveDetails,true);
+                Set(varShowFeatures,false);
+                Set(varShowResources,false);
+                Set(varShowPayments,false);
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =65
+            X: =1189
+            Y: =78
+            ZIndex: =28
+
+        IconEdidt As icon.Edit:
+            Height: =52
+            Icon: =Icon.Edit
+            OnSelect: |+
+                =Set(varShowEditProjectDetailsPopUp,true);
+                Set(varShowNE,false);
+                Set(varShowGI,false);
+                Set(varShowEL,false);
+                
+                
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =39
+            X: =1264
+            Y: =76
+            ZIndex: =29
+
+        NP_EpicSectionTitleLabel_3 As label:
+            Color: =RGBA(58, 203, 137, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =18
+            Text: |
+                ="Deal Value:      "&Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =370
+            X: =783
+            Y: =68
+            ZIndex: =30
+
+        NP_EpicSectionTitleLabel_5 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =29
+            Size: =18
+            Text: |
+                ="Project Value: "&Text(Sum(PaymentsCollection, value), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =373
+            X: =783
+            Y: =98
+            ZIndex: =31
+
+        NP_SelectProject_ComboBox As combobox:
+            BorderThickness: =1
+            DisplayFields: =["project_name"]
+            FocusedBorderThickness: =1
+            Height: =32
+            IsSearchable: =false
+            Items: |-
+                =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
+                //GM_GlobalGeneralInformation.project_name
+            OnSelect: |-
+                =Set(varProjectDetails,
+                    {
+                        id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
+                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
+                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,line_of_business),
+                        segment: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,segment),
+                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,start_date),
+                        project_name: NP_SelectProject_ComboBox.Selected.project_name,
+                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,project_link),
+                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,currency_code),
+                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
+                        status: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,status),
+                        observations: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,observations),
+                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,created_date)
+                    });
+                
+                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
+                //ClearCollect(CollectionSQL_Features, GM_Features);
+            SearchFields: =["project_name"]
+            SearchItems: =[]
+            SelectMultiple: =false
+            Size: =16
+            Underline: =true
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =564
+            X: =200
+            Y: =95
+            ZIndex: =32
+
+        EP_GeneralStatus_Dropdown As dropdown:
+            BorderThickness: =1
+            Default: ="Normal"
+            FocusedBorderThickness: =1
+            Height: =25
+            Items: =Distinct(GM_GlobalGeneralInformation,status)
+            OnSelect: =
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =185
+            X: =276
+            Y: =61
+            ZIndex: =33
+
+        NP_EpicSectionTitleLabel_6 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Size: =15
+            Text: ="Status"
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =94
+            X: =201
+            Y: =61
+            ZIndex: =34
+
+        EP_GeneralSegment_Dropdown As dropdown:
+            BorderThickness: =1
+            FocusedBorderThickness: =1
+            Height: =25
+            Items: =Distinct(GM_GlobalGeneralInformation,segment)
+            OnSelect: =
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =185
+            X: =579
+            Y: =61
+            ZIndex: =35
+
+        NP_EpicSectionTitleLabel_7 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Size: =15
+            Text: ="Segment"
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =109
+            X: =473
+            Y: =61
+            ZIndex: =36
+
+    EP_New_Epic As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =143
+
+        NP_EpicSectionTitleLabel As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="Project Epics"
+            Visible: =varShowNE
+            Width: =156
+            X: =202
+            Y: =136
+            ZIndex: =6
+
+        NP_EpicsSection_EpicName As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =25
+            HintText: ="Insert Epic Name"
+            Size: =11
+            Visible: =varShowNE
+            Width: =428
+            X: =207
+            Y: =194
+            ZIndex: =7
+
+        NP_EpicsSection_Value As text:
+            BorderThickness: =1
+            Default: =
+            Height: =25
+            HintText: ="Price"
+            Size: =11
+            Visible: =varShowNE
+            Width: =250
+            X: =674
+            Y: =194
+            ZIndex: =8
+
+        NP_EpicsSection_ExpectedDate As datepicker:
+            BorderThickness: =1
+            Height: =25
+            IconBackground: =RGBA(58, 87, 255, 1)
+            PaddingTop: =4
+            Size: =11
+            Visible: =varShowNE
+            Width: =150
+            X: =207
+            Y: =251
+            ZIndex: =9
+
+        NP_EpicsSection_Currency As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["USD"]
+            Size: =11
+            Visible: =varShowNE
+            Width: =250
+            X: =974
+            Y: =192
+            ZIndex: =10
+
+        NP_EpicsSection_Pokemon As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: |
+                =["Pokemon"]
+            Size: =11
+            Visible: =varShowNE
+            Width: =250
+            X: =396
+            Y: =253
+            ZIndex: =11
+
+        NP_EpicsSection_Masterchief As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: =["Masterchief"]
+            Size: =11
+            Visible: =varShowNE
+            Width: =250
+            X: =974
+            Y: =247
+            ZIndex: =12
+
+        NP_EpicsSection_Neo As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Items: =["NEO"]
+            Size: =11
+            Visible: =varShowNE
+            Width: =250
+            X: =674
+            Y: =249
+            ZIndex: =13
+
+        NP_AddEpicButton As icon.Add:
+            Height: =46
+            Icon: =Icon.Add
+            OnSelect: |-
+                =Collect(EpicsCollection,
+                    {
+                        epic_id : varEpicsNumber+1,
+                        epic_name: NP_EpicsSection_EpicName.Text,
+                        value: NP_EpicsSection_Value.Text,
+                        currency: NP_EpicsSection_Currency.Selected.Value,
+                        expected_date: NP_EpicsSection_ExpectedDate.SelectedDate,
+                        pokemon:NP_EpicsSection_Pokemon.Selected.Value,
+                        neo:NP_EpicsSection_Neo.Selected.Value,
+                        masterchief:NP_EpicsSection_Masterchief.Selected.Value
+                     });
+                
+                Reset(NP_EpicsSection_EpicName);
+                Reset(NP_EpicsSection_Value);
+                Reset(NP_EpicsSection_Currency);
+                Reset(NP_EpicsSection_ExpectedDate);
+                Reset(NP_EpicsSection_Pokemon);
+                Reset(NP_EpicsSection_Neo);
+                Reset(NP_EpicsSection_Masterchief);
+                Set(varEpicsNumber,varEpicsNumber+1);
+            Visible: =varShowNE
+            Width: =43
+            X: =1255
+            Y: =159
+            ZIndex: =18
+
+        Label3_34 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Epic Name"
+            Visible: =varShowNE
+            Width: =149
+            X: =207
+            Y: =169
+            ZIndex: =20
+
+        Label3_35 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Value"
+            Visible: =varShowNE
+            Width: =149
+            X: =674
+            Y: =169
+            ZIndex: =21
+
+        Label3_36 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            Size: =11
+            Text: ="Currency"
+            Visible: =varShowNE
+            Width: =92
+            X: =974
+            Y: =167
+            ZIndex: =22
+
+        Label3_37 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            Size: =11
+            Text: ="Expected Date"
+            Visible: =varShowNE
+            Width: =140
+            X: =207
+            Y: =226
+            ZIndex: =23
+
+        Label3_38 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Pokemon"
+            Visible: =varShowNE
+            Width: =100
+            X: =396
+            Y: =228
+            ZIndex: =24
+
+        Label3_39 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Neo"
+            Visible: =varShowNE
+            Width: =100
+            X: =674
+            Y: =224
+            ZIndex: =26
+
+        Label3_40 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Masterchief"
+            Visible: =varShowNE
+            Width: =110
+            X: =974
+            Y: =222
+            ZIndex: =27
+
+    EP_Epics_List As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =143
+
+        Label10_5 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Neo"
+            Visible: =varShowEL
+            Width: =177
+            X: =980
+            Y: =289
+            ZIndex: =4
+
+        Label10_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Masterchief"
+            Visible: =varShowEL
+            Width: =151
+            X: =1158
+            Y: =289
+            ZIndex: =5
+
+        Label10_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Name"
+            Visible: =varShowEL
+            Width: =250
+            X: =211
+            Y: =289
+            ZIndex: =14
+
+        Label10_3 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Expected Date"
+            Visible: =varShowEL
+            Width: =130
+            X: =698
+            Y: =289
+            ZIndex: =15
+
+        Label10_8 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Value"
+            Visible: =varShowEL
+            X: =462
+            Y: =289
+            ZIndex: =16
+
+        Gallery2_2 As gallery.galleryVertical:
+            Height: =84
+            Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name)))
+            Layout: =Layout.Vertical
+            TemplateSize: =18
+            Visible: =varShowEL
+            Width: =1129
+            X: =206
+            Y: =310
+            ZIndex: =17
+
+            Label4_2 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: |-
+                    =Set(varSelectedEpic,ThisItem.epic_id);
+                    ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
+                PressedColor: =RGBA(166, 166, 166, 1)
+                PressedFill: =Self.DisabledFill
+                Size: =10
+                Text: =ThisItem.epic_name
+                Width: =250
+                ZIndex: =1
+
+            Label5_2 As label:
+                Align: =Align.Center
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: |-
+                    =Text( ThisItem.value_currency, "[$-en-US]$ ###,##0 ")
+                Width: =152
+                X: =250
+                ZIndex: =2
+
+            Label6_2 As label:
+                Align: =Align.Center
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.expected_date
+                Width: =132
+                X: =485
+                ZIndex: =3
+
+            Label5_4 As label:
+                Align: =Align.Center
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.currency_code
+                Width: =83
+                X: =402
+                ZIndex: =4
+
+            Label6_4 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.pokemon_master_id
+                X: =617
+                ZIndex: =5
+
+            Label6_14 As label:
+                Align: =Align.Center
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.neo_id
+                Width: =180
+                X: =767
+                ZIndex: =6
+
+            Label6_15 As label:
+                BorderThickness: =1
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =10
+                Text: =ThisItem.master_chief_id
+                X: =947
+                ZIndex: =7
+
+        Label10_21 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Currency"
+            Visible: =varShowEL
+            Width: =84
+            X: =613
+            Y: =289
+            ZIndex: =19
+
+        Label10_4 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =25
+            Text: ="Pokemon"
+            Visible: =varShowEL
+            X: =829
+            Y: =289
+            ZIndex: =25
+
+    Icon1_1 As icon.Check:
+        Height: =50
+        Icon: =Icon.Check
+        OnSelect: |+
+            =Set(varShowEditProjectDetailsPopUp,false);
+            Set(varShowNE,false);
+            Set(varShowGI,false);
+            Set(varShowEL,true);
+            
+            
+        Width: =61
+        X: =1036
+        ZIndex: =144
+
     NP_EditProjectGeneralGroup As group:
         Height: =5
         Width: =5
@@ -1665,530 +2240,4 @@ EditProject As screen:
             X: =1235
             Y: =78
             ZIndex: =141
-
-    EP_EpicsTableGroup As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =165
-
-        Rectangle2 As rectangle:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =1
-            Fill: =RGBA(56, 96, 178, 0)
-            Height: =258
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =1135
-            X: =200
-            Y: =135
-            ZIndex: =3
-
-        Label10_5 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Neo"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =177
-            X: =980
-            Y: =289
-            ZIndex: =4
-
-        Label10_6 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Masterchief"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =151
-            X: =1158
-            Y: =289
-            ZIndex: =5
-
-        NP_EpicSectionTitleLabel As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="Project Epics"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =156
-            X: =202
-            Y: =136
-            ZIndex: =6
-
-        NP_EpicsSection_EpicName As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =25
-            HintText: ="Insert Epic Name"
-            Size: =11
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =428
-            X: =207
-            Y: =194
-            ZIndex: =7
-
-        NP_EpicsSection_Value As text:
-            BorderThickness: =1
-            Default: =
-            Height: =25
-            HintText: ="Price"
-            Size: =11
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =250
-            X: =674
-            Y: =194
-            ZIndex: =8
-
-        NP_EpicsSection_ExpectedDate As datepicker:
-            BorderThickness: =1
-            Height: =25
-            IconBackground: =RGBA(58, 87, 255, 1)
-            PaddingTop: =4
-            Size: =11
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =150
-            X: =207
-            Y: =251
-            ZIndex: =9
-
-        NP_EpicsSection_Currency As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["USD"]
-            Size: =11
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =250
-            X: =974
-            Y: =192
-            ZIndex: =10
-
-        NP_EpicsSection_Pokemon As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: |
-                =["Pokemon"]
-            Size: =11
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =250
-            X: =396
-            Y: =253
-            ZIndex: =11
-
-        NP_EpicsSection_Masterchief As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["Masterchief"]
-            Size: =11
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =250
-            X: =974
-            Y: =247
-            ZIndex: =12
-
-        NP_EpicsSection_Neo As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Items: =["NEO"]
-            Size: =11
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =250
-            X: =674
-            Y: =249
-            ZIndex: =13
-
-        Label10_2 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Name"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =250
-            X: =211
-            Y: =289
-            ZIndex: =14
-
-        Label10_3 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Expected Date"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =130
-            X: =698
-            Y: =289
-            ZIndex: =15
-
-        Label10_8 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Value"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            X: =462
-            Y: =289
-            ZIndex: =16
-
-        Gallery2_2 As gallery.galleryVertical:
-            Height: =84
-            Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name)))
-            Layout: =Layout.Vertical
-            TemplateSize: =18
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =1129
-            X: =206
-            Y: =310
-            ZIndex: =17
-
-            Label4_2 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: |-
-                    =Set(varSelectedEpic,ThisItem.epic_id);
-                    ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
-                PressedColor: =RGBA(166, 166, 166, 1)
-                PressedFill: =Self.DisabledFill
-                Size: =10
-                Text: =ThisItem.epic_name
-                Width: =250
-                ZIndex: =1
-
-            Label5_2 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: |-
-                    =Text( ThisItem.value_currency, "[$-en-US]$ ###,##0 ")
-                Width: =152
-                X: =250
-                ZIndex: =2
-
-            Label6_2 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.expected_date
-                Width: =132
-                X: =485
-                ZIndex: =3
-
-            Label5_4 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.currency_code
-                Width: =83
-                X: =402
-                ZIndex: =4
-
-            Label6_4 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.pokemon_master_id
-                X: =617
-                ZIndex: =5
-
-            Label6_14 As label:
-                Align: =Align.Center
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.neo_id
-                Width: =180
-                X: =767
-                ZIndex: =6
-
-            Label6_15 As label:
-                BorderThickness: =1
-                Height: =23
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.master_chief_id
-                X: =947
-                ZIndex: =7
-
-        NP_AddEpicButton As icon.Add:
-            Height: =46
-            Icon: =Icon.Add
-            OnSelect: |-
-                =Collect(EpicsCollection,
-                    {
-                        epic_id : varEpicsNumber+1,
-                        epic_name: NP_EpicsSection_EpicName.Text,
-                        value: NP_EpicsSection_Value.Text,
-                        currency: NP_EpicsSection_Currency.Selected.Value,
-                        expected_date: NP_EpicsSection_ExpectedDate.SelectedDate,
-                        pokemon:NP_EpicsSection_Pokemon.Selected.Value,
-                        neo:NP_EpicsSection_Neo.Selected.Value,
-                        masterchief:NP_EpicsSection_Masterchief.Selected.Value
-                     });
-                
-                Reset(NP_EpicsSection_EpicName);
-                Reset(NP_EpicsSection_Value);
-                Reset(NP_EpicsSection_Currency);
-                Reset(NP_EpicsSection_ExpectedDate);
-                Reset(NP_EpicsSection_Pokemon);
-                Reset(NP_EpicsSection_Neo);
-                Reset(NP_EpicsSection_Masterchief);
-                Set(varEpicsNumber,varEpicsNumber+1);
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =43
-            X: =1255
-            Y: =159
-            ZIndex: =18
-
-        Label10_21 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Currency"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =84
-            X: =613
-            Y: =289
-            ZIndex: =19
-
-        Label3_34 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Epic Name"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =149
-            X: =207
-            Y: =169
-            ZIndex: =20
-
-        Label3_35 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Value"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =149
-            X: =674
-            Y: =169
-            ZIndex: =21
-
-        Label3_36 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =27
-            Size: =11
-            Text: ="Currency"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =92
-            X: =974
-            Y: =167
-            ZIndex: =22
-
-        Label3_37 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =27
-            Size: =11
-            Text: ="Expected Date"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =140
-            X: =207
-            Y: =226
-            ZIndex: =23
-
-        Label3_38 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Pokemon"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =100
-            X: =396
-            Y: =228
-            ZIndex: =24
-
-        Label10_4 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =25
-            Text: ="Pokemon"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            X: =829
-            Y: =289
-            ZIndex: =25
-
-        Label3_39 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Neo"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =100
-            X: =674
-            Y: =224
-            ZIndex: =26
-
-        Label3_40 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
-            Text: ="Masterchief"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =110
-            X: =974
-            Y: =222
-            ZIndex: =27
-
-        NP_SaveProjectDetailsButton As icon.Save:
-            Color: =RGBA(58, 87, 255, 1)
-            Height: =47
-            Icon: =Icon.Save
-            OnSelect: |-
-                =Set(varShowPopupSaveDetails,true);
-                Set(varShowFeatures,false);
-                Set(varShowResources,false);
-                Set(varShowPayments,false);
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =65
-            X: =1189
-            Y: =78
-            ZIndex: =28
-
-        Icon3 As icon.Edit:
-            Height: =52
-            Icon: =Icon.Edit
-            OnSelect: =Set(varShowEditProjectDetailsPopUp,true)
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =39
-            X: =1264
-            Y: =76
-            ZIndex: =29
-
-        NP_EpicSectionTitleLabel_3 As label:
-            Color: =RGBA(58, 203, 137, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =18
-            Text: |
-                ="Deal Value:      "&Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =370
-            X: =783
-            Y: =68
-            ZIndex: =30
-
-        NP_EpicSectionTitleLabel_5 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =29
-            Size: =18
-            Text: |
-                ="Project Value: "&Text(Sum(PaymentsCollection, value), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =373
-            X: =783
-            Y: =98
-            ZIndex: =31
-
-        NP_SelectProject_ComboBox As combobox:
-            BorderThickness: =1
-            DisplayFields: =["project_name"]
-            FocusedBorderThickness: =1
-            Height: =32
-            IsSearchable: =false
-            Items: |-
-                =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
-                //GM_GlobalGeneralInformation.project_name
-            OnSelect: |-
-                =Set(varProjectDetails,
-                    {
-                        id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
-                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
-                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,line_of_business),
-                        segment: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,segment),
-                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,start_date),
-                        project_name: NP_SelectProject_ComboBox.Selected.project_name,
-                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,project_link),
-                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,currency_code),
-                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
-                        status: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,status),
-                        observations: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,observations),
-                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,created_date)
-                    });
-                
-                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
-                //ClearCollect(CollectionSQL_Features, GM_Features);
-            SearchFields: =["project_name"]
-            SearchItems: =[]
-            SelectMultiple: =false
-            Size: =16
-            Underline: =true
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =564
-            X: =200
-            Y: =95
-            ZIndex: =32
-
-        EP_GeneralStatus_Dropdown As dropdown:
-            BorderThickness: =1
-            Default: ="Normal"
-            FocusedBorderThickness: =1
-            Height: =25
-            Items: =Distinct(GM_GlobalGeneralInformation,status)
-            OnSelect: =
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =185
-            X: =276
-            Y: =61
-            ZIndex: =33
-
-        NP_EpicSectionTitleLabel_6 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =25
-            Size: =15
-            Text: ="Status"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =94
-            X: =201
-            Y: =61
-            ZIndex: =34
-
-        EP_GeneralSegment_Dropdown As dropdown:
-            BorderThickness: =1
-            FocusedBorderThickness: =1
-            Height: =25
-            Items: =Distinct(GM_GlobalGeneralInformation,segment)
-            OnSelect: =
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =185
-            X: =579
-            Y: =61
-            ZIndex: =35
-
-        NP_EpicSectionTitleLabel_7 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =25
-            Size: =15
-            Text: ="Segment"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =109
-            X: =473
-            Y: =61
-            ZIndex: =36
 
