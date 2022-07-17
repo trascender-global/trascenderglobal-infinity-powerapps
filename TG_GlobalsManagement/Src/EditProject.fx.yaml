@@ -59,7 +59,9 @@ EditProject As screen:
                 Set(varShowFeaturesFL,false);
                 Set(varShowFeaturesNF,false);
                 Set(varShowviewfeature,false);
-                Set(varShowResources,false);
+                Set(varShowResourcesRL,false);
+                Set(varShowResourcesNR,false);
+                Set(varShowviewresources,false);
                 
                 
             RadiusBottomLeft: =5
@@ -87,7 +89,10 @@ EditProject As screen:
                 Set(varShowFeaturesFL,true);
                 Set(varShowFeaturesNF,false);
                 Set(varShowviewfeature,true);
-                Set(varShowResources,false);
+                Set(varShowResourcesRL,false);
+                Set(varShowResourcesNR,false);
+                Set(varShowviewresources,false);
+                
                 
                 
             RadiusBottomLeft: =5
@@ -115,7 +120,11 @@ EditProject As screen:
                 Set(varShowFeaturesFL,false);
                 Set(varShowFeaturesNF,false);
                 Set(varShowviewfeature,false);
-                Set(varShowResources,true);
+                Set(varShowResourcesRL,true);
+                Set(varShowResourcesNR,false);
+                Set(varShowviewresources,true);
+                
+                
                 
                 
             RadiusBottomLeft: =5
@@ -646,17 +655,6 @@ EditProject As screen:
             X: =980
             Y: =298
             ZIndex: =27
-
-    Icon7 As icon.Check:
-        Height: =52
-        Icon: =Icon.Check
-        OnSelect: |+
-            =Set(varShowResourcesRL,false);
-            Set(varShowResourcesNR,true);
-            
-        Width: =66
-        X: =914
-        ZIndex: =148
 
     EP_General_Information As group:
         Height: =5
@@ -1396,17 +1394,6 @@ EditProject As screen:
             Y: =524
             ZIndex: =66
 
-    Icon7_1 As icon.Check:
-        Height: =52
-        Icon: =Icon.Check
-        OnSelect: |+
-            =Set(varShowResourcesRL,true);
-            Set(varShowResourcesNR,false);
-            
-        Width: =66
-        X: =800
-        ZIndex: =149
-
     EP_New_Features As group:
         Height: =5
         Width: =5
@@ -1766,108 +1753,108 @@ EditProject As screen:
         NP_ResourcesSection_Name As text:
             BorderThickness: =1
             Default: =""
-            Height: =25
+            Height: =30
             HintText: ="Input Name"
-            Size: =11
+            Size: =12
             Tooltip: ="Parrado perra"
             Visible: =varShowResourcesNR
             Width: =223
-            X: =207
-            Y: =520
+            X: =213
+            Y: =569
             ZIndex: =90
 
         NP_ResourcesSection_EstimatedValue As text:
             BorderThickness: =1
             Default: =""
             Format: =TextFormat.Number
-            Height: =25
+            Height: =30
             HintText: ="Input value"
-            Size: =11
+            Size: =12
             Visible: =varShowResourcesNR
             Width: =250
-            X: =514
-            Y: =583
+            X: =523
+            Y: =668
             ZIndex: =91
 
         NP_ResourcesSection_Feature As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =30
             Items: |
                 =["Feature 1"]
-            Size: =11
+            Size: =12
             Visible: =varShowResourcesNR
             Width: =252
-            X: =828
-            Y: =520
+            X: =834
+            Y: =569
             ZIndex: =92
 
         Label3_51 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
+            Height: =30
+            Size: =12
             Text: ="Currency"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =828
-            Y: =558
+            X: =837
+            Y: =633
             ZIndex: =97
 
         Label3_61 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
+            Height: =30
+            Size: =12
             Text: ="Feature"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =828
-            Y: =493
+            X: =834
+            Y: =532
             ZIndex: =98
 
         Label3_49 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
+            Height: =30
+            Size: =12
             Text: ="Name"
             Visible: =varShowResourcesNR
             Width: =167
-            X: =207
-            Y: =494
+            X: =213
+            Y: =533
             ZIndex: =99
 
         Label3_50 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
+            Height: =30
+            Size: =12
             Text: ="Estimated Value"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =514
-            Y: =559
+            X: =523
+            Y: =634
             ZIndex: =100
 
         NP_ResourcesSection_EstimatedTime As text:
             BorderThickness: =1
             Default: =""
             Format: =TextFormat.Number
-            Height: =25
+            Height: =30
             HintText: ="Input time estimation"
-            Size: =11
+            Size: =12
             Visible: =varShowResourcesNR
             Width: =223
-            X: =207
-            Y: =583
+            X: =216
+            Y: =668
             ZIndex: =103
 
         Label3_63 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =27
-            Size: =11
+            Height: =30
+            Size: =12
             Text: ="Estimated Time"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =207
-            Y: =556
+            X: =216
+            Y: =631
             ZIndex: =104
 
         NP_ResourcesSection_CreateButton As button:
@@ -1894,46 +1881,46 @@ EditProject As screen:
             Text: ="Create"
             Visible: =varShowResourcesNR
             Width: =154
-            X: =1131
-            Y: =509
+            X: =1137
+            Y: =564
             ZIndex: =105
 
         NP_ResourcesSection_Type As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Default: ="TGcito"
-            Height: =25
+            Height: =30
             Items: |
                 =["Tegecito", "Hosting", "Cloud"]
-            Size: =11
+            Size: =12
             Visible: =varShowResourcesNR
             Width: =250
-            X: =514
-            Y: =520
+            X: =520
+            Y: =569
             ZIndex: =106
 
         Label3_62 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =11
+            Height: =30
+            Size: =12
             Text: ="Type"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =514
-            Y: =495
+            X: =520
+            Y: =534
             ZIndex: =107
 
         NP_ResourcesSection_Currency As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =25
+            Height: =30
             Items: |
                 =["COP","USD"]
-            Size: =11
+            Size: =12
             Visible: =varShowResourcesNR
             Width: =252
-            X: =830
-            Y: =583
+            X: =839
+            Y: =668
             ZIndex: =110
 
     EP_varShowviefetaure As group:
@@ -2413,4 +2400,55 @@ EditProject As screen:
             X: =1235
             Y: =78
             ZIndex: =140
+
+    EP_viewpayment_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =162
+
+        Icon2_3 As icon.ListScrollWatchlist:
+            Height: =30
+            Icon: =Icon.ListScrollWatchlist
+            OnSelect: |+
+                =Set(varShowResourcesRL,true);
+                Set(varShowResourcesNR,false);
+                
+            Visible: =varShowviewresources
+            Width: =30
+            X: =1284
+            Y: =487
+            ZIndex: =158
+
+        Icon5_3 As icon.AddDocument:
+            Height: =30
+            Icon: =Icon.AddDocument
+            OnSelect: |+
+                =Set(varShowResourcesRL,false);
+                Set(varShowResourcesNR,true);
+                
+            Visible: =varShowviewresources
+            Width: =30
+            X: =1116
+            Y: =487
+            ZIndex: =159
+
+        Label2_6 As label:
+            Height: =28
+            Text: ="Add New Resource"
+            Visible: =varShowviewresources
+            Width: =164
+            X: =950
+            Y: =488
+            ZIndex: =160
+
+        Label2_7 As label:
+            Height: =28
+            Text: ="Resource List"
+            Visible: =varShowviewresources
+            Width: =120
+            X: =1167
+            Y: =488
+            ZIndex: =161
 
