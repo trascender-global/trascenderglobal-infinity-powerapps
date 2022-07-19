@@ -24,7 +24,7 @@ DynamicNav As CanvasComponent:
                 NavLink:FinanceManagement
             }
             )
-    Width: =176
+    Width: =52
     X: =0
     Y: =0
     ZIndex: =1
@@ -37,28 +37,8 @@ DynamicNav As CanvasComponent:
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =79
-        Width: =176
+        Width: =52
         ZIndex: =1
-
-        MenuItemTitle As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Verdana
-            FontWeight: =FontWeight.Normal
-            Height: =63
-            HoverColor: =RGBA(84, 84, 84, 1)
-            HoverFill: =Self.Color
-            OnSelect: =Navigate(ThisItem.NavLink,Fade)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
-            Text: |
-                =ThisItem.Name
-            Width: =165
-            X: =10
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
 
         MenuItemIcon As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
