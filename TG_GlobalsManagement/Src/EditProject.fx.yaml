@@ -7,9 +7,9 @@ EditProject As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =1
         Fill: =RGBA(56, 96, 178, 0)
-        Height: =258
+        Height: =250
         Visible: =Not(varShowEditProjectDetailsPopUp)
-        Width: =1218
+        Width: =1120
         X: =69
         Y: =136
         ZIndex: =1
@@ -25,13 +25,13 @@ EditProject As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
-            Height: =356
+            Height: =358
             OnSelect: =
             Visible: |
                 =Not(varShowInit)
             Width: =1296
             X: =70
-            Y: =396
+            Y: =394
             ZIndex: =2
 
         NP_EpicSectionTitleLabel_4 As label:
@@ -485,8 +485,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowNE
             Width: =250
-            X: =635
-            Y: =247
+            X: =548
+            Y: =248
             ZIndex: =8
 
         NP_EpicsSection_ExpectedDate As datepicker:
@@ -510,7 +510,7 @@ EditProject As screen:
             Size: =12
             Visible: =varShowNE
             Width: =250
-            X: =991
+            X: =874
             Y: =245
             ZIndex: =10
 
@@ -535,7 +535,7 @@ EditProject As screen:
             Size: =12
             Visible: =varShowNE
             Width: =250
-            X: =991
+            X: =874
             Y: =333
             ZIndex: =12
 
@@ -547,8 +547,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowNE
             Width: =250
-            X: =637
-            Y: =333
+            X: =550
+            Y: =334
             ZIndex: =13
 
         NP_AddEpicButton As icon.Add:
@@ -577,8 +577,8 @@ EditProject As screen:
                 Set(varEpicsNumber,varEpicsNumber+1);
             Visible: =varShowNE
             Width: =43
-            X: =1192
-            Y: =178
+            X: =1082
+            Y: =181
             ZIndex: =18
 
         Label3_34 As label:
@@ -599,8 +599,8 @@ EditProject As screen:
             Text: ="Value"
             Visible: =varShowNE
             Width: =149
-            X: =637
-            Y: =217
+            X: =550
+            Y: =218
             ZIndex: =21
 
         Label3_36 As label:
@@ -610,7 +610,7 @@ EditProject As screen:
             Text: ="Currency"
             Visible: =varShowNE
             Width: =92
-            X: =991
+            X: =874
             Y: =212
             ZIndex: =22
 
@@ -643,8 +643,8 @@ EditProject As screen:
             Text: ="Neo"
             Visible: =varShowNE
             Width: =100
-            X: =637
-            Y: =300
+            X: =550
+            Y: =301
             ZIndex: =26
 
         Label3_40 As label:
@@ -654,7 +654,7 @@ EditProject As screen:
             Text: ="Masterchief"
             Visible: =varShowNE
             Width: =110
-            X: =991
+            X: =874
             Y: =298
             ZIndex: =27
 
@@ -1117,8 +1117,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowFeaturesNF
             Width: =251
-            X: =78
-            Y: =569
+            X: =175
+            Y: =574
             ZIndex: =72
 
         NP_FeaturesSection_Neo As dropdown:
@@ -1129,8 +1129,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowFeaturesNF
             Width: =250
-            X: =78
-            Y: =661
+            X: =175
+            Y: =666
             ZIndex: =73
 
         Label3_53 As label:
@@ -1140,8 +1140,8 @@ EditProject As screen:
             Text: ="Neo"
             Visible: =varShowFeaturesNF
             Width: =112
-            X: =78
-            Y: =631
+            X: =175
+            Y: =636
             ZIndex: =78
 
         Label3_52 As label:
@@ -1151,8 +1151,8 @@ EditProject As screen:
             Text: ="Expected Date"
             Visible: =varShowFeaturesNF
             Width: =139
-            X: =692
-            Y: =540
+            X: =789
+            Y: =545
             ZIndex: =79
 
         Label3_48 As label:
@@ -1162,8 +1162,8 @@ EditProject As screen:
             Text: ="Feature Name"
             Visible: =varShowFeaturesNF
             Width: =167
-            X: =78
-            Y: =540
+            X: =175
+            Y: =545
             ZIndex: =80
 
         NP_FeaturesSection_Status As dropdown:
@@ -1175,8 +1175,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowFeaturesNF
             Width: =250
-            X: =385
-            Y: =569
+            X: =482
+            Y: =574
             ZIndex: =84
 
         Label3_57 As label:
@@ -1186,8 +1186,8 @@ EditProject As screen:
             Text: ="Status"
             Visible: =varShowFeaturesNF
             Width: =110
-            X: =385
-            Y: =540
+            X: =482
+            Y: =545
             ZIndex: =85
 
         NP_FeaturesSection_CreateButton As button:
@@ -1212,8 +1212,8 @@ EditProject As screen:
             Text: ="Create"
             Visible: =varShowFeaturesNF
             Width: =154
-            X: =998
-            Y: =567
+            X: =1095
+            Y: =572
             ZIndex: =86
 
         NP_FeaturesSection_Masterchief As dropdown:
@@ -1225,8 +1225,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowFeaturesNF
             Width: =250
-            X: =385
-            Y: =661
+            X: =482
+            Y: =666
             ZIndex: =87
 
         Label3_58 As label:
@@ -1236,8 +1236,8 @@ EditProject As screen:
             Text: ="Masterchief"
             Visible: =varShowFeaturesNF
             Width: =110
-            X: =385
-            Y: =631
+            X: =482
+            Y: =636
             ZIndex: =88
 
         NP_FeaturesSection_ExpectedDate As datepicker:
@@ -1248,8 +1248,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowFeaturesNF
             Width: =189
-            X: =697
-            Y: =569
+            X: =794
+            Y: =574
             ZIndex: =89
 
     EP_viewpayment As group:
@@ -1316,8 +1316,8 @@ EditProject As screen:
             Text: ="Feature Name"
             Visible: =varShowFeaturesFL
             Width: =200
-            X: =78
-            Y: =531
+            X: =183
+            Y: =553
             ZIndex: =74
 
         Label10_30 As label:
@@ -1327,9 +1327,9 @@ EditProject As screen:
             Height: =30
             Text: ="Status"
             Visible: =varShowFeaturesFL
-            Width: =164
-            X: =473
-            Y: =531
+            Width: =163
+            X: =576
+            Y: =553
             ZIndex: =75
 
         Label10_25 As label:
@@ -1339,9 +1339,9 @@ EditProject As screen:
             Height: =30
             Text: ="Epic"
             Visible: =varShowFeaturesFL
-            Width: =193
-            X: =279
-            Y: =531
+            Width: =190
+            X: =385
+            Y: =553
             ZIndex: =76
 
         Gallery2_4 As gallery.galleryVertical:
@@ -1351,8 +1351,8 @@ EditProject As screen:
             TemplateSize: =25
             Visible: =varShowFeaturesFL
             Width: =1105
-            X: =77
-            Y: =556
+            X: =177
+            Y: =579
             ZIndex: =77
 
             Label4_4 As label:
@@ -1423,8 +1423,8 @@ EditProject As screen:
             Text: ="Expected Date"
             Visible: =varShowFeaturesFL
             Width: =139
-            X: =638
-            Y: =531
+            X: =741
+            Y: =553
             ZIndex: =81
 
         Label10_42 As label:
@@ -1435,8 +1435,8 @@ EditProject As screen:
             Text: ="Neo"
             Visible: =varShowFeaturesFL
             Width: =164
-            X: =778
-            Y: =531
+            X: =881
+            Y: =553
             ZIndex: =82
 
         Label10_45 As label:
@@ -1447,8 +1447,8 @@ EditProject As screen:
             Text: ="Masterchief"
             Visible: =varShowFeaturesFL
             Width: =215
-            X: =943
-            Y: =531
+            X: =1046
+            Y: =553
             ZIndex: =83
 
     EP_New_Resource As group:
@@ -1467,8 +1467,8 @@ EditProject As screen:
             Tooltip: ="Parrado perra"
             Visible: =varShowResourcesNR
             Width: =223
-            X: =80
-            Y: =569
+            X: =172
+            Y: =571
             ZIndex: =90
 
         NP_ResourcesSection_EstimatedValue As text:
@@ -1480,8 +1480,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowResourcesNR
             Width: =250
-            X: =390
-            Y: =668
+            X: =482
+            Y: =670
             ZIndex: =91
 
         NP_ResourcesSection_Feature As dropdown:
@@ -1493,8 +1493,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowResourcesNR
             Width: =252
-            X: =701
-            Y: =569
+            X: =793
+            Y: =571
             ZIndex: =92
 
         Label3_51 As label:
@@ -1504,8 +1504,8 @@ EditProject As screen:
             Text: ="Currency"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =704
-            Y: =633
+            X: =796
+            Y: =635
             ZIndex: =97
 
         Label3_61 As label:
@@ -1515,8 +1515,8 @@ EditProject As screen:
             Text: ="Feature"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =701
-            Y: =532
+            X: =793
+            Y: =534
             ZIndex: =98
 
         Label3_49 As label:
@@ -1526,8 +1526,8 @@ EditProject As screen:
             Text: ="Name"
             Visible: =varShowResourcesNR
             Width: =167
-            X: =80
-            Y: =533
+            X: =172
+            Y: =535
             ZIndex: =99
 
         Label3_50 As label:
@@ -1537,8 +1537,8 @@ EditProject As screen:
             Text: ="Estimated Value"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =390
-            Y: =634
+            X: =482
+            Y: =636
             ZIndex: =100
 
         NP_ResourcesSection_EstimatedTime As text:
@@ -1550,8 +1550,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowResourcesNR
             Width: =223
-            X: =83
-            Y: =668
+            X: =175
+            Y: =670
             ZIndex: =103
 
         Label3_63 As label:
@@ -1561,8 +1561,8 @@ EditProject As screen:
             Text: ="Estimated Time"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =83
-            Y: =631
+            X: =175
+            Y: =633
             ZIndex: =104
 
         NP_ResourcesSection_CreateButton As button:
@@ -1589,8 +1589,8 @@ EditProject As screen:
             Text: ="Create"
             Visible: =varShowResourcesNR
             Width: =154
-            X: =1004
-            Y: =564
+            X: =1096
+            Y: =566
             ZIndex: =105
 
         NP_ResourcesSection_Type As dropdown:
@@ -1603,8 +1603,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowResourcesNR
             Width: =250
-            X: =387
-            Y: =569
+            X: =479
+            Y: =571
             ZIndex: =106
 
         Label3_62 As label:
@@ -1614,8 +1614,8 @@ EditProject As screen:
             Text: ="Type"
             Visible: =varShowResourcesNR
             Width: =250
-            X: =387
-            Y: =534
+            X: =479
+            Y: =536
             ZIndex: =107
 
         NP_ResourcesSection_Currency As dropdown:
@@ -1627,8 +1627,8 @@ EditProject As screen:
             Size: =12
             Visible: =varShowResourcesNR
             Width: =252
-            X: =706
-            Y: =668
+            X: =798
+            Y: =670
             ZIndex: =110
 
     EP_varShowviefetaure As group:
@@ -1695,8 +1695,8 @@ EditProject As screen:
             Text: ="Name"
             Visible: =varShowResourcesRL
             Width: =200
-            X: =83
-            Y: =545
+            X: =164
+            Y: =558
             ZIndex: =93
 
         Label10_37 As label:
@@ -1707,8 +1707,8 @@ EditProject As screen:
             Text: ="Type"
             Visible: =varShowResourcesRL
             Width: =141
-            X: =600
-            Y: =545
+            X: =681
+            Y: =558
             ZIndex: =94
 
         Label10_36 As label:
@@ -1719,8 +1719,8 @@ EditProject As screen:
             Text: ="Epic"
             Visible: =varShowResourcesRL
             Width: =172
-            X: =284
-            Y: =545
+            X: =365
+            Y: =558
             ZIndex: =95
 
         Gallery2_5 As gallery.galleryVertical:
@@ -1730,8 +1730,8 @@ EditProject As screen:
             TemplateSize: =30
             Visible: =varShowResourcesRL
             Width: =1105
-            X: =78
-            Y: =571
+            X: =159
+            Y: =584
             ZIndex: =96
 
             Label4_5 As label:
@@ -1811,8 +1811,8 @@ EditProject As screen:
             Text: ="Estimated Time"
             Visible: =varShowResourcesRL
             Width: =137
-            X: =742
-            Y: =545
+            X: =823
+            Y: =558
             ZIndex: =101
 
         Label10_33 As label:
@@ -1823,8 +1823,8 @@ EditProject As screen:
             Text: ="Currency"
             Visible: =varShowResourcesRL
             Width: =136
-            X: =1027
-            Y: =545
+            X: =1108
+            Y: =558
             ZIndex: =102
 
         Label10_44 As label:
@@ -1835,8 +1835,8 @@ EditProject As screen:
             Text: ="Estimated Value"
             Visible: =varShowResourcesRL
             Width: =145
-            X: =881
-            Y: =545
+            X: =962
+            Y: =558
             ZIndex: =108
 
         Label10_46 As label:
@@ -1847,8 +1847,8 @@ EditProject As screen:
             Text: ="Feature"
             Visible: =varShowResourcesRL
             Width: =142
-            X: =457
-            Y: =545
+            X: =538
+            Y: =558
             ZIndex: =109
 
     NP_EditProjectGeneralGroup As group:
@@ -2386,7 +2386,7 @@ EditProject As screen:
 
             NP_PaymentsGallery_ExpectedDate_1 As datepicker:
                 BorderThickness: =1
-                DefaultDate: =ThisItem.gm_expected_date
+                DefaultDate: =ThisItem.fm_invoice_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =25
@@ -2399,7 +2399,7 @@ EditProject As screen:
 
             NP_PaymentsGallery_ExpectedDate_2 As datepicker:
                 BorderThickness: =1
-                DefaultDate: =ThisItem.gm_expected_date
+                DefaultDate: =ThisItem.fm_delivery_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =25
