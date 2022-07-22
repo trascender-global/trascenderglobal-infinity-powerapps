@@ -2173,7 +2173,7 @@ EditProject As screen:
             FillPortions: =0
             LayoutMinHeight: =25
             LayoutMinWidth: =250
-            Width: =1900
+            Width: =1700
             ZIndex: =1
 
             Label10_47 As label:
