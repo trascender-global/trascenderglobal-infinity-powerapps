@@ -2372,7 +2372,7 @@ EditProject As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =8
-                Width: =300
+                Width: =150
                 ZIndex: =11
 
             NP_PaymentsGallery_SaveButton As icon.Save:
@@ -2443,7 +2443,7 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =23
+                Height: =24
                 Items: =Filter(TD_Trascendentales,Status="Active").FullName
                 OnSelect: =Select(Parent)
                 Size: =8
@@ -2486,7 +2486,7 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =23
+                Height: =24
                 Items: |-
                     =//Filter(TD_Trascendentales,Status="Active").FullName
                     TD_Trascendentales
@@ -2503,7 +2503,7 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =23
+                Height: =24
                 Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
                 OnSelect: =Select(Parent)
                 Size: =8
@@ -2553,6 +2553,7 @@ EditProject As screen:
                 ZIndex: =28
 
             NP_PaymentsGallery_FeeValue As text:
+                Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.fee_value
                 DisabledColor: =RGBA(0, 0, 0, 1)
