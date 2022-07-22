@@ -2160,58 +2160,201 @@ EditProject As screen:
             Y: =488
             ZIndex: =161
 
-    Label10_47 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(58, 87, 255, 1)
-        Height: =30
-        Size: =9
-        Text: ="Delivery date"
-        Visible: =varShowPaymentsPL 
-        Width: =100
-        X: =1174
-        Y: =525
-        ZIndex: =165
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        LayoutWrap: =true
+        Width: =1273
+        X: =76
+        Y: =538
+        ZIndex: =166
 
-    EP_Payments_Payment_List As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =165
+        Container3 As groupContainer.manualLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =25
+            LayoutMinWidth: =250
+            Width: =1400
+            ZIndex: =1
+
+            Label10_47 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Delivery date"
+                Visible: =varShowPaymentsPL 
+                Width: =102
+                X: =1298
+                ZIndex: =1
+
+            Label10_18 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Payment Name"
+                Visible: =varShowPaymentsPL 
+                X: =4
+                ZIndex: =2
+
+            Label10_19 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Value"
+                Visible: =varShowPaymentsPL 
+                Width: =90
+                X: =356
+                ZIndex: =3
+
+            Label10_20 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Epic"
+                Visible: =varShowPaymentsPL 
+                Width: =200
+                X: =155
+                ZIndex: =4
+
+            Label10_22 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="$"
+                Visible: =varShowPaymentsPL 
+                Width: =49
+                X: =447
+                ZIndex: =5
+
+            Label10_31 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Expected"
+                Visible: =varShowPaymentsPL 
+                Width: =120
+                X: =497
+                ZIndex: =6
+
+            Label10_38 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Pokemon"
+                Visible: =varShowPaymentsPL 
+                Width: =200
+                X: =618
+                ZIndex: =7
+
+            Label10_39 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Neo"
+                Visible: =varShowPaymentsPL 
+                Width: =200
+                X: =819
+                ZIndex: =8
+
+            Label10_43 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Masterchief"
+                Visible: =varShowPaymentsPL 
+                Width: =200
+                X: =1020
+                ZIndex: =9
+
+            Label10_32 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Status"
+                Visible: =varShowPaymentsPL 
+                Width: =105
+                X: =1271
+                ZIndex: =10
+
+            Label10_40 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Fee Value"
+                Visible: =varShowPaymentsPL 
+                Width: =105
+                X: =1295
+                ZIndex: =11
+
+            Label10_41 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Invoice date"
+                Visible: =varShowPaymentsPL 
+                Width: =100
+                X: =1287
+                ZIndex: =12
 
         NP_PaymentsGallery As gallery.galleryVertical:
+            AlignInContainer: =AlignInContainer.Start
+            FillPortions: =0
             Height: =171
             Items: |-
                 =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
                 //CollectionSQL_Payments
                 //Filter(CollectionSQL_Payments,epic_id = varSelectedEpic)
             Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =400
             TemplateSize: =19
             Visible: =varShowPaymentsPL 
-            Width: =1277
+            Width: =1400
             X: =74
-            Y: =554
-            ZIndex: =3
+            Y: =29
+            ZIndex: =2
 
             NP_PaymentsGallery_DeleteButton As icon.Trash:
-                Height: =24
+                Height: =19
                 Icon: =Icon.Trash
                 OnSelect: |-
                     =Remove( PaymentsCollection,
                     First( Filter( PaymentsCollection, payment_id=ThisItem.PaymentID)));
                 Width: =20
-                X: =1231
+                X: =1243
                 ZIndex: =9
 
             NP_PaymentsGallery_EditButton As icon.Edit:
-                Height: =25
+                Height: =19
                 Icon: =Icon.Edit
                 OnSelect: |-
                     =Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), { editable: DisplayMode.Edit} );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
                 Width: =20
-                X: =1208
+                X: =1243
                 ZIndex: =10
 
             NP_PaymentsGallery_PaymentName As text:
@@ -2220,7 +2363,7 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =24
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
@@ -2229,11 +2372,11 @@ EditProject As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =8
-                Width: =111
+                Width: =300
                 ZIndex: =11
 
             NP_PaymentsGallery_SaveButton As icon.Save:
-                Height: =25
+                Height: =19
                 Icon: =Icon.Save
                 OnSelect: |-
                     =/*Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), 
@@ -2253,7 +2396,6 @@ EditProject As screen:
                     } );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
                 Width: =20
-                X: =1208
                 ZIndex: =12
 
             NP_PaymentsGallery_Value As text:
@@ -2264,15 +2406,15 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 Format: =TextFormat.Number
-                Height: =25
+                Height: =24
                 OnSelect: =Select(Parent)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =8
-                Width: =55
-                X: =257
+                Width: =90
+                X: =350
                 ZIndex: =14
 
             NP_PaymentsGallery_Currency As text:
@@ -2283,7 +2425,7 @@ EditProject As screen:
                     //ThisItem.pokemon_master_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
-                Height: =25
+                Height: =23
                 OnSelect: =Select(Parent)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -2291,7 +2433,7 @@ EditProject As screen:
                 RadiusTopRight: =0
                 Size: =8
                 Width: =50
-                X: =312
+                X: =440
                 ZIndex: =15
 
             NP_PaymentsGallery_Neo As dropdown:
@@ -2301,12 +2443,12 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =19
                 Items: =Filter(TD_Trascendentales,Status="Active").FullName
                 OnSelect: =Select(Parent)
                 Size: =8
-                Width: =112
-                X: =564
+                Width: =200
+                X: =812
                 ZIndex: =20
 
             NP_PaymentsGallery_Pokemon As dropdown:
@@ -2316,12 +2458,12 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =23
                 Items: =Filter(TD_Trascendentales,Status="Active").FullName
                 OnSelect: =Select(Parent)
                 Size: =8
-                Width: =101
-                X: =463
+                Width: =202
+                X: =610
                 ZIndex: =21
 
             NP_PaymentsGallery_ExpectedDate As datepicker:
@@ -2329,12 +2471,12 @@ EditProject As screen:
                 DefaultDate: =ThisItem.gm_expected_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =23
                 OnSelect: =Select(Parent)
                 PaddingTop: =5
                 Size: =8
-                Width: =101
-                X: =362
+                Width: =120
+                X: =490
                 ZIndex: =22
 
             NP_PaymentsGallery_Masterchief As dropdown:
@@ -2344,14 +2486,14 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =23
                 Items: |-
                     =//Filter(TD_Trascendentales,Status="Active").FullName
                     TD_Trascendentales
                 OnSelect: =Select(Parent)
                 Size: =8
-                Width: =106
-                X: =675
+                Width: =200
+                X: =1012
                 ZIndex: =23
 
             NP_PaymentsGallery_Epic As dropdown:
@@ -2361,62 +2503,62 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =23
                 Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
                 OnSelect: =Select(Parent)
                 Size: =8
-                Width: =146
-                X: =111
+                Width: =200
+                X: =150
                 ZIndex: =24
 
-            NP_PaymentsGallery_Masterchief_1 As dropdown:
+            NP_PaymentsGallery_StatusOp As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.master_chief_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =19
                 Items: =Distinct(GM_Payments,status_op)
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =106
-                X: =781
+                X: =1226
                 ZIndex: =25
 
-            NP_PaymentsGallery_ExpectedDate_1 As datepicker:
+            NP_PaymentsGallery_InvoiceDate As datepicker:
                 BorderThickness: =1
                 DefaultDate: =ThisItem.fm_invoice_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =19
                 OnSelect: =Select(Parent)
                 PaddingTop: =5
                 Size: =8
                 Width: =101
-                X: =993
+                X: =1265
                 ZIndex: =27
 
-            NP_PaymentsGallery_ExpectedDate_2 As datepicker:
+            NP_PaymentsGallery_DeliveryDate As datepicker:
                 BorderThickness: =1
                 DefaultDate: =ThisItem.fm_delivery_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =19
                 OnSelect: =Select(Parent)
                 PaddingTop: =5
                 Size: =8
                 Width: =101
-                X: =1094
+                X: =1265
                 ZIndex: =28
 
-            NP_PaymentsGallery_PaymentName_1 As text:
+            NP_PaymentsGallery_FeeValue As text:
                 BorderThickness: =1
                 Default: =ThisItem.fee_value
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =25
+                Height: =19
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
@@ -2426,149 +2568,6 @@ EditProject As screen:
                 RadiusTopRight: =0
                 Size: =8
                 Width: =106
-                X: =887
+                X: =1260
                 ZIndex: =29
-
-        Label10_18 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Payment Name"
-            Visible: =varShowPaymentsPL 
-            Width: =112
-            X: =78
-            Y: =525
-            ZIndex: =52
-
-        Label10_19 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Value"
-            Visible: =varShowPaymentsPL 
-            Width: =55
-            X: =335
-            Y: =525
-            ZIndex: =53
-
-        Label10_20 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Epic"
-            Visible: =varShowPaymentsPL 
-            Width: =145
-            X: =190
-            Y: =525
-            ZIndex: =54
-
-        Label10_22 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="CUR"
-            Visible: =varShowPaymentsPL 
-            Width: =49
-            X: =390
-            Y: =525
-            ZIndex: =62
-
-        Label10_31 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Expected"
-            Visible: =varShowPaymentsPL 
-            Width: =104
-            X: =439
-            Y: =525
-            ZIndex: =63
-
-        Label10_38 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Pokemon"
-            Visible: =varShowPaymentsPL 
-            Width: =100
-            X: =543
-            Y: =525
-            ZIndex: =64
-
-        Label10_39 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Neo"
-            Visible: =varShowPaymentsPL 
-            Width: =115
-            X: =639
-            Y: =525
-            ZIndex: =65
-
-        Label10_43 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Masterchief"
-            Visible: =varShowPaymentsPL 
-            Width: =105
-            X: =755
-            Y: =525
-            ZIndex: =66
-
-        Label10_32 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Status"
-            Visible: =varShowPaymentsPL 
-            Width: =105
-            X: =861
-            Y: =525
-            ZIndex: =162
-
-        Label10_40 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Fee Value"
-            Visible: =varShowPaymentsPL 
-            Width: =105
-            X: =967
-            Y: =525
-            ZIndex: =163
-
-        Label10_41 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Size: =9
-            Text: ="Invoice date"
-            Visible: =varShowPaymentsPL 
-            Width: =100
-            X: =1073
-            Y: =525
-            ZIndex: =164
 
