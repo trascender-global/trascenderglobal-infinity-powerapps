@@ -4945,7 +4945,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PaymentsGallery_DeliveryDate",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5337,7 +5337,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PaymentsGallery_FeeValue",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5664,7 +5664,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PaymentsGallery_InvoiceDate",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6024,7 +6024,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PaymentsGallery_StatusOp",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10313,7 +10313,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -10362,7 +10369,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_2",
-      "ParentIndex": 29,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11017,7 +11024,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_21",
-      "ParentIndex": 31,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12637,7 +12644,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_3",
-      "ParentIndex": 32,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16173,7 +16180,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -16222,7 +16236,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_4",
-      "ParentIndex": 33,
+      "ParentIndex": 34,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19110,7 +19124,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -19159,7 +19180,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_5",
-      "ParentIndex": 34,
+      "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19427,7 +19448,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -19476,7 +19504,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_6",
-      "ParentIndex": 35,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19793,7 +19821,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_8",
-      "ParentIndex": 30,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -41062,7 +41090,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_EpicSectionTitleLabel",
-      "ParentIndex": 28,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -47419,7 +47447,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_Currency",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -47902,7 +47930,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_EditButton",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48161,7 +48189,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_Epic",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48506,7 +48534,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_ExpectedDate",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48866,7 +48894,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_Masterchief",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -49222,7 +49250,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_Neo",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -49943,7 +49971,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_Pokemon",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -50252,7 +50280,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_SaveButton",
-      "ParentIndex": 2,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -50535,7 +50563,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsGallery_Value",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
