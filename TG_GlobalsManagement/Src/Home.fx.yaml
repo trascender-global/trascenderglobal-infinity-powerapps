@@ -7,7 +7,7 @@ Home As screen:
 
     DynamicNav_HomeView As DynamicNav:
         Width: =247
-        Y: =65
+        Y: =50
         ZIndex: =6
 
     Rectangle1_3 As rectangle:

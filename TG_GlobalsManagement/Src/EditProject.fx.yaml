@@ -2183,8 +2183,8 @@ EditProject As screen:
         NP_PaymentsGallery As gallery.galleryVertical:
             Height: =171
             Items: |-
-                =//Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
-                CollectionSQL_Payments
+                =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
+                //CollectionSQL_Payments
                 //Filter(CollectionSQL_Payments,epic_id = varSelectedEpic)
             Layout: =Layout.Vertical
             TemplateSize: =19
