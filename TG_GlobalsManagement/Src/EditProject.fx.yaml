@@ -2173,7 +2173,7 @@ EditProject As screen:
             FillPortions: =0
             LayoutMinHeight: =25
             LayoutMinWidth: =250
-            Width: =1400
+            Width: =1900
             ZIndex: =1
 
             Label10_47 As label:
@@ -2185,7 +2185,7 @@ EditProject As screen:
                 Text: ="Delivery date"
                 Visible: =varShowPaymentsPL 
                 Width: =102
-                X: =1298
+                X: =1462
                 ZIndex: =1
 
             Label10_18 As label:
@@ -2241,10 +2241,10 @@ EditProject As screen:
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
                 Size: =9
-                Text: ="Expected"
+                Text: ="Expected Date"
                 Visible: =varShowPaymentsPL 
                 Width: =120
-                X: =497
+                X: =1341
                 ZIndex: =6
 
             Label10_38 As label:
@@ -2256,7 +2256,7 @@ EditProject As screen:
                 Text: ="Pokemon"
                 Visible: =varShowPaymentsPL 
                 Width: =200
-                X: =618
+                X: =603
                 ZIndex: =7
 
             Label10_39 As label:
@@ -2268,7 +2268,7 @@ EditProject As screen:
                 Text: ="Neo"
                 Visible: =varShowPaymentsPL 
                 Width: =200
-                X: =819
+                X: =804
                 ZIndex: =8
 
             Label10_43 As label:
@@ -2279,8 +2279,8 @@ EditProject As screen:
                 Size: =9
                 Text: ="Masterchief"
                 Visible: =varShowPaymentsPL 
-                Width: =200
-                X: =1020
+                Width: =201
+                X: =1005
                 ZIndex: =9
 
             Label10_32 As label:
@@ -2291,8 +2291,8 @@ EditProject As screen:
                 Size: =9
                 Text: ="Status"
                 Visible: =varShowPaymentsPL 
-                Width: =105
-                X: =1271
+                Width: =133
+                X: =1207
                 ZIndex: =10
 
             Label10_40 As label:
@@ -2304,7 +2304,7 @@ EditProject As screen:
                 Text: ="Fee Value"
                 Visible: =varShowPaymentsPL 
                 Width: =105
-                X: =1295
+                X: =497
                 ZIndex: =11
 
             Label10_41 As label:
@@ -2316,7 +2316,7 @@ EditProject As screen:
                 Text: ="Invoice date"
                 Visible: =varShowPaymentsPL 
                 Width: =100
-                X: =1287
+                X: =1565
                 ZIndex: =12
 
         NP_PaymentsGallery As gallery.galleryVertical:
@@ -2332,7 +2332,7 @@ EditProject As screen:
             LayoutMinWidth: =400
             TemplateSize: =19
             Visible: =varShowPaymentsPL 
-            Width: =1400
+            Width: =1740
             X: =74
             Y: =29
             ZIndex: =2
@@ -2344,7 +2344,7 @@ EditProject As screen:
                     =Remove( PaymentsCollection,
                     First( Filter( PaymentsCollection, payment_id=ThisItem.PaymentID)));
                 Width: =20
-                X: =1243
+                X: =1689
                 ZIndex: =9
 
             NP_PaymentsGallery_EditButton As icon.Edit:
@@ -2354,7 +2354,7 @@ EditProject As screen:
                     =Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), { editable: DisplayMode.Edit} );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
                 Width: =20
-                X: =1243
+                X: =1670
                 ZIndex: =10
 
             NP_PaymentsGallery_PaymentName As text:
@@ -2425,7 +2425,7 @@ EditProject As screen:
                     //ThisItem.pokemon_master_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
-                Height: =23
+                Height: =24
                 OnSelect: =Select(Parent)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -2443,12 +2443,12 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =19
+                Height: =23
                 Items: =Filter(TD_Trascendentales,Status="Active").FullName
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =200
-                X: =812
+                X: =798
                 ZIndex: =20
 
             NP_PaymentsGallery_Pokemon As dropdown:
@@ -2458,12 +2458,12 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =23
+                Height: =24
                 Items: =Filter(TD_Trascendentales,Status="Active").FullName
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =202
-                X: =610
+                X: =596
                 ZIndex: =21
 
             NP_PaymentsGallery_ExpectedDate As datepicker:
@@ -2471,12 +2471,12 @@ EditProject As screen:
                 DefaultDate: =ThisItem.gm_expected_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =23
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingTop: =5
                 Size: =8
-                Width: =120
-                X: =490
+                Width: =123
+                X: =1332
                 ZIndex: =22
 
             NP_PaymentsGallery_Masterchief As dropdown:
@@ -2492,8 +2492,8 @@ EditProject As screen:
                     TD_Trascendentales
                 OnSelect: =Select(Parent)
                 Size: =8
-                Width: =200
-                X: =1012
+                Width: =203
+                X: =998
                 ZIndex: =23
 
             NP_PaymentsGallery_Epic As dropdown:
@@ -2518,12 +2518,12 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =19
+                Height: =24
                 Items: =Distinct(GM_Payments,status_op)
                 OnSelect: =Select(Parent)
                 Size: =8
-                Width: =106
-                X: =1226
+                Width: =133
+                X: =1198
                 ZIndex: =25
 
             NP_PaymentsGallery_InvoiceDate As datepicker:
@@ -2531,12 +2531,12 @@ EditProject As screen:
                 DefaultDate: =ThisItem.fm_invoice_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =19
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingTop: =5
                 Size: =8
                 Width: =101
-                X: =1265
+                X: =1560
                 ZIndex: =27
 
             NP_PaymentsGallery_DeliveryDate As datepicker:
@@ -2544,12 +2544,12 @@ EditProject As screen:
                 DefaultDate: =ThisItem.fm_delivery_date
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =19
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingTop: =5
                 Size: =8
-                Width: =101
-                X: =1265
+                Width: =103
+                X: =1456
                 ZIndex: =28
 
             NP_PaymentsGallery_FeeValue As text:
@@ -2558,7 +2558,7 @@ EditProject As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
-                Height: =19
+                Height: =24
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
@@ -2568,6 +2568,6 @@ EditProject As screen:
                 RadiusTopRight: =0
                 Size: =8
                 Width: =106
-                X: =1260
+                X: =490
                 ZIndex: =29
 
