@@ -285,8 +285,8 @@ EditProject As screen:
             Height: =27
             Text: ="Neo"
             Visible: =varShowEL
-            Width: =200
-            X: =830
+            Width: =216
+            X: =889
             Y: =181
             ZIndex: =3
 
@@ -297,8 +297,8 @@ EditProject As screen:
             Height: =27
             Text: ="Masterchief"
             Visible: =varShowEL
-            Width: =200
-            X: =1031
+            Width: =216
+            X: =1106
             Y: =181
             ZIndex: =4
 
@@ -309,7 +309,7 @@ EditProject As screen:
             Height: =27
             Text: ="Name"
             Visible: =varShowEL
-            Width: =250
+            Width: =269
             X: =75
             Y: =181
             ZIndex: =13
@@ -321,8 +321,8 @@ EditProject As screen:
             Height: =27
             Text: ="Expected Date"
             Visible: =varShowEL
-            Width: =130
-            X: =498
+            Width: =139
+            X: =532
             Y: =181
             ZIndex: =14
 
@@ -333,8 +333,8 @@ EditProject As screen:
             Height: =27
             Text: ="Value"
             Visible: =varShowEL
-            Width: =110
-            X: =326
+            Width: =119
+            X: =346
             Y: =181
             ZIndex: =15
 
@@ -344,7 +344,7 @@ EditProject As screen:
             Layout: =Layout.Vertical
             TemplateSize: =25
             Visible: =varShowEL
-            Width: =1181
+            Width: =1273
             X: =70
             Y: =206
             ZIndex: =16
@@ -359,7 +359,7 @@ EditProject As screen:
                 PressedFill: =Self.DisabledFill
                 Size: =10
                 Text: =ThisItem.epic_name
-                Width: =250
+                Width: =271
                 ZIndex: =1
 
             Label5_2 As label:
@@ -370,8 +370,8 @@ EditProject As screen:
                 Size: =10
                 Text: |-
                     =Text( ThisItem.value_currency, "[$-en-US]$ ###,##0 ")
-                Width: =111
-                X: =250
+                Width: =121
+                X: =271
                 ZIndex: =2
 
             Label6_2 As label:
@@ -381,8 +381,8 @@ EditProject As screen:
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.expected_date
-                Width: =132
-                X: =421
+                Width: =144
+                X: =456
                 ZIndex: =3
 
             Label5_4 As label:
@@ -392,8 +392,8 @@ EditProject As screen:
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.currency_code
-                Width: =60
-                X: =361
+                Width: =64
+                X: =392
                 ZIndex: =4
 
             Label6_4 As label:
@@ -402,8 +402,8 @@ EditProject As screen:
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.pokemon_master_id
-                Width: =200
-                X: =553
+                Width: =215
+                X: =600
                 ZIndex: =5
 
             Label6_14 As label:
@@ -413,8 +413,8 @@ EditProject As screen:
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.neo_id
-                Width: =200
-                X: =753
+                Width: =215
+                X: =815
                 ZIndex: =6
 
             Label6_15 As label:
@@ -423,8 +423,8 @@ EditProject As screen:
                 OnSelect: =Select(Parent)
                 Size: =10
                 Text: =ThisItem.master_chief_id
-                Width: =202
-                X: =953
+                Width: =218
+                X: =1030
                 ZIndex: =7
 
         Label10_21 As label:
@@ -434,8 +434,8 @@ EditProject As screen:
             Height: =27
             Text: ="$"
             Visible: =varShowEL
-            Width: =60
-            X: =437
+            Width: =65
+            X: =466
             Y: =181
             ZIndex: =18
 
@@ -446,8 +446,8 @@ EditProject As screen:
             Height: =27
             Text: ="Pokemon"
             Visible: =varShowEL
-            Width: =200
-            X: =629
+            Width: =215
+            X: =673
             Y: =181
             ZIndex: =24
 
@@ -816,7 +816,7 @@ EditProject As screen:
                 Set(varShowNE,false);
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =30
-            X: =1147
+            X: =1203
             Y: =141
             ZIndex: =133
 
@@ -829,7 +829,7 @@ EditProject As screen:
                 Set(varShowNE,true);
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =30
-            X: =1007
+            X: =1063
             Y: =141
             ZIndex: =134
 
@@ -838,7 +838,7 @@ EditProject As screen:
             Text: ="Add New Epic"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =126
-            X: =879
+            X: =935
             Y: =141
             ZIndex: =135
 
@@ -847,7 +847,7 @@ EditProject As screen:
             Text: ="Epic List"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =92
-            X: =1058
+            X: =1114
             Y: =142
             ZIndex: =136
 
