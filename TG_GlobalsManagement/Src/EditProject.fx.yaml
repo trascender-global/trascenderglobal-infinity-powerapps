@@ -39,7 +39,7 @@ EditProject As screen:
             Height: =28
             Size: =18
             Text: |-
-                ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)&" "&varSelectedEpic
+                ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =788
             X: =71
@@ -53,7 +53,8 @@ EditProject As screen:
             Height: =32
             HoverFill: =ColorFade(RGBA(58, 203, 137, 0.6), -20%)
             OnSelect: |+
-                =Set(varShowPaymentsPL,true);
+                =Set(varShowPayments,true);
+                Set(varShowPaymentsPL,true);
                 Set(varShowPaymentsNP,false);
                 Set(varShowviewpayment,true);
                 Set(varShowFeaturesFL,false);
