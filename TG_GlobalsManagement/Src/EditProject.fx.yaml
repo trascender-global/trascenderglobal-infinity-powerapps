@@ -244,7 +244,8 @@ EditProject As screen:
             Size: =22
             Text: ="Edit Project"
             Width: =253
-            X: =1071
+            X: =1069
+            Y: =8
             ZIndex: =38
 
         Rectangle1_1 As rectangle:
@@ -2555,7 +2556,8 @@ EditProject As screen:
             NP_PaymentsGallery_FeeValue As text:
                 Align: =Align.Center
                 BorderThickness: =1
-                Default: =ThisItem.fee_value
+                Default: |-
+                    =Text(ThisItem.fee_value, "[$-en-US]$ ###,##0 ")
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
