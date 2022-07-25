@@ -28,7 +28,7 @@ EditProject As screen:
             Height: =28
             Size: =18
             Text: |-
-                ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)
+                ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)&varSelectedEpic
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =788
             X: =71
@@ -424,7 +424,8 @@ EditProject As screen:
 
             NP_PaymentsGallery_PaymentName As text:
                 BorderThickness: =1
-                Default: =ThisItem.payment_name
+                Default: |
+                    =ThisItem.payment_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -579,13 +580,15 @@ EditProject As screen:
             EP_PaymentsGallery_StatusOp As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.master_chief_id
+                Default: =ThisItem.status_op
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Distinct(GM_Payments,status_op)
+                Items: |
+                    =["True","False"]
                 OnSelect: =Select(Parent)
+                PaddingLeft: =40
                 Size: =8
                 Width: =133
                 X: =1198
@@ -980,6 +983,7 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(GM_Payments,status_op)
                 OnSelect: =Select(Parent)
+                PaddingLeft: =45
                 Size: =8
                 Width: =133
                 X: =1014
