@@ -3674,6 +3674,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "EditProject.NP_FeaturesSection_EstimatedTime.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.NP_FeaturesSection_EstimatedTime.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.NP_FeaturesSection_EstimatedTime"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_PaymentsGallery_Neo_1.AccessibleLabel"
                 }
               ],
@@ -4034,6 +4064,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "EditProject.NP_FeaturesSection_EstimatedValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.NP_FeaturesSection_EstimatedValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.NP_FeaturesSection_EstimatedValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject.NP_FeaturesSection_Currency.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.NP_FeaturesSection_Currency.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.NP_FeaturesSection_Currency"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "EditProject"
                 }
               ],
@@ -4171,7 +4261,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"EditProject\" is 419, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"EditProject\" is 425, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
