@@ -453,9 +453,9 @@ EditProject As screen:
                         gm_expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
                         fm_delivery_date:EP_PaymentsGallery_DeliveryDate.SelectedDate,
                         fm_invoice_date:EP_PaymentsGallery_InvoiceDate.SelectedDate,
-                        //pokemon_master_id: NP_PaymentsGallery_Pokemon.Selected.Value,
-                        //neo_id: NP_PaymentsGallery_Neo.Selected.Value,
-                        //master_chief_id: NP_PaymentsGallery_Masterchief.Selected.Value,
+                        pokemon_master_id: NP_PaymentsGallery_Pokemon.Selected.FullName,
+                        neo_id: NP_PaymentsGallery_Neo.Selected.FullName,
+                        master_chief_id: NP_PaymentsGallery_Masterchief.Selected.FullName,
                         editable: DisplayMode.Disabled
                     } );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
