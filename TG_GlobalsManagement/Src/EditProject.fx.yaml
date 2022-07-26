@@ -812,7 +812,7 @@ EditProject As screen:
             Y: =29
             ZIndex: =2
 
-            NP_FeaturesGallery_DeleteButton As icon.Trash:
+            EP_FeaturesGallery_DeleteButton As icon.Trash:
                 Height: =19
                 Icon: =Icon.Trash
                 OnSelect: |-
@@ -822,7 +822,7 @@ EditProject As screen:
                 X: =1546
                 ZIndex: =9
 
-            NP_FeaturesGallery_EditButton As icon.Edit:
+            EP_FeaturesGallery_EditButton As icon.Edit:
                 Height: =19
                 Icon: =Icon.Edit
                 OnSelect: |-
@@ -832,7 +832,7 @@ EditProject As screen:
                 X: =1525
                 ZIndex: =10
 
-            NP_FeaturesGallery_FeatureName As text:
+            EP_FeaturesGallery_FeatureName As text:
                 BorderThickness: =1
                 Default: =ThisItem.feature_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
@@ -850,23 +850,20 @@ EditProject As screen:
                 Width: =150
                 ZIndex: =11
 
-            NP_FeaturesGallery_SaveButton As icon.Save:
+            EP_FeaturesGallery_SaveButton As icon.Save:
                 Height: =19
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =/*Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), 
-                    {   payment_name:NP_PaymentsGallery_PaymentName.Text,
-                        epic_id:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
-                        value_currency: NP_PaymentsGallery_Value,
-                        currency_code: NP_PaymentsGallery_Currency.Text,
-                        gm_expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
-                        pokemon_master_id: NP_PaymentsGallery_Pokemon.Selected.Value,
-                        neo_id: NP_PaymentsGallery_Neo.Selected.Value,
-                        master_chief_id: NP_PaymentsGallery_Masterchief.Selected.Value,
-                        editable: DisplayMode.Disabled
-                    } );*/
-                    Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID)), 
-                    {   
+                    =Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), 
+                    {   feature_name:EP_FeaturesGallery_FeatureName.Text,
+                        //epic_name:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
+                        neo_id: EP_FeaturesGallery_Neo.Selected.Result,
+                        master_chief_id: EP_FeaturesGallery_Masterchief.Selected.Result,
+                        estimation_Value:Value(EP_FeaturesGallery_EstimatedValue.Text),
+                        currency_code:EP_FeaturesGallery_Currency.Text,
+                        Status: EP_FeaturesGallery_Status.Selected.Value,
+                        delivery_date: EP_FeaturesGallery_DeliveryDate.SelectedDate,
+                        created_date: EP_FeaturesGallery_CreatedDate.SelectedDate,
                         editable: DisplayMode.Disabled
                     } );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
@@ -874,7 +871,7 @@ EditProject As screen:
                 X: =1525
                 ZIndex: =12
 
-            NP_FeaturesGallery_EstimatedValue As text:
+            EP_FeaturesGallery_EstimatedValue As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |-
@@ -893,7 +890,7 @@ EditProject As screen:
                 X: =755
                 ZIndex: =14
 
-            NP_FeaturesGallery_Currency As text:
+            EP_FeaturesGallery_Currency As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |
@@ -911,7 +908,7 @@ EditProject As screen:
                 X: =858
                 ZIndex: =15
 
-            NP_FeaturesGallery_Neo As dropdown:
+            EP_FeaturesGallery_Neo As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.neo_id
@@ -926,7 +923,7 @@ EditProject As screen:
                 X: =350
                 ZIndex: =20
 
-            NP_FeaturesGallery_ExpectedDate As datepicker:
+            EP_FeaturesGallery_ExpectedDate As datepicker:
                 BorderThickness: =1
                 DefaultDate: =ThisItem.delivery_date
                 DisplayMode: =ThisItem.editable
@@ -939,7 +936,7 @@ EditProject As screen:
                 X: =1270
                 ZIndex: =22
 
-            NP_FeaturesGallery_Masterchief As dropdown:
+            EP_FeaturesGallery_Masterchief As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.master_chief_id
@@ -954,7 +951,7 @@ EditProject As screen:
                 X: =550
                 ZIndex: =23
 
-            NP_FeaturesGallery_Epic As dropdown:
+            EP_FeaturesGallery_Epic As dropdown:
                 BorderThickness: =1
                 Default: |
                     =LookUp(CollectionSQL_Epics,epic_id=ThisItem.epic_id,epic_name)

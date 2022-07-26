@@ -1754,19 +1754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_FeatureName.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_FeatureName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_FeatureName.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_FeatureName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_FeatureName"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_FeatureName"
               }
             }
           ],
@@ -1784,19 +1784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Epic.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Epic.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Epic.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Epic.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Epic"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Epic"
               }
             }
           ],
@@ -1814,19 +1814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Neo.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Neo.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Neo.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Neo.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Neo"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Neo"
               }
             }
           ],
@@ -1844,19 +1844,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Masterchief.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Masterchief.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Masterchief.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Masterchief.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Masterchief"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Masterchief"
               }
             }
           ],
@@ -1874,19 +1874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EstimatedValue.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EstimatedValue.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EstimatedValue.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EstimatedValue.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EstimatedValue"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EstimatedValue"
               }
             }
           ],
@@ -1904,19 +1904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Currency.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Currency.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Currency.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Currency.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_Currency"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_Currency"
               }
             }
           ],
@@ -2024,19 +2024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_ExpectedDate.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_ExpectedDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_ExpectedDate.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_ExpectedDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_ExpectedDate"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_ExpectedDate"
               }
             }
           ],
@@ -2084,19 +2084,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EditButton.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EditButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EditButton.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EditButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EditButton"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EditButton"
               }
             }
           ],
@@ -2114,19 +2114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EditButton.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EditButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EditButton.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EditButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_EditButton"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_EditButton"
               }
             }
           ],
@@ -2144,49 +2144,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_SaveButton.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_SaveButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_SaveButton.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_SaveButton"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_SaveButton.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_SaveButton.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_SaveButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_SaveButton"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_SaveButton"
               }
             }
           ],
@@ -2204,19 +2174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_DeleteButton.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_SaveButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_DeleteButton.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_SaveButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_DeleteButton"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_SaveButton"
               }
             }
           ],
@@ -2234,19 +2204,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_DeleteButton.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_DeleteButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_DeleteButton.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_DeleteButton.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_DeleteButton"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_DeleteButton.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_DeleteButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.NP_FeaturesGallery_DeleteButton"
+                "type": "EditProject.EP_FeaturesContainer.EP_PaymentsGallery_1.EP_FeaturesGallery_DeleteButton"
               }
             }
           ],
