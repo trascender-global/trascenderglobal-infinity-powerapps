@@ -59053,7 +59053,7 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"FullName\"}",
+          "NameMap": "{\"Value\":\"Result\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -59747,7 +59747,7 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"FullName\"}",
+          "NameMap": "{\"Value\":\"Result\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -60097,7 +60097,7 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"FullName\"}",
+          "NameMap": "{\"Value\":\"Result\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

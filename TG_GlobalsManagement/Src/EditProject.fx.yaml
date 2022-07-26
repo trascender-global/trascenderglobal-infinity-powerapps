@@ -457,6 +457,7 @@ EditProject As screen:
                         pokemon_master_id: NP_PaymentsGallery_Pokemon.Selected.Result,
                         neo_id: NP_PaymentsGallery_Neo.Selected.Result,
                         master_chief_id: NP_PaymentsGallery_Masterchief.Selected.Result,
+                        status_op:EP_PaymentsGallery_StatusOp.Selected.Value,
                         editable: DisplayMode.Disabled
                     } );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
@@ -1731,7 +1732,7 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: |
-                =Filter(TD_Trascendentales,Status="Active").FullName
+                =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(pokemon_master_id))),pokemon_master_id)
             Size: =12
             Visible: =varShowPaymentsNP 
             Width: =281
@@ -1743,7 +1744,7 @@ EditProject As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
-            Items: =Filter(TD_Trascendentales,Status="Active").FullName
+            Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
             Size: =12
             Visible: =varShowPaymentsNP 
             Width: =298
@@ -1755,7 +1756,7 @@ EditProject As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
-            Items: =Filter(TD_Trascendentales,Status="Active").FullName
+            Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
             Size: =12
             Visible: =varShowPaymentsNP 
             Width: =312
@@ -1899,9 +1900,9 @@ EditProject As screen:
                         value: NP_PaymentsSection_Value.Text,
                         currency: NP_PaymentsSection_Currency.Selected.Value,
                         expected_date: NP_PaymentsSection_ExpectedDate.SelectedDate,
-                        pokemon:NP_PaymentsSection_Pokemon.Selected.FullName,
-                        neo:NP_PaymentsSection_Neo.Selected.FullName,
-                        masterchief:NP_PaymentsSection_Masterchief.Selected.FullName,
+                        pokemon:NP_PaymentsSection_Pokemon.Selected.Result,
+                        neo:NP_PaymentsSection_Neo.Selected.Result,
+                        masterchief:NP_PaymentsSection_Masterchief.Selected.Result,
                         status:NP_PaymentsSection_Status.Selected.Value,
                         fee: NP_PaymentsSection_Fee.Text,
                         editable: DisplayMode.Disabled
@@ -1916,6 +1917,7 @@ EditProject As screen:
                 Reset(NP_PaymentsSection_Masterchief);
                 Reset(NP_PaymentsSection_Status);
                 Reset(NP_PaymentsSection_Fee);
+                NotificationType.Success;
             Text: ="Create"
             Visible: =varShowPaymentsNP 
             Width: =173
