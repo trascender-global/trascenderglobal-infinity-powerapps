@@ -1897,14 +1897,14 @@ EditProject As screen:
                         PaymentID: Last(CollectionSQL_Payments).PaymentID+1,
                         payment_name: NP_PaymentsSection_Name.Text,
                         epic_id: varSelectedEpic,
-                        value: NP_PaymentsSection_Value.Text,
-                        currency: NP_PaymentsSection_Currency.Selected.Value,
-                        expected_date: NP_PaymentsSection_ExpectedDate.SelectedDate,
-                        pokemon:NP_PaymentsSection_Pokemon.Selected.Result,
-                        neo:NP_PaymentsSection_Neo.Selected.Result,
-                        masterchief:NP_PaymentsSection_Masterchief.Selected.Result,
-                        status:NP_PaymentsSection_Status.Selected.Value,
-                        fee: NP_PaymentsSection_Fee.Text,
+                        value_currency: Value(NP_PaymentsSection_Value.Text),
+                        currency_code: NP_PaymentsSection_Currency.Selected.Value,
+                        gm_expected_date: NP_PaymentsSection_ExpectedDate.SelectedDate,
+                        pokemon_master_id:NP_PaymentsSection_Pokemon.Selected.Result,
+                        neo_id:NP_PaymentsSection_Neo.Selected.Result,
+                        master_chief_id:NP_PaymentsSection_Masterchief.Selected.Result,
+                        status_op:NP_PaymentsSection_Status.Selected.Value,
+                        fee_value: Value(NP_PaymentsSection_Fee.Text),
                         editable: DisplayMode.Disabled
                      });
                 
