@@ -1487,7 +1487,7 @@ EditProject As screen:
         Y: =40
         ZIndex: =148
 
-        NP_SaveProjectDetailsButton As icon.Save:
+        EP_SaveProjectDetailsButton As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
             Height: =47
             Icon: =Icon.Save
@@ -1498,11 +1498,12 @@ EditProject As screen:
                 Set(varShowPayments,false);
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =65
-            X: =1058
-            Y: =78
+            X: =1293
+            Y: =80
             ZIndex: =27
 
-        Icon3 As icon.Edit:
+        EP_EditProjectDetailsButton As icon.Edit:
+            Color: =RGBA(58, 87, 255, 1)
             Height: =52
             Icon: =Icon.Edit
             OnSelect: |-
@@ -1511,11 +1512,11 @@ EditProject As screen:
                 Set(varShowNE,false);
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =39
-            X: =1133
-            Y: =76
+            X: =1255
+            Y: =75
             ZIndex: =28
 
-        NP_EpicSectionTitleLabel_3 As label:
+        EP_EpicSectiondealValueLabel As label:
             Color: =RGBA(58, 203, 137, 1)
             FontWeight: =FontWeight.Bold
             Height: =27
@@ -1528,7 +1529,7 @@ EditProject As screen:
             Y: =68
             ZIndex: =29
 
-        NP_EpicSectionTitleLabel_5 As label:
+        EP_EpicSectionProjectValueLabel As label:
             FontWeight: =FontWeight.Bold
             Height: =29
             Size: =18
@@ -1540,7 +1541,7 @@ EditProject As screen:
             Y: =98
             ZIndex: =30
 
-        NP_SelectProject_ComboBox As combobox:
+        EP_SelectProject_ComboBox As combobox:
             BorderThickness: =1
             DisplayFields: =["project_name"]
             FocusedBorderThickness: =1
@@ -1552,18 +1553,18 @@ EditProject As screen:
             OnSelect: |-
                 =Set(varProjectDetails,
                     {
-                        id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
-                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name, id),
-                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,line_of_business),
-                        segment: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,segment),
-                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,start_date),
-                        project_name: NP_SelectProject_ComboBox.Selected.project_name,
-                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,project_link),
-                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,currency_code),
-                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
-                        status: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,status),
-                        observations: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,observations),
-                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = NP_SelectProject_ComboBox.Selected.project_name,created_date)
+                        id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
+                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
+                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,line_of_business),
+                        segment: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,segment),
+                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,start_date),
+                        project_name: EP_SelectProject_ComboBox.Selected.project_name,
+                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,project_link),
+                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,currency_code),
+                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
+                        status: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,status),
+                        observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
+                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
                     });
                 
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
@@ -1592,7 +1593,7 @@ EditProject As screen:
             Y: =61
             ZIndex: =32
 
-        NP_EpicSectionTitleLabel_6 As label:
+        EP_EpicSectionStatus_Label As label:
             FontWeight: =FontWeight.Bold
             Height: =25
             Size: =15
@@ -1615,7 +1616,7 @@ EditProject As screen:
             Y: =61
             ZIndex: =34
 
-        NP_EpicSectionTitleLabel_7 As label:
+        EP_EpicSectionSegment_Label As label:
             FontWeight: =FontWeight.Bold
             Height: =25
             Size: =15
@@ -1626,7 +1627,7 @@ EditProject As screen:
             Y: =61
             ZIndex: =35
 
-        Icon2 As icon.ListScrollWatchlist:
+        EP_EpicSectionEpicList As icon.ListScrollWatchlist:
             Height: =30
             Icon: =Icon.ListScrollWatchlist
             OnSelect: |-
@@ -1639,7 +1640,7 @@ EditProject As screen:
             Y: =141
             ZIndex: =126
 
-        Icon5 As icon.AddDocument:
+        EP_EpicSectionNewEpic As icon.AddDocument:
             Height: =30
             Icon: =Icon.AddDocument
             OnSelect: |-
@@ -1870,7 +1871,7 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: |
-                =["Normal"]
+                =["True","False"]
             Size: =12
             Visible: =varShowPaymentsNP 
             Width: =175

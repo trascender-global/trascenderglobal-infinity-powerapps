@@ -314,19 +314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon3.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditProjectDetailsButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon3.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditProjectDetailsButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon3"
+                "type": "EditProject.EP_EditProjectDetailsButton"
               }
             }
           ],
@@ -344,19 +344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon3.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_EditProjectDetailsButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon3.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_EditProjectDetailsButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon3"
+                "type": "EditProject.EP_EditProjectDetailsButton"
               }
             }
           ],
@@ -374,19 +374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_SaveProjectDetailsButton.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_SaveProjectDetailsButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.NP_SaveProjectDetailsButton.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_SaveProjectDetailsButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.NP_SaveProjectDetailsButton"
+                "type": "EditProject.EP_SaveProjectDetailsButton"
               }
             }
           ],
@@ -404,19 +404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_SaveProjectDetailsButton.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_SaveProjectDetailsButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.NP_SaveProjectDetailsButton.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_SaveProjectDetailsButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.NP_SaveProjectDetailsButton"
+                "type": "EditProject.EP_SaveProjectDetailsButton"
               }
             }
           ],
@@ -494,19 +494,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_SelectProject_ComboBox.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_SelectProject_ComboBox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.NP_SelectProject_ComboBox.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_SelectProject_ComboBox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.NP_SelectProject_ComboBox"
+                "type": "EditProject.EP_SelectProject_ComboBox"
               }
             }
           ],
@@ -524,19 +524,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionNewEpic.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionNewEpic.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon5"
+                "type": "EditProject.EP_EpicSectionNewEpic"
               }
             }
           ],
@@ -554,19 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionNewEpic.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionNewEpic.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon5"
+                "type": "EditProject.EP_EpicSectionNewEpic"
               }
             }
           ],
@@ -584,19 +584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionEpicList.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionEpicList.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon2"
+                "type": "EditProject.EP_EpicSectionEpicList"
               }
             }
           ],
@@ -614,19 +614,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionEpicList.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_EpicSectionEpicList.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon2"
+                "type": "EditProject.EP_EpicSectionEpicList"
               }
             }
           ],
