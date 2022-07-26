@@ -454,9 +454,9 @@ EditProject As screen:
                         gm_expected_date:NP_PaymentsGallery_ExpectedDate.SelectedDate,
                         fm_delivery_date:EP_PaymentsGallery_DeliveryDate.SelectedDate,
                         fm_invoice_date:EP_PaymentsGallery_InvoiceDate.SelectedDate,
-                        pokemon_master_id: NP_PaymentsGallery_Pokemon.Selected.FullName,
-                        neo_id: NP_PaymentsGallery_Neo.Selected.FullName,
-                        master_chief_id: NP_PaymentsGallery_Masterchief.Selected.FullName,
+                        pokemon_master_id: NP_PaymentsGallery_Pokemon.Selected.Result,
+                        neo_id: NP_PaymentsGallery_Neo.Selected.Result,
+                        master_chief_id: NP_PaymentsGallery_Masterchief.Selected.Result,
                         editable: DisplayMode.Disabled
                     } );
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
@@ -510,7 +510,7 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Filter(TD_Trascendentales,Status="Active").FullName
+                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =200
@@ -525,7 +525,7 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Filter(TD_Trascendentales,Status="Active").FullName
+                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(pokemon_master_id))),pokemon_master_id)
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =202
@@ -553,9 +553,7 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: |-
-                    =//Filter(TD_Trascendentales,Status="Active").FullName
-                    TD_Trascendentales
+                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =203
