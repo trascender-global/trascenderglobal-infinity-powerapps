@@ -28,7 +28,7 @@ EditProject As screen:
             Height: =28
             Size: =18
             Text: |-
-                ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)&varSelectedEpic
+                ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =788
             X: =71
@@ -812,7 +812,7 @@ EditProject As screen:
             Y: =29
             ZIndex: =2
 
-            NP_PaymentsGallery_DeleteButton_1 As icon.Trash:
+            NP_FeaturesGallery_DeleteButton As icon.Trash:
                 Height: =19
                 Icon: =Icon.Trash
                 OnSelect: |-
@@ -822,7 +822,7 @@ EditProject As screen:
                 X: =1546
                 ZIndex: =9
 
-            NP_PaymentsGallery_EditButton_1 As icon.Edit:
+            NP_FeaturesGallery_EditButton As icon.Edit:
                 Height: =19
                 Icon: =Icon.Edit
                 OnSelect: |-
@@ -832,7 +832,7 @@ EditProject As screen:
                 X: =1525
                 ZIndex: =10
 
-            NP_PaymentsGallery_PaymentName_1 As text:
+            NP_FeaturesGallery_FeatureName As text:
                 BorderThickness: =1
                 Default: =ThisItem.feature_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
@@ -850,7 +850,7 @@ EditProject As screen:
                 Width: =150
                 ZIndex: =11
 
-            NP_PaymentsGallery_SaveButton_1 As icon.Save:
+            NP_FeaturesGallery_SaveButton As icon.Save:
                 Height: =19
                 Icon: =Icon.Save
                 OnSelect: |-
@@ -874,7 +874,7 @@ EditProject As screen:
                 X: =1525
                 ZIndex: =12
 
-            NP_PaymentsGallery_Value_1 As text:
+            NP_FeaturesGallery_EstimatedValue As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |-
@@ -893,12 +893,11 @@ EditProject As screen:
                 X: =755
                 ZIndex: =14
 
-            NP_PaymentsGallery_Currency_1 As text:
+            NP_FeaturesGallery_Currency As text:
                 Align: =Align.Center
                 BorderThickness: =1
-                Default: |-
+                Default: |
                     =ThisItem.currency_code
-                    //ThisItem.pokemon_master_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 Height: =24
@@ -912,7 +911,7 @@ EditProject As screen:
                 X: =858
                 ZIndex: =15
 
-            NP_PaymentsGallery_Neo_1 As dropdown:
+            NP_FeaturesGallery_Neo As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.neo_id
@@ -920,7 +919,7 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Filter(TD_Trascendentales,Status="Active").FullName
+                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =200
@@ -940,7 +939,7 @@ EditProject As screen:
                 X: =1270
                 ZIndex: =22
 
-            NP_PaymentsGallery_Masterchief_1 As dropdown:
+            NP_FeaturesGallery_Masterchief As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.master_chief_id
@@ -948,16 +947,14 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: |-
-                    =//Filter(TD_Trascendentales,Status="Active").FullName
-                    TD_Trascendentales
+                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
                 OnSelect: =Select(Parent)
                 Size: =8
                 Width: =203
                 X: =550
                 ZIndex: =23
 
-            NP_PaymentsGallery_Epic_1 As dropdown:
+            NP_FeaturesGallery_Epic As dropdown:
                 BorderThickness: =1
                 Default: |
                     =LookUp(CollectionSQL_Epics,epic_id=ThisItem.epic_id,epic_name)
@@ -972,7 +969,7 @@ EditProject As screen:
                 X: =150
                 ZIndex: =24
 
-            EP_PaymentsGallery_StatusOp_1 As dropdown:
+            EP_FeaturesGallery_Status As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =ThisItem.Status
@@ -980,7 +977,7 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Distinct(GM_Payments,status_op)
+                Items: =["True","False"]
                 OnSelect: =Select(Parent)
                 PaddingLeft: =45
                 Size: =8
@@ -1014,7 +1011,7 @@ EditProject As screen:
                 X: =1396
                 ZIndex: =28
 
-            EP_PaymentsGallery_FeeValue_1 As text:
+            EP_FeaturesGallery_EstimatedTime As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.estimation_Value
