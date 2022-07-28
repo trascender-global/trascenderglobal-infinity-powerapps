@@ -1486,198 +1486,6 @@ EditProject As screen:
             Y: =181
             ZIndex: =9
 
-    EP_General_Information As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =148
-
-        EP_SaveProjectDetailsButton As icon.Save:
-            Color: =RGBA(58, 87, 255, 1)
-            Height: =47
-            Icon: =Icon.Save
-            OnSelect: |-
-                =Set(varShowPopupSaveDetails,true);
-                Set(varShowFeatures,false);
-                Set(varShowResources,false);
-                Set(varShowPayments,false);
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =65
-            X: =1260
-            Y: =78
-            ZIndex: =27
-
-        EP_EditProjectDetailsButton As icon.Edit:
-            Color: =RGBA(58, 87, 255, 1)
-            Height: =57
-            Icon: =Icon.Edit
-            OnSelect: |-
-                =Set(varShowEditProjectDetailsPopUp,true);
-                Set(varShowEL,false);
-                Set(varShowNE,false);
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =42
-            X: =1210
-            Y: =75
-            ZIndex: =28
-
-        EP_EpicSectiondealValueLabel As label:
-            Color: =RGBA(58, 203, 137, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =18
-            Text: |
-                ="Deal Value:      "&Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =370
-            X: =652
-            Y: =68
-            ZIndex: =29
-
-        EP_EpicSectionProjectValueLabel As label:
-            FontWeight: =FontWeight.Bold
-            Height: =29
-            Size: =18
-            Text: |
-                ="Project Value: "&Text(Sum(PaymentsCollection, value), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =373
-            X: =652
-            Y: =98
-            ZIndex: =30
-
-        EP_SelectProject_ComboBox As combobox:
-            BorderThickness: =1
-            DisplayFields: =["project_name"]
-            FocusedBorderThickness: =1
-            Height: =32
-            IsSearchable: =false
-            Items: |-
-                =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
-                //GM_GlobalGeneralInformation.project_name
-            OnSelect: |-
-                =Set(varProjectDetails,
-                    {
-                        id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
-                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
-                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,line_of_business),
-                        segment: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,segment),
-                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,start_date),
-                        project_name: EP_SelectProject_ComboBox.Selected.project_name,
-                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,project_link),
-                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,currency_code),
-                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
-                        status: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,status),
-                        observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
-                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
-                    });
-                
-                //Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
-                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
-                ClearCollect(CollectionSQL_Features, GM_Features);
-            SearchFields: =["project_name"]
-            SearchItems: =[]
-            SelectMultiple: =false
-            Size: =16
-            Underline: =true
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =564
-            X: =69
-            Y: =95
-            ZIndex: =31
-
-        EP_GeneralStatus_Dropdown As dropdown:
-            BorderThickness: =1
-            Default: ="Normal"
-            FocusedBorderThickness: =1
-            Height: =25
-            Items: =Distinct(GM_GlobalGeneralInformation,status)
-            OnSelect: =
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =185
-            X: =145
-            Y: =61
-            ZIndex: =32
-
-        EP_EpicSectionStatus_Label As label:
-            FontWeight: =FontWeight.Bold
-            Height: =25
-            Size: =15
-            Text: ="Status"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =94
-            X: =70
-            Y: =61
-            ZIndex: =33
-
-        EP_GeneralSegment_Dropdown As dropdown:
-            BorderThickness: =1
-            FocusedBorderThickness: =1
-            Height: =25
-            Items: =Distinct(GM_GlobalGeneralInformation,segment)
-            OnSelect: =
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =185
-            X: =448
-            Y: =61
-            ZIndex: =34
-
-        EP_EpicSectionSegment_Label As label:
-            FontWeight: =FontWeight.Bold
-            Height: =25
-            Size: =15
-            Text: ="Segment"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =109
-            X: =342
-            Y: =61
-            ZIndex: =35
-
-        EP_EpicSectionEpicList As icon.ListScrollWatchlist:
-            Height: =30
-            Icon: =Icon.ListScrollWatchlist
-            OnSelect: |-
-                =Set(varShowEditProjectDetailsPopUp,false);
-                Set(varShowEL,true);
-                Set(varShowNE,false);
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =30
-            X: =1294
-            Y: =141
-            ZIndex: =126
-
-        EP_EpicSectionNewEpic As icon.AddDocument:
-            Height: =30
-            Icon: =Icon.AddDocument
-            OnSelect: |-
-                =Set(varShowEditProjectDetailsPopUp,false);
-                Set(varShowEL,false);
-                Set(varShowNE,true);
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =30
-            X: =1154
-            Y: =141
-            ZIndex: =127
-
-        Label2 As label:
-            Height: =28
-            Text: ="Add New Epic"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =126
-            X: =1026
-            Y: =141
-            ZIndex: =128
-
-        Label2_1 As label:
-            Height: =28
-            Text: ="Epic List"
-            Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =92
-            X: =1205
-            Y: =142
-            ZIndex: =129
-
     EP_Payments_New_Payment As group:
         Height: =5
         Width: =5
@@ -2086,7 +1894,7 @@ EditProject As screen:
 
             EP_FeaturesGallery_FeatureName_1 As text:
                 BorderThickness: =1
-                Default: =ThisItem.resource_id
+                Default: =ThisItem.resource_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2223,7 +2031,7 @@ EditProject As screen:
             EP_FeaturesGallery_EstimatedTime_1 As text:
                 Align: =Align.Center
                 BorderThickness: =1
-                Default: =ThisItem.estimation_value
+                Default: =ThisItem.estimation_time_hrs
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2460,6 +2268,210 @@ EditProject As screen:
             Y: =633
             ZIndex: =149
 
+    EP_GeneralInformation As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =152
+
+        EP_SaveProjectDetailsButton As icon.Save:
+            Color: =RGBA(58, 87, 255, 1)
+            Height: =47
+            Icon: =Icon.Save
+            OnSelect: |-
+                =Set(varShowPopupSaveDetails,true);
+                Set(varShowFeatures,false);
+                Set(varShowResources,false);
+                Set(varShowPayments,false);
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =65
+            X: =1260
+            Y: =78
+            ZIndex: =27
+
+        EP_EditProjectDetailsButton As icon.Edit:
+            Color: =RGBA(58, 87, 255, 1)
+            Height: =57
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =Set(varShowEditProjectDetailsPopUp,true);
+                Set(varShowEL,false);
+                Set(varShowNE,false);
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =42
+            X: =1210
+            Y: =75
+            ZIndex: =28
+
+        EP_EpicSectiondealValueLabel As label:
+            Color: =RGBA(58, 203, 137, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =18
+            Text: |
+                ="Project Value:      "&Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =370
+            X: =652
+            Y: =68
+            ZIndex: =29
+
+        EP_EpicSectionProjectValueLabel As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =16
+            Text: |-
+                ="Epic's Payments Total: "&Text(Sum(CollectionSQL_Payments, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =461
+            X: =75
+            Y: =484
+            ZIndex: =30
+
+        EP_SelectProject_ComboBox As combobox:
+            BorderThickness: =1
+            DisplayFields: =["project_name"]
+            FocusedBorderThickness: =1
+            Height: =32
+            IsSearchable: =false
+            Items: |-
+                =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
+                //GM_GlobalGeneralInformation.project_name
+            OnSelect: |-
+                =Set(varProjectDetails,
+                    {
+                        id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
+                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
+                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,line_of_business),
+                        segment: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,segment),
+                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,start_date),
+                        project_name: EP_SelectProject_ComboBox.Selected.project_name,
+                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,project_link),
+                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,currency_code),
+                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
+                        status: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,status),
+                        observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
+                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
+                    });
+                
+                //Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
+                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
+                ClearCollect(CollectionSQL_Features, GM_Features);
+            SearchFields: =["project_name"]
+            SearchItems: =[]
+            SelectMultiple: =false
+            Size: =16
+            Underline: =true
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =564
+            X: =69
+            Y: =95
+            ZIndex: =31
+
+        EP_GeneralStatus_Dropdown As dropdown:
+            BorderThickness: =1
+            Default: ="Normal"
+            FocusedBorderThickness: =1
+            Height: =25
+            Items: =Distinct(GM_GlobalGeneralInformation,status)
+            OnSelect: =
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =185
+            X: =145
+            Y: =61
+            ZIndex: =32
+
+        EP_EpicSectionStatus_Label As label:
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Size: =15
+            Text: ="Status"
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =94
+            X: =70
+            Y: =61
+            ZIndex: =33
+
+        EP_GeneralSegment_Dropdown As dropdown:
+            BorderThickness: =1
+            FocusedBorderThickness: =1
+            Height: =25
+            Items: =Distinct(GM_GlobalGeneralInformation,segment)
+            OnSelect: =
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =185
+            X: =448
+            Y: =61
+            ZIndex: =34
+
+        EP_EpicSectionSegment_Label As label:
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Size: =15
+            Text: ="Segment"
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =109
+            X: =342
+            Y: =61
+            ZIndex: =35
+
+        EP_EpicSectionEpicList As icon.ListScrollWatchlist:
+            Height: =30
+            Icon: =Icon.ListScrollWatchlist
+            OnSelect: |-
+                =Set(varShowEditProjectDetailsPopUp,false);
+                Set(varShowEL,true);
+                Set(varShowNE,false);
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =30
+            X: =1294
+            Y: =141
+            ZIndex: =126
+
+        EP_EpicSectionNewEpic As icon.AddDocument:
+            Height: =30
+            Icon: =Icon.AddDocument
+            OnSelect: |-
+                =Set(varShowEditProjectDetailsPopUp,false);
+                Set(varShowEL,false);
+                Set(varShowNE,true);
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =30
+            X: =1154
+            Y: =141
+            ZIndex: =127
+
+        Label2 As label:
+            Height: =28
+            Text: ="Add New Epic"
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =126
+            X: =1026
+            Y: =141
+            ZIndex: =128
+
+        Label2_1 As label:
+            Height: =28
+            Text: ="Epic List"
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =92
+            X: =1205
+            Y: =142
+            ZIndex: =129
+
+        EP_EpicSectionProjectValueLabel_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =18
+            Text: |
+                ="Total Payments Value: "&Text(Sum(CollectionSQL_Epics, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =461
+            X: =652
+            Y: =101
+            ZIndex: =151
+
     EP_ViewPaymentToggle As group:
         Height: =5
         Width: =5
@@ -2630,13 +2642,13 @@ EditProject As screen:
         NP_ResourcesSection_CreateButton As button:
             Height: =32
             OnSelect: |+
-                =Collect(ResourcesCollection,
+                =Collect(CollectionSQL_Resources,
                     {
                         resource_name: NP_ResourcesSection_Name.Text,
                         epic: varSelectedEpic,
                         type: NP_ResourcesSection_Type.Selected.Value,
-                        estimated_time:NP_ResourcesSection_EstimatedTime.Text,
-                        estimated_value:NP_ResourcesSection_EstimatedValue.Text,
+                        estimation_time_hrs: Value(NP_ResourcesSection_EstimatedTime.Text),
+                        estimation_value: Value(NP_ResourcesSection_EstimatedValue.Text),
                         feature:NP_ResourcesSection_Feature.Selected.Value,
                         currency:NP_ResourcesSection_Currency.Selected.Value
                      });
