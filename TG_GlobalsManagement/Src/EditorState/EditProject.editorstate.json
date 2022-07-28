@@ -7415,7 +7415,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_FeaturesGallery_DeleteButton_1",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13288,7 +13288,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_FeaturesGallery_SaveButton_1",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

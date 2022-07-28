@@ -333,7 +333,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/28/2022 20:29:12",
+  "HeaderLastSavedDateTimeUTC": "07/28/2022 20:43:12",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -357,8 +357,9 @@
     "CollectionSQL_Epics": 18,
     "CollectionSQL_Features": 20,
     "CollectionSQL_Payments": 19,
+    "CollectionSQL_Resources": 21,
     "ColumnChartSample": 0,
-    "ComboBoxSample": 13,
+    "ComboBoxSample": 12,
     "CRM_Deals": 1,
     "CustomGallerySample": 2,
     "DropDownSample": 3,
@@ -368,13 +369,13 @@
     "GM_Features": 5,
     "GM_GlobalGeneralInformation": 6,
     "GM_Payments": 7,
+    "GM_ResourceEstimation": 13,
     "LegendSample": 8,
     "PaymentsCollection": 16,
     "PieChartSample": 9,
     "RadioSample": 10,
     "ResourcesCollection": 15,
-    "TD_Trascendentales": 12,
-    "VW_FM_Transactions": 11
+    "TD_Trascendentales": 11
   },
   "OrderGroupControls": {
     "EP_EditProjectGeneralGroup": {
@@ -657,7 +658,7 @@
     "EP_FeaturesGallery_Currency": 225,
     "EP_FeaturesGallery_Currency_1": 251,
     "EP_FeaturesGallery_DeleteButton": 233,
-    "EP_FeaturesGallery_DeleteButton_1": 255,
+    "EP_FeaturesGallery_DeleteButton_1": 256,
     "EP_FeaturesGallery_DeliveryDate": 230,
     "EP_FeaturesGallery_EditButton": 231,
     "EP_FeaturesGallery_EditButton_1": 254,
@@ -675,7 +676,7 @@
     "EP_FeaturesGallery_Neo": 222,
     "EP_FeaturesGallery_Neo_1": 248,
     "EP_FeaturesGallery_SaveButton": 232,
-    "EP_FeaturesGallery_SaveButton_1": 256,
+    "EP_FeaturesGallery_SaveButton_1": 255,
     "EP_FeaturesGallery_Status": 227,
     "EP_FeaturesGallery_Status_1": 253,
     "EP_General_Information": 77,
@@ -973,7 +974,7 @@
       "text": 40
     },
     "DeserializationLoadTime": 3.063988,
-    "ErrorCount": 9
+    "ErrorCount": 3
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

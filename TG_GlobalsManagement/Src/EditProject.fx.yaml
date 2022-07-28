@@ -1380,6 +1380,7 @@ EditProject As screen:
                     =Set(varSelectedEpic,ThisItem.epic_id);
                     ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
                     ClearCollect(CollectionSQL_Features, AddColumns(Filter(GM_Features,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
+                    ClearCollect(CollectionSQL_Resources, AddColumns(GM_ResourceEstimation,"editable",DisplayMode.Disabled));
                 PressedColor: =RGBA(166, 166, 166, 1)
                 PressedFill: =Self.DisabledFill
                 Size: =10
@@ -2044,10 +2045,7 @@ EditProject As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =171
-            Items: |-
-                =Filter(CollectionSQL_Features,varSelectedEpic=epic_id && Not(IsBlank(feature_name)))
-                //CollectionSQL_Payments
-                //Filter(CollectionSQL_Payments,epic_id = varSelectedEpic)
+            Items: =CollectionSQL_Resources
             Layout: =Layout.Vertical
             LayoutMinHeight: =287
             LayoutMinWidth: =400
@@ -2062,8 +2060,8 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Trash
                 OnSelect: |-
-                    =Remove( CollectionSQL_Features,
-                    First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));
+                    =/*Remove( CollectionSQL_Features,
+                    First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));*/
                 Width: =20
                 X: =1225
                 ZIndex: =9
@@ -2072,7 +2070,7 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Edit
                 OnSelect: |-
-                    =Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), { editable: DisplayMode.Edit} );
+                    =/*Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), { editable: DisplayMode.Edit} );*/
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
                 Width: =20
                 X: =1205
@@ -2080,7 +2078,7 @@ EditProject As screen:
 
             EP_FeaturesGallery_FeatureName_1 As text:
                 BorderThickness: =1
-                Default: =ThisItem.feature_name
+                Default: =ThisItem.resource_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2100,7 +2098,7 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), 
+                    =/*Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), 
                     {   feature_name:EP_FeaturesGallery_FeatureName_1.Text,
                         //epic_name:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
                         neo_id: EP_FeaturesGallery_Neo_1.Selected.Result,
@@ -2111,7 +2109,7 @@ EditProject As screen:
                         delivery_date: EP_FeaturesGallery_DeliveryDate_1.SelectedDate,
                         created_date: EP_FeaturesGallery_CreatedDate_1.SelectedDate,
                         editable: DisplayMode.Disabled
-                    } );
+                    } );*/
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
                 Width: =20
                 X: =1205
@@ -2121,7 +2119,7 @@ EditProject As screen:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |-
-                    =Text( ThisItem.estimation_Value, "[$-en-US]$ ###,##0 ")
+                    =Text( ThisItem.estimation_value, "[$-en-US]$ ###,##0 ")
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 Format: =TextFormat.Number
@@ -2157,7 +2155,7 @@ EditProject As screen:
             EP_FeaturesGallery_Neo_1 As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.neo_id
+                Default: =ThisItem.feature_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2172,7 +2170,7 @@ EditProject As screen:
             EP_FeaturesGallery_Masterchief_1 As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.master_chief_id
+                Default: =ThisItem.editable
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2186,8 +2184,7 @@ EditProject As screen:
 
             EP_FeaturesGallery_Epic_1 As dropdown:
                 BorderThickness: =1
-                Default: |
-                    =LookUp(CollectionSQL_Epics,epic_id=ThisItem.epic_id,epic_name)
+                Default: =ThisItem.feature_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2202,7 +2199,7 @@ EditProject As screen:
             EP_FeaturesGallery_Status_1 As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.Status
+                Default: =ThisItem.editable
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2218,7 +2215,7 @@ EditProject As screen:
             EP_FeaturesGallery_EstimatedTime_1 As text:
                 Align: =Align.Center
                 BorderThickness: =1
-                Default: =ThisItem.estimation_Value
+                Default: =ThisItem.estimation_value
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1

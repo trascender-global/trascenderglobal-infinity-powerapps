@@ -32,6 +32,9 @@
           "GM_Payments": {
             "tableName": "[dbo].[GM_Payments]"
           },
+          "GM_ResourceEstimation": {
+            "tableName": "[dbo].[GM_ResourceEstimation]"
+          },
           "TD_Trascendentales": {
             "tableName": "[dbo].[TD_Trascendentales]"
           }
@@ -44,7 +47,8 @@
       "GM_Payments",
       "CRM_Deals",
       "GM_Epics",
-      "TD_Trascendentales"
+      "TD_Trascendentales",
+      "GM_ResourceEstimation"
     ],
     "dependencies": {},
     "dependents": [],
