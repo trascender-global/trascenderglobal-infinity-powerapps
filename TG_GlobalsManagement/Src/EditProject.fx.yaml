@@ -44,6 +44,8 @@ EditProject As screen:
             OnSelect: |+
                 =Set(varShowPayments,true);
                 Set(varShowFeatures,false);
+                Set(varShowResources,false);
+                
                 Set(varShowPaymentsPL,true);
                 Set(varShowPaymentsNP,false);
                 Set(varShowviewpayment,true);
@@ -85,7 +87,7 @@ EditProject As screen:
                 Set(varShowviewresources,false);
                 Set(varShowFeatures,true);
                 Set(varShowPayments,false);
-                
+                Set(varShowResources,false);
                 
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
@@ -115,7 +117,9 @@ EditProject As screen:
                 Set(varShowResourcesRL,true);
                 Set(varShowResourcesNR,false);
                 Set(varShowviewresources,true);
-                
+                Set(varShowFeatures,false);
+                Set(varShowPayments,false);
+                Set(varShowResources,true);
                 
                 
                 
@@ -222,17 +226,17 @@ EditProject As screen:
             ZIndex: =101
 
     EP_PaymentsContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =230
+        Height: =235
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
         Visible: =varShowPaymentsPL
-        Width: =1275
+        Width: =1270
         X: =74
-        Y: =522
+        Y: =517
         ZIndex: =142
 
-        Container3 As groupContainer.manualLayoutContainer:
+        EP_PaymentsTitles As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =25
@@ -642,17 +646,17 @@ EditProject As screen:
                 ZIndex: =29
 
     EP_FeaturesContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =218
+        Height: =235
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
         Visible: =varShowFeaturesFL
         Width: =1270
-        X: =75
-        Y: =534
+        X: =74
+        Y: =517
         ZIndex: =143
 
-        Container3_1 As groupContainer.manualLayoutContainer:
+        EP_FeatruresTitles As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =25
@@ -794,7 +798,7 @@ EditProject As screen:
                 X: =1156
                 ZIndex: =12
 
-        EP_PaymentsGallery_1 As gallery.galleryVertical:
+        EP_FeaturesGallery As gallery.galleryVertical:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =171
@@ -1920,6 +1924,393 @@ EditProject As screen:
             Y: =568
             ZIndex: =62
 
+    EP_ResourcesContainer As groupContainer.horizontalAutoLayoutContainer:
+        Height: =235
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        LayoutWrap: =true
+        Visible: =varShowResourcesRL
+        Width: =1270
+        X: =94
+        Y: =533
+        ZIndex: =150
+
+        EP_ResourcesTitles As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =25
+            LayoutMinHeight: =25
+            LayoutMinWidth: =250
+            Visible: =varShowResourcesRL
+            Width: =1520
+            ZIndex: =1
+
+            Label10_59 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Delivery date"
+                Visible: =varShowResourcesRL
+                Width: =120
+                X: =1398
+                ZIndex: =1
+
+            Label10_27 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Feature Name"
+                Visible: =varShowResourcesRL 
+                X: =4
+                ZIndex: =2
+
+            Label10_29 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Neo"
+                Visible: =varShowResourcesRL
+                Width: =200
+                X: =356
+                ZIndex: =3
+
+            Label10_28 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Epic"
+                Visible: =varShowResourcesRL 
+                Width: =200
+                X: =155
+                ZIndex: =4
+
+            Label10_30 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="$"
+                Visible: =varShowResourcesRL 
+                Width: =48
+                X: =865
+                ZIndex: =5
+
+            Label10_58 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Expected Date"
+                Visible: =varShowResourcesRL 
+                Width: =120
+                X: =1277
+                ZIndex: =6
+
+            Label10_55 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Estimated Time"
+                Visible: =varShowResourcesRL 
+                Width: =107
+                X: =914
+                ZIndex: =8
+
+            Label10_54 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Masterchief"
+                Visible: =varShowResourcesRL 
+                Width: =201
+                X: =557
+                ZIndex: =9
+
+            Label10_56 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Status"
+                Visible: =varShowResourcesRL 
+                Width: =133
+                X: =1022
+                ZIndex: =10
+
+            Label10_44 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Estimation Value"
+                Visible: =varShowResourcesRL 
+                Width: =105
+                X: =759
+                ZIndex: =11
+
+            Label10_57 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(58, 87, 255, 1)
+                Height: =25
+                Size: =9
+                Text: ="Created date"
+                Visible: |
+                    =varShowResourcesRL 
+                Width: =120
+                X: =1156
+                ZIndex: =12
+
+        EP_FeaturesGallery_1 As gallery.galleryVertical:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =171
+            Items: |-
+                =Filter(CollectionSQL_Features,varSelectedEpic=epic_id && Not(IsBlank(feature_name)))
+                //CollectionSQL_Payments
+                //Filter(CollectionSQL_Payments,epic_id = varSelectedEpic)
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =400
+            TemplateSize: =19
+            Visible: =varShowResourcesRL
+            Width: =1570
+            X: =74
+            Y: =29
+            ZIndex: =2
+
+            EP_FeaturesGallery_DeleteButton_1 As icon.Trash:
+                Height: =24
+                Icon: =Icon.Trash
+                OnSelect: |-
+                    =Remove( CollectionSQL_Features,
+                    First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));
+                Width: =20
+                X: =1346
+                ZIndex: =9
+
+            EP_FeaturesGallery_EditButton_1 As icon.Edit:
+                Height: =24
+                Icon: =Icon.Edit
+                OnSelect: |-
+                    =Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), { editable: DisplayMode.Edit} );
+                Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
+                Width: =20
+                X: =1346
+                ZIndex: =10
+
+            EP_FeaturesGallery_FeatureName_1 As text:
+                BorderThickness: =1
+                Default: =ThisItem.feature_name
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                LineHeight: =1
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =8
+                Width: =150
+                ZIndex: =11
+
+            EP_FeaturesGallery_SaveButton_1 As icon.Save:
+                Height: =24
+                Icon: =Icon.Save
+                OnSelect: |-
+                    =Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), 
+                    {   feature_name:EP_FeaturesGallery_FeatureName_1.Text,
+                        //epic_name:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
+                        neo_id: EP_FeaturesGallery_Neo_1.Selected.Result,
+                        master_chief_id: EP_FeaturesGallery_Masterchief_1.Selected.Result,
+                        estimation_Value:Value(EP_FeaturesGallery_EstimatedValue_1.Text),
+                        currency_code:EP_FeaturesGallery_Currency_1.Text,
+                        Status: EP_FeaturesGallery_Status_1.Selected.Value,
+                        delivery_date: EP_FeaturesGallery_DeliveryDate_1.SelectedDate,
+                        created_date: EP_FeaturesGallery_CreatedDate_1.SelectedDate,
+                        editable: DisplayMode.Disabled
+                    } );
+                Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
+                Width: =20
+                X: =1346
+                ZIndex: =12
+
+            EP_FeaturesGallery_EstimatedValue_1 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: |-
+                    =Text( ThisItem.estimation_Value, "[$-en-US]$ ###,##0 ")
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Format: =TextFormat.Number
+                Height: =24
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =8
+                Width: =103
+                X: =755
+                ZIndex: =14
+
+            EP_FeaturesGallery_Currency_1 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: |
+                    =ThisItem.currency_code
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                Height: =24
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =8
+                Width: =50
+                X: =858
+                ZIndex: =15
+
+            EP_FeaturesGallery_Neo_1 As dropdown:
+                AllowEmptySelection: =true
+                BorderThickness: =1
+                Default: =ThisItem.neo_id
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
+                OnSelect: =Select(Parent)
+                Size: =8
+                Width: =200
+                X: =350
+                ZIndex: =20
+
+            EP_FeaturesGallery_ExpectedDate_1 As datepicker:
+                BorderThickness: =1
+                DefaultDate: =ThisItem.delivery_date
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                OnSelect: =Select(Parent)
+                PaddingTop: =5
+                Size: =8
+                Width: =130
+                X: =1500
+                ZIndex: =22
+
+            EP_FeaturesGallery_Masterchief_1 As dropdown:
+                AllowEmptySelection: =true
+                BorderThickness: =1
+                Default: =ThisItem.master_chief_id
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
+                OnSelect: =Select(Parent)
+                Size: =8
+                Width: =203
+                X: =550
+                ZIndex: =23
+
+            EP_FeaturesGallery_Epic_1 As dropdown:
+                BorderThickness: =1
+                Default: |
+                    =LookUp(CollectionSQL_Epics,epic_id=ThisItem.epic_id,epic_name)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
+                OnSelect: =Select(Parent)
+                Size: =8
+                Width: =200
+                X: =150
+                ZIndex: =24
+
+            EP_FeaturesGallery_Status_1 As dropdown:
+                AllowEmptySelection: =true
+                BorderThickness: =1
+                Default: =ThisItem.Status
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                Items: =["True","False"]
+                OnSelect: =Select(Parent)
+                PaddingLeft: =45
+                Size: =8
+                Width: =133
+                X: =1014
+                ZIndex: =25
+
+            EP_FeaturesGallery_CreatedDate_1 As datepicker:
+                BorderThickness: =1
+                DefaultDate: =ThisItem.created_date
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                OnSelect: =Select(Parent)
+                PaddingTop: =5
+                Size: =8
+                Width: =122
+                X: =1147
+                ZIndex: =27
+
+            EP_FeaturesGallery_DeliveryDate_1 As datepicker:
+                BorderThickness: =1
+                DefaultDate: =ThisItem.delivery_date
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                OnSelect: =Select(Parent)
+                PaddingTop: =5
+                Size: =8
+                Width: =120
+                X: =1246
+                ZIndex: =28
+
+            EP_FeaturesGallery_EstimatedTime_1 As text:
+                Align: =Align.Center
+                BorderThickness: =1
+                Default: =ThisItem.estimation_Value
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisplayMode: =ThisItem.editable
+                FocusedBorderThickness: =1
+                Height: =24
+                LineHeight: =1
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =8
+                Width: =106
+                X: =908
+                ZIndex: =29
+
     EP_NewFeatures As group:
         Height: =5
         Width: =5
@@ -2157,7 +2548,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =30
             X: =1313
-            Y: =485
+            Y: =482
             ZIndex: =130
 
         Icon5_1 As icon.AddDocument:
@@ -2170,7 +2561,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =30
             X: =1145
-            Y: =484
+            Y: =482
             ZIndex: =131
 
         Label2_2 As label:
@@ -2180,7 +2571,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =160
             X: =983
-            Y: =484
+            Y: =482
             ZIndex: =132
 
         Label2_3 As label:
@@ -2190,7 +2581,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =120
             X: =1190
-            Y: =483
+            Y: =482
             ZIndex: =133
 
     EP_New_Resource As group:
@@ -2373,7 +2764,7 @@ EditProject As screen:
             Y: =670
             ZIndex: =94
 
-    EP_varShowviefetaure As group:
+    EP_ViewFeaturesToggle As group:
         Height: =5
         Width: =5
         X: =20
@@ -2388,8 +2779,8 @@ EditProject As screen:
                 Set(varShowFeaturesNF,false);
             Visible: =varShowviewfeature
             Width: =30
-            X: =1306
-            Y: =485
+            X: =1312
+            Y: =482
             ZIndex: =134
 
         Icon5_2 As icon.AddDocument:
@@ -2400,8 +2791,8 @@ EditProject As screen:
                 Set(varShowFeaturesNF,true);
             Visible: =varShowviewfeature
             Width: =30
-            X: =1138
-            Y: =484
+            X: =1144
+            Y: =482
             ZIndex: =135
 
         Label2_4 As label:
@@ -2409,8 +2800,8 @@ EditProject As screen:
             Text: ="Add New Feature"
             Visible: =varShowviewfeature
             Width: =160
-            X: =976
-            Y: =484
+            X: =982
+            Y: =482
             ZIndex: =136
 
         Label2_5 As label:
@@ -2418,180 +2809,9 @@ EditProject As screen:
             Text: ="Feature List"
             Visible: =varShowviewfeature
             Width: =120
-            X: =1189
-            Y: =486
+            X: =1195
+            Y: =482
             ZIndex: =137
-
-    EP_Resources_List As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =158
-
-        Label10_35 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Name"
-            Visible: =varShowResourcesRL
-            Width: =200
-            X: =164
-            Y: =558
-            ZIndex: =77
-
-        Label10_37 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Type"
-            Visible: =varShowResourcesRL
-            Width: =141
-            X: =681
-            Y: =558
-            ZIndex: =78
-
-        Label10_36 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Epic"
-            Visible: =varShowResourcesRL
-            Width: =172
-            X: =365
-            Y: =558
-            ZIndex: =79
-
-        Gallery2_5 As gallery.galleryVertical:
-            Height: =108
-            Items: =Filter(ResourcesCollection,varSelectedEpic=epic)
-            Layout: =Layout.Vertical
-            TemplateSize: =30
-            Visible: =varShowResourcesRL
-            Width: =1105
-            X: =159
-            Y: =584
-            ZIndex: =80
-
-            Label4_5 As label:
-                BorderThickness: =1
-                Height: =30
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: =ThisItem.resource_name
-                Width: =200
-                ZIndex: =1
-
-            Label5_11 As label:
-                BorderThickness: =1
-                Height: =30
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: =LookUp(EpicsCollection,epic_id=ThisItem.epic,epic_name)
-                Width: =171
-                X: =200
-                ZIndex: =2
-
-            Label6_12 As label:
-                BorderThickness: =1
-                Height: =30
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: =ThisItem.feature
-                Width: =145
-                X: =372
-                ZIndex: =4
-
-            Label6_13 As label:
-                BorderThickness: =1
-                Height: =30
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: =ThisItem.feature
-                Width: =139
-                X: =517
-                ZIndex: =5
-
-            Label6_22 As label:
-                BorderThickness: =1
-                Height: =30
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: =ThisItem.estimated_time
-                Width: =140
-                X: =656
-                ZIndex: =6
-
-            Label6_23 As label:
-                BorderThickness: =1
-                Height: =30
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: =ThisItem.estimated_value
-                Width: =151
-                X: =796
-                ZIndex: =7
-
-            Label6_24 As label:
-                BorderThickness: =1
-                Height: =30
-                OnSelect: =Select(Parent)
-                Size: =10
-                Text: =ThisItem.currency
-                Width: =130
-                X: =947
-                ZIndex: =8
-
-        Label10_34 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Estimated Time"
-            Visible: =varShowResourcesRL
-            Width: =137
-            X: =823
-            Y: =558
-            ZIndex: =85
-
-        Label10_33 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Currency"
-            Visible: =varShowResourcesRL
-            Width: =136
-            X: =1108
-            Y: =558
-            ZIndex: =86
-
-        Label10_44 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Estimated Value"
-            Visible: =varShowResourcesRL
-            Width: =145
-            X: =962
-            Y: =558
-            ZIndex: =92
-
-        Label10_46 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Text: ="Feature"
-            Visible: =varShowResourcesRL
-            Width: =142
-            X: =538
-            Y: =558
-            ZIndex: =93
 
     EP_EditProjectGeneralGroup As group:
         Height: =5
@@ -2854,7 +3074,7 @@ EditProject As screen:
             Y: =78
             ZIndex: =124
 
-    EP_viewpayment_1 As group:
+    EP_ViewResourcesToggle As group:
         Height: =5
         Width: =5
         X: =20
@@ -2870,8 +3090,8 @@ EditProject As screen:
                 
             Visible: =varShowviewresources
             Width: =30
-            X: =1143
-            Y: =487
+            X: =1311
+            Y: =482
             ZIndex: =138
 
         Icon5_3 As icon.AddDocument:
@@ -2883,8 +3103,8 @@ EditProject As screen:
                 
             Visible: =varShowviewresources
             Width: =30
-            X: =975
-            Y: =487
+            X: =1143
+            Y: =482
             ZIndex: =139
 
         Label2_6 As label:
@@ -2892,8 +3112,8 @@ EditProject As screen:
             Text: ="Add New Resource"
             Visible: =varShowviewresources
             Width: =164
-            X: =809
-            Y: =488
+            X: =977
+            Y: =482
             ZIndex: =140
 
         Label2_7 As label:
@@ -2901,7 +3121,7 @@ EditProject As screen:
             Text: ="Resource List"
             Visible: =varShowviewresources
             Width: =120
-            X: =1026
-            Y: =488
+            X: =1194
+            Y: =482
             ZIndex: =141
 
