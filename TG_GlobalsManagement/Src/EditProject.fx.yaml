@@ -222,14 +222,14 @@ EditProject As screen:
             ZIndex: =101
 
     EP_PaymentsContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =214
+        Height: =230
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
         Visible: =varShowPaymentsPL
         Width: =1275
         X: =74
-        Y: =538
+        Y: =522
         ZIndex: =142
 
         Container3 As groupContainer.manualLayoutContainer:
@@ -387,7 +387,7 @@ EditProject As screen:
         EP_PaymentsGallery As gallery.galleryVertical:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =171
+            Height: =187
             Items: |-
                 =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
                 //CollectionSQL_Payments
@@ -1492,21 +1492,21 @@ EditProject As screen:
                 Set(varShowPayments,false);
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =65
-            X: =1293
-            Y: =80
+            X: =1260
+            Y: =78
             ZIndex: =27
 
         EP_EditProjectDetailsButton As icon.Edit:
             Color: =RGBA(58, 87, 255, 1)
-            Height: =52
+            Height: =57
             Icon: =Icon.Edit
             OnSelect: |-
                 =Set(varShowEditProjectDetailsPopUp,true);
                 Set(varShowEL,false);
                 Set(varShowNE,false);
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =39
-            X: =1255
+            Width: =42
+            X: =1210
             Y: =75
             ZIndex: =28
 
@@ -1630,7 +1630,7 @@ EditProject As screen:
                 Set(varShowNE,false);
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =30
-            X: =1203
+            X: =1294
             Y: =141
             ZIndex: =126
 
@@ -1643,7 +1643,7 @@ EditProject As screen:
                 Set(varShowNE,true);
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =30
-            X: =1063
+            X: =1154
             Y: =141
             ZIndex: =127
 
@@ -1652,7 +1652,7 @@ EditProject As screen:
             Text: ="Add New Epic"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =126
-            X: =935
+            X: =1026
             Y: =141
             ZIndex: =128
 
@@ -1661,7 +1661,7 @@ EditProject As screen:
             Text: ="Epic List"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =92
-            X: =1114
+            X: =1205
             Y: =142
             ZIndex: =129
 
@@ -2157,7 +2157,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =30
             X: =1313
-            Y: =492
+            Y: =485
             ZIndex: =130
 
         Icon5_1 As icon.AddDocument:
@@ -2170,7 +2170,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =30
             X: =1145
-            Y: =491
+            Y: =484
             ZIndex: =131
 
         Label2_2 As label:
@@ -2180,7 +2180,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =160
             X: =983
-            Y: =491
+            Y: =484
             ZIndex: =132
 
         Label2_3 As label:
@@ -2190,7 +2190,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =120
             X: =1190
-            Y: =490
+            Y: =483
             ZIndex: =133
 
     EP_New_Resource As group:
