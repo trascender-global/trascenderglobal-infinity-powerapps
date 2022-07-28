@@ -1557,7 +1557,7 @@ EditProject As screen:
                 =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
                 //GM_GlobalGeneralInformation.project_name
             OnSelect: |-
-                =/*Set(varProjectDetails,
+                =Set(varProjectDetails,
                     {
                         id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
                         global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
@@ -1572,10 +1572,10 @@ EditProject As screen:
                         observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
                         created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
                     });
-                */
-                Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
-                //ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
-                //ClearCollect(CollectionSQL_Features, GM_Features);
+                
+                //Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
+                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
+                ClearCollect(CollectionSQL_Features, GM_Features);
             SearchFields: =["project_name"]
             SearchItems: =[]
             SelectMultiple: =false
