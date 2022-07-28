@@ -1557,7 +1557,7 @@ EditProject As screen:
                 =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
                 //GM_GlobalGeneralInformation.project_name
             OnSelect: |-
-                =Set(varProjectDetails,
+                =/*Set(varProjectDetails,
                     {
                         id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
                         global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
@@ -1572,7 +1572,9 @@ EditProject As screen:
                         observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
                         created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
                     });
-                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
+                */
+                Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
+                //ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
                 //ClearCollect(CollectionSQL_Features, GM_Features);
             SearchFields: =["project_name"]
             SearchItems: =[]
@@ -2995,6 +2997,21 @@ EditProject As screen:
             OnSelect: |
                 =Set(varShowEditProjectDetailsPopUp, false);
                 Set(varShowEL,true);
+                /*Set(varProjectDetails,
+                    {
+                        id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
+                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
+                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,line_of_business),
+                        segment: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,segment),
+                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,start_date),
+                        project_name: EP_SelectProject_ComboBox.Selected.project_name,
+                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,project_link),
+                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,currency_code),
+                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
+                        status: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,status),
+                        observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
+                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
+                    });*/
             Visible: =varShowEditProjectDetailsPopUp
             Width: =67
             X: =1255

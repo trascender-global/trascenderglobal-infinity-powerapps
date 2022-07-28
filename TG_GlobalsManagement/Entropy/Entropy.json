@@ -333,7 +333,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/28/2022 20:48:09",
+  "HeaderLastSavedDateTimeUTC": "07/28/2022 21:02:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -354,10 +354,9 @@
     "51a4282aa30f4cc68c1ee62e75ae9939": 0
   },
   "OrderDataSource": {
-    "CollectionSQL_Epics": 18,
-    "CollectionSQL_Features": 20,
-    "CollectionSQL_Payments": 19,
-    "CollectionSQL_Resources": 21,
+    "CollectionSQL_Features": 19,
+    "CollectionSQL_Payments": 18,
+    "CollectionSQL_Resources": 20,
     "ColumnChartSample": 0,
     "ComboBoxSample": 12,
     "CRM_Deals": 1,
@@ -974,7 +973,7 @@
       "text": 40
     },
     "DeserializationLoadTime": 3.063988,
-    "ErrorCount": 3
+    "ErrorCount": 118
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
