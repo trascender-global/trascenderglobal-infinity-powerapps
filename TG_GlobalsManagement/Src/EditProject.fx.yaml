@@ -1307,6 +1307,7 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
+            Size: =12
             Text: ="Neo"
             Visible: =varShowEL
             Width: =216
@@ -1319,6 +1320,7 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
+            Size: =12
             Text: ="Masterchief"
             Visible: =varShowEL
             Width: =216
@@ -1331,6 +1333,7 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
+            Size: =12
             Text: ="Name"
             Visible: =varShowEL
             Width: =269
@@ -1343,6 +1346,7 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
+            Size: =12
             Text: ="Expected Date"
             Visible: =varShowEL
             Width: =139
@@ -1355,6 +1359,7 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
+            Size: =12
             Text: ="Value"
             Visible: =varShowEL
             Width: =119
@@ -1460,6 +1465,7 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
+            Size: =12
             Text: ="$"
             Visible: =varShowEL
             Width: =65
@@ -1472,6 +1478,7 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
+            Size: =12
             Text: ="Pokemon"
             Visible: =varShowEL
             Width: =215
@@ -1565,7 +1572,6 @@ EditProject As screen:
                         observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
                         created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
                     });
-                
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
                 //ClearCollect(CollectionSQL_Features, GM_Features);
             SearchFields: =["project_name"]
