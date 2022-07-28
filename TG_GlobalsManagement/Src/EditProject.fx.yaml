@@ -25,14 +25,14 @@ EditProject As screen:
 
         NP_EpicSectionTitleLabel_4 As label:
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =26
             Size: =18
             Text: |-
                 ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =788
+            Width: =1269
             X: =71
-            Y: =400
+            Y: =403
             ZIndex: =40
 
         Button2 As button:
@@ -2361,7 +2361,7 @@ EditProject As screen:
             SearchFields: =["project_name"]
             SearchItems: =[]
             SelectMultiple: =false
-            Size: =16
+            Size: =14
             Underline: =true
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =564
