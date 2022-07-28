@@ -2770,7 +2770,7 @@ EditProject As screen:
             Y: =132
             ZIndex: =103
 
-        TextInput5_14 As text:
+        EP_EditGeneral_Name As text:
             BorderThickness: =1
             Default: =varProjectDetails.project_name
             Height: =25
@@ -2791,7 +2791,7 @@ EditProject As screen:
             Y: =132
             ZIndex: =105
 
-        TextInput5_18 As text:
+        EP_EditGeneral_Segment As text:
             BorderThickness: =1
             Default: =varProjectDetails.segment
             Height: =25
@@ -2822,7 +2822,7 @@ EditProject As screen:
             Y: =188
             ZIndex: =108
 
-        DatePicker1_9 As datepicker:
+        EP_EditGeneral_InitialDate As datepicker:
             BorderColor: =RGBA(0, 13, 75, 1)
             BorderThickness: =1
             DefaultDate: =
@@ -2857,7 +2857,7 @@ EditProject As screen:
             Y: =188
             ZIndex: =111
 
-        TextInput5_13 As text:
+        EP_EditGeneral_TotalPrice As text:
             BorderThickness: =1
             Default: =varProjectDetails.total_price_currency
             Height: =25
@@ -2888,7 +2888,7 @@ EditProject As screen:
             Y: =243
             ZIndex: =114
 
-        TextInput5_16 As text:
+        EP_EditGeneral_Observations As text:
             BorderThickness: =1
             Default: =varProjectDetails.observations
             Height: =58
@@ -2909,7 +2909,7 @@ EditProject As screen:
             Y: =295
             ZIndex: =116
 
-        Dropdown3_8 As dropdown:
+        EP_EditGeneral_Status As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Default: =varProjectDetails.status
@@ -2922,7 +2922,7 @@ EditProject As screen:
             Y: =266
             ZIndex: =117
 
-        TextInput5_15 As text:
+        EP_EditGeneral_CreatedDate As text:
             BorderThickness: =1
             Default: =varProjectDetails.created_date
             Height: =25
@@ -2933,7 +2933,7 @@ EditProject As screen:
             Y: =213
             ZIndex: =118
 
-        TextInput5_19 As text:
+        EP_EditGeneral_CurrencyCode As text:
             BorderThickness: =1
             Default: =varProjectDetails.currency_code
             Height: =25
@@ -2945,7 +2945,7 @@ EditProject As screen:
             Y: =213
             ZIndex: =119
 
-        TextInput5_17 As text:
+        EP_EditGeneral_ProjectLink As text:
             BorderThickness: =1
             Default: =varProjectDetails.project_link
             Height: =25
@@ -2966,7 +2966,7 @@ EditProject As screen:
             Y: =243
             ZIndex: =121
 
-        Dropdown3_7 As dropdown:
+        EP_EditGeneral_LineOfBusiness As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Default: =varProjectDetails.line_of_business
@@ -2990,28 +2990,28 @@ EditProject As screen:
             Y: =75
             ZIndex: =123
 
-        Icon4 As icon.Save:
+        EP_EditGeneral_SaveButton As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
             Height: =54
             Icon: =Icon.Save
             OnSelect: |
                 =Set(varShowEditProjectDetailsPopUp, false);
                 Set(varShowEL,true);
-                /*Set(varProjectDetails,
+                Set(varProjectDetails,
                     {
-                        id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
-                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
-                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,line_of_business),
-                        segment: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,segment),
-                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,start_date),
-                        project_name: EP_SelectProject_ComboBox.Selected.project_name,
-                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,project_link),
-                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,currency_code),
-                        total_price_currency: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,total_price_currency),
-                        status: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,status),
-                        observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
-                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
-                    });*/
+                        id: varProjectDetails.id,
+                        global_internal_id: varProjectDetails.global_internal_id,
+                        line_of_business: EP_EditGeneral_LineOfBusiness.Selected.Value,
+                        segment: EP_EditGeneral_Segment.Text,
+                        start_date: EP_EditGeneral_InitialDate.SelectedDate,
+                        project_name: EP_EditGeneral_Name.Text,
+                        project_link: EP_EditGeneral_ProjectLink.Text,
+                        currency_code: EP_EditGeneral_CurrencyCode.Text,
+                        total_price_currency: Value(EP_EditGeneral_TotalPrice.Text),
+                        status: EP_EditGeneral_Status.Selected.Value,
+                        observations: EP_EditGeneral_Observations.Text,
+                        created_date: varProjectDetails.created_date
+                    });
             Visible: =varShowEditProjectDetailsPopUp
             Width: =67
             X: =1255

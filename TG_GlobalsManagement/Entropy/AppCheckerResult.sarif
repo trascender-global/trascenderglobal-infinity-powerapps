@@ -374,49 +374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon4.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_SaveButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditProject",
-                "type": "EditProject.Icon4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditProject.Icon4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.Icon4.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_SaveButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon4"
+                "type": "EditProject.EP_EditGeneral_SaveButton"
               }
             }
           ],
@@ -428,6 +398,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_SaveButton.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_SaveButton.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.EP_EditGeneral_SaveButton"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -644,19 +644,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.TextInput5_14.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Name.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.TextInput5_14.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Name.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.TextInput5_14"
+                "type": "EditProject.EP_EditGeneral_Name"
               }
             }
           ],
@@ -674,19 +674,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Dropdown3_7.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_LineOfBusiness.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Dropdown3_7.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_LineOfBusiness.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Dropdown3_7"
+                "type": "EditProject.EP_EditGeneral_LineOfBusiness"
               }
             }
           ],
@@ -704,19 +704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.TextInput5_18.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Segment.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.TextInput5_18.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Segment.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.TextInput5_18"
+                "type": "EditProject.EP_EditGeneral_Segment"
               }
             }
           ],
@@ -914,19 +914,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.TextInput5_15.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_CreatedDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.TextInput5_15.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_CreatedDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.TextInput5_15"
+                "type": "EditProject.EP_EditGeneral_CreatedDate"
               }
             }
           ],
@@ -944,19 +944,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.DatePicker1_9.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_InitialDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.DatePicker1_9.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_InitialDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.DatePicker1_9"
+                "type": "EditProject.EP_EditGeneral_InitialDate"
               }
             }
           ],
@@ -974,19 +974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.TextInput5_19.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_CurrencyCode.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.TextInput5_19.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_CurrencyCode.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.TextInput5_19"
+                "type": "EditProject.EP_EditGeneral_CurrencyCode"
               }
             }
           ],
@@ -1094,19 +1094,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.TextInput5_13.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_TotalPrice.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.TextInput5_13.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_TotalPrice.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.TextInput5_13"
+                "type": "EditProject.EP_EditGeneral_TotalPrice"
               }
             }
           ],
@@ -1124,19 +1124,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.TextInput5_17.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_ProjectLink.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.TextInput5_17.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_ProjectLink.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.TextInput5_17"
+                "type": "EditProject.EP_EditGeneral_ProjectLink"
               }
             }
           ],
@@ -1154,19 +1154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Dropdown3_8.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Status.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Dropdown3_8.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Status.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Dropdown3_8"
+                "type": "EditProject.EP_EditGeneral_Status"
               }
             }
           ],
@@ -1184,19 +1184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.TextInput5_16.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Observations.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.TextInput5_16.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Observations.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.TextInput5_16"
+                "type": "EditProject.EP_EditGeneral_Observations"
               }
             }
           ],
