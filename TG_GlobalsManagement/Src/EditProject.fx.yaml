@@ -3009,7 +3009,7 @@ EditProject As screen:
             OnSelect: |
                 =Set(varShowEditProjectDetailsPopUp, false);
                 Set(varShowEL,true);
-                Set(varProjectDetails,
+                /*Set(varProjectDetails,
                     {
                         id: varProjectDetails.id,
                         global_internal_id: varProjectDetails.global_internal_id,
@@ -3023,7 +3023,7 @@ EditProject As screen:
                         status: EP_EditGeneral_Status.Selected.Value,
                         observations: EP_EditGeneral_Observations.Text,
                         created_date: varProjectDetails.created_date
-                    });
+                    });*/
             Visible: =varShowEditProjectDetailsPopUp
             Width: =67
             X: =1255
