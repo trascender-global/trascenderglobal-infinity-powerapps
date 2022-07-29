@@ -334,7 +334,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/29/2022 16:42:26",
+  "HeaderLastSavedDateTimeUTC": "07/29/2022 21:29:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -344,8 +344,9 @@
     "Símbolo TG 4": "0001.png"
   },
   "LocalResourceRootPaths": {
-    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/1121692c-e9de-46f3-8375-b4ad1248dddb-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=21iH3BIe9xcJvwAn0vyDZjE0DR6fMO4fAsJIlQoXxQk%3D&spr=https&se=2022-07-30T16%3A55%3A27Z&sp=r"
+    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/8c823ebc-6b99-493d-a685-cf00d91f02c8-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=L9Jn%2F3b3nMHDHwJQbN6eNayrzRVWFRWjvIFjPxGp%2FTE%3D&spr=https&se=2022-07-30T21%3A25%3A02Z&sp=r"
   },
+  "OldLogoFileName": "1z0ktl1v.jpg",
   "OrderComponentMetadata": {
     "3bd3cda16e6f498db1fa26e9f6ca986b": 1,
     "51a4282aa30f4cc68c1ee62e75ae9939": 0
@@ -955,7 +956,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 2.5786889,
+    "AnalysisLoadTime": 2.7304496,
     "ControlCount": {
       "3bd3cda16e6f498db1fa26e9f6ca986b": 5,
       "51a4282aa30f4cc68c1ee62e75ae9939": 5,
@@ -976,8 +977,8 @@
       "screen": 4,
       "text": 36
     },
-    "DeserializationLoadTime": 3.9036827,
-    "ErrorCount": 3
+    "DeserializationLoadTime": 4.0911987,
+    "ErrorCount": 8
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

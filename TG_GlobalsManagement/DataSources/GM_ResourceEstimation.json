@@ -13,7 +13,8 @@
       "estimation_time_hrs": "estimation_time_hrs",
       "estimation_value": "estimation_value",
       "feature_id": "feature_id",
-      "resource_id": "resource_id"
+      "resource_id": "resource_id",
+      "type": "type"
     },
     "DatasetName": "trascenderdatabases.database.windows.net,TrascenderGlobal",
     "EncodeDataset": false,
