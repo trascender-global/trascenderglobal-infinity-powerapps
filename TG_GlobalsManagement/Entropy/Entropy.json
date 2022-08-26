@@ -336,7 +336,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/26/2022 23:35:41",
+  "HeaderLastSavedDateTimeUTC": "08/26/2022 23:57:23",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -640,7 +640,7 @@
     "DynamicNav_HomeView_1": 312,
     "DynamicNav_NewProjectView": 12,
     "EditProject": 10,
-    "EditProjectView_TitleLabel": 70,
+    "EditProjectView_TitleLabel": 69,
     "EP_EditGeneral_CreatedDate": 137,
     "EP_EditGeneral_CurrencyCode": 139,
     "EP_EditGeneral_InitialDate": 138,
@@ -715,7 +715,7 @@
     "EP_ResourcesTitles": 277,
     "EP_SaveProjectDetailsButton": 75,
     "EP_SelectProject_ComboBox": 86,
-    "EP_Titles": 69,
+    "EP_Titles": 70,
     "EP_ViewFeaturesToggle": 193,
     "EP_ViewFeaturesToggle_AddButton": 199,
     "EP_ViewFeaturesToggle_AddLabel": 202,
@@ -982,7 +982,7 @@
       "text": 36
     },
     "DeserializationLoadTime": 4.0986623,
-    "ErrorCount": 8
+    "ErrorCount": 10
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
