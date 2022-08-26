@@ -137,6 +137,47 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "EditProject.EP_PaymentsContainer.EP_PaymentsGallery.NP_PaymentsGallery_Pokemon.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.EP_PaymentsContainer.EP_PaymentsGallery.NP_PaymentsGallery_Pokemon.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 23,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "EditProject",
+                "type": "EditProject.EP_PaymentsContainer.EP_PaymentsGallery.NP_PaymentsGallery_Pokemon"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "EditProject.EP_PaymentsContainer.EP_PaymentsGallery.NP_PaymentsGallery_Neo.Default"
                 }
               ],

@@ -581,7 +581,7 @@ EditProject As screen:
             NP_PaymentsGallery_Pokemon As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.pokemon_master_id
+                Default: =LookUp(TM_Tegecitos,id = ThisItem.pokemon_master_id ).full_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
