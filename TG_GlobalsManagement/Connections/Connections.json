@@ -35,8 +35,8 @@
           "GM_ResourceEstimation": {
             "tableName": "[dbo].[GM_ResourceEstimation]"
           },
-          "TD_Trascendentales": {
-            "tableName": "[dbo].[TD_Trascendentales]"
+          "TM_Tegecitos": {
+            "tableName": "[dbo].[TM_Tegecitos]"
           }
         }
       }
@@ -47,8 +47,8 @@
       "GM_Payments",
       "CRM_Deals",
       "GM_Epics",
-      "TD_Trascendentales",
-      "GM_ResourceEstimation"
+      "GM_ResourceEstimation",
+      "TM_Tegecitos"
     ],
     "dependencies": {},
     "dependents": [],
