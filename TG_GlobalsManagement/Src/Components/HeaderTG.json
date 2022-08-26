@@ -70,7 +70,7 @@
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "1000",
+            "AutoRuleBindingString": "",
             "InvariantPropertyName": "Width",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
@@ -139,7 +139,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "18",
+            "InvariantScript": "22.76",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -193,19 +193,19 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1366",
+            "InvariantScript": "1920",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "5",
+            "InvariantScript": "6.33",
             "Property": "PaddingRight",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "5",
+            "InvariantScript": "6.33",
             "Property": "PaddingTop",
             "RuleProviderType": "Unknown"
           },
@@ -223,7 +223,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "0.00",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -526,13 +526,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "0.00",
             "Property": "PaddingRight",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "0.00",
             "Property": "PaddingTop",
             "RuleProviderType": "Unknown"
           },
@@ -556,7 +556,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "70",
+            "InvariantScript": "88.52",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -568,7 +568,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "0.00",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -744,7 +744,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "0.00",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -756,7 +756,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1366",
+            "InvariantScript": "1727.44",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -824,7 +824,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637947258023679853",
+    "LastModifiedTimestamp": "637971305880752936",
     "Name": "HeaderTG",
     "Rules": [
       {
@@ -883,7 +883,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637947258023679853",
+  "LastModifiedTimestamp": "637971305880752936",
   "Name": "3bd3cda16e6f498db1fa26e9f6ca986b",
   "OverridableProperties": {},
   "Version": "637805439354025725"

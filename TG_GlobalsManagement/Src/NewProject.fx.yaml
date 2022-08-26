@@ -1,10 +1,13 @@
 "NewProject As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     HeaderTG_NewProjectView As HeaderTG:
+        Width: =1727.44
+        X: =0.00
         ZIndex: =71
 
     DynamicNav_NewProjectView As DynamicNav:
-        Width: =175
+        Width: =221.31
+        X: =0.00
         Y: =50
         ZIndex: =72
 
@@ -19,15 +22,16 @@
             Fill: =RGBA(56, 96, 178, 0.7)
             Height: =768
             Visible: =varShowPopup
-            Width: =1366
+            Width: =1727.44
+            X: =0.00
             ZIndex: =107
 
         Rectangle4 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
             Height: =56
             Visible: =varShowPopup
-            Width: =699
-            X: =355
+            Width: =883.96
+            X: =448.94
             Y: =218
             ZIndex: =108
 
@@ -36,8 +40,8 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =210
             Visible: =varShowPopup
-            Width: =699
-            X: =355
+            Width: =883.96
+            X: =448.94
             Y: =274
             ZIndex: =109
 
@@ -45,11 +49,13 @@
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Size: =20
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
             Text: ="Add New Project"
             Visible: =varShowPopup
-            Width: =244
-            X: =575
+            Width: =308.56
+            X: =727.14
             Y: =226
             ZIndex: =110
 
@@ -57,11 +63,13 @@
             Align: =Align.Center
             FontWeight: =FontWeight.Semibold
             Height: =90
-            Size: =20
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
             Text: ="You are about to add a new project, do you want to continue?"
             Visible: =varShowPopup
-            Width: =462
-            X: =479
+            Width: =584.24
+            X: =605.74
             Y: =294
             ZIndex: =111
 
@@ -69,10 +77,13 @@
             Fill: =RGBA(41, 41, 41, 1)
             Height: =46
             OnSelect: =Set(varShowPopup,false)
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Cancel"
             Visible: =varShowPopup
-            Width: =215
-            X: =460
+            Width: =271.89
+            X: =581.72
             Y: =406
             ZIndex: =112
 
@@ -180,10 +191,13 @@
                     Reset(NP_GeneralInfo_CreatedDateInput);
                 );
                 
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Continue"
             Visible: =varShowPopup
-            Width: =215
-            X: =750
+            Width: =271.89
+            X: =948.45
             Y: =406
             ZIndex: =113
 
@@ -200,10 +214,12 @@
             DisplayMode: =DisplayMode.View
             FontWeight: =FontWeight.Bold
             Height: =50
-            Size: =18
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =22.76
             Text: ="Create a New Project "
-            Width: =278
-            X: =1067
+            Width: =351.56
+            X: =1349.33
             ZIndex: =73
 
         Rectangle1 As rectangle:
@@ -212,7 +228,8 @@
                 =RGBA(255, 255, 255, 0.2
                 )
             Height: =60
-            Width: =175
+            Width: =221.31
+            X: =0.00
             Y: =138
             ZIndex: =74
 
@@ -228,11 +245,13 @@
             BorderThickness: =1
             Height: =27
             IconBackground: =RGBA(58, 87, 255, 1)
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =0.00
+            Size: =15.18
             StartOfWeek: =StartOfWeek.Monday
             Tooltip: =
-            Width: =263
-            X: =243
+            Width: =332.58
+            X: =307.30
             Y: =453
             ZIndex: =4
 
@@ -241,18 +260,21 @@
             Fill: =RGBA(56, 96, 178, 0)
             Height: =293
             Tooltip: =
-            Width: =1108
-            X: =211
+            Width: =1401.18
+            X: =266.83
             Y: =350
             ZIndex: =50
 
         Label3_12 As label:
             FontWeight: =FontWeight.Bold
             Height: =27
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Line of Business"
             Tooltip: =
-            Width: =175
-            X: =589
+            Width: =221.31
+            X: =744.85
             Y: =363
             ZIndex: =51
 
@@ -260,20 +282,25 @@
             BorderThickness: =1
             Default: =Deal.Name
             Height: =28
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: =
-            Width: =329
-            X: =243
+            Width: =416.05
+            X: =307.30
             Y: =396
             ZIndex: =52
 
         Label3_13 As label:
             FontWeight: =FontWeight.Bold
             Height: =27
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Name"
             Tooltip: =
-            Width: =151
-            X: =243
+            Width: =190.96
+            X: =307.30
             Y: =363
             ZIndex: =53
 
@@ -281,30 +308,38 @@
             BorderThickness: =1
             Default: =Deal.Segment
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: =
-            Width: =263
-            X: =922
+            Width: =332.58
+            X: =1165.96
             Y: =396
             ZIndex: =54
 
         Label3_14 As label:
             FontWeight: =FontWeight.Bold
             Height: =27
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Segment"
             Tooltip: =
-            Width: =145
-            X: =922
+            Width: =183.37
+            X: =1165.96
             Y: =363
             ZIndex: =55
 
         Label3_15 As label:
             FontWeight: =FontWeight.Bold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Create Date"
             Tooltip: =
-            Width: =151
-            X: =243
+            Width: =190.96
+            X: =307.30
             Y: =425
             ZIndex: =56
 
@@ -313,31 +348,39 @@
             BorderThickness: =1
             Height: =27
             IconBackground: =RGBA(58, 87, 255, 1)
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =0.00
+            Size: =15.18
             StartOfWeek: =StartOfWeek.Monday
             Tooltip: =
-            Width: =263
-            X: =589
+            Width: =332.58
+            X: =744.85
             Y: =453
             ZIndex: =57
 
         Label3_16 As label:
             FontWeight: =FontWeight.Bold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Initial Date"
             Tooltip: =
-            Width: =145
-            X: =589
+            Width: =183.37
+            X: =744.85
             Y: =425
             ZIndex: =58
 
         Label3_17 As label:
             FontWeight: =FontWeight.Bold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Currency Code"
             Tooltip: =
-            Width: =145
-            X: =922
+            Width: =183.37
+            X: =1165.96
             Y: =425
             ZIndex: =59
 
@@ -345,30 +388,38 @@
             BorderThickness: =1
             Default: ="$ " & Deal.Amount
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: =
-            Width: =274
-            X: =243
+            Width: =346.50
+            X: =307.30
             Y: =509
             ZIndex: =60
 
         Label3_18 As label:
             FontWeight: =FontWeight.Bold
             Height: =27
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Total Price Currency"
             Tooltip: =
-            Width: =197
-            X: =243
+            Width: =249.12
+            X: =307.30
             Y: =485
             ZIndex: =61
 
         Label3_19 As label:
             FontWeight: =FontWeight.Bold
             Height: =27
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Status"
             Tooltip: =
-            Width: =145
-            X: =922
+            Width: =183.37
+            X: =1165.96
             Y: =486
             ZIndex: =62
 
@@ -376,20 +427,25 @@
             BorderThickness: =1
             Default: =""
             Height: =53
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: =
-            Width: =945
-            X: =243
+            Width: =1195.04
+            X: =307.30
             Y: =559
             ZIndex: =63
 
         Label3_20 As label:
             FontWeight: =FontWeight.Bold
             Height: =27
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Observations    "
             Tooltip: =
-            Width: =197
-            X: =243
+            Width: =249.12
+            X: =307.30
             Y: =532
             ZIndex: =64
 
@@ -402,9 +458,11 @@
             Height: =39
             Icon: =Icon.Save
             OnSelect: =Set(varShowPopup,true)
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Tooltip: =
-            Width: =57
-            X: =1205
+            Width: =72.08
+            X: =1523.84
             Y: =386
             ZIndex: =65
 
@@ -414,10 +472,12 @@
             Default: ="Normal"
             Height: =27
             Items: =["Normal", "Delayed", "Disputed", "Finished"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Tooltip: =
-            Width: =263
-            X: =922
+            Width: =332.58
+            X: =1165.96
             Y: =510
             ZIndex: =66
 
@@ -425,10 +485,12 @@
             BorderThickness: =1
             Default: ="USD"
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: =
-            Width: =263
-            X: =922
+            Width: =332.58
+            X: =1165.96
             Y: =453
             ZIndex: =67
 
@@ -436,20 +498,25 @@
             BorderThickness: =1
             Default: =""
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: =
-            Width: =263
-            X: =589
+            Width: =332.58
+            X: =744.85
             Y: =510
             ZIndex: =68
 
         Label3_24 As label:
             FontWeight: =FontWeight.Bold
             Height: =27
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Project Link "
             Tooltip: =
-            Width: =189
-            X: =589
+            Width: =239.00
+            X: =744.85
             Y: =486
             ZIndex: =69
 
@@ -459,10 +526,12 @@
             Default: =Deal.LineofBusiness
             Height: =27
             Items: =["Globals Fit", "Globals Fat"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Tooltip: =
-            Width: =263
-            X: =590
+            Width: =332.58
+            X: =746.12
             Y: =396
             ZIndex: =70
 
@@ -476,10 +545,12 @@
         Label1 As label:
             FontWeight: =FontWeight.Bold
             Height: =34
-            Size: =15
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Close Won Deals Information"
-            Width: =300
-            X: =252
+            Width: =379.38
+            X: =318.68
             Y: =88
             ZIndex: =99
 
@@ -488,9 +559,12 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Deal Name"
-            Width: =392
-            X: =231
+            Width: =495.73
+            X: =292.12
             Y: =123
             ZIndex: =100
 
@@ -499,9 +573,12 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="LOB "
-            Width: =103
-            X: =624
+            Width: =130.25
+            X: =789.11
             Y: =123
             ZIndex: =101
 
@@ -510,9 +587,12 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Owner Name"
-            Width: =178
-            X: =907
+            Width: =225.10
+            X: =1146.98
             Y: =123
             ZIndex: =102
 
@@ -521,9 +601,12 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Segment "
-            Width: =178
-            X: =728
+            Width: =225.10
+            X: =920.63
             Y: =123
             ZIndex: =103
 
@@ -532,9 +615,12 @@
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Close Date"
-            Width: =213
-            X: =1086
+            Width: =269.36
+            X: =1373.35
             Y: =123
             ZIndex: =104
 
@@ -543,8 +629,8 @@
             Fill: =RGBA(56, 96, 178, 0)
             Height: =247
             Tooltip: =
-            Width: =1108
-            X: =211
+            Width: =1401.18
+            X: =266.83
             Y: =85
             ZIndex: =105
 
@@ -556,8 +642,8 @@
             Selectable: |
                 =true
             TemplateSize: =20
-            Width: =1091
-            X: =227
+            Width: =1379.67
+            X: =287.06
             Y: =147
             ZIndex: =106
 
@@ -565,41 +651,54 @@
                 BorderThickness: =0.5
                 Height: =26
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 PressedBorderColor: =RGBA(58, 87, 255, 1)
                 PressedColor: =RGBA(25,25,25,1)
                 PressedFill: =Self.DisabledColor
+                Size: =16.45
                 Text: =ThisItem.Name
-                Width: =391
+                Width: =494.46
+                X: =0.00
                 ZIndex: =1
 
             GalleryDeals_LOB As label:
                 BorderThickness: =1
                 Height: =25
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 PressedFill: =Self.DisabledColor
+                Size: =16.45
                 Text: =ThisItem.LineofBusiness
-                Width: =106
-                X: =390
+                Width: =134.05
+                X: =493.20
                 ZIndex: =2
 
             GalleryDeals_Segments As label:
                 BorderThickness: =1
                 Height: =25
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 PressedFill: =Self.DisabledColor
+                Size: =16.45
                 Text: =ThisItem.Segment
-                Width: =178
-                X: =496
+                Width: =225.10
+                X: =627.23
                 ZIndex: =3
 
             GalleryDeals_Owner As label:
                 BorderThickness: =1
                 Height: =25
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 PressedFill: =Self.DisabledColor
+                Size: =16.45
                 Text: =ThisItem.OwnerName
-                Width: =178
-                X: =674
+                Width: =225.10
+                X: =852.33
                 ZIndex: =4
 
             GalleryDeals_CloseDate As label:
@@ -607,11 +706,14 @@
                 BorderThickness: =1
                 Height: =25
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 PressedFill: |
                     =Self.DisabledColor
+                Size: =16.45
                 Text: =ThisItem.CloseDate
-                Width: =215
-                X: =852
+                Width: =271.89
+                X: =1077.43
                 ZIndex: =5
 
         Icon3_1 As icon.Reload:
@@ -619,8 +721,10 @@
             Height: =25
             Icon: =Icon.Reload
             OnSelect: =Refresh(CRM_Deals)
-            Width: =25
-            X: =1270
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =31.61
+            X: =1606.04
             Y: =127
             ZIndex: =126
 
@@ -635,15 +739,16 @@
             Fill: =RGBA(56, 96, 178, 0.7)
             Height: =768
             Visible: =varShowPopupDetails
-            Width: =1366
+            Width: =1727.44
+            X: =0.00
             ZIndex: =114
 
         Rectangle4_2 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
             Height: =56
             Visible: =varShowPopupDetails
-            Width: =699
-            X: =355
+            Width: =883.96
+            X: =448.94
             Y: =218
             ZIndex: =115
 
@@ -652,8 +757,8 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =210
             Visible: =varShowPopupDetails
-            Width: =699
-            X: =355
+            Width: =883.96
+            X: =448.94
             Y: =274
             ZIndex: =116
 
@@ -661,11 +766,13 @@
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Size: =20
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
             Text: ="Add Details"
             Visible: =varShowPopupDetails
-            Width: =244
-            X: =575
+            Width: =308.56
+            X: =727.14
             Y: =226
             ZIndex: =117
 
@@ -673,11 +780,13 @@
             Align: =Align.Center
             FontWeight: =FontWeight.Semibold
             Height: =59
-            Size: =20
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
             Text: ="Do you want to continue adding the detailed information?"
             Visible: =varShowPopupDetails
-            Width: =462
-            X: =479
+            Width: =584.24
+            X: =605.74
             Y: =325
             ZIndex: =118
 
@@ -685,10 +794,13 @@
             Fill: =RGBA(41, 41, 41, 1)
             Height: =46
             OnSelect: =Set(varShowPopupDetails,false)
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Cancel"
             Visible: =varShowPopupDetails
-            Width: =215
-            X: =460
+            Width: =271.89
+            X: =581.72
             Y: =406
             ZIndex: =119
 
@@ -703,10 +815,13 @@
                 Set(varShowResources,false);
                 
                 Navigate(EditProject);
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Continue"
             Visible: =varShowPopupDetails
-            Width: =215
-            X: =750
+            Width: =271.89
+            X: =948.45
             Y: =406
             ZIndex: =120
 
@@ -714,11 +829,13 @@
             Align: =Align.Center
             FontWeight: =FontWeight.Semibold
             Height: =59
-            Size: =15
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Ïnformation successfully sent"
             Visible: =varShowPopupDetails
-            Width: =462
-            X: =480
+            Width: =584.24
+            X: =607.01
             Y: =276
             ZIndex: =129
 

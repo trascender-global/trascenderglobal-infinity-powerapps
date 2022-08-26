@@ -14,32 +14,34 @@ EditProject As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
-            Height: =358
+            Height: =550
             OnSelect: =
             Visible: |
                 =Not(varShowInit)
-            Width: =1285
-            X: =70
-            Y: =394
+            Width: =1790
+            X: =100
+            Y: =502
             ZIndex: =10
 
         NP_EpicSectionTitleLabel_4 As label:
             FontWeight: =FontWeight.Bold
-            Height: =26
-            Size: =18
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =19
             Text: |-
                 ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
-            Width: =1269
-            X: =71
-            Y: =403
+            Width: =1624
+            X: =103
+            Y: =511
             ZIndex: =40
 
-        Button2 As button:
+        EP_PFR_PaymentsButton As button:
             BorderThickness: =0
             Fill: =If(varShowPayments,RGBA(58, 203, 137, 1),RGBA(41, 41, 41, 1))
             FocusedBorderThickness: =1
-            Height: =32
+            Height: =35
             HoverFill: =ColorFade(RGBA(58, 203, 137, 0.6), -20%)
             OnSelect: |+
                 =Set(varShowPayments,true);
@@ -57,23 +59,25 @@ EditProject As screen:
                 Set(varShowviewresources,false);
                 
                 
+            PaddingRight: =6.33
+            PaddingTop: =6.33
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =12
+            Size: =14
             Text: ="Payments"
             Visible: =Not(varShowInit)
-            Width: =425
-            X: =73
-            Y: =442
+            Width: =580
+            X: =110
+            Y: =550
             ZIndex: =41
 
-        Button2_1 As button:
+        EP_PFR_FeaturesButton As button:
             BorderThickness: =0
             Fill: =If(varShowFeatures,RGBA(58, 203, 137, 1),RGBA(41, 41, 41, 1))
             FocusedBorderThickness: =1
-            Height: =32
+            Height: =35
             HoverFill: =ColorFade(RGBA(58, 203, 137, 0.6), -20%)
             OnSelect: |+
                 =Set(varShowPaymentsPL,false);
@@ -89,23 +93,25 @@ EditProject As screen:
                 Set(varShowPayments,false);
                 Set(varShowResources,false);
                 
+            PaddingRight: =6.33
+            PaddingTop: =6.33
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =12
+            Size: =14
             Text: ="Features"
             Visible: =Not(varShowInit)
-            Width: =425
-            X: =499
-            Y: =443
+            Width: =580
+            X: =700
+            Y: =551
             ZIndex: =42
 
-        Button2_2 As button:
+        EP_PFR_ResourcesButton As button:
             BorderThickness: =0
             Fill: =If(varShowResources,RGBA(58, 203, 137, 1),RGBA(41, 41, 41, 1))
             FocusedBorderThickness: =1
-            Height: =32
+            Height: =35
             HoverFill: =ColorFade(RGBA(58, 203, 137, 0.6), -20%)
             OnSelect: |+
                 =Set(varShowPaymentsPL,false);
@@ -123,24 +129,30 @@ EditProject As screen:
                 
                 
                 
+            PaddingRight: =6.33
+            PaddingTop: =6.33
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =12
+            Size: =14
             Text: ="Resources"
             Visible: =Not(varShowInit)
-            Width: =425
-            X: =924
-            Y: =443
+            Width: =580
+            X: =1290
+            Y: =551
             ZIndex: =43
 
     HeaderTG_EditProjectView As HeaderTG:
-        Height: =76
+        Height: =52
+        Width: =1920
+        X: =0.00
         ZIndex: =36
 
     DynamicNav_EditProjectView As DynamicNav:
-        Height: =716
+        Height: =1028
+        Width: =65.75
+        X: =0.00
         Y: =52
         ZIndex: =38
 
@@ -155,15 +167,16 @@ EditProject As screen:
             Fill: =RGBA(56, 96, 178, 0.7)
             Height: =768
             Visible: =varShowPopupSaveDetails
-            Width: =1366
+            Width: =1727.44
+            X: =0.00
             ZIndex: =95
 
         Rectangle4_3 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
             Height: =56
             Visible: =varShowPopupSaveDetails
-            Width: =699
-            X: =375
+            Width: =1727.44
+            X: =474.22
             Y: =238
             ZIndex: =96
 
@@ -172,8 +185,8 @@ EditProject As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =210
             Visible: =varShowPopupSaveDetails
-            Width: =699
-            X: =375
+            Width: =1727.44
+            X: =474.22
             Y: =294
             ZIndex: =97
 
@@ -181,11 +194,13 @@ EditProject As screen:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Size: =20
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
             Text: ="Add Details"
             Visible: =varShowPopupSaveDetails
-            Width: =244
-            X: =595
+            Width: =1727.44
+            X: =752.44
             Y: =246
             ZIndex: =98
 
@@ -193,11 +208,13 @@ EditProject As screen:
             Align: =Align.Center
             FontWeight: =FontWeight.Semibold
             Height: =90
-            Size: =20
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
             Text: ="You are about to save the project details, do you want to continue?"
             Visible: =varShowPopupSaveDetails
-            Width: =462
-            X: =499
+            Width: =1727.44
+            X: =631.03
             Y: =314
             ZIndex: =99
 
@@ -205,10 +222,13 @@ EditProject As screen:
             Fill: =RGBA(41, 41, 41, 1)
             Height: =46
             OnSelect: =Set(varShowPopupSaveDetails,false)
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Cancel"
             Visible: =varShowPopupSaveDetails
-            Width: =215
-            X: =480
+            Width: =1727.44
+            X: =607.01
             Y: =426
             ZIndex: =100
 
@@ -218,22 +238,27 @@ EditProject As screen:
             OnSelect: |-
                 =Set(varShowPopupSaveDetails,false);
                 Set(varShowInit,true)
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Continue"
             Visible: =varShowPopupSaveDetails
-            Width: =215
-            X: =770
+            Width: =1727.44
+            X: =973.73
             Y: =426
             ZIndex: =101
 
     EP_PaymentsContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =235
+        Height: =360
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =varShowPaymentsPL
-        Width: =1270
-        X: =74
-        Y: =517
+        Width: =1760
+        X: =110
+        Y: =650
         ZIndex: =142
 
         EP_PaymentsTitles As groupContainer.manualLayoutContainer:
@@ -242,7 +267,10 @@ EditProject As screen:
             Height: =25
             LayoutMinHeight: =25
             LayoutMinWidth: =250
-            Width: =1700
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =2100
+            X: =0.00
             ZIndex: =1
 
             Label10_47 As label:
@@ -250,11 +278,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Delivery date"
                 Visible: =varShowPaymentsPL 
-                Width: =102
-                X: =1462
+                Width: =128.99
+                X: =1848.84
                 ZIndex: =1
 
             Label10_18 As label:
@@ -262,10 +291,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Payment Name"
                 Visible: =varShowPaymentsPL 
-                X: =4
+                Width: =189.69
+                X: =5.06
                 ZIndex: =2
 
             Label10_19 As label:
@@ -273,11 +304,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Value"
                 Visible: =varShowPaymentsPL 
-                Width: =90
-                X: =356
+                Width: =113.81
+                X: =450.20
                 ZIndex: =3
 
             Label10_20 As label:
@@ -285,11 +317,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Epic"
                 Visible: =varShowPaymentsPL 
-                Width: =200
-                X: =155
+                Width: =252.92
+                X: =196.01
                 ZIndex: =4
 
             Label10_22 As label:
@@ -297,11 +330,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="$"
                 Visible: =varShowPaymentsPL 
-                Width: =49
-                X: =447
+                Width: =61.97
+                X: =565.28
                 ZIndex: =5
 
             Label10_31 As label:
@@ -309,11 +343,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Expected Date"
                 Visible: =varShowPaymentsPL 
-                Width: =120
-                X: =1341
+                Width: =151.74
+                X: =1695.83
                 ZIndex: =6
 
             Label10_38 As label:
@@ -321,11 +356,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Pokemon"
                 Visible: =varShowPaymentsPL 
-                Width: =200
-                X: =603
+                Width: =252.92
+                X: =762.55
                 ZIndex: =7
 
             Label10_39 As label:
@@ -333,11 +369,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Neo"
                 Visible: =varShowPaymentsPL 
-                Width: =200
-                X: =804
+                Width: =252.92
+                X: =1016.73
                 ZIndex: =8
 
             Label10_43 As label:
@@ -345,11 +382,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Masterchief"
                 Visible: =varShowPaymentsPL 
-                Width: =201
-                X: =1005
+                Width: =254.18
+                X: =1270.92
                 ZIndex: =9
 
             Label10_32 As label:
@@ -357,11 +395,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Status"
                 Visible: =varShowPaymentsPL 
-                Width: =133
-                X: =1207
+                Width: =168.19
+                X: =1526.37
                 ZIndex: =10
 
             Label10_40 As label:
@@ -369,11 +408,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Fee Value"
                 Visible: =varShowPaymentsPL 
-                Width: =105
-                X: =497
+                Width: =132.78
+                X: =628.50
                 ZIndex: =11
 
             Label10_41 As label:
@@ -381,11 +421,12 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 Text: ="Invoice date"
                 Visible: =varShowPaymentsPL 
-                Width: =100
-                X: =1565
+                Width: =126.46
+                X: =1979.09
                 ZIndex: =12
 
         EP_PaymentsGallery As gallery.galleryVertical:
@@ -401,8 +442,8 @@ EditProject As screen:
             LayoutMinWidth: =400
             TemplateSize: =19
             Visible: =varShowPaymentsPL
-            Width: =1740
-            X: =74
+            Width: =2100
+            X: =0.00
             Y: =29
             ZIndex: =2
 
@@ -412,8 +453,10 @@ EditProject As screen:
                 OnSelect: |-
                     =Remove( CollectionSQL_Payments,
                     First( Filter( CollectionSQL_Payments, PaymentID=ThisItem.PaymentID)));
-                Width: =20
-                X: =1689
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =25.29
+                X: =2135.91
                 ZIndex: =9
 
             NP_PaymentsGallery_EditButton As icon.Edit:
@@ -421,9 +464,11 @@ EditProject As screen:
                 Icon: =Icon.Edit
                 OnSelect: |-
                     =Patch(CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID = ThisItem.PaymentID) ), { editable: DisplayMode.Edit} );
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
-                Width: =20
-                X: =1670
+                Width: =25.29
+                X: =2111.87
                 ZIndex: =10
 
             NP_PaymentsGallery_PaymentName As text:
@@ -437,12 +482,15 @@ EditProject As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =150
+                Size: =10.12
+                Width: =189.69
+                X: =0.00
                 ZIndex: =11
 
             NP_PaymentsGallery_SaveButton As icon.Save:
@@ -464,9 +512,11 @@ EditProject As screen:
                         status_op:EP_PaymentsGallery_StatusOp.Selected.Value,
                         editable: DisplayMode.Disabled
                     } );
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
-                Width: =20
-                X: =1670
+                Width: =25.29
+                X: =2111.87
                 ZIndex: =12
 
             NP_PaymentsGallery_Value As text:
@@ -479,13 +529,15 @@ EditProject As screen:
                 Format: =TextFormat.Number
                 Height: =24
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =90
-                X: =350
+                Size: =10.12
+                Width: =113.81
+                X: =442.61
                 ZIndex: =14
 
             NP_PaymentsGallery_Currency As text:
@@ -498,13 +550,15 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 Height: =24
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =50
-                X: =440
+                Size: =10.12
+                Width: =63.24
+                X: =556.42
                 ZIndex: =15
 
             NP_PaymentsGallery_Neo As dropdown:
@@ -517,9 +571,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =200
-                X: =798
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =252.92
+                X: =1009.15
                 ZIndex: =20
 
             NP_PaymentsGallery_Pokemon As dropdown:
@@ -532,9 +588,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(pokemon_master_id))),pokemon_master_id)
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =202
-                X: =596
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =255.45
+                X: =753.71
                 ZIndex: =21
 
             NP_PaymentsGallery_ExpectedDate As datepicker:
@@ -544,10 +602,11 @@ EditProject As screen:
                 FocusedBorderThickness: =1
                 Height: =24
                 OnSelect: =Select(Parent)
-                PaddingTop: =5
-                Size: =8
-                Width: =123
-                X: =1332
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =10.12
+                Width: =155.54
+                X: =1684.44
                 ZIndex: =22
 
             NP_PaymentsGallery_Masterchief As dropdown:
@@ -560,9 +619,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =203
-                X: =998
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =256.71
+                X: =1262.07
                 ZIndex: =23
 
             NP_PaymentsGallery_Epic As dropdown:
@@ -575,9 +636,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =200
-                X: =150
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =252.92
+                X: =189.69
                 ZIndex: =24
 
             EP_PaymentsGallery_StatusOp As dropdown:
@@ -592,9 +655,11 @@ EditProject As screen:
                     =["True","False"]
                 OnSelect: =Select(Parent)
                 PaddingLeft: =40
-                Size: =8
-                Width: =133
-                X: =1198
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =168.19
+                X: =1514.99
                 ZIndex: =25
 
             EP_PaymentsGallery_InvoiceDate As datepicker:
@@ -604,10 +669,11 @@ EditProject As screen:
                 FocusedBorderThickness: =1
                 Height: =24
                 OnSelect: =Select(Parent)
-                PaddingTop: =5
-                Size: =8
-                Width: =101
-                X: =1560
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =10.12
+                Width: =127.72
+                X: =1972.76
                 ZIndex: =27
 
             EP_PaymentsGallery_DeliveryDate As datepicker:
@@ -617,10 +683,11 @@ EditProject As screen:
                 FocusedBorderThickness: =1
                 Height: =24
                 OnSelect: =Select(Parent)
-                PaddingTop: =5
-                Size: =8
-                Width: =103
-                X: =1456
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =10.12
+                Width: =130.25
+                X: =1841.25
                 ZIndex: =28
 
             EP_PaymentsGallery_FeeValue As text:
@@ -636,24 +703,28 @@ EditProject As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =106
-                X: =490
+                Size: =10.12
+                Width: =134.05
+                X: =619.66
                 ZIndex: =29
 
     EP_FeaturesContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =235
+        Height: =360
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =varShowFeaturesFL
-        Width: =1270
-        X: =74
-        Y: =517
+        Width: =1760
+        X: =110
+        Y: =650
         ZIndex: =143
 
         EP_FeatruresTitles As groupContainer.manualLayoutContainer:
@@ -662,8 +733,11 @@ EditProject As screen:
             Height: =25
             LayoutMinHeight: =25
             LayoutMinWidth: =250
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowFeaturesFL
-            Width: =1520
+            Width: =1922.18
+            X: =0.00
             ZIndex: =1
 
             Label10_52 As label:
@@ -671,11 +745,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Delivery date"
                 Visible: =varShowFeaturesFL
-                Width: =120
-                X: =1398
+                Width: =151.74
+                X: =1767.90
                 ZIndex: =1
 
             Label10_23 As label:
@@ -683,10 +759,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Feature Name"
                 Visible: =varShowFeaturesFL 
-                X: =4
+                Width: =189.69
+                X: =5.06
                 ZIndex: =2
 
             Label10_25 As label:
@@ -694,11 +773,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Neo"
                 Visible: =varShowFeaturesFL
-                Width: =200
-                X: =356
+                Width: =252.92
+                X: =450.20
                 ZIndex: =3
 
             Label10_24 As label:
@@ -706,11 +787,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Epic"
                 Visible: =varShowFeaturesFL 
-                Width: =200
-                X: =155
+                Width: =252.92
+                X: =196.01
                 ZIndex: =4
 
             Label10_26 As label:
@@ -718,11 +801,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="$"
                 Visible: =varShowFeaturesFL 
-                Width: =48
-                X: =865
+                Width: =60.71
+                X: =1093.88
                 ZIndex: =5
 
             Label10_51 As label:
@@ -730,11 +815,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Expected Date"
                 Visible: =varShowFeaturesFL 
-                Width: =120
-                X: =1277
+                Width: =151.74
+                X: =1614.89
                 ZIndex: =6
 
             Label10_48 As label:
@@ -742,11 +829,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Estimated Time"
                 Visible: =varShowFeaturesFL 
-                Width: =107
-                X: =914
+                Width: =135.31
+                X: =1155.84
                 ZIndex: =8
 
             Label10_49 As label:
@@ -754,11 +843,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Masterchief"
                 Visible: =varShowFeaturesFL 
-                Width: =201
-                X: =557
+                Width: =254.18
+                X: =704.38
                 ZIndex: =9
 
             Label10_50 As label:
@@ -766,11 +857,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Status"
                 Visible: =varShowFeaturesFL 
-                Width: =133
-                X: =1022
+                Width: =168.19
+                X: =1292.42
                 ZIndex: =10
 
             Label10_42 As label:
@@ -778,11 +871,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Estimation Value"
                 Visible: =varShowFeaturesFL 
-                Width: =105
-                X: =759
+                Width: =132.78
+                X: =959.83
                 ZIndex: =11
 
             Label10_53 As label:
@@ -790,12 +885,14 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =11.39
                 Text: ="Created date"
                 Visible: |
                     =varShowFeaturesFL 
-                Width: =120
-                X: =1156
+                Width: =151.74
+                X: =1461.87
                 ZIndex: =12
 
         EP_FeaturesGallery As gallery.galleryVertical:
@@ -811,8 +908,8 @@ EditProject As screen:
             LayoutMinWidth: =400
             TemplateSize: =19
             Visible: =varShowFeaturesFL
-            Width: =1570
-            X: =74
+            Width: =1750
+            X: =0.00
             Y: =29
             ZIndex: =2
 
@@ -822,8 +919,10 @@ EditProject As screen:
                 OnSelect: |-
                     =Remove( CollectionSQL_Features,
                     First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));
-                Width: =20
-                X: =1546
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =25.29
+                X: =1955.07
                 ZIndex: =9
 
             EP_FeaturesGallery_EditButton As icon.Edit:
@@ -831,9 +930,11 @@ EditProject As screen:
                 Icon: =Icon.Edit
                 OnSelect: |-
                     =Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), { editable: DisplayMode.Edit} );
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
-                Width: =20
-                X: =1525
+                Width: =25.29
+                X: =1928.50
                 ZIndex: =10
 
             EP_FeaturesGallery_FeatureName As text:
@@ -846,12 +947,15 @@ EditProject As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =150
+                Size: =10.12
+                Width: =189.69
+                X: =0.00
                 ZIndex: =11
 
             EP_FeaturesGallery_SaveButton As icon.Save:
@@ -870,28 +974,32 @@ EditProject As screen:
                         created_date: EP_FeaturesGallery_CreatedDate.SelectedDate,
                         editable: DisplayMode.Disabled
                     } );
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
-                Width: =20
-                X: =1525
+                Width: =25.29
+                X: =1928.50
                 ZIndex: =12
 
             EP_FeaturesGallery_EstimatedValue As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |-
-                    =Text( ThisItem.estimation_Value, "[$-en-US]$ ###,##0 ")
+                    =//Text( ThisItem.estimation_Value, "[$-en-US]$ ###,##0 ")
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 Format: =TextFormat.Number
                 Height: =24
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =103
-                X: =755
+                Size: =10.12
+                Width: =130.25
+                X: =954.77
                 ZIndex: =14
 
             EP_FeaturesGallery_Currency As text:
@@ -903,13 +1011,15 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 Height: =24
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =50
-                X: =858
+                Size: =10.12
+                Width: =63.24
+                X: =1085.02
                 ZIndex: =15
 
             EP_FeaturesGallery_Neo As dropdown:
@@ -922,9 +1032,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =200
-                X: =350
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =252.92
+                X: =442.61
                 ZIndex: =20
 
             EP_FeaturesGallery_ExpectedDate As datepicker:
@@ -934,10 +1046,11 @@ EditProject As screen:
                 FocusedBorderThickness: =1
                 Height: =24
                 OnSelect: =Select(Parent)
-                PaddingTop: =5
-                Size: =8
-                Width: =130
-                X: =1270
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =10.12
+                Width: =164.39
+                X: =1606.04
                 ZIndex: =22
 
             EP_FeaturesGallery_Masterchief As dropdown:
@@ -950,9 +1063,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =203
-                X: =550
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =256.71
+                X: =695.53
                 ZIndex: =23
 
             EP_FeaturesGallery_Epic As dropdown:
@@ -965,9 +1080,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =200
-                X: =150
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =252.92
+                X: =189.69
                 ZIndex: =24
 
             EP_FeaturesGallery_Status As dropdown:
@@ -981,9 +1098,11 @@ EditProject As screen:
                 Items: =["True","False"]
                 OnSelect: =Select(Parent)
                 PaddingLeft: =45
-                Size: =8
-                Width: =133
-                X: =1014
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =168.19
+                X: =1282.30
                 ZIndex: =25
 
             EP_FeaturesGallery_CreatedDate As datepicker:
@@ -993,10 +1112,11 @@ EditProject As screen:
                 FocusedBorderThickness: =1
                 Height: =24
                 OnSelect: =Select(Parent)
-                PaddingTop: =5
-                Size: =8
-                Width: =122
-                X: =1147
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =10.12
+                Width: =154.27
+                X: =1450.49
                 ZIndex: =27
 
             EP_FeaturesGallery_DeliveryDate As datepicker:
@@ -1006,16 +1126,17 @@ EditProject As screen:
                 FocusedBorderThickness: =1
                 Height: =24
                 OnSelect: =Select(Parent)
-                PaddingTop: =5
-                Size: =8
-                Width: =120
-                X: =1396
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =10.12
+                Width: =151.74
+                X: =1765.37
                 ZIndex: =28
 
             EP_FeaturesGallery_EstimatedTime As text:
                 Align: =Align.Center
                 BorderThickness: =1
-                Default: =ThisItem.estimation_Value
+                Default: =//ThisItem.estimation_Value
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -1023,13 +1144,15 @@ EditProject As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =106
-                X: =908
+                Size: =10.12
+                Width: =134.05
+                X: =1148.25
                 ZIndex: =29
 
     EP_New_Epic As group:
@@ -1042,10 +1165,13 @@ EditProject As screen:
         NP_EpicSectionTitleLabel As label:
             FontWeight: =FontWeight.Bold
             Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Project Epics"
             Visible: =varShowNE
-            Width: =187
-            X: =80
+            Width: =1727.44
+            X: =0.00
             Y: =171
             ZIndex: =11
 
@@ -1054,10 +1180,12 @@ EditProject As screen:
             Default: =""
             Height: =30
             HintText: ="Insert Epic Name"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowNE
-            Width: =514
-            X: =80
+            Width: =1727.44
+            X: =0.00
             Y: =240
             ZIndex: =12
 
@@ -1066,10 +1194,12 @@ EditProject As screen:
             Default: =
             Height: =30
             HintText: ="Price"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowNE
-            Width: =300
-            X: =650
+            Width: =1727.44
+            X: =0.00
             Y: =241
             ZIndex: =13
 
@@ -1077,11 +1207,12 @@ EditProject As screen:
             BorderThickness: =1
             Height: =30
             IconBackground: =RGBA(58, 87, 255, 1)
-            PaddingTop: =4
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =5.06
+            Size: =15.18
             Visible: =varShowNE
-            Width: =180
-            X: =80
+            Width: =1727.44
+            X: =0.00
             Y: =326
             ZIndex: =14
 
@@ -1091,10 +1222,12 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["USD"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowNE
-            Width: =300
-            X: =1042
+            Width: =1727.44
+            X: =0.00
             Y: =238
             ZIndex: =15
 
@@ -1104,10 +1237,12 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["Pokemon"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowNE
-            Width: =282
-            X: =313
+            Width: =1727.44
+            X: =0.00
             Y: =326
             ZIndex: =16
 
@@ -1116,10 +1251,12 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: =["Masterchief"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowNE
-            Width: =300
-            X: =1042
+            Width: =1727.44
+            X: =0.00
             Y: =326
             ZIndex: =17
 
@@ -1128,10 +1265,12 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: =["NEO"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowNE
-            Width: =300
-            X: =653
+            Width: =1727.44
+            X: =0.00
             Y: =327
             ZIndex: =18
 
@@ -1159,86 +1298,102 @@ EditProject As screen:
                 Reset(NP_EpicsSection_Neo);
                 Reset(NP_EpicsSection_Masterchief);
                 Set(varEpicsNumber,varEpicsNumber+1);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowNE
-            Width: =42
-            X: =1298
+            Width: =1727.44
+            X: =0.00
             Y: =171
             ZIndex: =19
 
         Label3_34 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Epic Name"
             Visible: =varShowNE
-            Width: =179
-            X: =80
+            Width: =1727.44
+            X: =0.00
             Y: =210
             ZIndex: =20
 
         Label3_35 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Value"
             Visible: =varShowNE
-            Width: =179
-            X: =653
+            Width: =1727.44
+            X: =0.00
             Y: =211
             ZIndex: =21
 
         Label3_36 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Currency"
             Visible: =varShowNE
-            Width: =111
-            X: =1042
+            Width: =1727.44
+            X: =0.00
             Y: =205
             ZIndex: =22
 
         Label3_37 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Expected Date"
             Visible: =varShowNE
-            Width: =168
-            X: =80
+            Width: =1727.44
+            X: =0.00
             Y: =295
             ZIndex: =23
 
         Label3_38 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Pokemon"
             Visible: =varShowNE
-            Width: =120
-            X: =307
+            Width: =1727.44
+            X: =0.00
             Y: =297
             ZIndex: =24
 
         Label3_39 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Neo"
             Visible: =varShowNE
-            Width: =120
-            X: =653
+            Width: =1727.44
+            X: =0.00
             Y: =294
             ZIndex: =25
 
         Label3_40 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Masterchief"
             Visible: =varShowNE
-            Width: =132
-            X: =1042
+            Width: =1727.44
+            X: =0.00
             Y: =291
             ZIndex: =26
 
@@ -1254,10 +1409,12 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisplayMode: =DisplayMode.View
             FontWeight: =FontWeight.Bold
-            Size: =22
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =27.82
             Text: ="Edit Project"
-            Width: =253
-            X: =1069
+            Width: =1727.44
+            X: =1351.86
             Y: =8
             ZIndex: =37
 
@@ -1267,7 +1424,8 @@ EditProject As screen:
                 =RGBA(255, 255, 255, 0.2
                 )
             Height: =60
-            Width: =176
+            Width: =1727.44
+            X: =0.00
             Y: =219
             ZIndex: =39
 
@@ -1279,9 +1437,11 @@ EditProject As screen:
                 =Refresh(GM_GlobalGeneralInformation);
                 Refresh(GM_Epics);
                 Refresh(GM_Payments);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Width: =40
-            X: =372
-            Y: =8
+            X: =1870
+            Y: =11
             ZIndex: =125
 
     EP_Epic_List As group:
@@ -1297,9 +1457,9 @@ EditProject As screen:
             Fill: =RGBA(56, 96, 178, 0)
             Height: =250
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =1285
-            X: =69
-            Y: =136
+            Width: =1790
+            X: =100
+            Y: =200
             ZIndex: =1
 
         Label10_5 As label:
@@ -1307,11 +1467,13 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Neo"
             Visible: =varShowEL
-            Width: =216
-            X: =889
+            Width: =1750
+            X: =100
             Y: =181
             ZIndex: =2
 
@@ -1320,11 +1482,13 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Masterchief"
             Visible: =varShowEL
-            Width: =216
-            X: =1106
+            Width: =1750
+            X: =100
             Y: =181
             ZIndex: =3
 
@@ -1333,11 +1497,13 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Name"
             Visible: =varShowEL
-            Width: =269
-            X: =75
+            Width: =1750
+            X: =100
             Y: =181
             ZIndex: =4
 
@@ -1346,11 +1512,13 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Expected Date"
             Visible: =varShowEL
-            Width: =139
-            X: =532
+            Width: =1750
+            X: =100
             Y: =181
             ZIndex: =5
 
@@ -1359,11 +1527,13 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Value"
             Visible: =varShowEL
-            Width: =119
-            X: =346
+            Width: =1750
+            X: =100
             Y: =181
             ZIndex: =6
 
@@ -1373,8 +1543,8 @@ EditProject As screen:
             Layout: =Layout.Vertical
             TemplateSize: =25
             Visible: =varShowEL
-            Width: =1273
-            X: =70
+            Width: =1750
+            X: =100
             Y: =206
             ZIndex: =7
 
@@ -1386,11 +1556,14 @@ EditProject As screen:
                     ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
                     ClearCollect(CollectionSQL_Features, AddColumns(Filter(GM_Features,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
                     ClearCollect(CollectionSQL_Resources, AddColumns(GM_ResourceEstimation,"editable",DisplayMode.Disabled));
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 PressedColor: =RGBA(166, 166, 166, 1)
                 PressedFill: =Self.DisabledFill
-                Size: =10
+                Size: =12.65
                 Text: =ThisItem.epic_name
-                Width: =271
+                Width: =342.70
+                X: =0.00
                 ZIndex: =1
 
             Label5_2 As label:
@@ -1398,11 +1571,13 @@ EditProject As screen:
                 BorderThickness: =1
                 Height: =30
                 OnSelect: =Select(Parent)
-                Size: =10
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =12.65
                 Text: |-
                     =Text( ThisItem.value_currency, "[$-en-US]$ ###,##0 ")
-                Width: =121
-                X: =271
+                Width: =153.01
+                X: =342.70
                 ZIndex: =2
 
             Label6_2 As label:
@@ -1410,10 +1585,12 @@ EditProject As screen:
                 BorderThickness: =1
                 Height: =30
                 OnSelect: =Select(Parent)
-                Size: =10
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =12.65
                 Text: =ThisItem.expected_date
-                Width: =144
-                X: =456
+                Width: =182.10
+                X: =576.66
                 ZIndex: =3
 
             Label5_4 As label:
@@ -1421,10 +1598,12 @@ EditProject As screen:
                 BorderThickness: =1
                 Height: =30
                 OnSelect: =Select(Parent)
-                Size: =10
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =12.65
                 Text: =ThisItem.currency_code
-                Width: =64
-                X: =392
+                Width: =80.93
+                X: =495.73
                 ZIndex: =4
 
             Label6_4 As label:
@@ -1432,10 +1611,12 @@ EditProject As screen:
                 BorderThickness: =1
                 Height: =30
                 OnSelect: =Select(Parent)
-                Size: =10
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =12.65
                 Text: =ThisItem.pokemon_master_id
-                Width: =215
-                X: =600
+                Width: =271.89
+                X: =758.75
                 ZIndex: =5
 
             Label6_14 As label:
@@ -1443,10 +1624,12 @@ EditProject As screen:
                 BorderThickness: =1
                 Height: =30
                 OnSelect: =Select(Parent)
-                Size: =10
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =12.65
                 Text: =ThisItem.neo_id
-                Width: =215
-                X: =815
+                Width: =271.89
+                X: =1030.64
                 ZIndex: =6
 
             Label6_15 As label:
@@ -1454,10 +1637,12 @@ EditProject As screen:
                 BorderThickness: =1
                 Height: =30
                 OnSelect: =Select(Parent)
-                Size: =10
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =12.65
                 Text: =ThisItem.master_chief_id
-                Width: =218
-                X: =1030
+                Width: =275.69
+                X: =1302.54
                 ZIndex: =7
 
         Label10_21 As label:
@@ -1465,11 +1650,13 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="$"
             Visible: =varShowEL
-            Width: =65
-            X: =466
+            Width: =1750
+            X: =100
             Y: =181
             ZIndex: =8
 
@@ -1478,11 +1665,13 @@ EditProject As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(58, 87, 255, 1)
             Height: =27
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Pokemon"
             Visible: =varShowEL
-            Width: =215
-            X: =673
+            Width: =1750
+            X: =100
             Y: =181
             ZIndex: =9
 
@@ -1498,11 +1687,13 @@ EditProject As screen:
             Default: =""
             Height: =30
             HintText: ="Input Name"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: ="Parrado perra"
             Visible: =varShowPaymentsNP 
-            Width: =281
-            X: =106
+            Width: =355.35
+            X: =18.27
             Y: =571
             ZIndex: =44
 
@@ -1512,10 +1703,12 @@ EditProject As screen:
             Format: =TextFormat.Number
             Height: =30
             HintText: ="Input value"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =168
-            X: =427
+            Width: =212.45
+            X: =18.27
             Y: =571
             ZIndex: =45
 
@@ -1523,10 +1716,12 @@ EditProject As screen:
             BorderThickness: =1
             Color: =RGBA(0,0,0,1)
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =0.00
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =173
-            X: =1146
+            Width: =218.78
+            X: =18.27
             Y: =663
             ZIndex: =46
 
@@ -1536,10 +1731,12 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["USD"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =112
-            X: =629
+            Width: =141.64
+            X: =18.27
             Y: =571
             ZIndex: =47
 
@@ -1549,10 +1746,12 @@ EditProject As screen:
             Height: =30
             Items: |
                 =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(pokemon_master_id))),pokemon_master_id)
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =281
-            X: =108
+            Width: =355.35
+            X: =18.27
             Y: =666
             ZIndex: =48
 
@@ -1561,10 +1760,12 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =298
-            X: =776
+            Width: =376.85
+            X: =18.27
             Y: =665
             ZIndex: =49
 
@@ -1573,87 +1774,103 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =312
-            X: =430
+            Width: =394.56
+            X: =18.27
             Y: =665
             ZIndex: =50
 
         Label3_43 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Currency"
             Visible: =varShowPaymentsNP 
-            Width: =124
-            X: =629
+            Width: =156.80
+            X: =18.27
             Y: =540
             ZIndex: =51
 
         Label3_44 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Expected Date"
             Visible: =varShowPaymentsNP 
-            Width: =176
-            X: =1146
+            Width: =222.57
+            X: =18.27
             Y: =630
             ZIndex: =52
 
         Label3_45 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Pokemon"
             Visible: =varShowPaymentsNP 
-            Width: =126
-            X: =108
+            Width: =159.33
+            X: =18.27
             Y: =633
             ZIndex: =53
 
         Label3_46 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Neo"
             Visible: =varShowPaymentsNP 
-            Width: =126
-            X: =430
+            Width: =159.33
+            X: =18.27
             Y: =632
             ZIndex: =54
 
         Label3_47 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Masterchief"
             Visible: =varShowPaymentsNP 
-            Width: =126
-            X: =776
+            Width: =159.33
+            X: =18.27
             Y: =632
             ZIndex: =55
 
         Label3_41 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Payment Name"
             Visible: =varShowPaymentsNP 
-            Width: =188
-            X: =106
+            Width: =237.74
+            X: =18.27
             Y: =540
             ZIndex: =56
 
         Label3_42 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Value"
             Visible: =varShowPaymentsNP 
-            Width: =188
-            X: =427
+            Width: =237.74
+            X: =18.27
             Y: =540
             ZIndex: =57
 
@@ -1663,21 +1880,25 @@ EditProject As screen:
             Format: =TextFormat.Number
             Height: =30
             HintText: ="Input Fee"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =112
-            X: =770
+            Width: =141.64
+            X: =18.27
             Y: =571
             ZIndex: =58
 
         Label3_55 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Fee"
             Visible: =varShowPaymentsNP 
-            Width: =122
-            X: =770
+            Width: =154.27
+            X: =18.27
             Y: =538
             ZIndex: =59
 
@@ -1687,21 +1908,25 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["True","False"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =175
-            X: =894
+            Width: =221.31
+            X: =18.27
             Y: =571
             ZIndex: =60
 
         Label3_56 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Status"
             Visible: =varShowPaymentsNP 
-            Width: =124
-            X: =894
+            Width: =156.80
+            X: =18.27
             Y: =540
             ZIndex: =61
 
@@ -1734,22 +1959,27 @@ EditProject As screen:
                 Reset(NP_PaymentsSection_Status);
                 Reset(NP_PaymentsSection_Fee);
                 NotificationType.Success;
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Create"
             Visible: =varShowPaymentsNP 
-            Width: =173
-            X: =1145
+            Width: =218.78
+            X: =18.27
             Y: =568
             ZIndex: =62
 
     EP_ResourcesContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =235
+        Height: =360
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =varShowResourcesRL
-        Width: =1270
-        X: =74
-        Y: =517
+        Width: =1760
+        X: =110
+        Y: =650
         ZIndex: =150
 
         EP_ResourcesTitles As groupContainer.manualLayoutContainer:
@@ -1758,8 +1988,11 @@ EditProject As screen:
             Height: =25
             LayoutMinHeight: =25
             LayoutMinWidth: =250
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowResourcesRL
-            Width: =1220
+            Width: =1750
+            X: =0.00
             ZIndex: =1
 
             Label10_27 As label:
@@ -1767,10 +2000,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="Resource Name"
                 Visible: =varShowResourcesRL 
-                X: =4
+                Width: =220
+                X: =5.06
                 ZIndex: =2
 
             Label10_29 As label:
@@ -1778,11 +2014,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="Feature"
                 Visible: =varShowResourcesRL
-                Width: =200
-                X: =406
+                Width: =253
+                X: =558
                 ZIndex: =3
 
             Label10_28 As label:
@@ -1790,11 +2028,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="Epic"
                 Visible: =varShowResourcesRL 
-                Width: =250
-                X: =155
+                Width: =330
+                X: =226
                 ZIndex: =4
 
             Label10_30 As label:
@@ -1802,11 +2042,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="$"
                 Visible: =varShowResourcesRL 
-                Width: =48
-                X: =915
+                Width: =60.71
+                X: =1249
                 ZIndex: =5
 
             Label10_55 As label:
@@ -1814,11 +2056,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="Estimated Time"
                 Visible: =varShowResourcesRL 
-                Width: =107
-                X: =964
+                Width: =180
+                X: =1311
                 ZIndex: =8
 
             Label10_54 As label:
@@ -1826,11 +2070,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="Type"
                 Visible: =varShowResourcesRL 
-                Width: =201
-                X: =607
+                Width: =254.18
+                X: =813
                 ZIndex: =9
 
             Label10_56 As label:
@@ -1838,11 +2084,13 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="Status"
                 Visible: =varShowResourcesRL 
-                Width: =133
-                X: =1072
+                Width: =168.19
+                X: =1493
                 ZIndex: =10
 
             Label10_44 As label:
@@ -1850,14 +2098,16 @@ EditProject As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(58, 87, 255, 1)
                 Height: =25
-                Size: =9
+                PaddingRight: =6.33
+                PaddingTop: =6.33
+                Size: =14
                 Text: ="Estimation Value"
                 Visible: =varShowResourcesRL 
-                Width: =105
-                X: =809
+                Width: =180
+                X: =1068
                 ZIndex: =11
 
-        EP_FeaturesGallery_1 As gallery.galleryVertical:
+        EP_ResourcesGallery As gallery.galleryVertical:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =171
@@ -1867,8 +2117,8 @@ EditProject As screen:
             LayoutMinWidth: =400
             TemplateSize: =19
             Visible: =varShowResourcesRL
-            Width: =1270
-            X: =74
+            Width: =1750
+            X: =0.00
             Y: =29
             ZIndex: =2
 
@@ -1878,8 +2128,10 @@ EditProject As screen:
                 OnSelect: |-
                     =/*Remove( CollectionSQL_Features,
                     First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));*/
-                Width: =20
-                X: =1225
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =25.29
+                X: =1693
                 ZIndex: =9
 
             EP_FeaturesGallery_EditButton_1 As icon.Edit:
@@ -1887,9 +2139,11 @@ EditProject As screen:
                 Icon: =Icon.Edit
                 OnSelect: |-
                     =/*Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), { editable: DisplayMode.Edit} );*/
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
-                Width: =20
-                X: =1205
+                Width: =25.29
+                X: =1668
                 ZIndex: =10
 
             EP_FeaturesGallery_FeatureName_1 As text:
@@ -1902,12 +2156,15 @@ EditProject As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =150
+                Size: =10.12
+                Width: =220
+                X: =0.00
                 ZIndex: =11
 
             EP_FeaturesGallery_SaveButton_1 As icon.Save:
@@ -1926,9 +2183,11 @@ EditProject As screen:
                         created_date: EP_FeaturesGallery_CreatedDate_1.SelectedDate,
                         editable: DisplayMode.Disabled
                     } );*/
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
-                Width: =20
-                X: =1205
+                Width: =25.29
+                X: =1523.84
                 ZIndex: =12
 
             EP_FeaturesGallery_EstimatedValue_1 As text:
@@ -1941,13 +2200,15 @@ EditProject As screen:
                 Format: =TextFormat.Number
                 Height: =24
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =103
-                X: =805
+                Size: =10.12
+                Width: =173
+                X: =1063
                 ZIndex: =14
 
             EP_FeaturesGallery_Currency_1 As text:
@@ -1959,13 +2220,15 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 Height: =24
                 OnSelect: =Select(Parent)
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =50
-                X: =908
+                Size: =10.12
+                Width: =63.24
+                X: =1247
                 ZIndex: =15
 
             EP_FeaturesGallery_Neo_1 As dropdown:
@@ -1978,9 +2241,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =200
-                X: =400
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =253
+                X: =551
                 ZIndex: =20
 
             EP_FeaturesGallery_Masterchief_1 As dropdown:
@@ -1993,9 +2258,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =203
-                X: =600
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =256.71
+                X: =804
                 ZIndex: =23
 
             EP_FeaturesGallery_Epic_1 As dropdown:
@@ -2007,9 +2274,11 @@ EditProject As screen:
                 Height: =24
                 Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
                 OnSelect: =Select(Parent)
-                Size: =8
-                Width: =250
-                X: =150
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =329
+                X: =218
                 ZIndex: =24
 
             EP_FeaturesGallery_Status_1 As dropdown:
@@ -2023,9 +2292,11 @@ EditProject As screen:
                 Items: =["True","False"]
                 OnSelect: =Select(Parent)
                 PaddingLeft: =45
-                Size: =8
-                Width: =133
-                X: =1064
+                PaddingRight: =12.65
+                PaddingTop: =12.65
+                Size: =10.12
+                Width: =168.19
+                X: =1490
                 ZIndex: =25
 
             EP_FeaturesGallery_EstimatedTime_1 As text:
@@ -2039,13 +2310,15 @@ EditProject As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingLeft: =5
+                PaddingRight: =6.33
+                PaddingTop: =6.33
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =8
-                Width: =106
-                X: =958
+                Size: =10.12
+                Width: =180
+                X: =1310
                 ZIndex: =29
 
     EP_NewFeatures As group:
@@ -2060,10 +2333,12 @@ EditProject As screen:
             Default: =""
             Height: =30
             HintText: ="Input Name"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =267
-            X: =100
+            Width: =337.64
+            X: =9.84
             Y: =574
             ZIndex: =63
 
@@ -2072,43 +2347,51 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: =["NEO"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =266
-            X: =100
+            Width: =336.38
+            X: =9.84
             Y: =666
             ZIndex: =64
 
         Label3_53 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Neo"
             Visible: =varShowFeaturesNF
-            Width: =119
-            X: =100
+            Width: =150.49
+            X: =9.84
             Y: =636
             ZIndex: =65
 
         Label3_52 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Expected Date"
             Visible: =varShowFeaturesNF
-            Width: =148
-            X: =738
+            Width: =187.16
+            X: =9.84
             Y: =545
             ZIndex: =66
 
         Label3_48 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Feature Name"
             Visible: =varShowFeaturesNF
-            Width: =178
-            X: =100
+            Width: =225.10
+            X: =9.84
             Y: =545
             ZIndex: =67
 
@@ -2118,21 +2401,25 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["Normal"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =266
-            X: =419
+            Width: =336.38
+            X: =9.84
             Y: =574
             ZIndex: =68
 
         Label3_57 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Status"
             Visible: =varShowFeaturesNF
-            Width: =117
-            X: =419
+            Width: =147.96
+            X: =9.84
             Y: =545
             ZIndex: =69
 
@@ -2155,10 +2442,13 @@ EditProject As screen:
                 Reset(NP_FeaturesSection_Masterchief);
                 Reset(NP_FeaturesSection_Status);
                 
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Create"
             Visible: =varShowFeaturesNF
-            Width: =164
-            X: =1158
+            Width: =207.39
+            X: =9.84
             Y: =572
             ZIndex: =70
 
@@ -2168,21 +2458,25 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["Masterchief"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =266
-            X: =419
+            Width: =336.38
+            X: =9.84
             Y: =666
             ZIndex: =71
 
         Label3_58 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Masterchief"
             Visible: =varShowFeaturesNF
-            Width: =117
-            X: =419
+            Width: =147.96
+            X: =9.84
             Y: =636
             ZIndex: =72
 
@@ -2190,11 +2484,12 @@ EditProject As screen:
             BorderThickness: =1
             Height: =30
             IconBackground: =RGBA(58, 87, 255, 1)
-            PaddingTop: =4
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =5.06
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =169
-            X: =738
+            Width: =213.72
+            X: =9.84
             Y: =574
             ZIndex: =73
 
@@ -2203,21 +2498,25 @@ EditProject As screen:
             Default: =""
             Height: =30
             HintText: ="Input Time"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =163
-            X: =745
+            Width: =206.13
+            X: =9.84
             Y: =666
             ZIndex: =144
 
         Label3_54 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Estimated Time"
             Visible: =varShowFeaturesNF
-            Width: =178
-            X: =745
+            Width: =225.10
+            X: =9.84
             Y: =637
             ZIndex: =145
 
@@ -2226,21 +2525,25 @@ EditProject As screen:
             Default: =""
             Height: =29
             HintText: ="Input Value"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =157
-            X: =956
+            Width: =198.54
+            X: =9.84
             Y: =666
             ZIndex: =146
 
         Label3_59 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Estimated Value"
             Visible: =varShowFeaturesNF
-            Width: =178
-            X: =956
+            Width: =225.10
+            X: =9.84
             Y: =637
             ZIndex: =147
 
@@ -2250,21 +2553,25 @@ EditProject As screen:
             Height: =29
             Items: |
                 =["USD"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowFeaturesNF
-            Width: =143
-            X: =1162
+            Width: =180.84
+            X: =9.84
             Y: =663
             ZIndex: =148
 
         Label3_60 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Currency"
             Visible: =varShowFeaturesNF
-            Width: =117
-            X: =1162
+            Width: =147.96
+            X: =9.84
             Y: =633
             ZIndex: =149
 
@@ -2284,10 +2591,12 @@ EditProject As screen:
                 Set(varShowFeatures,false);
                 Set(varShowResources,false);
                 Set(varShowPayments,false);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =65
-            X: =1260
-            Y: =78
+            Width: =50
+            X: =1840
+            Y: =137
             ZIndex: =27
 
         EP_EditProjectDetailsButton As icon.Edit:
@@ -2298,35 +2607,41 @@ EditProject As screen:
                 =Set(varShowEditProjectDetailsPopUp,true);
                 Set(varShowEL,false);
                 Set(varShowNE,false);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =42
-            X: =1210
-            Y: =75
+            Width: =50
+            X: =1776
+            Y: =133
             ZIndex: =28
 
         EP_EpicSectiondealValueLabel As label:
             Color: =RGBA(58, 203, 137, 1)
             FontWeight: =FontWeight.Bold
             Height: =27
-            Size: =18
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =22.76
             Text: |
                 ="Project Value:      "&Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =370
-            X: =652
-            Y: =68
+            Width: =600
+            X: =915
+            Y: =77
             ZIndex: =29
 
         EP_EpicSectionProjectValueLabel As label:
             FontWeight: =FontWeight.Bold
             Height: =27
-            Size: =16
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =20.24
             Text: |-
                 ="Epic's Payments Total: "&Text(Sum(CollectionSQL_Payments, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =461
-            X: =75
-            Y: =484
+            Width: =600
+            X: =99
+            Y: =413
             ZIndex: =30
 
         EP_SelectProject_ComboBox As combobox:
@@ -2358,15 +2673,17 @@ EditProject As screen:
                 //Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
                 ClearCollect(CollectionSQL_Features, GM_Features);
+            PaddingRight: =6.33
+            PaddingTop: =6.33
             SearchFields: =["project_name"]
             SearchItems: =[]
             SelectMultiple: =false
-            Size: =14
+            Size: =17.71
             Underline: =true
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =564
-            X: =69
-            Y: =95
+            Width: =500
+            X: =240
+            Y: =112
             ZIndex: =31
 
         EP_GeneralStatus_Dropdown As dropdown:
@@ -2376,21 +2693,26 @@ EditProject As screen:
             Height: =25
             Items: =Distinct(GM_GlobalGeneralInformation,status)
             OnSelect: =
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =16.45
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =185
-            X: =145
-            Y: =61
+            Width: =200
+            X: =563
+            Y: =70
             ZIndex: =32
 
         EP_EpicSectionStatus_Label As label:
             FontWeight: =FontWeight.Bold
             Height: =25
-            Size: =15
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Status"
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =94
-            X: =70
-            Y: =61
+            Width: =300
+            X: =460
+            Y: =70
             ZIndex: =33
 
         EP_GeneralSegment_Dropdown As dropdown:
@@ -2399,21 +2721,26 @@ EditProject As screen:
             Height: =25
             Items: =Distinct(GM_GlobalGeneralInformation,segment)
             OnSelect: =
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =16.45
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =185
-            X: =448
-            Y: =61
+            Width: =200
+            X: =239
+            Y: =70
             ZIndex: =34
 
         EP_EpicSectionSegment_Label As label:
             FontWeight: =FontWeight.Bold
             Height: =25
-            Size: =15
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Segment"
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =109
-            X: =342
-            Y: =61
+            Width: =200
+            X: =100
+            Y: =70
             ZIndex: =35
 
         EP_EpicSectionEpicList As icon.ListScrollWatchlist:
@@ -2423,10 +2750,12 @@ EditProject As screen:
                 =Set(varShowEditProjectDetailsPopUp,false);
                 Set(varShowEL,true);
                 Set(varShowNE,false);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =30
-            X: =1294
-            Y: =141
+            Width: =38
+            X: =1223
+            Y: =156
             ZIndex: =126
 
         EP_EpicSectionNewEpic As icon.AddDocument:
@@ -2436,40 +2765,50 @@ EditProject As screen:
                 =Set(varShowEditProjectDetailsPopUp,false);
                 Set(varShowEL,false);
                 Set(varShowNE,true);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =30
-            X: =1154
-            Y: =141
+            Width: =38
+            X: =1351
+            Y: =156
             ZIndex: =127
 
         Label2 As label:
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Add New Epic"
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =126
-            X: =1026
-            Y: =141
+            Width: =166
+            X: =1384
+            Y: =153
             ZIndex: =128
 
         Label2_1 As label:
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Epic List"
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =92
-            X: =1205
-            Y: =142
+            Width: =100
+            X: =1256
+            Y: =155
             ZIndex: =129
 
         EP_EpicSectionProjectValueLabel_1 As label:
             FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =18
+            Height: =0
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =22.76
             Text: |
                 ="Total Payments Value: "&Text(Sum(CollectionSQL_Epics, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =461
-            X: =652
-            Y: =101
+            Width: =717
+            X: =1109
+            Y: =110
             ZIndex: =151
 
     EP_ViewPaymentToggle As group:
@@ -2479,50 +2818,60 @@ EditProject As screen:
         Y: =40
         ZIndex: =154
 
-        Icon2_1 As icon.ListScrollWatchlist:
+        EP_ViewPaymentToggle_ListButton As icon.ListScrollWatchlist:
             Color: =RGBA(41, 41, 41, 1)
             Height: =30
             Icon: =Icon.ListScrollWatchlist
             OnSelect: |
                 =Set(varShowPaymentsPL,true);
                 Set(varShowPaymentsNP,false);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowviewpayment
-            Width: =30
-            X: =1313
-            Y: =482
+            Width: =38
+            X: =1415
+            Y: =600
             ZIndex: =130
 
-        Icon5_1 As icon.AddDocument:
+        EP_ViewPaymentToggle_AddButton As icon.AddDocument:
             Color: =RGBA(41, 41, 41, 1)
             Height: =30
             Icon: =Icon.AddDocument
             OnSelect: |
                 =Set(varShowPaymentsPL,false);
                 Set(varShowPaymentsNP,true);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowviewpayment
-            Width: =30
-            X: =1145
-            Y: =482
+            Width: =38
+            X: =1618
+            Y: =600
             ZIndex: =131
 
-        Label2_2 As label:
+        EP_ViewTogglePayment_AddLabel As label:
             Color: =RGBA(41, 41, 41, 1)
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =14
             Text: ="Add New Payment"
             Visible: =varShowviewpayment
-            Width: =160
-            X: =983
-            Y: =482
+            Width: =202.33
+            X: =1650
+            Y: =600
             ZIndex: =132
 
-        Label2_3 As label:
+        EP_ViewPaymentToggle_ListLabel As label:
             Color: =RGBA(41, 41, 41, 1)
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =14
             Text: ="Payment List"
             Visible: =varShowviewpayment
-            Width: =120
-            X: =1190
-            Y: =482
+            Width: =151.74
+            X: =1452
+            Y: =600
             ZIndex: =133
 
     EP_New_Resource As group:
@@ -2537,11 +2886,13 @@ EditProject As screen:
             Default: =""
             Height: =30
             HintText: ="Input Name"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: ="Parrado perra"
             Visible: =varShowResourcesNR
-            Width: =223
-            X: =172
+            Width: =282.00
+            X: =212.24
             Y: =571
             ZIndex: =74
 
@@ -2551,10 +2902,12 @@ EditProject As screen:
             Format: =TextFormat.Number
             Height: =30
             HintText: ="Input value"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =250
-            X: =482
+            Width: =316.15
+            X: =212.24
             Y: =670
             ZIndex: =75
 
@@ -2564,54 +2917,64 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["Feature 1"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =252
-            X: =793
+            Width: =318.68
+            X: =212.24
             Y: =571
             ZIndex: =76
 
         Label3_51 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Currency"
             Visible: =varShowResourcesNR
-            Width: =250
-            X: =796
+            Width: =316.15
+            X: =212.24
             Y: =635
             ZIndex: =81
 
         Label3_61 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Feature"
             Visible: =varShowResourcesNR
-            Width: =250
-            X: =793
+            Width: =316.15
+            X: =212.24
             Y: =534
             ZIndex: =82
 
         Label3_49 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Name"
             Visible: =varShowResourcesNR
-            Width: =167
-            X: =172
+            Width: =211.19
+            X: =212.24
             Y: =535
             ZIndex: =83
 
         Label3_50 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Estimated Value"
             Visible: =varShowResourcesNR
-            Width: =250
-            X: =482
+            Width: =316.15
+            X: =212.24
             Y: =636
             ZIndex: =84
 
@@ -2621,21 +2984,25 @@ EditProject As screen:
             Format: =TextFormat.Number
             Height: =30
             HintText: ="Input time estimation"
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =223
-            X: =175
+            Width: =282.00
+            X: =212.24
             Y: =670
             ZIndex: =87
 
         Label3_63 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Estimated Time"
             Visible: =varShowResourcesNR
-            Width: =250
-            X: =175
+            Width: =316.15
+            X: =212.24
             Y: =633
             ZIndex: =88
 
@@ -2660,10 +3027,13 @@ EditProject As screen:
                 Reset(NP_ResourcesSection_Feature);
                 Reset(NP_ResourcesSection_Currency);
                 
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
             Text: ="Create"
             Visible: =varShowResourcesNR
-            Width: =154
-            X: =1096
+            Width: =194.74
+            X: =212.24
             Y: =566
             ZIndex: =89
 
@@ -2674,21 +3044,25 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["Tegecito", "Hosting", "Cloud"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =250
-            X: =479
+            Width: =316.15
+            X: =212.24
             Y: =571
             ZIndex: =90
 
         Label3_62 As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Text: ="Type"
             Visible: =varShowResourcesNR
-            Width: =250
-            X: =479
+            Width: =316.15
+            X: =212.24
             Y: =536
             ZIndex: =91
 
@@ -2698,10 +3072,12 @@ EditProject As screen:
             Height: =30
             Items: |
                 =["COP","USD"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =252
-            X: =798
+            Width: =318.68
+            X: =212.24
             Y: =670
             ZIndex: =94
 
@@ -2712,46 +3088,56 @@ EditProject As screen:
         Y: =20
         ZIndex: =158
 
-        Icon2_2 As icon.ListScrollWatchlist:
+        EP_ViewFeaturesToggle_ListButton As icon.ListScrollWatchlist:
             Height: =30
             Icon: =Icon.ListScrollWatchlist
             OnSelect: |
                 =Set(varShowFeaturesFL,true);
                 Set(varShowFeaturesNF,false);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowviewfeature
-            Width: =30
-            X: =1312
-            Y: =482
+            Width: =38
+            X: =1415
+            Y: =600
             ZIndex: =134
 
-        Icon5_2 As icon.AddDocument:
+        EP_ViewFeaturesToggle_AddButton As icon.AddDocument:
             Height: =30
             Icon: =Icon.AddDocument
             OnSelect: |
                 =Set(varShowFeaturesFL,false);
                 Set(varShowFeaturesNF,true);
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowviewfeature
-            Width: =30
-            X: =1144
-            Y: =482
+            Width: =38
+            X: =1618
+            Y: =600
             ZIndex: =135
 
-        Label2_4 As label:
+        EP_ViewFeaturesToggle_AddLabel As label:
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =14
             Text: ="Add New Feature"
             Visible: =varShowviewfeature
-            Width: =160
-            X: =982
-            Y: =482
+            Width: =202.33
+            X: =1650
+            Y: =600
             ZIndex: =136
 
-        Label2_5 As label:
+        EP_ViewFeaturesToggle_ListLabel As label:
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =14
             Text: ="Feature List"
             Visible: =varShowviewfeature
-            Width: =120
-            X: =1195
-            Y: =482
+            Width: =151.74
+            X: =1452
+            Y: =600
             ZIndex: =137
 
     EP_EditProjectGeneralGroup As group:
@@ -2767,18 +3153,21 @@ EditProject As screen:
             Fill: =RGBA(56, 96, 178, 0)
             Height: =318
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =1285
-            X: =69
+            Width: =1727.44
+            X: =0.00
             Y: =68
             ZIndex: =102
 
         Label3_25 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Line of Business"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =209
-            X: =497
+            Width: =1727.44
+            X: =0.00
             Y: =132
             ZIndex: =103
 
@@ -2786,20 +3175,25 @@ EditProject As screen:
             BorderThickness: =1
             Default: =varProjectDetails.project_name
             Height: =25
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =395
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =161
             ZIndex: =104
 
         Label3_21 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Name"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =182
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =132
             ZIndex: =105
 
@@ -2807,30 +3201,38 @@ EditProject As screen:
             BorderThickness: =1
             Default: =varProjectDetails.segment
             Height: =25
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =315
-            X: =897
+            Width: =1727.44
+            X: =0.00
             Y: =161
             ZIndex: =106
 
         Label3_31 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Segment"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =173
-            X: =903
+            Width: =1727.44
+            X: =0.00
             Y: =132
             ZIndex: =107
 
         Label3_26 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Created Date"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =182
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =188
             ZIndex: =108
 
@@ -2841,31 +3243,39 @@ EditProject As screen:
             DisabledColor: =RGBA(0, 0, 0, 1)
             Height: =25
             IconBackground: =RGBA(58, 87, 255, 1)
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =0.00
+            Size: =15.18
             StartOfWeek: =StartOfWeek.Monday
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =315
-            X: =497
+            Width: =1727.44
+            X: =0.00
             Y: =213
             ZIndex: =109
 
         Label3_30 As label:
             FontWeight: =FontWeight.Semibold
             Height: =18
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Initial Date"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =173
-            X: =497
+            Width: =1727.44
+            X: =0.00
             Y: =188
             ZIndex: =110
 
         Label3_32 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Currency Code"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =173
-            X: =897
+            Width: =1727.44
+            X: =0.00
             Y: =188
             ZIndex: =111
 
@@ -2873,30 +3283,38 @@ EditProject As screen:
             BorderThickness: =1
             Default: =varProjectDetails.total_price_currency
             Height: =25
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =328
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =266
             ZIndex: =112
 
         Label3_27 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Total Price Currency"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =235
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =243
             ZIndex: =113
 
         Label3_33 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Status"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =173
-            X: =898
+            Width: =1727.44
+            X: =0.00
             Y: =243
             ZIndex: =114
 
@@ -2904,20 +3322,25 @@ EditProject As screen:
             BorderThickness: =1
             Default: =varProjectDetails.observations
             Height: =58
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =1130
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =316
             ZIndex: =115
 
         Label3_28 As label:
             FontWeight: =FontWeight.Semibold
             Height: =19
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Observations    "
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =235
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =295
             ZIndex: =116
 
@@ -2927,10 +3350,12 @@ EditProject As screen:
             Default: =varProjectDetails.status
             Height: =25
             Items: =["Normal", "Delayed", "Disputed", "Finished"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =315
-            X: =898
+            Width: =1727.44
+            X: =0.00
             Y: =266
             ZIndex: =117
 
@@ -2938,10 +3363,12 @@ EditProject As screen:
             BorderThickness: =1
             Default: =varProjectDetails.created_date
             Height: =25
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =328
-            X: =85
+            Width: =1727.44
+            X: =0.00
             Y: =213
             ZIndex: =118
 
@@ -2949,11 +3376,13 @@ EditProject As screen:
             BorderThickness: =1
             Default: =varProjectDetails.currency_code
             Height: =25
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Tooltip: =
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =315
-            X: =897
+            Width: =1727.44
+            X: =0.00
             Y: =213
             ZIndex: =119
 
@@ -2961,20 +3390,25 @@ EditProject As screen:
             BorderThickness: =1
             Default: =varProjectDetails.project_link
             Height: =25
-            Size: =12
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =315
-            X: =497
+            Width: =1727.44
+            X: =0.00
             Y: =266
             ZIndex: =120
 
         Label3_29 As label:
             FontWeight: =FontWeight.Semibold
             Height: =25
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =16.45
             Text: ="Project Link "
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =226
-            X: =497
+            Width: =1727.44
+            X: =0.00
             Y: =243
             ZIndex: =121
 
@@ -2984,21 +3418,25 @@ EditProject As screen:
             Default: =varProjectDetails.line_of_business
             Height: =25
             Items: =["Fit", "Fat"]
-            Size: =12
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =315
-            X: =497
+            Width: =1727.44
+            X: =0.00
             Y: =161
             ZIndex: =122
 
         Label6 As label:
             FontWeight: =FontWeight.Bold
             Height: =35
-            Size: =20
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
             Text: ="Edit Project General Details"
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =586
-            X: =80
+            Width: =1727.44
+            X: =0.00
             Y: =75
             ZIndex: =123
 
@@ -3024,9 +3462,11 @@ EditProject As screen:
                         observations: EP_EditGeneral_Observations.Text,
                         created_date: varProjectDetails.created_date
                     });*/
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =67
-            X: =1255
+            Width: =1727.44
+            X: =0.00
             Y: =78
             ZIndex: =124
 
@@ -3037,47 +3477,57 @@ EditProject As screen:
         Y: =20
         ZIndex: =162
 
-        Icon2_3 As icon.ListScrollWatchlist:
+        EP_ViewResourcesToggle_ListButton As icon.ListScrollWatchlist:
             Height: =30
             Icon: =Icon.ListScrollWatchlist
             OnSelect: |+
                 =Set(varShowResourcesRL,true);
                 Set(varShowResourcesNR,false);
                 
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowviewresources
-            Width: =30
-            X: =1311
-            Y: =482
+            Width: =38
+            X: =1415
+            Y: =600
             ZIndex: =138
 
-        Icon5_3 As icon.AddDocument:
+        EP_ViewResourcesToggle_AddButton As icon.AddDocument:
             Height: =30
             Icon: =Icon.AddDocument
             OnSelect: |+
                 =Set(varShowResourcesRL,false);
                 Set(varShowResourcesNR,true);
                 
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =varShowviewresources
-            Width: =30
-            X: =1143
-            Y: =482
+            Width: =38
+            X: =1618
+            Y: =600
             ZIndex: =139
 
-        Label2_6 As label:
+        EP_ViewResourcesToggle_AddLabel As label:
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =14
             Text: ="Add New Resource"
             Visible: =varShowviewresources
-            Width: =164
-            X: =977
-            Y: =482
+            Width: =207.39
+            X: =1650
+            Y: =600
             ZIndex: =140
 
-        Label2_7 As label:
+        EP_ViewResourcesToggle_ListLabel As label:
             Height: =28
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =14
             Text: ="Resource List"
             Visible: =varShowviewresources
-            Width: =120
-            X: =1194
-            Y: =482
+            Width: =151.74
+            X: =1452
+            Y: =600
             ZIndex: =141
 

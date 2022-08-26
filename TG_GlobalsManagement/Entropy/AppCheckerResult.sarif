@@ -14,126 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedValue.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedValue.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".estimation_Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedValue"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "estimation_Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedValue.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedValue.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 55,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Text( ThisItem.estimation_Value, \"[$-en-US]$ ###,##0 \")"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedValue"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedTime.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedTime.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".estimation_Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditProject",
-                "type": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_EstimatedTime"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "estimation_Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditProject.EP_FeaturesContainer.EP_FeaturesGallery.EP_FeaturesGallery_SaveButton.OnSelect"
                 }
               ],
@@ -167,7 +47,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -208,7 +88,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColumnDoesNotExist-Name-Similar",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -248,7 +128,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -288,7 +168,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -328,7 +208,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -358,7 +238,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -388,7 +268,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -418,7 +298,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -448,7 +328,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -478,7 +358,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -508,7 +388,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -538,7 +418,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -568,7 +448,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -598,7 +478,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -628,7 +508,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -658,7 +538,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -688,7 +568,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -718,7 +598,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -748,7 +628,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -778,7 +658,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -808,7 +688,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -838,7 +718,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -868,7 +748,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -898,7 +778,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -928,7 +808,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -958,7 +838,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -988,7 +868,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1018,7 +898,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1048,7 +928,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1078,7 +958,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1108,7 +988,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1138,7 +1018,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1168,7 +1048,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1198,7 +1078,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1228,7 +1108,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1258,7 +1138,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1288,7 +1168,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1318,7 +1198,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1348,7 +1228,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1378,7 +1258,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1408,7 +1288,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1438,7 +1318,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1468,7 +1348,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1498,7 +1378,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1528,26 +1408,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5_3.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_AddButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5_3.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_AddButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon5_3"
+                "type": "EditProject.EP_ViewResourcesToggle_AddButton"
               }
             }
           ],
@@ -1558,26 +1438,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5_3.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_AddButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5_3.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_AddButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon5_3"
+                "type": "EditProject.EP_ViewResourcesToggle_AddButton"
               }
             }
           ],
@@ -1588,26 +1468,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5_2.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_AddButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5_2.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_AddButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon5_2"
+                "type": "EditProject.EP_ViewFeaturesToggle_AddButton"
               }
             }
           ],
@@ -1618,26 +1498,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5_2.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_AddButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5_2.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_AddButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon5_2"
+                "type": "EditProject.EP_ViewFeaturesToggle_AddButton"
               }
             }
           ],
@@ -1648,26 +1528,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_AddButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_AddButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon5_1"
+                "type": "EditProject.EP_ViewPaymentToggle_AddButton"
               }
             }
           ],
@@ -1678,26 +1558,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon5_1.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_AddButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon5_1.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_AddButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon5_1"
+                "type": "EditProject.EP_ViewPaymentToggle_AddButton"
               }
             }
           ],
@@ -1708,26 +1588,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2_3.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_ListButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2_3.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_ListButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon2_3"
+                "type": "EditProject.EP_ViewResourcesToggle_ListButton"
               }
             }
           ],
@@ -1738,26 +1618,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2_3.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_ListButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2_3.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ViewResourcesToggle_ListButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon2_3"
+                "type": "EditProject.EP_ViewResourcesToggle_ListButton"
               }
             }
           ],
@@ -1768,26 +1648,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2_2.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_ListButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2_2.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_ListButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon2_2"
+                "type": "EditProject.EP_ViewFeaturesToggle_ListButton"
               }
             }
           ],
@@ -1798,26 +1678,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2_2.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_ListButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2_2.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ViewFeaturesToggle_ListButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon2_2"
+                "type": "EditProject.EP_ViewFeaturesToggle_ListButton"
               }
             }
           ],
@@ -1828,26 +1708,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_ListButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_ListButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.Icon2_1"
+                "type": "EditProject.EP_ViewPaymentToggle_ListButton"
               }
             }
           ],
@@ -1858,26 +1738,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.Icon2_1.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_ListButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.Icon2_1.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ViewPaymentToggle_ListButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.Icon2_1"
+                "type": "EditProject.EP_ViewPaymentToggle_ListButton"
               }
             }
           ],
@@ -1888,7 +1768,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1918,7 +1798,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1948,7 +1828,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1978,7 +1858,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2008,7 +1888,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2038,7 +1918,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2068,7 +1948,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2098,7 +1978,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2128,7 +2008,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2158,7 +2038,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2188,7 +2068,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2218,7 +2098,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2248,7 +2128,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2278,7 +2158,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2308,7 +2188,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2338,7 +2218,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2368,7 +2248,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2398,7 +2278,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2428,7 +2308,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2458,7 +2338,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2488,7 +2368,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2518,7 +2398,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2548,7 +2428,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2578,7 +2458,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2608,7 +2488,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2638,7 +2518,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2668,7 +2548,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2698,7 +2578,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2728,7 +2608,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2758,7 +2638,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2788,7 +2668,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2818,7 +2698,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2848,7 +2728,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2878,7 +2758,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2908,7 +2788,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2938,7 +2818,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2968,7 +2848,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2998,26 +2878,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery"
               }
             }
           ],
@@ -3028,26 +2908,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery"
               }
             }
           ],
@@ -3058,26 +2938,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_FeatureName_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_FeatureName_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_FeatureName_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_FeatureName_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_FeatureName_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_FeatureName_1"
               }
             }
           ],
@@ -3088,26 +2968,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Epic_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Epic_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Epic_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Epic_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Epic_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Epic_1"
               }
             }
           ],
@@ -3118,26 +2998,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Neo_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Neo_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Neo_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Neo_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Neo_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Neo_1"
               }
             }
           ],
@@ -3148,26 +3028,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Masterchief_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Masterchief_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Masterchief_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Masterchief_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Masterchief_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Masterchief_1"
               }
             }
           ],
@@ -3178,26 +3058,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EstimatedValue_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedValue_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EstimatedValue_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedValue_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EstimatedValue_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedValue_1"
               }
             }
           ],
@@ -3208,26 +3088,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Currency_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Currency_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Currency_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Currency_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Currency_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Currency_1"
               }
             }
           ],
@@ -3238,26 +3118,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EstimatedTime_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedTime_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EstimatedTime_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedTime_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EstimatedTime_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedTime_1"
               }
             }
           ],
@@ -3268,26 +3148,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Status_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Status_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Status_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Status_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_Status_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_Status_1"
               }
             }
           ],
@@ -3298,26 +3178,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EditButton_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EditButton_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EditButton_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EditButton_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EditButton_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EditButton_1"
               }
             }
           ],
@@ -3328,26 +3208,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EditButton_1.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EditButton_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EditButton_1.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EditButton_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_EditButton_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EditButton_1"
               }
             }
           ],
@@ -3358,26 +3238,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_SaveButton_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_SaveButton_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_SaveButton_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_SaveButton_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_SaveButton_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_SaveButton_1"
               }
             }
           ],
@@ -3388,26 +3268,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_SaveButton_1.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_SaveButton_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_SaveButton_1.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_SaveButton_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_SaveButton_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_SaveButton_1"
               }
             }
           ],
@@ -3418,26 +3298,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_DeleteButton_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_DeleteButton_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_DeleteButton_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_DeleteButton_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_DeleteButton_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_DeleteButton_1"
               }
             }
           ],
@@ -3448,26 +3328,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_DeleteButton_1.TabIndex"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_DeleteButton_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_DeleteButton_1.TabIndex",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_DeleteButton_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_FeaturesGallery_1.EP_FeaturesGallery_DeleteButton_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_DeleteButton_1"
               }
             }
           ],
@@ -3478,7 +3358,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -3508,7 +3388,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3538,7 +3418,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3568,7 +3448,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3598,7 +3478,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3628,7 +3508,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3658,7 +3538,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3688,7 +3568,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3718,7 +3598,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3748,7 +3628,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3778,7 +3658,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3808,7 +3688,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3838,7 +3718,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3868,7 +3748,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3898,7 +3778,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3928,7 +3808,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3958,7 +3838,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3988,7 +3868,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4018,7 +3898,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4048,7 +3928,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4078,7 +3958,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4108,7 +3988,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4138,7 +4018,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4168,7 +4048,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4198,7 +4078,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4228,7 +4108,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4258,7 +4138,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -4288,7 +4168,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4318,7 +4198,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -4348,7 +4228,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4378,7 +4258,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -4408,7 +4288,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4438,7 +4318,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4468,7 +4348,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4498,7 +4378,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4528,7 +4408,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4558,7 +4438,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4588,7 +4468,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4618,7 +4498,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4648,7 +4528,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4678,7 +4558,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4708,7 +4588,7 @@
             "level": "Medium"
           },
           "ruleId": "app-CollectDelegatableDataSource",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -4737,7 +4617,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 9
+          "ruleIndex": 8
         }
       ],
       "tool": {
@@ -4745,23 +4625,6 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
-            {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
             {
               "id": "app-ErrInvalidArgs-Func",
               "messageStrings": {
@@ -4918,7 +4781,7 @@
               }
             }
           ],
-          "version": "1.325"
+          "version": "1.326"
         }
       }
     }

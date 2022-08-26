@@ -3,10 +3,13 @@ Home As screen:
     Width: =Max(App.Width, 1366)
 
     HeaderTG_HomeView As HeaderTG:
+        Width: =1727.44
+        X: =0.00
         ZIndex: =5
 
     DynamicNav_HomeView As DynamicNav:
-        Width: =247
+        Width: =312.36
+        X: =0.00
         Y: =50
         ZIndex: =6
 
@@ -16,22 +19,27 @@ Home As screen:
             =RGBA(255, 255, 255, 0.2
             )
         Height: =60
-        Width: =234
+        Width: =295.91
+        X: =0.00
         Y: =75
         ZIndex: =7
 
     ColumnChart1 As barChart:
         Items: =ColumnChartSample
-        Width: =578
-        X: =271
+        PaddingRight: =63.24
+        PaddingTop: =0.00
+        Size: =12.65
+        Width: =730.94
+        X: =342.70
         Y: =276
         ZIndex: =10
 
     PieChart1 As pieChart:
         Height: =474
         Items: =PieChartSample
-        Width: =580
-        X: =765
+        Size: =12.65
+        Width: =733.47
+        X: =967.42
         Y: =239
         ZIndex: =14
 

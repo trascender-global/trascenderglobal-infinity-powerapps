@@ -31,13 +31,14 @@ DynamicNav As CanvasComponent:
 
     "Galery_Menu As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Fill: =RGBA(41, 41, 41, 1)
-        Height: =718
+        Height: =1920
         Items: |
             =DynamicNav.MenuItem
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =79
-        Width: =52
+        Width: =65.75
+        X: =0.00
         ZIndex: =1
 
         MenuItemIcon As icon.ChevronRight:
@@ -49,11 +50,12 @@ DynamicNav As CanvasComponent:
             OnSelect: =Navigate(ThisItem.NavLink,Fade)
             PaddingBottom: =10
             PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
+            PaddingRight: =12.65
+            PaddingTop: =12.65
             TabIndex: =0
             Tooltip: ="View item details"
-            Width: =49
+            Width: =61.97
+            X: =0.00
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =2
 
