@@ -70,7 +70,7 @@ EditProject As screen:
             Visible: =Not(varShowInit)
             Width: =580
             X: =110
-            Y: =550
+            Y: =560
             ZIndex: =41
 
         EP_PFR_FeaturesButton As button:
@@ -104,7 +104,7 @@ EditProject As screen:
             Visible: =Not(varShowInit)
             Width: =580
             X: =700
-            Y: =551
+            Y: =560
             ZIndex: =42
 
         EP_PFR_ResourcesButton As button:
@@ -140,7 +140,7 @@ EditProject As screen:
             Visible: =Not(varShowInit)
             Width: =580
             X: =1290
-            Y: =551
+            Y: =560
             ZIndex: =43
 
     HeaderTG_EditProjectView As HeaderTG:
@@ -249,7 +249,7 @@ EditProject As screen:
             ZIndex: =101
 
     EP_PaymentsContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =360
+        Height: =380
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
@@ -432,7 +432,7 @@ EditProject As screen:
         EP_PaymentsGallery As gallery.galleryVertical:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =187
+            Height: =330
             Items: |-
                 =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
                 //CollectionSQL_Payments
@@ -715,7 +715,7 @@ EditProject As screen:
                 ZIndex: =29
 
     EP_FeaturesContainer As groupContainer.horizontalAutoLayoutContainer:
-        Height: =360
+        Height: =380
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         LayoutWrap: =true
@@ -898,7 +898,7 @@ EditProject As screen:
         EP_FeaturesGallery As gallery.galleryVertical:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =171
+            Height: =330
             Items: |-
                 =Filter(CollectionSQL_Features,varSelectedEpic=epic_id && Not(IsBlank(feature_name)))
                 //CollectionSQL_Payments
@@ -1472,8 +1472,8 @@ EditProject As screen:
             Size: =15.18
             Text: ="Neo"
             Visible: =varShowEL
-            Width: =1750
-            X: =100
+            Width: =267
+            X: =1139
             Y: =181
             ZIndex: =2
 
@@ -1487,8 +1487,8 @@ EditProject As screen:
             Size: =15.18
             Text: ="Masterchief"
             Visible: =varShowEL
-            Width: =1750
-            X: =100
+            Width: =275
+            X: =1408
             Y: =181
             ZIndex: =3
 
@@ -1502,8 +1502,8 @@ EditProject As screen:
             Size: =15.18
             Text: ="Name"
             Visible: =varShowEL
-            Width: =1750
-            X: =100
+            Width: =343
+            X: =105
             Y: =181
             ZIndex: =4
 
@@ -1517,8 +1517,8 @@ EditProject As screen:
             Size: =15.18
             Text: ="Expected Date"
             Visible: =varShowEL
-            Width: =1750
-            X: =100
+            Width: =183
+            X: =681
             Y: =181
             ZIndex: =5
 
@@ -1532,8 +1532,8 @@ EditProject As screen:
             Size: =15.18
             Text: ="Value"
             Visible: =varShowEL
-            Width: =1750
-            X: =100
+            Width: =151
+            X: =449
             Y: =181
             ZIndex: =6
 
@@ -1655,8 +1655,8 @@ EditProject As screen:
             Size: =15.18
             Text: ="$"
             Visible: =varShowEL
-            Width: =1750
-            X: =100
+            Width: =78
+            X: =602
             Y: =181
             ZIndex: =8
 
@@ -1670,8 +1670,8 @@ EditProject As screen:
             Size: =15.18
             Text: ="Pokemon"
             Visible: =varShowEL
-            Width: =1750
-            X: =100
+            Width: =271
+            X: =866
             Y: =181
             ZIndex: =9
 
@@ -2110,7 +2110,7 @@ EditProject As screen:
         EP_ResourcesGallery As gallery.galleryVertical:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =171
+            Height: =330
             Items: =CollectionSQL_Resources
             Layout: =Layout.Vertical
             LayoutMinHeight: =287
@@ -2580,7 +2580,7 @@ EditProject As screen:
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =152
+        ZIndex: =153
 
         EP_SaveProjectDetailsButton As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
@@ -2595,8 +2595,8 @@ EditProject As screen:
             PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =50
-            X: =1840
-            Y: =137
+            X: =1826
+            Y: =61
             ZIndex: =27
 
         EP_EditProjectDetailsButton As icon.Edit:
@@ -2611,8 +2611,8 @@ EditProject As screen:
             PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =50
-            X: =1776
-            Y: =133
+            X: =1736
+            Y: =56
             ZIndex: =28
 
         EP_EpicSectiondealValueLabel As label:
@@ -2648,7 +2648,7 @@ EditProject As screen:
             BorderThickness: =1
             DisplayFields: =["project_name"]
             FocusedBorderThickness: =1
-            Height: =32
+            Height: =30
             IsSearchable: =false
             Items: |-
                 =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
@@ -2682,7 +2682,7 @@ EditProject As screen:
             Underline: =true
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =500
-            X: =240
+            X: =310
             Y: =112
             ZIndex: =31
 
@@ -2690,7 +2690,7 @@ EditProject As screen:
             BorderThickness: =1
             Default: ="Normal"
             FocusedBorderThickness: =1
-            Height: =25
+            Height: =30
             Items: =Distinct(GM_GlobalGeneralInformation,status)
             OnSelect: =
             PaddingRight: =12.65
@@ -2698,27 +2698,27 @@ EditProject As screen:
             Size: =16.45
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =200
-            X: =563
+            X: =608
             Y: =70
             ZIndex: =32
 
         EP_EpicSectionStatus_Label As label:
             FontWeight: =FontWeight.Bold
-            Height: =25
+            Height: =30
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
             Text: ="Status"
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =300
-            X: =460
+            Width: =100
+            X: =505
             Y: =70
             ZIndex: =33
 
         EP_GeneralSegment_Dropdown As dropdown:
             BorderThickness: =1
             FocusedBorderThickness: =1
-            Height: =25
+            Height: =30
             Items: =Distinct(GM_GlobalGeneralInformation,segment)
             OnSelect: =
             PaddingRight: =12.65
@@ -2732,7 +2732,7 @@ EditProject As screen:
 
         EP_EpicSectionSegment_Label As label:
             FontWeight: =FontWeight.Bold
-            Height: =25
+            Height: =30
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
@@ -2754,8 +2754,8 @@ EditProject As screen:
             PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =38
-            X: =1223
-            Y: =156
+            X: =1394
+            Y: =140
             ZIndex: =126
 
         EP_EpicSectionNewEpic As icon.AddDocument:
@@ -2769,8 +2769,8 @@ EditProject As screen:
             PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =38
-            X: =1351
-            Y: =156
+            X: =1522
+            Y: =140
             ZIndex: =127
 
         Label2 As label:
@@ -2781,8 +2781,8 @@ EditProject As screen:
             Text: ="Add New Epic"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =166
-            X: =1384
-            Y: =153
+            X: =1555
+            Y: =140
             ZIndex: =128
 
         Label2_1 As label:
@@ -2793,8 +2793,8 @@ EditProject As screen:
             Text: ="Epic List"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =100
-            X: =1256
-            Y: =155
+            X: =1427
+            Y: =140
             ZIndex: =129
 
         EP_EpicSectionProjectValueLabel_1 As label:
@@ -2810,6 +2810,19 @@ EditProject As screen:
             X: =1109
             Y: =110
             ZIndex: =151
+
+        EP_EpicSectionSegment_Label_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
+            Text: ="Select Project"
+            Visible: =Not(varShowEditProjectDetailsPopUp)
+            Width: =200
+            X: =100
+            Y: =116
+            ZIndex: =152
 
     EP_ViewPaymentToggle As group:
         Height: =5
@@ -2830,7 +2843,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =38
             X: =1415
-            Y: =600
+            Y: =609
             ZIndex: =130
 
         EP_ViewPaymentToggle_AddButton As icon.AddDocument:
@@ -2845,7 +2858,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =38
             X: =1618
-            Y: =600
+            Y: =609
             ZIndex: =131
 
         EP_ViewTogglePayment_AddLabel As label:
@@ -2858,7 +2871,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =202.33
             X: =1650
-            Y: =600
+            Y: =609
             ZIndex: =132
 
         EP_ViewPaymentToggle_ListLabel As label:
@@ -2871,7 +2884,7 @@ EditProject As screen:
             Visible: =varShowviewpayment
             Width: =151.74
             X: =1452
-            Y: =600
+            Y: =609
             ZIndex: =133
 
     EP_New_Resource As group:
@@ -3099,7 +3112,7 @@ EditProject As screen:
             Visible: =varShowviewfeature
             Width: =38
             X: =1415
-            Y: =600
+            Y: =609
             ZIndex: =134
 
         EP_ViewFeaturesToggle_AddButton As icon.AddDocument:
@@ -3113,7 +3126,7 @@ EditProject As screen:
             Visible: =varShowviewfeature
             Width: =38
             X: =1618
-            Y: =600
+            Y: =609
             ZIndex: =135
 
         EP_ViewFeaturesToggle_AddLabel As label:
@@ -3125,7 +3138,7 @@ EditProject As screen:
             Visible: =varShowviewfeature
             Width: =202.33
             X: =1650
-            Y: =600
+            Y: =609
             ZIndex: =136
 
         EP_ViewFeaturesToggle_ListLabel As label:
@@ -3137,7 +3150,7 @@ EditProject As screen:
             Visible: =varShowviewfeature
             Width: =151.74
             X: =1452
-            Y: =600
+            Y: =609
             ZIndex: =137
 
     EP_EditProjectGeneralGroup As group:
@@ -3489,7 +3502,7 @@ EditProject As screen:
             Visible: =varShowviewresources
             Width: =38
             X: =1415
-            Y: =600
+            Y: =609
             ZIndex: =138
 
         EP_ViewResourcesToggle_AddButton As icon.AddDocument:
@@ -3504,7 +3517,7 @@ EditProject As screen:
             Visible: =varShowviewresources
             Width: =38
             X: =1618
-            Y: =600
+            Y: =609
             ZIndex: =139
 
         EP_ViewResourcesToggle_AddLabel As label:
@@ -3516,7 +3529,7 @@ EditProject As screen:
             Visible: =varShowviewresources
             Width: =207.39
             X: =1650
-            Y: =600
+            Y: =609
             ZIndex: =140
 
         EP_ViewResourcesToggle_ListLabel As label:
@@ -3528,6 +3541,6 @@ EditProject As screen:
             Visible: =varShowviewresources
             Width: =151.74
             X: =1452
-            Y: =600
+            Y: =609
             ZIndex: =141
 

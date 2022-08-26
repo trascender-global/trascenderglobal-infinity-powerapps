@@ -3,12 +3,14 @@ Home As screen:
     Width: =Max(App.Width, 1366)
 
     HeaderTG_HomeView As HeaderTG:
-        Width: =1727.44
+        Height: =50
+        Width: =1920
         X: =0.00
         ZIndex: =5
 
     DynamicNav_HomeView As DynamicNav:
-        Width: =312.36
+        Height: =1030
+        Width: =63
         X: =0.00
         Y: =50
         ZIndex: =6
