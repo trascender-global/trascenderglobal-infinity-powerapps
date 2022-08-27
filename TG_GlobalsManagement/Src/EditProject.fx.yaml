@@ -1475,7 +1475,7 @@ EditProject As screen:
             Text: ="Neo"
             Visible: =varShowEL
             Width: =330
-            X: =1166
+            X: =1211
             Y: =181
             ZIndex: =2
 
@@ -1490,7 +1490,7 @@ EditProject As screen:
             Text: ="Masterchief"
             Visible: =varShowEL
             Width: =330
-            X: =1498
+            X: =1543
             Y: =181
             ZIndex: =3
 
@@ -1504,7 +1504,7 @@ EditProject As screen:
             Size: =15.18
             Text: ="Name"
             Visible: =varShowEL
-            Width: =343
+            Width: =387
             X: =105
             Y: =181
             ZIndex: =4
@@ -1520,7 +1520,7 @@ EditProject As screen:
             Text: ="Expected Date"
             Visible: =varShowEL
             Width: =183
-            X: =681
+            X: =726
             Y: =181
             ZIndex: =5
 
@@ -1535,7 +1535,7 @@ EditProject As screen:
             Text: ="Value"
             Visible: =varShowEL
             Width: =151
-            X: =449
+            X: =494
             Y: =181
             ZIndex: =6
 
@@ -1543,16 +1543,16 @@ EditProject As screen:
             Height: =230
             Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name)))
             Layout: =Layout.Vertical
-            TemplateSize: =25
+            TemplateSize: =19
             Visible: =varShowEL
-            Width: =1750
+            Width: =1776
             X: =100
             Y: =206
             ZIndex: =7
 
             Label4_2 As label:
                 BorderThickness: =1
-                Height: =30
+                Height: =24
                 OnSelect: |-
                     =Set(varSelectedEpic,ThisItem.epic_id);
                     ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
@@ -1564,14 +1564,14 @@ EditProject As screen:
                 PressedFill: =Self.DisabledFill
                 Size: =11
                 Text: =ThisItem.epic_name
-                Width: =342.70
+                Width: =389
                 X: =0.00
                 ZIndex: =1
 
             Label5_2 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =30
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
@@ -1579,73 +1579,73 @@ EditProject As screen:
                 Text: |-
                     =Text( ThisItem.value_currency, "[$-en-US]$ ###,##0 ")
                 Width: =153.01
-                X: =342.70
+                X: =390
                 ZIndex: =2
 
             Label6_2 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =30
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
                 Size: =11
                 Text: =ThisItem.expected_date
                 Width: =182.10
-                X: =576.66
+                X: =623
                 ZIndex: =3
 
             Label5_4 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =30
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
                 Size: =11
                 Text: =ThisItem.currency_code
                 Width: =80.93
-                X: =495.73
+                X: =543
                 ZIndex: =4
 
             Label6_4 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =30
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
                 Size: =11
                 Text: =LookUp(TM_Tegecitos, id = ThisItem.pokemon_master_id).full_name
                 Width: =303
-                X: =758.75
+                X: =805
                 ZIndex: =5
 
             Label6_14 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =30
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
                 Size: =11
                 Text: |
                     = LookUp(TM_Tegecitos, id = ThisItem.neo_id).full_name
-                Width: =333
-                X: =1060
+                Width: =330
+                X: =1109
                 ZIndex: =6
 
             Label6_15 As label:
                 Align: =Align.Center
                 BorderThickness: =1
-                Height: =30
+                Height: =24
                 OnSelect: =Select(Parent)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
                 Size: =11
                 Text: = LookUp(TM_Tegecitos, id = ThisItem.master_chief_id).full_name
                 Width: =330
-                X: =1392
+                X: =1438
                 ZIndex: =7
 
         Label10_21 As label:
@@ -1659,7 +1659,7 @@ EditProject As screen:
             Text: ="$"
             Visible: =varShowEL
             Width: =78
-            X: =602
+            X: =647
             Y: =181
             ZIndex: =8
 
@@ -1674,7 +1674,7 @@ EditProject As screen:
             Text: ="Pokemon"
             Visible: =varShowEL
             Width: =298
-            X: =866
+            X: =911
             Y: =181
             ZIndex: =9
 
@@ -1696,8 +1696,8 @@ EditProject As screen:
             Tooltip: ="Parrado perra"
             Visible: =varShowPaymentsNP 
             Width: =355.35
-            X: =18.27
-            Y: =571
+            X: =178
+            Y: =778
             ZIndex: =44
 
         NP_PaymentsSection_Value As text:
@@ -1711,8 +1711,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowPaymentsNP 
             Width: =212.45
-            X: =18.27
-            Y: =571
+            X: =860
+            Y: =775
             ZIndex: =45
 
         NP_PaymentsSection_ExpectedDate As datepicker:
@@ -1724,14 +1724,14 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowPaymentsNP 
             Width: =218.78
-            X: =18.27
-            Y: =663
+            X: =1337
+            Y: =910
             ZIndex: =46
 
         NP_PaymentsSection_Currency As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =30
+            Height: =26
             Items: |
                 =["USD"]
             PaddingRight: =12.65
@@ -1739,8 +1739,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowPaymentsNP 
             Width: =141.64
-            X: =18.27
-            Y: =571
+            X: =1145
+            Y: =774
             ZIndex: =47
 
         NP_PaymentsSection_Pokemon As dropdown:
@@ -1753,9 +1753,9 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =355.35
-            X: =18.27
-            Y: =666
+            Width: =250
+            X: =189
+            Y: =917
             ZIndex: =48
 
         NP_PaymentsSection_Masterchief As dropdown:
@@ -1767,9 +1767,9 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =376.85
-            X: =18.27
-            Y: =665
+            Width: =250
+            X: =600
+            Y: =910
             ZIndex: =49
 
         NP_PaymentsSection_Neo As dropdown:
@@ -1781,9 +1781,9 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP 
-            Width: =394.56
-            X: =18.27
-            Y: =665
+            Width: =250
+            X: =944
+            Y: =897
             ZIndex: =50
 
         Label3_43 As label:
@@ -1795,8 +1795,8 @@ EditProject As screen:
             Text: ="Currency"
             Visible: =varShowPaymentsNP 
             Width: =156.80
-            X: =18.27
-            Y: =540
+            X: =1141
+            Y: =730
             ZIndex: =51
 
         Label3_44 As label:
@@ -1808,8 +1808,8 @@ EditProject As screen:
             Text: ="Expected Date"
             Visible: =varShowPaymentsNP 
             Width: =222.57
-            X: =18.27
-            Y: =630
+            X: =1337
+            Y: =877
             ZIndex: =52
 
         Label3_45 As label:
@@ -1821,8 +1821,8 @@ EditProject As screen:
             Text: ="Pokemon"
             Visible: =varShowPaymentsNP 
             Width: =159.33
-            X: =18.27
-            Y: =633
+            X: =178
+            Y: =871
             ZIndex: =53
 
         Label3_46 As label:
@@ -1834,8 +1834,8 @@ EditProject As screen:
             Text: ="Neo"
             Visible: =varShowPaymentsNP 
             Width: =159.33
-            X: =18.27
-            Y: =632
+            X: =936
+            Y: =854
             ZIndex: =54
 
         Label3_47 As label:
@@ -1847,8 +1847,8 @@ EditProject As screen:
             Text: ="Masterchief"
             Visible: =varShowPaymentsNP 
             Width: =159.33
-            X: =18.27
-            Y: =632
+            X: =593
+            Y: =865
             ZIndex: =55
 
         Label3_41 As label:
@@ -1860,8 +1860,8 @@ EditProject As screen:
             Text: ="Payment Name"
             Visible: =varShowPaymentsNP 
             Width: =237.74
-            X: =18.27
-            Y: =540
+            X: =167
+            Y: =731
             ZIndex: =56
 
         Label3_42 As label:
@@ -1873,8 +1873,8 @@ EditProject As screen:
             Text: ="Value"
             Visible: =varShowPaymentsNP 
             Width: =237.74
-            X: =18.27
-            Y: =540
+            X: =849
+            Y: =735
             ZIndex: =57
 
         NP_PaymentsSection_Fee As text:
@@ -1888,8 +1888,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowPaymentsNP 
             Width: =141.64
-            X: =18.27
-            Y: =571
+            X: =1359
+            Y: =769
             ZIndex: =58
 
         Label3_55 As label:
@@ -1901,8 +1901,8 @@ EditProject As screen:
             Text: ="Fee"
             Visible: =varShowPaymentsNP 
             Width: =154.27
-            X: =18.27
-            Y: =538
+            X: =1352
+            Y: =730
             ZIndex: =59
 
         NP_PaymentsSection_Status As dropdown:
@@ -1916,8 +1916,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowPaymentsNP 
             Width: =221.31
-            X: =18.27
-            Y: =571
+            X: =599
+            Y: =773
             ZIndex: =60
 
         Label3_56 As label:
@@ -1929,8 +1929,8 @@ EditProject As screen:
             Text: ="Status"
             Visible: =varShowPaymentsNP 
             Width: =156.80
-            X: =18.27
-            Y: =540
+            X: =600
+            Y: =742
             ZIndex: =61
 
         NP_PaymentsSection_CreateButton As button:
@@ -1968,8 +1968,8 @@ EditProject As screen:
             Text: ="Create"
             Visible: =varShowPaymentsNP 
             Width: =218.78
-            X: =18.27
-            Y: =568
+            X: =1618
+            Y: =690
             ZIndex: =62
 
     EP_ResourcesContainer As groupContainer.horizontalAutoLayoutContainer:
@@ -2967,7 +2967,8 @@ EditProject As screen:
 
         EP_EditGeneral_TotalPrice As text:
             BorderThickness: =1
-            Default: =varProjectDetails.total_price_currency
+            Default: |-
+                =Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")
             Height: =31
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -3067,7 +3068,7 @@ EditProject As screen:
             PaddingTop: =6.33
             Size: =15.18
             Visible: =varShowEditProjectDetailsPopUp
-            Width: =395
+            Width: =467
             X: =1370
             Y: =273
             ZIndex: =120
