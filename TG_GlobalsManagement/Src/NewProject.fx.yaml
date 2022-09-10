@@ -1,12 +1,14 @@
 "NewProject As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     HeaderTG_NewProjectView As HeaderTG:
-        Width: =1727.44
+        Height: =50
+        Width: =1920
         X: =0.00
         ZIndex: =71
 
     DynamicNav_NewProjectView As DynamicNav:
-        Width: =221.31
+        Height: =1030
+        Width: =64
         X: =0.00
         Y: =50
         ZIndex: =72
@@ -209,17 +211,16 @@
         ZIndex: =102
 
         NewProjectView_TitleLabel As label:
-            Align: =Align.Right
             Color: =RGBA(255, 255, 255, 1)
             DisplayMode: =DisplayMode.View
             FontWeight: =FontWeight.Bold
             Height: =50
             PaddingRight: =6.33
             PaddingTop: =6.33
-            Size: =22.76
+            Size: =21
             Text: ="Create a New Project "
             Width: =351.56
-            X: =1349.33
+            X: =494
             ZIndex: =73
 
         Rectangle1 As rectangle:
@@ -258,10 +259,10 @@
         NP_GeneralInfo_Rectangle As rectangle:
             BorderThickness: =1
             Fill: =RGBA(56, 96, 178, 0)
-            Height: =293
+            Height: =348
             Tooltip: =
-            Width: =1401.18
-            X: =266.83
+            Width: =1785
+            X: =92
             Y: =350
             ZIndex: =50
 
@@ -549,8 +550,8 @@
             PaddingTop: =6.33
             Size: =18.98
             Text: ="Close Won Deals Information"
-            Width: =379.38
-            X: =318.68
+            Width: =385
+            X: =297
             Y: =88
             ZIndex: =99
 
@@ -563,8 +564,8 @@
             PaddingTop: =6.33
             Size: =16.45
             Text: ="Deal Name"
-            Width: =495.73
-            X: =292.12
+            Width: =498
+            X: =140
             Y: =123
             ZIndex: =100
 
@@ -577,8 +578,8 @@
             PaddingTop: =6.33
             Size: =16.45
             Text: ="LOB "
-            Width: =130.25
-            X: =789.11
+            Width: =161
+            X: =638
             Y: =123
             ZIndex: =101
 
@@ -591,8 +592,8 @@
             PaddingTop: =6.33
             Size: =16.45
             Text: ="Owner Name"
-            Width: =225.10
-            X: =1146.98
+            Width: =279
+            X: =1080
             Y: =123
             ZIndex: =102
 
@@ -605,8 +606,8 @@
             PaddingTop: =6.33
             Size: =16.45
             Text: ="Segment "
-            Width: =225.10
-            X: =920.63
+            Width: =279
+            X: =800
             Y: =123
             ZIndex: =103
 
@@ -619,8 +620,8 @@
             PaddingTop: =6.33
             Size: =16.45
             Text: ="Close Date"
-            Width: =269.36
-            X: =1373.35
+            Width: =334
+            X: =1362
             Y: =123
             ZIndex: =104
 
@@ -629,8 +630,8 @@
             Fill: =RGBA(56, 96, 178, 0)
             Height: =247
             Tooltip: =
-            Width: =1401.18
-            X: =266.83
+            Width: =1785
+            X: =92
             Y: =85
             ZIndex: =105
 
@@ -642,8 +643,8 @@
             Selectable: |
                 =true
             TemplateSize: =20
-            Width: =1379.67
-            X: =287.06
+            Width: =1715
+            X: =134
             Y: =147
             ZIndex: =106
 
@@ -671,7 +672,7 @@
                 PressedFill: =Self.DisabledColor
                 Size: =16.45
                 Text: =ThisItem.LineofBusiness
-                Width: =134.05
+                Width: =166
                 X: =493.20
                 ZIndex: =2
 
@@ -684,8 +685,8 @@
                 PressedFill: =Self.DisabledColor
                 Size: =16.45
                 Text: =ThisItem.Segment
-                Width: =225.10
-                X: =627.23
+                Width: =280
+                X: =660
                 ZIndex: =3
 
             GalleryDeals_Owner As label:
@@ -698,7 +699,7 @@
                 Size: =16.45
                 Text: =ThisItem.OwnerName
                 Width: =225.10
-                X: =852.33
+                X: =942
                 ZIndex: =4
 
             GalleryDeals_CloseDate As label:
@@ -713,7 +714,7 @@
                 Size: =16.45
                 Text: =ThisItem.CloseDate
                 Width: =271.89
-                X: =1077.43
+                X: =1167
                 ZIndex: =5
 
         Icon3_1 As icon.Reload:
@@ -723,8 +724,8 @@
             OnSelect: =Refresh(CRM_Deals)
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =31.61
-            X: =1606.04
+            Width: =31
+            X: =1604
             Y: =127
             ZIndex: =126
 
