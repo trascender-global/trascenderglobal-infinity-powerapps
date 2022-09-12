@@ -551,8 +551,8 @@
             Size: =18.98
             Text: ="Close Won Deals Information"
             Width: =385
-            X: =297
-            Y: =88
+            X: =140
+            Y: =85
             ZIndex: =99
 
         DealName As label:
@@ -564,8 +564,8 @@
             PaddingTop: =6.33
             Size: =16.45
             Text: ="Deal Name"
-            Width: =498
-            X: =140
+            Width: =606
+            X: =138
             Y: =123
             ZIndex: =100
 
@@ -579,7 +579,7 @@
             Size: =16.45
             Text: ="LOB "
             Width: =161
-            X: =638
+            X: =744
             Y: =123
             ZIndex: =101
 
@@ -592,8 +592,8 @@
             PaddingTop: =6.33
             Size: =16.45
             Text: ="Owner Name"
-            Width: =279
-            X: =1080
+            Width: =280
+            X: =1186
             Y: =123
             ZIndex: =102
 
@@ -607,7 +607,7 @@
             Size: =16.45
             Text: ="Segment "
             Width: =279
-            X: =800
+            X: =906
             Y: =123
             ZIndex: =103
 
@@ -621,7 +621,7 @@
             Size: =16.45
             Text: ="Close Date"
             Width: =334
-            X: =1362
+            X: =1468
             Y: =123
             ZIndex: =104
 
@@ -650,7 +650,7 @@
 
             GalleryDeals_Name As label:
                 BorderThickness: =0.5
-                Height: =26
+                Height: =25
                 OnSelect: =Select(Parent)
                 PaddingRight: =6.33
                 PaddingTop: =6.33
@@ -659,7 +659,7 @@
                 PressedFill: =Self.DisabledColor
                 Size: =16.45
                 Text: =ThisItem.Name
-                Width: =494.46
+                Width: =603
                 X: =0.00
                 ZIndex: =1
 
@@ -673,7 +673,7 @@
                 Size: =16.45
                 Text: =ThisItem.LineofBusiness
                 Width: =166
-                X: =493.20
+                X: =603
                 ZIndex: =2
 
             GalleryDeals_Segments As label:
@@ -685,8 +685,8 @@
                 PressedFill: =Self.DisabledColor
                 Size: =16.45
                 Text: =ThisItem.Segment
-                Width: =280
-                X: =660
+                Width: =281
+                X: =770
                 ZIndex: =3
 
             GalleryDeals_Owner As label:
@@ -698,8 +698,8 @@
                 PressedFill: =Self.DisabledColor
                 Size: =16.45
                 Text: =ThisItem.OwnerName
-                Width: =225.10
-                X: =942
+                Width: =276
+                X: =1052
                 ZIndex: =4
 
             GalleryDeals_CloseDate As label:
@@ -713,8 +713,8 @@
                     =Self.DisabledColor
                 Size: =16.45
                 Text: =ThisItem.CloseDate
-                Width: =271.89
-                X: =1167
+                Width: =331
+                X: =1328
                 ZIndex: =5
 
         Icon3_1 As icon.Reload:
@@ -725,8 +725,8 @@
             PaddingRight: =0.00
             PaddingTop: =0.00
             Width: =31
-            X: =1604
-            Y: =127
+            X: =1757
+            Y: =123
             ZIndex: =126
 
     NP_PopUpAddDetailsGroup As group:
