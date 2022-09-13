@@ -27,13 +27,14 @@ Home As screen:
         ZIndex: =7
 
     ColumnChart1 As barChart:
+        Height: =528
         Items: =ColumnChartSample
         PaddingRight: =63.24
         PaddingTop: =0.00
         Size: =12.65
-        Width: =730.94
-        X: =342.70
-        Y: =276
+        Width: =826
+        X: =225
+        Y: =225
         ZIndex: =10
 
     PieChart1 As pieChart:
@@ -41,7 +42,7 @@ Home As screen:
         Items: =PieChartSample
         Size: =12.65
         Width: =733.47
-        X: =967.42
-        Y: =239
+        X: =1032
+        Y: =297
         ZIndex: =14
 
