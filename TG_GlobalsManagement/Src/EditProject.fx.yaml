@@ -909,7 +909,7 @@ EditProject As screen:
             LayoutMinWidth: =400
             TemplateSize: =19
             Visible: =varShowFeaturesFL
-            Width: =1750
+            Width: =1990
             X: =0.00
             Y: =29
             ZIndex: =2
@@ -968,7 +968,7 @@ EditProject As screen:
                         //epic_name:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
                         neo_id: EP_FeaturesGallery_Neo.Selected.Result,
                         master_chief_id: EP_FeaturesGallery_Masterchief.Selected.Result,
-                        estimation_Value:Value(EP_FeaturesGallery_EstimatedValue.Text),
+                        //estimation_Value:Value(EP_FeaturesGallery_EstimatedValue.Text),
                         currency_code:EP_FeaturesGallery_Currency.Text,
                         Status: EP_FeaturesGallery_Status.Selected.Value,
                         delivery_date: EP_FeaturesGallery_DeliveryDate.SelectedDate,
@@ -1026,7 +1026,7 @@ EditProject As screen:
             EP_FeaturesGallery_Neo As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.neo_id
+                Default: =LookUp(TM_Tegecitos,id = ThisItem.neo_id).full_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -1057,7 +1057,7 @@ EditProject As screen:
             EP_FeaturesGallery_Masterchief As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.master_chief_id
+                Default: =LookUp(TM_Tegecitos,id = ThisItem.master_chief_id).full_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
