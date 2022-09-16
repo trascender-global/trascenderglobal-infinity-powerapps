@@ -93,11 +93,11 @@
     "Id": "a5674d1c-5eb1-4347-9594-676248b7cafb",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Inifnity Manager",
+    "Name": "Infinity Manager",
     "OriginatingVersion": "1.321"
   },
   "PublishInfo": {
-    "AppName": "Inifnity Manager",
+    "AppName": "Infinity Manager",
     "BackgroundColor": "rgba(41, 41, 41, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "",

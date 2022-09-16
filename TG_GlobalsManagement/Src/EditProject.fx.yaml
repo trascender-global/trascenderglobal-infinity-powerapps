@@ -966,13 +966,14 @@ EditProject As screen:
                     =Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), 
                     {   feature_name:EP_FeaturesGallery_FeatureName.Text,
                         //epic_name:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
-                        neo_id: EP_FeaturesGallery_Neo.Selected.Result,
-                        master_chief_id: EP_FeaturesGallery_Masterchief.Selected.Result,
-                        //estimation_Value:Value(EP_FeaturesGallery_EstimatedValue.Text),
+                        neo_id:  LookUp(TM_Tegecitos,full_name = EP_FeaturesGallery_Neo.Selected.Result,id),
+                        master_chief_id: LookUp(TM_Tegecitos,full_name = EP_FeaturesGallery_Masterchief.Selected.Result,id),
+                        estimation_value:Value(EP_FeaturesGallery_EstimatedValue.Text),
                         currency_code:EP_FeaturesGallery_Currency.Text,
                         Status: EP_FeaturesGallery_Status.Selected.Value,
                         delivery_date: EP_FeaturesGallery_DeliveryDate.SelectedDate,
                         created_date: EP_FeaturesGallery_CreatedDate.SelectedDate,
+                        expected_date: EP_FeaturesGallery_ExpectedDate.SelectedDate,
                         editable: DisplayMode.Disabled
                     } );
                 PaddingRight: =0.00
@@ -986,7 +987,7 @@ EditProject As screen:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |-
-                    =//Text( ThisItem.estimation_Value, "[$-en-US]$ ###,##0 ")
+                    =Text( ThisItem.estimation_value, "[$-en-US]$ ###,##0 ")
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 Format: =TextFormat.Number
@@ -1031,7 +1032,9 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
+                Items: |-
+                    =//Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
+                    Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name)
                 OnSelect: =Select(Parent)
                 PaddingRight: =12.65
                 PaddingTop: =12.65
@@ -1062,7 +1065,9 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
+                Items: |-
+                    =//Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
+                    Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name)
                 OnSelect: =Select(Parent)
                 PaddingRight: =12.65
                 PaddingTop: =12.65
