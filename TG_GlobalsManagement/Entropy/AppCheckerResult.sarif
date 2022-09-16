@@ -4302,19 +4302,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_Neo_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_PaymentMethod.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_Neo_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_PaymentMethod.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.NP_PaymentsSection_Neo_1"
+                "type": "EditProject.NP_PaymentsSection_PaymentMethod"
               }
             }
           ],
@@ -4452,19 +4452,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_Neo_2.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_RelatedFeature.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_Neo_2.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.NP_PaymentsSection_RelatedFeature.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.NP_PaymentsSection_Neo_2"
+                "type": "EditProject.NP_PaymentsSection_RelatedFeature"
               }
             }
           ],

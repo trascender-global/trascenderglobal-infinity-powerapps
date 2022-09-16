@@ -3257,7 +3257,7 @@ EditProject As screen:
 
         NP_PaymentsSection_Value As text:
             BorderThickness: =1
-            Default: =""
+            Default: =
             Format: =TextFormat.Number
             Height: =30
             HintText: ="Input value"
@@ -3279,7 +3279,7 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowPaymentsNP
             Width: =218.78
-            X: =1302
+            X: =1362
             Y: =840
             ZIndex: =47
 
@@ -3293,8 +3293,8 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP
-            Width: =219
-            X: =966
+            Width: =250
+            X: =1046
             Y: =738
             ZIndex: =48
 
@@ -3302,13 +3302,12 @@ EditProject As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
-            Items: |
-                =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(pokemon_master_id))),pokemon_master_id)
+            Items: =Sort(Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name),Result)
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP
-            Width: =250
+            Width: =350
             X: =167
             Y: =848
             ZIndex: =49
@@ -3317,12 +3316,12 @@ EditProject As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
-            Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
+            Items: =Sort(Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name),Result)
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP
-            Width: =250
+            Width: =350
             X: =167
             Y: =954
             ZIndex: =50
@@ -3331,12 +3330,12 @@ EditProject As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =31
-            Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
+            Items: =Sort(Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name),Result)
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP
-            Width: =213
+            Width: =350
             X: =633
             Y: =845
             ZIndex: =51
@@ -3350,7 +3349,7 @@ EditProject As screen:
             Text: ="Currency"
             Visible: =varShowPaymentsNP
             Width: =156.80
-            X: =966
+            X: =1046
             Y: =694
             ZIndex: =52
 
@@ -3363,7 +3362,7 @@ EditProject As screen:
             Text: ="Expected Date"
             Visible: =varShowPaymentsNP
             Width: =222.57
-            X: =1302
+            X: =1362
             Y: =807
             ZIndex: =53
 
@@ -3443,7 +3442,7 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowPaymentsNP
             Width: =218
-            X: =1302
+            X: =1362
             Y: =733
             ZIndex: =59
 
@@ -3456,7 +3455,7 @@ EditProject As screen:
             Text: ="Fee"
             Visible: =varShowPaymentsNP
             Width: =154.27
-            X: =1302
+            X: =1362
             Y: =694
             ZIndex: =60
 
@@ -3499,11 +3498,13 @@ EditProject As screen:
                         value_currency: Value(NP_PaymentsSection_Value.Text),
                         currency_code: NP_PaymentsSection_Currency.Selected.Value,
                         gm_expected_date: NP_PaymentsSection_ExpectedDate.SelectedDate,
-                        pokemon_master_id:NP_PaymentsSection_Pokemon.Selected.Result,
-                        neo_id:NP_PaymentsSection_Neo.Selected.Result,
-                        master_chief_id:NP_PaymentsSection_Masterchief.Selected.Result,
+                        pokemon_master_id: Text(LookUp(TM_Tegecitos,full_name = NP_PaymentsSection_Pokemon.Selected.Result ,id)),
+                        neo_id: Text(LookUp(TM_Tegecitos,full_name = NP_PaymentsSection_Neo.Selected.Result ,id)),
+                        master_chief_id: Text(LookUp(TM_Tegecitos,full_name = NP_PaymentsSection_Masterchief.Selected.Result ,id)),
                         status_op:NP_PaymentsSection_Status.Selected.Value,
                         fee_value: Value(NP_PaymentsSection_Fee.Text),
+                        payment_method: NP_PaymentsSection_PaymentMethod.SelectedText.Value,
+                        feature_id: LookUp(CollectionSQL_Features,feature_name = NP_PaymentsSection_RelatedFeature.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1Bfeature_name', FeatureID),
                         editable: DisplayMode.Disabled
                      });
                 
@@ -3516,6 +3517,8 @@ EditProject As screen:
                 Reset(NP_PaymentsSection_Masterchief);
                 Reset(NP_PaymentsSection_Status);
                 Reset(NP_PaymentsSection_Fee);
+                Reset([@NP_PaymentsSection_RelatedFeature]);
+                Reset([@NP_PaymentsSection_PaymentMethod]);
                 NotificationType.Success;
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -3527,17 +3530,17 @@ EditProject As screen:
             Y: =699
             ZIndex: =63
 
-        NP_PaymentsSection_Neo_1 As dropdown:
+        NP_PaymentsSection_PaymentMethod As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =31
-            Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
+            Items: =["Paypal","Payoneer","Freelancer","Upwork","Direct"]
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP
-            Width: =219
-            X: =966
+            Width: =250
+            X: =1046
             Y: =841
             ZIndex: =146
 
@@ -3550,21 +3553,21 @@ EditProject As screen:
             Text: ="Payment Method"
             Visible: =varShowPaymentsNP
             Width: =219
-            X: =966
+            X: =1046
             Y: =802
             ZIndex: =147
 
-        NP_PaymentsSection_Neo_2 As dropdown:
+        NP_PaymentsSection_RelatedFeature As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =31
-            Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(neo_id))),neo_id)
+            Items: =Filter(CollectionSQL_Features,varSelectedEpic=epic_id && Not(IsBlank(feature_name))).feature_name
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowPaymentsNP
-            Width: =219
-            X: =966
+            Width: =250
+            X: =1046
             Y: =957
             ZIndex: =148
 
@@ -3577,7 +3580,7 @@ EditProject As screen:
             Text: ="Related Feature"
             Visible: =varShowPaymentsNP
             Width: =219
-            X: =966
+            X: =1046
             Y: =918
             ZIndex: =149
 
