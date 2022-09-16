@@ -202,9 +202,9 @@
     "Label3_38": 84,
     "Label3_39": 81,
     "Label3_40": 80,
-    "Label3_41": 229,
-    "Label3_42": 230,
-    "Label3_43": 227,
+    "Label3_41": 228,
+    "Label3_42": 229,
+    "Label3_43": 226,
     "Label3_44": 238,
     "Label3_45": 236,
     "Label3_46": 235,
@@ -216,7 +216,7 @@
     "Label3_52": 100,
     "Label3_53": 129,
     "Label3_54": 132,
-    "Label3_55": 228,
+    "Label3_55": 227,
     "Label3_56": 245,
     "Label3_57": 102,
     "Label3_58": 130,
@@ -292,7 +292,7 @@
     "NP_PaymentsGallery_Pokemon": 155,
     "NP_PaymentsGallery_SaveButton": 163,
     "NP_PaymentsGallery_Value": 152,
-    "NP_PaymentsSection_CreateButton": 226,
+    "NP_PaymentsSection_CreateButton": 230,
     "NP_PaymentsSection_Currency": 232,
     "NP_PaymentsSection_ExpectedDate": 239,
     "NP_PaymentsSection_Fee": 231,
@@ -341,7 +341,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/16/2022 22:34:38",
+  "HeaderLastSavedDateTimeUTC": "09/16/2022 22:48:58",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
@@ -351,7 +351,7 @@
     "Símbolo TG 4": "0001.png"
   },
   "LocalResourceRootPaths": {
-    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/30451a64-ce88-41fc-82cf-a8453b26558a-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=7obFBn9oWcBP1YWCByeAUTqOlzH5dsTbvesqAaR3iB4%3D&spr=https&se=2022-09-17T17%3A46%3A08Z&sp=r"
+    "Símbolo TG 4": "https://docserverpwaprodsbr.blob.core.windows.net/47c57aee-b61b-4272-b030-262fbb2368e9-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=ZqoqvFkxOBM1IujCdorXklzgyH6ty%2B57%2ByPq%2F9SqaYE%3D&spr=https&se=2022-09-17T22%3A50%3A25Z&sp=r"
   },
   "OldLogoFileName": "1z0ktl1v.jpg",
   "OrderComponentMetadata": {
@@ -372,6 +372,7 @@
     "CRM_Deals": 1,
     "CustomGallerySample": 2,
     "DropDownSample": 3,
+    "employeesWithBlank": 22,
     "EpicsCollection": 14,
     "FeaturesCollection": 17,
     "GM_Epics": 4,
@@ -975,7 +976,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 4.9333308,
+    "AnalysisLoadTime": 3.9484042,
     "ControlCount": {
       "3bd3cda16e6f498db1fa26e9f6ca986b": 5,
       "51a4282aa30f4cc68c1ee62e75ae9939": 5,
@@ -996,7 +997,7 @@
       "screen": 4,
       "text": 35
     },
-    "DeserializationLoadTime": 7.0996272,
+    "DeserializationLoadTime": 5.9776281,
     "ErrorCount": 11
   },
   "WasLocalDatabaseReferencesEmpty": true
