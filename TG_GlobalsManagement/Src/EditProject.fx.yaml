@@ -3519,6 +3519,9 @@ EditProject As screen:
                 Reset(NP_PaymentsSection_Fee);
                 Reset([@NP_PaymentsSection_RelatedFeature]);
                 Reset([@NP_PaymentsSection_PaymentMethod]);
+                
+                Set(varShowPaymentsPL,true);
+                Set(varShowPaymentsNP,false);
                 NotificationType.Success;
             PaddingRight: =6.33
             PaddingTop: =6.33
