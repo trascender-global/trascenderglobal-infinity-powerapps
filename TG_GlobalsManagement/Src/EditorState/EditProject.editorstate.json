@@ -68448,7 +68448,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"feature_name\"}",
+          "NameMap": "{\"Value\":\"Result\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
