@@ -4896,7 +4896,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_EditProjectGeneralGroup",
-      "ParentIndex": 156,
+      "ParentIndex": 157,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4947,7 +4947,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_Epic_List",
-      "ParentIndex": 157,
+      "ParentIndex": 158,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7678,7 +7678,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_FeaturesContainer",
-      "ParentIndex": 115,
+      "ParentIndex": 103,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16313,7 +16313,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_GeneralInformation",
-      "ParentIndex": 149,
+      "ParentIndex": 150,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17063,7 +17063,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_New_Epic",
-      "ParentIndex": 158,
+      "ParentIndex": 159,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17114,7 +17114,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_New_Resource",
-      "ParentIndex": 154,
+      "ParentIndex": 155,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17165,7 +17165,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_NewFeatures",
-      "ParentIndex": 153,
+      "ParentIndex": 154,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17216,7 +17216,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_Payments_New_Payment",
-      "ParentIndex": 152,
+      "ParentIndex": 153,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17362,7 +17362,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PaymentsContainer",
-      "ParentIndex": 114,
+      "ParentIndex": 102,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19605,7 +19605,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PFR_FeaturesButton",
-      "ParentIndex": 84,
+      "ParentIndex": 81,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19972,7 +19972,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PFR_PaymentsButton",
-      "ParentIndex": 83,
+      "ParentIndex": 80,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20339,7 +20339,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PFR_ResourcesButton",
-      "ParentIndex": 85,
+      "ParentIndex": 82,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20560,7 +20560,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PFRSection_Group",
-      "ParentIndex": 150,
+      "ParentIndex": 151,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20611,7 +20611,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_PopUpSavingDetailsGroup",
-      "ParentIndex": 155,
+      "ParentIndex": 156,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20734,7 +20734,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ResourcesContainer",
-      "ParentIndex": 116,
+      "ParentIndex": 104,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22010,7 +22010,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_Titles",
-      "ParentIndex": 151,
+      "ParentIndex": 152,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22061,7 +22061,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewFeaturesToggle",
-      "ParentIndex": 160,
+      "ParentIndex": 161,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22176,7 +22176,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewFeaturesToggle_AddButton",
-      "ParentIndex": 101,
+      "ParentIndex": 94,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22407,7 +22407,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewFeaturesToggle_AddLabel",
-      "ParentIndex": 104,
+      "ParentIndex": 97,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22697,7 +22697,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewFeaturesToggle_ListButton",
-      "ParentIndex": 95,
+      "ParentIndex": 88,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22928,7 +22928,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewFeaturesToggle_ListLabel",
-      "ParentIndex": 98,
+      "ParentIndex": 91,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23154,7 +23154,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewPaymentToggle",
-      "ParentIndex": 159,
+      "ParentIndex": 160,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23276,7 +23276,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewPaymentToggle_AddButton",
-      "ParentIndex": 100,
+      "ParentIndex": 93,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23508,7 +23508,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewPaymentToggle_ListButton",
-      "ParentIndex": 94,
+      "ParentIndex": 87,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23761,7 +23761,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewPaymentToggle_ListLabel",
-      "ParentIndex": 97,
+      "ParentIndex": 90,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23992,7 +23992,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewResourcesToggle",
-      "ParentIndex": 161,
+      "ParentIndex": 162,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24107,7 +24107,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewResourcesToggle_AddButton",
-      "ParentIndex": 102,
+      "ParentIndex": 95,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24338,7 +24338,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewResourcesToggle_AddLabel",
-      "ParentIndex": 105,
+      "ParentIndex": 98,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24628,7 +24628,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewResourcesToggle_ListButton",
-      "ParentIndex": 96,
+      "ParentIndex": 89,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24859,7 +24859,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewResourcesToggle_ListLabel",
-      "ParentIndex": 99,
+      "ParentIndex": 92,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25162,7 +25162,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ViewTogglePayment_AddLabel",
-      "ParentIndex": 103,
+      "ParentIndex": 96,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44578,7 +44578,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_41",
-      "ParentIndex": 128,
+      "ParentIndex": 113,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44888,7 +44888,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_42",
-      "ParentIndex": 129,
+      "ParentIndex": 114,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45198,7 +45198,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_43",
-      "ParentIndex": 126,
+      "ParentIndex": 110,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45515,7 +45515,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_44",
-      "ParentIndex": 138,
+      "ParentIndex": 131,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45832,7 +45832,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_45",
-      "ParentIndex": 136,
+      "ParentIndex": 129,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -46149,7 +46149,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_46",
-      "ParentIndex": 135,
+      "ParentIndex": 128,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -46466,7 +46466,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_47",
-      "ParentIndex": 143,
+      "ParentIndex": 144,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -46776,7 +46776,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_48",
-      "ParentIndex": 81,
+      "ParentIndex": 116,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -47403,7 +47403,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_50",
-      "ParentIndex": 111,
+      "ParentIndex": 101,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -47720,7 +47720,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_51",
-      "ParentIndex": 108,
+      "ParentIndex": 100,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48037,7 +48037,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_52",
-      "ParentIndex": 80,
+      "ParentIndex": 139,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48354,7 +48354,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_53",
-      "ParentIndex": 109,
+      "ParentIndex": 137,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48664,7 +48664,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_54",
-      "ParentIndex": 112,
+      "ParentIndex": 119,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48974,7 +48974,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_55",
-      "ParentIndex": 127,
+      "ParentIndex": 111,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -49284,7 +49284,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_56",
-      "ParentIndex": 145,
+      "ParentIndex": 146,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -49594,7 +49594,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_57",
-      "ParentIndex": 82,
+      "ParentIndex": 138,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -49904,7 +49904,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_58",
-      "ParentIndex": 110,
+      "ParentIndex": 136,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -50214,7 +50214,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_59",
-      "ParentIndex": 113,
+      "ParentIndex": 117,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -50524,7 +50524,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_60",
-      "ParentIndex": 106,
+      "ParentIndex": 118,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -51475,7 +51475,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_63",
-      "ParentIndex": 107,
+      "ParentIndex": 99,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -51785,7 +51785,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_64",
-      "ParentIndex": 137,
+      "ParentIndex": 130,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -52095,7 +52095,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_65",
-      "ParentIndex": 144,
+      "ParentIndex": 145,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58760,7 +58760,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_CreateButton",
-      "ParentIndex": 90,
+      "ParentIndex": 112,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -59082,7 +59082,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_Currency",
-      "ParentIndex": 117,
+      "ParentIndex": 126,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -59424,7 +59424,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_EstimatedTime",
-      "ParentIndex": 121,
+      "ParentIndex": 124,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -59760,7 +59760,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_EstimatedValue",
-      "ParentIndex": 122,
+      "ParentIndex": 125,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -60106,7 +60106,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_ExpectedDate",
-      "ParentIndex": 93,
+      "ParentIndex": 143,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -60458,7 +60458,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_Masterchief",
-      "ParentIndex": 120,
+      "ParentIndex": 140,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -60800,7 +60800,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_Name",
-      "ParentIndex": 91,
+      "ParentIndex": 127,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -61144,7 +61144,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_Neo",
-      "ParentIndex": 119,
+      "ParentIndex": 141,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -61487,7 +61487,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_FeaturesSection_Status",
-      "ParentIndex": 92,
+      "ParentIndex": 142,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -65318,7 +65318,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_CreateButton",
-      "ParentIndex": 130,
+      "ParentIndex": 115,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -65640,7 +65640,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Currency",
-      "ParentIndex": 132,
+      "ParentIndex": 121,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -65978,7 +65978,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_ExpectedDate",
-      "ParentIndex": 139,
+      "ParentIndex": 132,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -66336,7 +66336,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Fee",
-      "ParentIndex": 131,
+      "ParentIndex": 120,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -66687,7 +66687,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Masterchief",
-      "ParentIndex": 147,
+      "ParentIndex": 148,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -67044,7 +67044,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Name",
-      "ParentIndex": 134,
+      "ParentIndex": 123,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -67393,7 +67393,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Neo",
-      "ParentIndex": 141,
+      "ParentIndex": 134,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -67743,7 +67743,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_PaymentMethod",
-      "ParentIndex": 140,
+      "ParentIndex": 133,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -68093,7 +68093,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Pokemon",
-      "ParentIndex": 142,
+      "ParentIndex": 135,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -68443,7 +68443,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_RelatedFeature",
-      "ParentIndex": 148,
+      "ParentIndex": 149,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -68766,7 +68766,14 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
-        "Default",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Default",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -68786,7 +68793,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Status",
-      "ParentIndex": 146,
+      "ParentIndex": 147,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -69128,7 +69135,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_PaymentsSection_Value",
-      "ParentIndex": 133,
+      "ParentIndex": 122,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -69433,7 +69440,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ResourcesSection_CreateButton",
-      "ParentIndex": 86,
+      "ParentIndex": 83,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -69762,7 +69769,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ResourcesSection_Currency",
-      "ParentIndex": 125,
+      "ParentIndex": 109,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -70111,7 +70118,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ResourcesSection_EstimatedTime",
-      "ParentIndex": 124,
+      "ParentIndex": 108,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -70454,7 +70461,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ResourcesSection_EstimatedValue",
-      "ParentIndex": 123,
+      "ParentIndex": 107,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -70798,7 +70805,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ResourcesSection_Feature",
-      "ParentIndex": 88,
+      "ParentIndex": 85,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -71155,7 +71162,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ResourcesSection_Name",
-      "ParentIndex": 87,
+      "ParentIndex": 84,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -71511,7 +71518,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_ResourcesSection_Type",
-      "ParentIndex": 89,
+      "ParentIndex": 86,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -72877,7 +72884,159 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle9",
-      "ParentIndex": 118,
+      "ParentIndex": 105,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "defaultRectangleStyle",
+      "Type": "ControlInfo"
+    },
+    "Rectangle9_1": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "BorderColor",
+        "BorderStyle",
+        "FocusedBorderColor",
+        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "Width",
+        "Height",
+        "ZIndex",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "FocusedBorderThickness",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "",
+      "Name": "Rectangle9_1",
+      "ParentIndex": 106,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
