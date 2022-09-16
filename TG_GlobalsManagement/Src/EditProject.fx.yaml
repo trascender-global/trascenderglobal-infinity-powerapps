@@ -2,7 +2,7 @@ EditProject As screen:
     Height: =Max(App.Height,700)
     ImagePosition: =ImagePosition.Fill
     OnVisible: |-
-        =ClearCollect(employeesWithBlank,{Name:""}); Collect(employeesWithBlank,Sort(Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name),Result))
+        =ClearCollect(employeesWithBlank,{full_name:""}); Collect(employeesWithBlank,Sort(Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name),Result))
     Width: =Max(App.Width, 1366)
 
     EP_PFRSection_Group As group:
@@ -1917,7 +1917,9 @@ EditProject As screen:
                     =Set(varSelectedEpic,ThisItem.epic_id);
                     ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
                     ClearCollect(CollectionSQL_Features, AddColumns(Filter(GM_Features,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
+                    ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
                     ClearCollect(CollectionSQL_Resources, AddColumns(GM_ResourceEstimation,"editable",DisplayMode.Disabled));
+                    
                     Set(varShowPayments,true);
                     Set(varShowFeatures,false);
                     Set(varShowResources,false);
@@ -3566,7 +3568,7 @@ EditProject As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =31
-            Items: =Filter(CollectionSQL_Features,varSelectedEpic=epic_id && Not(IsBlank(feature_name))).feature_name
+            Items: =Filter(CollectionSQL_Features_WithBlank,varSelectedEpic=epic_id).feature_name
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
