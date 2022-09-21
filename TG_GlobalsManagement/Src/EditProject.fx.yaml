@@ -904,7 +904,6 @@ EditProject As screen:
             Height: =330
             Items: |-
                 =Filter(CollectionSQL_Features,varSelectedEpic=epic_id && Not(IsBlank(feature_name)))
-                //CollectionSQL_Payments
                 //Filter(CollectionSQL_Payments,epic_id = varSelectedEpic)
             Layout: =Layout.Vertical
             LayoutMinHeight: =287
@@ -1030,7 +1029,8 @@ EditProject As screen:
             EP_FeaturesGallery_Neo As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =LookUp(TM_Tegecitos,id = ThisItem.neo_id).full_name
+                Default: |
+                    =LookUp(TM_Tegecitos,id = Value(ThisItem.neo_id)).full_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2065,6 +2065,7 @@ EditProject As screen:
             BorderThickness: =1
             Fill: =RGBA(0, 0, 0, 0)
             Height: =367
+            Visible: =varShowFeaturesNF
             Width: =1757
             X: =111
             Y: =664
@@ -2088,7 +2089,7 @@ EditProject As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
-            Items: =["NEO"]
+            Items: =employeesWithBlank
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
@@ -2142,7 +2143,7 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: |
-                =["Normal"]
+                =["False"]
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
@@ -2167,15 +2168,20 @@ EditProject As screen:
 
         NP_FeaturesSection_CreateButton As button:
             Height: =32
-            OnSelect: |+
-                =Collect(FeaturesCollection,
+            OnSelect: |
+                =Collect(CollectionSQL_Features,
                     {
+                        epic_id: varSelectedEpic,
                         feature_name: NP_FeaturesSection_Name.Text,
-                        epic: varSelectedEpic,
+                        neo_id:Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Neo.Selected.full_name,id)),
+                        estimation_time_hrs: Value(NP_FeaturesSection_EstimatedTime.Text),
+                        master_chief_id:Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Masterchief.Selected.full_name,id)),
+                        estimation_value: Value(NP_FeaturesSection_EstimatedValue.Text),
+                        currency_code: NP_FeaturesSection_Currency.Selected.Value,
+                        status:NP_FeaturesSection_Status.Selected.Value,
+                        created_date:Today(),
                         expected_date: NP_FeaturesSection_ExpectedDate.SelectedDate,
-                        neo:NP_FeaturesSection_Neo.Selected.Value,
-                        masterchief:NP_FeaturesSection_Masterchief.Selected.Value,
-                        status:NP_FeaturesSection_Status.Selected.Value
+                        editable: DisplayMode.Disabled
                      });
                 
                 Reset(NP_FeaturesSection_Name);
@@ -2183,7 +2189,11 @@ EditProject As screen:
                 Reset(NP_FeaturesSection_Neo);
                 Reset(NP_FeaturesSection_Masterchief);
                 Reset(NP_FeaturesSection_Status);
-                
+                Reset(NP_FeaturesSection_EstimatedValue);
+                Reset(NP_FeaturesSection_EstimatedTime);
+                Reset(NP_FeaturesSection_Currency);
+                Set(varShowFeaturesFL,true);
+                Set(varShowFeaturesNF,false);
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
@@ -2199,7 +2209,7 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: |
-                =["Masterchief"]
+                =employeesWithBlank
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
