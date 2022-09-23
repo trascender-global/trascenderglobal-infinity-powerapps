@@ -146,7 +146,6 @@ EditProject As screen:
             ZIndex: =45
 
     HeaderTG_EditProjectView As HeaderTG:
-        Height: =52
         Width: =1920
         X: =0.00
         ZIndex: =38
@@ -167,19 +166,19 @@ EditProject As screen:
 
         Rectangle3_3 As rectangle:
             Fill: =RGBA(56, 96, 178, 0.7)
-            Height: =768
+            Height: =1080
             Visible: =varShowPopupSaveDetails
-            Width: =1727.44
+            Width: =1920
             X: =0.00
             ZIndex: =89
 
         Rectangle4_3 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
-            Height: =56
+            Height: =54
             Visible: =varShowPopupSaveDetails
-            Width: =1727.44
-            X: =474.22
-            Y: =238
+            Width: =1124
+            X: =446
+            Y: =346
             ZIndex: =90
 
         Rectangle5_2 As rectangle:
@@ -187,23 +186,24 @@ EditProject As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =210
             Visible: =varShowPopupSaveDetails
-            Width: =1727.44
-            X: =474.22
-            Y: =294
+            Width: =1128
+            X: =442
+            Y: =400
             ZIndex: =91
 
         Label5_8 As label:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
+            Height: =45
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =25.29
             Text: ="Add Details"
             Visible: =varShowPopupSaveDetails
-            Width: =1727.44
-            X: =752.44
-            Y: =246
+            Width: =432
+            X: =772
+            Y: =351
             ZIndex: =92
 
         Label5_7 As label:
@@ -215,9 +215,9 @@ EditProject As screen:
             Size: =25.29
             Text: ="You are about to save the project details, do you want to continue?"
             Visible: =varShowPopupSaveDetails
-            Width: =1727.44
-            X: =631.03
-            Y: =314
+            Width: =780
+            X: =615
+            Y: =418
             ZIndex: =93
 
         Button3_5 As button:
@@ -229,14 +229,14 @@ EditProject As screen:
             Size: =18.98
             Text: ="Cancel"
             Visible: =varShowPopupSaveDetails
-            Width: =1727.44
-            X: =607.01
-            Y: =426
+            Width: =300
+            X: =604
+            Y: =533
             ZIndex: =94
 
         Button3_4 As button:
             Fill: =RGBA(0, 182, 125, 1)
-            Height: =46
+            Height: =49
             OnSelect: |-
                 =Set(varShowPopupSaveDetails,false);
                 Set(varShowInit,true)
@@ -245,9 +245,9 @@ EditProject As screen:
             Size: =18.98
             Text: ="Continue"
             Visible: =varShowPopupSaveDetails
-            Width: =1727.44
-            X: =973.73
-            Y: =426
+            Width: =300
+            X: =1137
+            Y: =533
             ZIndex: =95
 
     EP_PaymentsContainer As groupContainer.horizontalAutoLayoutContainer:

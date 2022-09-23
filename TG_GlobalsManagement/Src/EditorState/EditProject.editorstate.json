@@ -39,7 +39,14 @@
         "VerticalAlign",
         "X",
         "Y",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Height",
         "ZIndex",
         "RadiusTopLeft",
@@ -322,7 +329,14 @@
         "VerticalAlign",
         "X",
         "Y",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Height",
         "ZIndex",
         "RadiusTopLeft",
@@ -1197,7 +1211,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_EditGeneral_CreatedDate",
-      "ParentIndex": 57,
+      "ParentIndex": 56,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1548,7 +1562,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_EditGeneral_CurrencyCode",
-      "ParentIndex": 59,
+      "ParentIndex": 58,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1908,7 +1922,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_EditGeneral_InitialDate",
-      "ParentIndex": 58,
+      "ParentIndex": 57,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2903,7 +2917,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_EditGeneral_Observations",
-      "ParentIndex": 71,
+      "ParentIndex": 69,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3226,7 +3240,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_EditGeneral_ProjectLink",
-      "ParentIndex": 56,
+      "ParentIndex": 55,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4440,7 +4454,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_EditGeneral_TotalPrice",
-      "ParentIndex": 55,
+      "ParentIndex": 54,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25748,7 +25762,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -40520,7 +40534,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_28",
-      "ParentIndex": 66,
+      "ParentIndex": 63,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -43317,7 +43331,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_37",
-      "ParentIndex": 63,
+      "ParentIndex": 61,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -43634,7 +43648,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_38",
-      "ParentIndex": 64,
+      "ParentIndex": 62,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -43951,7 +43965,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_39",
-      "ParentIndex": 61,
+      "ParentIndex": 60,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44268,7 +44282,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_40",
-      "ParentIndex": 60,
+      "ParentIndex": 59,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -53349,7 +53363,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label5_7",
-      "ParentIndex": 65,
+      "ParentIndex": 70,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -53652,7 +53666,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label5_8",
-      "ParentIndex": 54,
+      "ParentIndex": 53,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56695,7 +56709,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_EpicsSection_EpicName",
-      "ParentIndex": 52,
+      "ParentIndex": 51,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57041,7 +57055,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_EpicsSection_ExpectedDate",
-      "ParentIndex": 67,
+      "ParentIndex": 64,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57400,7 +57414,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_EpicsSection_Masterchief",
-      "ParentIndex": 69,
+      "ParentIndex": 66,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57750,7 +57764,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_EpicsSection_Neo",
-      "ParentIndex": 70,
+      "ParentIndex": 67,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58100,7 +58114,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_EpicsSection_Pokemon",
-      "ParentIndex": 68,
+      "ParentIndex": 65,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58436,7 +58450,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NP_EpicsSection_Value",
-      "ParentIndex": 53,
+      "ParentIndex": 52,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -72608,7 +72622,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle4_3",
-      "ParentIndex": 51,
+      "ParentIndex": 68,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -72746,7 +72760,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle5_2",
-      "ParentIndex": 62,
+      "ParentIndex": 71,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
