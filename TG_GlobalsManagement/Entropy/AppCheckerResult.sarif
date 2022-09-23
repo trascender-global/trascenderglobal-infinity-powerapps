@@ -1781,19 +1781,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_ResourcesSection_Name.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.NP_ResourcesSection_Resource.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.NP_ResourcesSection_Name.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.NP_ResourcesSection_Resource.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.NP_ResourcesSection_Name"
+                "type": "EditProject.NP_ResourcesSection_Resource"
               }
             }
           ],

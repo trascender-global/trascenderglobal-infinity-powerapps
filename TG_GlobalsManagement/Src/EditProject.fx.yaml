@@ -2262,6 +2262,215 @@ EditProject As screen:
             Y: =729
             ZIndex: =142
 
+    EP_New_Resource As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =152
+
+        NP_ResourcesSection_EstimatedValue As text:
+            BorderThickness: =1
+            Default: =""
+            Format: =TextFormat.Number
+            Height: =30
+            HintText: ="Input value"
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Visible: =varShowResourcesNR
+            Width: =316.15
+            X: =748
+            Y: =886
+            ZIndex: =77
+
+        NP_ResourcesSection_Feature As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Items: |
+                =Sort(Distinct(Filter(CollectionSQL_Features_WithBlank,varSelectedEpic=epic_id).feature_name,feature_name),Result)
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
+            Visible: =varShowResourcesNR
+            Width: =318.68
+            X: =1200
+            Y: =733
+            ZIndex: =78
+
+        Label3_51 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Text: ="Currency"
+            Visible: =varShowResourcesNR
+            Width: =316.15
+            X: =1200
+            Y: =851
+            ZIndex: =79
+
+        Label3_61 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Text: ="Feature"
+            Visible: =varShowResourcesNR
+            Width: =316.15
+            X: =1200
+            Y: =696
+            ZIndex: =80
+
+        Label3_49 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Text: ="Resource"
+            Visible: =varShowResourcesNR
+            Width: =211.19
+            X: =748
+            Y: =697
+            ZIndex: =81
+
+        Label3_50 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Text: ="Estimated Value"
+            Visible: =varShowResourcesNR
+            Width: =316.15
+            X: =748
+            Y: =852
+            ZIndex: =82
+
+        NP_ResourcesSection_EstimatedTime As text:
+            BorderThickness: =1
+            Default: =""
+            Format: =TextFormat.Number
+            Height: =30
+            HintText: ="Input time estimation"
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Visible: =varShowResourcesNR
+            Width: =282.00
+            X: =194
+            Y: =886
+            ZIndex: =83
+
+        Label3_63 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Text: ="Estimated Time"
+            Visible: =varShowResourcesNR
+            Width: =315
+            X: =191
+            Y: =849
+            ZIndex: =84
+
+        NP_ResourcesSection_CreateButton As button:
+            Height: =32
+            OnSelect: |+
+                =Collect(CollectionSQL_Resources,
+                    {
+                        resource_name: NP_ResourcesSection_Resource.Selected.resource_name,
+                        epic: varSelectedEpic,
+                        type: NP_ResourcesSection_Type.Selected.Result,
+                        estimation_time_hrs: Value(NP_ResourcesSection_EstimatedTime.Text),
+                        estimation_value: Value(NP_ResourcesSection_EstimatedValue.Text),
+                        feature:NP_ResourcesSection_Feature.Selected.Result,
+                        currency:NP_ResourcesSection_Currency.Selected.Value,
+                        editable: DisplayMode.Disabled
+                     });
+                
+                Reset(NP_ResourcesSection_Resource);
+                Reset(NP_ResourcesSection_Type);
+                Reset(NP_ResourcesSection_EstimatedTime);
+                Reset(NP_ResourcesSection_EstimatedValue);
+                Reset(NP_ResourcesSection_Feature);
+                Reset(NP_ResourcesSection_Currency);
+                
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
+            Text: ="Create"
+            Visible: =varShowResourcesNR
+            Width: =194.74
+            X: =1600
+            Y: =683
+            ZIndex: =85
+
+        NP_ResourcesSection_Type As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: ="TGcito"
+            Height: =30
+            Items: |
+                =Distinct(GM_Resource,type)
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
+            Visible: =varShowResourcesNR
+            Width: =316.15
+            X: =200
+            Y: =733
+            ZIndex: =86
+
+        Label3_62 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =15.18
+            Text: ="Type"
+            Visible: =varShowResourcesNR
+            Width: =316.15
+            X: =200
+            Y: =698
+            ZIndex: =87
+
+        NP_ResourcesSection_Currency As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Height: =30
+            Items: |
+                =["COP","USD"]
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
+            Visible: =varShowResourcesNR
+            Width: =318.68
+            X: =1200
+            Y: =886
+            ZIndex: =88
+
+        NP_ResourcesSection_Resource As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(58, 87, 255, 1)
+            Default: ="TGcito"
+            Height: =30
+            Items: |
+                =Filter(GM_Resource,type=NP_ResourcesSection_Type.Selected.Result).resource_name
+            PaddingRight: =12.65
+            PaddingTop: =12.65
+            Size: =15.18
+            Visible: =varShowResourcesNR
+            Width: =316.15
+            X: =748
+            Y: =733
+            ZIndex: =151
+
     EP_GeneralInformation As group:
         Height: =5
         Width: =5
@@ -2914,213 +3123,6 @@ EditProject As screen:
             X: =1452
             Y: =609
             ZIndex: =126
-
-    EP_New_Resource As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =158
-
-        NP_ResourcesSection_Name As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =30
-            HintText: ="Input Name"
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Tooltip: ="Parrado perra"
-            Visible: =varShowResourcesNR
-            Width: =282.00
-            X: =194
-            Y: =688
-            ZIndex: =76
-
-        NP_ResourcesSection_EstimatedValue As text:
-            BorderThickness: =1
-            Default: =""
-            Format: =TextFormat.Number
-            Height: =30
-            HintText: ="Input value"
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =1200
-            Y: =913
-            ZIndex: =77
-
-        NP_ResourcesSection_Feature As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Items: |
-                =["Feature 1"]
-            PaddingRight: =12.65
-            PaddingTop: =12.65
-            Size: =15.18
-            Visible: =varShowResourcesNR
-            Width: =318.68
-            X: =194
-            Y: =688
-            ZIndex: =78
-
-        Label3_51 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Text: ="Currency"
-            Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =635
-            Y: =878
-            ZIndex: =79
-
-        Label3_61 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Text: ="Feature"
-            Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =194
-            Y: =651
-            ZIndex: =80
-
-        Label3_49 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Text: ="Name"
-            Visible: =varShowResourcesNR
-            Width: =211.19
-            X: =1200
-            Y: =652
-            ZIndex: =81
-
-        Label3_50 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Text: ="Estimated Value"
-            Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =1200
-            Y: =879
-            ZIndex: =82
-
-        NP_ResourcesSection_EstimatedTime As text:
-            BorderThickness: =1
-            Default: =""
-            Format: =TextFormat.Number
-            Height: =30
-            HintText: ="Input time estimation"
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Visible: =varShowResourcesNR
-            Width: =282.00
-            X: =194
-            Y: =913
-            ZIndex: =83
-
-        Label3_63 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Text: ="Estimated Time"
-            Visible: =varShowResourcesNR
-            Width: =315
-            X: =191
-            Y: =876
-            ZIndex: =84
-
-        NP_ResourcesSection_CreateButton As button:
-            Height: =32
-            OnSelect: |+
-                =Collect(CollectionSQL_Resources,
-                    {
-                        resource_name: NP_ResourcesSection_Name.Text,
-                        epic: varSelectedEpic,
-                        type: NP_ResourcesSection_Type.Selected.Value,
-                        estimation_time_hrs: Value(NP_ResourcesSection_EstimatedTime.Text),
-                        estimation_value: Value(NP_ResourcesSection_EstimatedValue.Text),
-                        feature:NP_ResourcesSection_Feature.Selected.Value,
-                        currency:NP_ResourcesSection_Currency.Selected.Value
-                     });
-                
-                Reset(NP_ResourcesSection_Name);
-                Reset(NP_ResourcesSection_Type);
-                Reset(NP_ResourcesSection_EstimatedTime);
-                Reset(NP_ResourcesSection_EstimatedValue);
-                Reset(NP_ResourcesSection_Feature);
-                Reset(NP_ResourcesSection_Currency);
-                
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =18.98
-            Text: ="Create"
-            Visible: =varShowResourcesNR
-            Width: =194.74
-            X: =1600
-            Y: =683
-            ZIndex: =85
-
-        NP_ResourcesSection_Type As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Default: ="TGcito"
-            Height: =30
-            Items: |
-                =["Tegecito", "Hosting", "Cloud"]
-            PaddingRight: =12.65
-            PaddingTop: =12.65
-            Size: =15.18
-            Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =640
-            Y: =688
-            ZIndex: =86
-
-        Label3_62 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =15.18
-            Text: ="Type"
-            Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =640
-            Y: =653
-            ZIndex: =87
-
-        NP_ResourcesSection_Currency As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(58, 87, 255, 1)
-            Height: =30
-            Items: |
-                =["COP","USD"]
-            PaddingRight: =12.65
-            PaddingTop: =12.65
-            Size: =15.18
-            Visible: =varShowResourcesNR
-            Width: =318.68
-            X: =635
-            Y: =913
-            ZIndex: =88
 
     EP_ViewFeaturesToggle As group:
         Height: =5
