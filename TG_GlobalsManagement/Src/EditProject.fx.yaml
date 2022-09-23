@@ -2171,9 +2171,10 @@ EditProject As screen:
             OnSelect: |
                 =Collect(CollectionSQL_Features,
                     {
+                        FeatureID: Last(CollectionSQL_Features).FeatureID+1,
                         epic_id: varSelectedEpic,
                         feature_name: NP_FeaturesSection_Name.Text,
-                        neo_id:Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Neo.Selected.full_name,id)),
+                        neo_id: Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Neo.Selected.full_name,id)), 
                         estimation_time_hrs: Value(NP_FeaturesSection_EstimatedTime.Text),
                         master_chief_id:Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Masterchief.Selected.full_name,id)),
                         estimation_value: Value(NP_FeaturesSection_EstimatedValue.Text),
@@ -2183,7 +2184,7 @@ EditProject As screen:
                         expected_date: NP_FeaturesSection_ExpectedDate.SelectedDate,
                         editable: DisplayMode.Disabled
                      });
-                
+                ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
                 Reset(NP_FeaturesSection_Name);
                 Reset(NP_FeaturesSection_ExpectedDate);
                 Reset(NP_FeaturesSection_Neo);
