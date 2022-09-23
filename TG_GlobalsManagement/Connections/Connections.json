@@ -32,6 +32,9 @@
           "GM_Payments": {
             "tableName": "[dbo].[GM_Payments]"
           },
+          "GM_Resource": {
+            "tableName": "[dbo].[GM_Resource]"
+          },
           "GM_ResourceEstimation": {
             "tableName": "[dbo].[GM_ResourceEstimation]"
           },
@@ -48,7 +51,8 @@
       "CRM_Deals",
       "GM_Epics",
       "GM_ResourceEstimation",
-      "TM_Tegecitos"
+      "TM_Tegecitos",
+      "GM_Resource"
     ],
     "dependencies": {},
     "dependents": [],

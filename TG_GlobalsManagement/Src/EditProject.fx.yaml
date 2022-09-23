@@ -1201,8 +1201,8 @@ EditProject As screen:
                 Size: =14
                 Text: ="Resource Name"
                 Visible: =varShowResourcesRL 
-                Width: =220
-                X: =5.06
+                Width: =500
+                X: =224
                 ZIndex: =2
 
             Label10_29 As label:
@@ -1215,23 +1215,9 @@ EditProject As screen:
                 Size: =14
                 Text: ="Feature"
                 Visible: =varShowResourcesRL
-                Width: =253
-                X: =558
+                Width: =382
+                X: =726
                 ZIndex: =3
-
-            Label10_28 As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(58, 87, 255, 1)
-                Height: =25
-                PaddingRight: =6.33
-                PaddingTop: =6.33
-                Size: =14
-                Text: ="Epic"
-                Visible: =varShowResourcesRL 
-                Width: =330
-                X: =226
-                ZIndex: =4
 
             Label10_30 As label:
                 Align: =Align.Center
@@ -1243,8 +1229,7 @@ EditProject As screen:
                 Size: =14
                 Text: ="$"
                 Visible: =varShowResourcesRL 
-                Width: =60.71
-                X: =1249
+                X: =1360
                 ZIndex: =5
 
             Label10_55 As label:
@@ -1258,22 +1243,8 @@ EditProject As screen:
                 Text: ="Estimated Time"
                 Visible: =varShowResourcesRL 
                 Width: =180
-                X: =1311
+                X: =1511
                 ZIndex: =8
-
-            Label10_54 As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(58, 87, 255, 1)
-                Height: =25
-                PaddingRight: =6.33
-                PaddingTop: =6.33
-                Size: =14
-                Text: ="Type"
-                Visible: =varShowResourcesRL 
-                Width: =254.18
-                X: =813
-                ZIndex: =9
 
             Label10_56 As label:
                 Align: =Align.Center
@@ -1283,10 +1254,10 @@ EditProject As screen:
                 PaddingRight: =6.33
                 PaddingTop: =6.33
                 Size: =14
-                Text: ="Status"
+                Text: ="Type"
                 Visible: =varShowResourcesRL 
-                Width: =168.19
-                X: =1493
+                Width: =218
+                X: =4
                 ZIndex: =10
 
             Label10_44 As label:
@@ -1299,8 +1270,8 @@ EditProject As screen:
                 Size: =14
                 Text: ="Estimation Value"
                 Visible: =varShowResourcesRL 
-                Width: =180
-                X: =1068
+                Width: =250
+                X: =1109
                 ZIndex: =11
 
         EP_ResourcesGallery As gallery.galleryVertical:
@@ -1313,12 +1284,12 @@ EditProject As screen:
             LayoutMinWidth: =400
             TemplateSize: =19
             Visible: =varShowResourcesRL
-            Width: =1750
+            Width: =1763
             X: =0.00
             Y: =29
             ZIndex: =2
 
-            EP_FeaturesGallery_DeleteButton_1 As icon.Trash:
+            EP_ResourceesGallery_DeleteButton As icon.Trash:
                 Height: =24
                 Icon: =Icon.Trash
                 OnSelect: |-
@@ -1327,10 +1298,10 @@ EditProject As screen:
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =25.29
-                X: =1693
+                X: =1728
                 ZIndex: =9
 
-            EP_FeaturesGallery_EditButton_1 As icon.Edit:
+            EP_ResourcesGallery_EditButton As icon.Edit:
                 Height: =24
                 Icon: =Icon.Edit
                 OnSelect: |-
@@ -1339,31 +1310,10 @@ EditProject As screen:
                 PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
                 Width: =25.29
-                X: =1668
+                X: =1699
                 ZIndex: =10
 
-            EP_FeaturesGallery_FeatureName_1 As text:
-                BorderThickness: =1
-                Default: =ThisItem.resource_name
-                DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =ThisItem.editable
-                FocusedBorderThickness: =1
-                Height: =24
-                LineHeight: =1
-                OnSelect: =Select(Parent)
-                PaddingLeft: =5
-                PaddingRight: =6.33
-                PaddingTop: =6.33
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10.12
-                Width: =220
-                X: =0.00
-                ZIndex: =11
-
-            EP_FeaturesGallery_SaveButton_1 As icon.Save:
+            EP_ResourcesGallery_SaveButton As icon.Save:
                 Height: =24
                 Icon: =Icon.Save
                 OnSelect: |-
@@ -1383,10 +1333,10 @@ EditProject As screen:
                 PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
                 Width: =25.29
-                X: =1523.84
+                X: =1573
                 ZIndex: =12
 
-            EP_FeaturesGallery_EstimatedValue_1 As text:
+            EP_ResourcesGallery_EstimatedValue As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |-
@@ -1403,11 +1353,11 @@ EditProject As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =10.12
-                Width: =173
-                X: =1063
+                Width: =250
+                X: =1102
                 ZIndex: =14
 
-            EP_FeaturesGallery_Currency_1 As text:
+            EP_ResourcesGallery_Currency As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: |
@@ -1423,14 +1373,14 @@ EditProject As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =10.12
-                Width: =63.24
-                X: =1247
+                Width: =154
+                X: =1352
                 ZIndex: =15
 
-            EP_FeaturesGallery_Neo_1 As dropdown:
+            EP_ResourcesGallery_Feature As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.feature_id
+                Default: =LookUp(CollectionSQL_Features_WithBlank,FeatureID=ThisItem.feature_id,feature_name)
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -1440,59 +1390,42 @@ EditProject As screen:
                 PaddingRight: =12.65
                 PaddingTop: =12.65
                 Size: =10.12
-                Width: =253
-                X: =551
+                Width: =380
+                X: =720
                 ZIndex: =20
 
-            EP_FeaturesGallery_Masterchief_1 As dropdown:
+            EP_ResourcesGallery_ResourceName As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.editable
+                Default: =LookUp(GM_Resource,resource_id=ThisItem.estimation_id,resource_name)
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Distinct(Filter(CollectionSQL_Epics,Not(IsBlank(master_chief_id))),master_chief_id)
+                Items: =Distinct(Filter(GM_Resource,Not(IsBlank(resource_name))),resource_name
                 OnSelect: =Select(Parent)
                 PaddingRight: =12.65
                 PaddingTop: =12.65
                 Size: =10.12
-                Width: =256.71
-                X: =804
+                Width: =500
+                X: =220
                 ZIndex: =23
 
-            EP_FeaturesGallery_Epic_1 As dropdown:
-                BorderThickness: =1
-                Default: =ThisItem.feature_id
-                DisabledColor: =RGBA(0, 0, 0, 1)
-                DisplayMode: =ThisItem.editable
-                FocusedBorderThickness: =1
-                Height: =24
-                Items: =Filter(CollectionSQL_Epics,Not(IsBlank(epic_name))).epic_name
-                OnSelect: =Select(Parent)
-                PaddingRight: =12.65
-                PaddingTop: =12.65
-                Size: =10.12
-                Width: =329
-                X: =218
-                ZIndex: =24
-
-            EP_FeaturesGallery_Status_1 As dropdown:
+            EP_ResourceGallery_Type As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =ThisItem.editable
+                Default: =ThisItem.type
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =["True","False"]
+                Items: =Distinct(GM_Resource,type)
                 OnSelect: =Select(Parent)
                 PaddingLeft: =45
                 PaddingRight: =12.65
                 PaddingTop: =12.65
                 Size: =10.12
-                Width: =168.19
-                X: =1490
+                Width: =218
                 ZIndex: =25
 
             EP_FeaturesGallery_EstimatedTime_1 As text:
@@ -1514,7 +1447,7 @@ EditProject As screen:
                 RadiusTopRight: =0
                 Size: =10.12
                 Width: =180
-                X: =1310
+                X: =1505
                 ZIndex: =29
 
     EP_New_Epic As group:
@@ -3000,8 +2933,8 @@ EditProject As screen:
             Tooltip: ="Parrado perra"
             Visible: =varShowResourcesNR
             Width: =282.00
-            X: =212.24
-            Y: =571
+            X: =194
+            Y: =688
             ZIndex: =76
 
         NP_ResourcesSection_EstimatedValue As text:
@@ -3015,8 +2948,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowResourcesNR
             Width: =316.15
-            X: =212.24
-            Y: =670
+            X: =1200
+            Y: =913
             ZIndex: =77
 
         NP_ResourcesSection_Feature As dropdown:
@@ -3030,8 +2963,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowResourcesNR
             Width: =318.68
-            X: =212.24
-            Y: =571
+            X: =194
+            Y: =688
             ZIndex: =78
 
         Label3_51 As label:
@@ -3043,8 +2976,8 @@ EditProject As screen:
             Text: ="Currency"
             Visible: =varShowResourcesNR
             Width: =316.15
-            X: =212.24
-            Y: =635
+            X: =635
+            Y: =878
             ZIndex: =79
 
         Label3_61 As label:
@@ -3056,8 +2989,8 @@ EditProject As screen:
             Text: ="Feature"
             Visible: =varShowResourcesNR
             Width: =316.15
-            X: =212.24
-            Y: =534
+            X: =194
+            Y: =651
             ZIndex: =80
 
         Label3_49 As label:
@@ -3069,8 +3002,8 @@ EditProject As screen:
             Text: ="Name"
             Visible: =varShowResourcesNR
             Width: =211.19
-            X: =212.24
-            Y: =535
+            X: =1200
+            Y: =652
             ZIndex: =81
 
         Label3_50 As label:
@@ -3082,8 +3015,8 @@ EditProject As screen:
             Text: ="Estimated Value"
             Visible: =varShowResourcesNR
             Width: =316.15
-            X: =212.24
-            Y: =636
+            X: =1200
+            Y: =879
             ZIndex: =82
 
         NP_ResourcesSection_EstimatedTime As text:
@@ -3097,8 +3030,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowResourcesNR
             Width: =282.00
-            X: =212.24
-            Y: =670
+            X: =194
+            Y: =913
             ZIndex: =83
 
         Label3_63 As label:
@@ -3109,9 +3042,9 @@ EditProject As screen:
             Size: =15.18
             Text: ="Estimated Time"
             Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =212.24
-            Y: =633
+            Width: =315
+            X: =191
+            Y: =876
             ZIndex: =84
 
         NP_ResourcesSection_CreateButton As button:
@@ -3141,8 +3074,8 @@ EditProject As screen:
             Text: ="Create"
             Visible: =varShowResourcesNR
             Width: =194.74
-            X: =212.24
-            Y: =566
+            X: =1600
+            Y: =683
             ZIndex: =85
 
         NP_ResourcesSection_Type As dropdown:
@@ -3157,8 +3090,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowResourcesNR
             Width: =316.15
-            X: =212.24
-            Y: =571
+            X: =640
+            Y: =688
             ZIndex: =86
 
         Label3_62 As label:
@@ -3170,8 +3103,8 @@ EditProject As screen:
             Text: ="Type"
             Visible: =varShowResourcesNR
             Width: =316.15
-            X: =212.24
-            Y: =536
+            X: =640
+            Y: =653
             ZIndex: =87
 
         NP_ResourcesSection_Currency As dropdown:
@@ -3185,8 +3118,8 @@ EditProject As screen:
             Size: =15.18
             Visible: =varShowResourcesNR
             Width: =318.68
-            X: =212.24
-            Y: =670
+            X: =635
+            Y: =913
             ZIndex: =88
 
     EP_ViewFeaturesToggle As group:
