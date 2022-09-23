@@ -921,6 +921,7 @@ EditProject As screen:
                 OnSelect: |-
                     =Remove( CollectionSQL_Features,
                     First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));
+                    ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =25.29
@@ -2143,7 +2144,7 @@ EditProject As screen:
             ChevronBackground: =RGBA(58, 87, 255, 1)
             Height: =30
             Items: |
-                =["False"]
+                =["","True","False"]
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =15.18
@@ -2174,12 +2175,12 @@ EditProject As screen:
                         FeatureID: Last(CollectionSQL_Features).FeatureID+1,
                         epic_id: varSelectedEpic,
                         feature_name: NP_FeaturesSection_Name.Text,
-                        neo_id: Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Neo.Selected.full_name,id)), 
+                        neo_id: Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Neo.Selected.Result,id)), 
                         estimation_time_hrs: Value(NP_FeaturesSection_EstimatedTime.Text),
-                        master_chief_id:Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Masterchief.Selected.full_name,id)),
+                        master_chief_id:Text(LookUp(TM_Tegecitos,full_name = NP_FeaturesSection_Masterchief.Selected.Result,id)),
                         estimation_value: Value(NP_FeaturesSection_EstimatedValue.Text),
                         currency_code: NP_FeaturesSection_Currency.Selected.Value,
-                        status:NP_FeaturesSection_Status.Selected.Value,
+                        Status:NP_FeaturesSection_Status.Selected.Value,
                         created_date:Today(),
                         expected_date: NP_FeaturesSection_ExpectedDate.SelectedDate,
                         editable: DisplayMode.Disabled
