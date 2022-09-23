@@ -2279,7 +2279,7 @@ EditProject As screen:
             PaddingTop: =6.33
             Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =316.15
+            Width: =350
             X: =748
             Y: =886
             ZIndex: =77
@@ -2361,8 +2361,8 @@ EditProject As screen:
             PaddingTop: =6.33
             Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =282.00
-            X: =194
+            Width: =400
+            X: =191
             Y: =886
             ZIndex: =83
 
@@ -2400,6 +2400,9 @@ EditProject As screen:
                 Reset(NP_ResourcesSection_EstimatedValue);
                 Reset(NP_ResourcesSection_Feature);
                 Reset(NP_ResourcesSection_Currency);
+                Set(varShowResourcesRL,true);
+                Set(varShowResourcesNR,false);
+                
                 
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -2422,8 +2425,8 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =316.15
-            X: =200
+            Width: =400
+            X: =191
             Y: =733
             ZIndex: =86
 
@@ -2436,7 +2439,7 @@ EditProject As screen:
             Text: ="Type"
             Visible: =varShowResourcesNR
             Width: =316.15
-            X: =200
+            X: =191
             Y: =698
             ZIndex: =87
 
@@ -2466,7 +2469,7 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowResourcesNR
-            Width: =316.15
+            Width: =350
             X: =748
             Y: =733
             ZIndex: =151
