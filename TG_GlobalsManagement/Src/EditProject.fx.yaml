@@ -1293,8 +1293,8 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Trash
                 OnSelect: |-
-                    =/*Remove( CollectionSQL_Features,
-                    First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));*/
+                    =Remove( CollectionSQL_Resources,
+                    First( Filter( CollectionSQL_Resources, estimation_id=ThisItem.estimation_id)));
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =25.29
@@ -1305,7 +1305,7 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Edit
                 OnSelect: |-
-                    =/*Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), { editable: DisplayMode.Edit} );*/
+                    =Patch(CollectionSQL_Resources,First( Filter( CollectionSQL_Resources, estimation_id = ThisItem.estimation_id) ), { editable: DisplayMode.Edit} );
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
@@ -1317,18 +1317,12 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =/*Patch(CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID = ThisItem.FeatureID) ), 
-                    {   feature_name:EP_FeaturesGallery_FeatureName_1.Text,
-                        //epic_name:LookUp(EpicsCollection,epic_name=NP_PaymentsGallery_Epic.SelectedText.Value,epic_id),
-                        neo_id: EP_FeaturesGallery_Neo_1.Selected.Result,
-                        master_chief_id: EP_FeaturesGallery_Masterchief_1.Selected.Result,
-                        estimation_Value:Value(EP_FeaturesGallery_EstimatedValue_1.Text),
-                        currency_code:EP_FeaturesGallery_Currency_1.Text,
-                        Status: EP_FeaturesGallery_Status_1.Selected.Value,
-                        delivery_date: EP_FeaturesGallery_DeliveryDate_1.SelectedDate,
-                        created_date: EP_FeaturesGallery_CreatedDate_1.SelectedDate,
+                    =Patch(CollectionSQL_Resources,First( Filter( CollectionSQL_Resources, estimation_id = ThisItem.estimation_id) ), 
+                    {   type:EP_ResourceGallery_Type.Selected.Result,
+                        feature_id:LookUp(CollectionSQL_Features,feature_name=EP_ResourcesGallery_Feature.Selected.Result,FeatureID),
+                        
                         editable: DisplayMode.Disabled
-                    } );*/
+                    } );
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,true,false)
@@ -1428,7 +1422,7 @@ EditProject As screen:
                 Width: =218
                 ZIndex: =25
 
-            EP_FeaturesGallery_EstimatedTime_1 As text:
+            EP_ResourcesGallery_EstimatedTime As text:
                 Align: =Align.Center
                 BorderThickness: =1
                 Default: =ThisItem.estimation_time_hrs
@@ -2384,6 +2378,7 @@ EditProject As screen:
             OnSelect: |+
                 =Collect(CollectionSQL_Resources,
                     {
+                        estimation_id: Last(CollectionSQL_Resources).estimation_id+1,
                         resource_name: NP_ResourcesSection_Resource.Selected.resource_name,
                         epic: varSelectedEpic,
                         type: NP_ResourcesSection_Type.Selected.Result,

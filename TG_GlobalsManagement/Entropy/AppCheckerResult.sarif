@@ -3641,19 +3641,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedTime_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_EstimatedTime.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedTime_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_EstimatedTime.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_FeaturesGallery_EstimatedTime_1"
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_EstimatedTime"
               }
             }
           ],
@@ -3701,36 +3701,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.TabIndex"
                 }
               ],
@@ -3755,6 +3725,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
         },
         {
           "locations": [
