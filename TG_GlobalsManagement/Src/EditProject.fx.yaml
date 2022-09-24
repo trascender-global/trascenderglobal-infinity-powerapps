@@ -1320,7 +1320,11 @@ EditProject As screen:
                     =Patch(CollectionSQL_Resources,First( Filter( CollectionSQL_Resources, estimation_id = ThisItem.estimation_id) ), 
                     {   type:EP_ResourceGallery_Type.Selected.Result,
                         feature_id:LookUp(CollectionSQL_Features,feature_name=EP_ResourcesGallery_Feature.Selected.Result,FeatureID),
-                        
+                        resource_id:LookUp(GM_Resource,resource_name=EP_ResourcesGallery_ResourceName.Selected.Result,resource_id),
+                        estimation_time_hrs: Value( EP_ResourcesGallery_EstimatedTime.Text),
+                        estimation_value: Value(EP_ResourcesGallery_EstimatedValue.Text),
+                        currency_code: EP_ResourcesGallery_Currency.Text,
+                        created_date: Today(),
                         editable: DisplayMode.Disabled
                     } );
                 PaddingRight: =0.00
