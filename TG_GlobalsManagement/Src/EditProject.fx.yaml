@@ -452,13 +452,13 @@ EditProject As screen:
             NP_PaymentsGallery_DeleteButton As icon.Trash:
                 Height: =19
                 Icon: =Icon.Trash
-                OnSelect: |-
+                OnSelect: |
                     =Set(varShowDelete_PopUp,true);
                     Set(varCollection_to_change,CollectionSQL_Payments);
                     Set(varCollection_to_change_id,ThisItem.PaymentID);
-                    Set(varCollection_to_change_id_field_name,"PaymentID";
-                    /*Remove( CollectionSQL_Payments,
-                    First( Filter( CollectionSQL_Payments, PaymentID=ThisItem.PaymentID)));*/
+                    Set(varCollection_to_change_id_field_name,"PaymentID");
+                    //Remove( CollectionSQL_Payments,
+                    //First( Filter( CollectionSQL_Payments, PaymentID=ThisItem.PaymentID)));
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =25.29
