@@ -5109,36 +5109,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditProject",
-                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.TabIndex"
                 }
               ],
@@ -5163,6 +5133,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.EP_ResourcesContainer.EP_ResourcesGallery.EP_ResourcesGallery_SaveButton"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [

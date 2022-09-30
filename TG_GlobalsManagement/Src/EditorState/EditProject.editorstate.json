@@ -18523,7 +18523,14 @@
         "DisabledColor",
         "PressedColor",
         "HoverColor",
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledFill",
         "PressedFill",
         "HoverFill",
@@ -18598,7 +18605,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ResourcesGallery_EditButton",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19629,7 +19636,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Result\"}",
+          "NameMap": "{\"Value\":\"feature_name\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -20298,7 +20305,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EP_ResourcesGallery_SaveButton",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
