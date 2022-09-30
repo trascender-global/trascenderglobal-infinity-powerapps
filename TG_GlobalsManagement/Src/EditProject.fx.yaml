@@ -452,12 +452,11 @@ EditProject As screen:
             NP_PaymentsGallery_DeleteButton As icon.Trash:
                 Height: =19
                 Icon: =Icon.Trash
-                OnSelect: |
+                OnSelect: |+
                     =Set(varShowDelete_PopUp,true);
                     Set(varCollection_to_change,"CollectionSQL_Payments");
                     Set(varCollection_to_change_id,ThisItem.PaymentID);
-                    //Remove( CollectionSQL_Payments,
-                    //First( Filter( CollectionSQL_Payments, PaymentID=ThisItem.PaymentID)));
+                    
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =25.29
@@ -921,10 +920,12 @@ EditProject As screen:
             EP_FeaturesGallery_DeleteButton As icon.Trash:
                 Height: =19
                 Icon: =Icon.Trash
-                OnSelect: |-
-                    =Remove( CollectionSQL_Features,
-                    First( Filter( CollectionSQL_Features, FeatureID=ThisItem.FeatureID)));
-                    ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
+                OnSelect: |+
+                    =Set(varShowDelete_PopUp,true);
+                    Set(varCollection_to_change,"CollectionSQL_Features");
+                    Set(varCollection_to_change_id,ThisItem.FeatureID);
+                    
+                    
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =25.29
@@ -3252,11 +3253,14 @@ EditProject As screen:
             Height: =49
             OnSelect: |-
                 =Switch( varCollection_to_change, 
-                        "CollectionSQL_Payments", Remove( CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID=varCollection_to_change_id))), 
-                        25, "Result2", 
-                        30, "Result3" )
+                        "CollectionSQL_Payments", Remove( CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID=varCollection_to_change_id))),
+                        "CollectionSQL_Features", 
+                            Remove( CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID=varCollection_to_change_id)));
+                            ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); 
+                            Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
+                        );
                 Set(varShowDelete_PopUp,false);
-                //Notify("Item has been removed", Notification.Success);
+                Notify("Item has been removed", NotificationType.Success);
             Size: =20
             Text: ="Continue"
             Visible: =varShowDelete_PopUp
