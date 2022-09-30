@@ -1296,9 +1296,11 @@ EditProject As screen:
             EP_ResourceesGallery_DeleteButton As icon.Trash:
                 Height: =24
                 Icon: =Icon.Trash
-                OnSelect: |-
-                    =Remove( CollectionSQL_Resources_Estimation,
-                    First( Filter( CollectionSQL_Resources_Estimation, estimation_id=ThisItem.estimation_id)));
+                OnSelect: |+
+                    =Set(varShowDelete_PopUp,true);
+                    Set(varCollection_to_change,"CollectionSQL_Resources_Estimation");
+                    Set(varCollection_to_change_id,ThisItem.estimation_id);
+                    
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =25.29
@@ -3257,7 +3259,9 @@ EditProject As screen:
                         "CollectionSQL_Features", 
                             Remove( CollectionSQL_Features,First( Filter( CollectionSQL_Features, FeatureID=varCollection_to_change_id)));
                             ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); 
-                            Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
+                            Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);,
+                        "CollectionSQL_Resources_Estimation", 
+                            Remove( CollectionSQL_Resources_Estimation,First( Filter( CollectionSQL_Resources_Estimation, estimation_id=varCollection_to_change_id)));
                         );
                 Set(varShowDelete_PopUp,false);
                 Notify("Item has been removed", NotificationType.Success);
