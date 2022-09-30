@@ -454,9 +454,8 @@ EditProject As screen:
                 Icon: =Icon.Trash
                 OnSelect: |
                     =Set(varShowDelete_PopUp,true);
-                    Set(varCollection_to_change,CollectionSQL_Payments);
+                    Set(varCollection_to_change,"CollectionSQL_Payments");
                     Set(varCollection_to_change_id,ThisItem.PaymentID);
-                    Set(varCollection_to_change_id_field_name,"PaymentID");
                     //Remove( CollectionSQL_Payments,
                     //First( Filter( CollectionSQL_Payments, PaymentID=ThisItem.PaymentID)));
                 PaddingRight: =0.00
@@ -3206,24 +3205,22 @@ EditProject As screen:
 
         EP_Delete_PopUp_Rectangle_Green As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
             Fill: =RGBA(58, 203, 137, 1)
             Height: =56
             Visible: =varShowDelete_PopUp
             Width: =883.96
             X: =535
-            Y: =370
+            Y: =418
             ZIndex: =153
 
         EP_Delete_PopUp_Rectangle_White As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =134
+            Height: =114
             Visible: =varShowDelete_PopUp
             Width: =883.96
             X: =535
-            Y: =426
+            Y: =474
             ZIndex: =154
 
         EP_Delete_PopUp_Tittle_Label As label:
@@ -3235,7 +3232,7 @@ EditProject As screen:
             Visible: =varShowDelete_PopUp
             Width: =748
             X: =618
-            Y: =376
+            Y: =424
             ZIndex: =155
 
         EP_Delete_PopUp_Cancel_Button As button:
@@ -3246,23 +3243,26 @@ EditProject As screen:
             Text: ="Cancel"
             Visible: =varShowDelete_PopUp
             Width: =338
-            X: =596
-            Y: =460
+            X: =599
+            Y: =503
             ZIndex: =156
 
         EP_Delete_PopUp_Continue_Button As button:
             Fill: =RGBA(58, 87, 255, 1)
             Height: =49
             OnSelect: |-
-                =Remove(varCollection_to_change , First( Filter( varCollection_to_change, varCollection_to_change_id_field_name=varCollection_to_change_id)));
-                Set(varShowDelete_PopUp,false)
-                Notify("Item has been removed", Notification.Success)
+                =Switch( varCollection_to_change, 
+                        "CollectionSQL_Payments", Remove( CollectionSQL_Payments,First( Filter( CollectionSQL_Payments, PaymentID=varCollection_to_change_id))), 
+                        25, "Result2", 
+                        30, "Result3" )
+                Set(varShowDelete_PopUp,false);
+                //Notify("Item has been removed", Notification.Success);
             Size: =20
             Text: ="Continue"
             Visible: =varShowDelete_PopUp
             Width: =338
-            X: =1029
-            Y: =460
+            X: =1032
+            Y: =503
             ZIndex: =157
 
     EP_Payments_New_Payment As group:
