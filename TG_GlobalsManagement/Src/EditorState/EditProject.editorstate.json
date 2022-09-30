@@ -20002,7 +20002,7 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Result\"}",
+          "NameMap": "{\"Value\":\"resource_name\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

@@ -1278,7 +1278,7 @@ EditProject As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =330
-            Items: =CollectionSQL_Resources
+            Items: =CollectionSQL_Resources_Estimation
             Layout: =Layout.Vertical
             LayoutMinHeight: =287
             LayoutMinWidth: =400
@@ -1305,7 +1305,7 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Edit
                 OnSelect: |-
-                    =Patch(CollectionSQL_Resources,First( Filter( CollectionSQL_Resources, estimation_id = ThisItem.estimation_id) ), { editable: DisplayMode.Edit} );
+                    =Patch(CollectionSQL_Resources_Estimation,First( Filter( CollectionSQL_Resources_Estimation, estimation_id = ThisItem.estimation_id) ), { editable: DisplayMode.Edit} );
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =If(ThisItem.editable =DisplayMode.Edit,false,true)
@@ -1317,10 +1317,10 @@ EditProject As screen:
                 Height: =24
                 Icon: =Icon.Save
                 OnSelect: |-
-                    =Patch(CollectionSQL_Resources,First( Filter( CollectionSQL_Resources, estimation_id = ThisItem.estimation_id) ), 
+                    =Patch(CollectionSQL_Resources_Estimation,First( Filter( CollectionSQL_Resources_Estimation, estimation_id = ThisItem.estimation_id) ), 
                     {   type:EP_ResourceGallery_Type.Selected.Result,
                         feature_id:LookUp(CollectionSQL_Features,feature_name=EP_ResourcesGallery_Feature.Selected.Result,FeatureID),
-                        resource_id:LookUp(GM_Resource,resource_name=EP_ResourcesGallery_ResourceName.Selected.Result,resource_id),
+                        resource_id:LookUp(GM_Resource,resource_name=EP_ResourcesGallery_ResourceName.Selected.resource_name,resource_id),
                         estimation_time_hrs: Value( EP_ResourcesGallery_EstimatedTime.Text),
                         estimation_value: Value(EP_ResourcesGallery_EstimatedValue.Text),
                         currency_code: EP_ResourcesGallery_Currency.Text,
@@ -1378,7 +1378,7 @@ EditProject As screen:
             EP_ResourcesGallery_Feature As dropdown:
                 AllowEmptySelection: =true
                 BorderThickness: =1
-                Default: =LookUp(CollectionSQL_Features_WithBlank,FeatureID=ThisItem.feature_id,feature_name)
+                Default: =LookUp(CollectionSQL_Features,FeatureID=ThisItem.feature_id,feature_name)
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -1400,7 +1400,7 @@ EditProject As screen:
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
                 Height: =24
-                Items: =Distinct(Filter(GM_Resource,Not(IsBlank(resource_name))),resource_name
+                Items: =Filter(GM_Resource,type=EP_ResourceGallery_Type.Selected.Result).resource_name
                 OnSelect: =Select(Parent)
                 PaddingRight: =12.65
                 PaddingTop: =12.65
@@ -1850,7 +1850,7 @@ EditProject As screen:
                     ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
                     ClearCollect(CollectionSQL_Features, AddColumns(Filter(GM_Features,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
                     ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
-                    ClearCollect(CollectionSQL_Resources, AddColumns(GM_ResourceEstimation,"editable",DisplayMode.Disabled));
+                    ClearCollect(CollectionSQL_Resources_Estimation, AddColumns(GM_ResourceEstimation,"editable",DisplayMode.Disabled));
                     
                     Set(varShowPayments,true);
                     Set(varShowFeatures,false);
@@ -2380,16 +2380,15 @@ EditProject As screen:
         NP_ResourcesSection_CreateButton As button:
             Height: =32
             OnSelect: |+
-                =Collect(CollectionSQL_Resources,
+                =Collect(CollectionSQL_Resources_Estimation,
                     {
-                        estimation_id: Last(CollectionSQL_Resources).estimation_id+1,
-                        resource_name: NP_ResourcesSection_Resource.Selected.resource_name,
-                        epic: varSelectedEpic,
+                        estimation_id: Last(CollectionSQL_Resources_Estimation).estimation_id+1,
+                        feature_id:LookUp(CollectionSQL_Features_WithBlank,feature_name=NP_ResourcesSection_Feature.Selected.Result,FeatureID),
+                        resource_id: LookUp(GM_Resource,resource_name=NP_ResourcesSection_Resource.Selected.resource_name,resource_id),
                         type: NP_ResourcesSection_Type.Selected.Result,
                         estimation_time_hrs: Value(NP_ResourcesSection_EstimatedTime.Text),
-                        estimation_value: Value(NP_ResourcesSection_EstimatedValue.Text),
-                        feature:NP_ResourcesSection_Feature.Selected.Result,
-                        currency:NP_ResourcesSection_Currency.Selected.Value,
+                        estimation_value: Value(NP_ResourcesSection_EstimatedValue.Text),        
+                        currency_code:NP_ResourcesSection_Currency.Selected.Value,
                         editable: DisplayMode.Disabled
                      });
                 
