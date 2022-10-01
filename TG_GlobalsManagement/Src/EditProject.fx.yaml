@@ -157,99 +157,6 @@ EditProject As screen:
         Y: =52
         ZIndex: =40
 
-    EP_PopUpSavingDetailsGroup As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =128
-
-        Rectangle3_3 As rectangle:
-            Fill: =RGBA(56, 96, 178, 0.7)
-            Height: =1080
-            Visible: =varShowPopupSaveDetails
-            Width: =1920
-            X: =0.00
-            ZIndex: =89
-
-        Rectangle4_3 As rectangle:
-            Fill: =RGBA(58, 87, 255, 1)
-            Height: =54
-            Visible: =varShowPopupSaveDetails
-            Width: =1124
-            X: =446
-            Y: =346
-            ZIndex: =90
-
-        Rectangle5_2 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =210
-            Visible: =varShowPopupSaveDetails
-            Width: =1128
-            X: =442
-            Y: =400
-            ZIndex: =91
-
-        Label5_8 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =25.29
-            Text: ="Add Details"
-            Visible: =varShowPopupSaveDetails
-            Width: =432
-            X: =772
-            Y: =351
-            ZIndex: =92
-
-        Label5_7 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Semibold
-            Height: =90
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =25.29
-            Text: ="You are about to save the project details, do you want to continue?"
-            Visible: =varShowPopupSaveDetails
-            Width: =780
-            X: =615
-            Y: =418
-            ZIndex: =93
-
-        Button3_5 As button:
-            Fill: =RGBA(41, 41, 41, 1)
-            Height: =46
-            OnSelect: =Set(varShowPopupSaveDetails,false)
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =18.98
-            Text: ="Cancel"
-            Visible: =varShowPopupSaveDetails
-            Width: =300
-            X: =604
-            Y: =533
-            ZIndex: =94
-
-        Button3_4 As button:
-            Fill: =RGBA(0, 182, 125, 1)
-            Height: =49
-            OnSelect: |-
-                =Set(varShowPopupSaveDetails,false);
-                Set(varShowInit,true)
-            PaddingRight: =6.33
-            PaddingTop: =6.33
-            Size: =18.98
-            Text: ="Continue"
-            Visible: =varShowPopupSaveDetails
-            Width: =300
-            X: =1137
-            Y: =533
-            ZIndex: =95
-
     EP_PaymentsContainer As groupContainer.horizontalAutoLayoutContainer:
         Height: =380
         LayoutMode: =LayoutMode.Auto
@@ -261,7 +168,7 @@ EditProject As screen:
         Width: =1760
         X: =110
         Y: =650
-        ZIndex: =135
+        ZIndex: =127
 
         EP_PaymentsTitles As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -730,7 +637,7 @@ EditProject As screen:
         Width: =1760
         X: =110
         Y: =650
-        ZIndex: =136
+        ZIndex: =128
 
         EP_FeatruresTitles As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1169,6 +1076,98 @@ EditProject As screen:
                 X: =1148.25
                 ZIndex: =29
 
+    EP_PopUpSavingDetailsGroup As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =128
+
+        Rectangle3_3 As rectangle:
+            Fill: =RGBA(56, 96, 178, 0.7)
+            Height: =1080
+            Visible: =varShowPopupSaveDetails
+            Width: =1920
+            X: =0.00
+            ZIndex: =150
+
+        Rectangle4_3 As rectangle:
+            Fill: =RGBA(58, 87, 255, 1)
+            Height: =54
+            Visible: =varShowPopupSaveDetails
+            Width: =1124
+            X: =446
+            Y: =346
+            ZIndex: =151
+
+        Rectangle5_2 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =210
+            Visible: =varShowPopupSaveDetails
+            Width: =1128
+            X: =442
+            Y: =400
+            ZIndex: =152
+
+        Label5_8 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
+            Text: ="Add Details"
+            Visible: =varShowPopupSaveDetails
+            Width: =432
+            X: =772
+            Y: =351
+            ZIndex: =153
+
+        Label5_7 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =90
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =25.29
+            Text: ="You are about to save the project details, do you want to continue?"
+            Visible: =varShowPopupSaveDetails
+            Width: =780
+            X: =615
+            Y: =418
+            ZIndex: =154
+
+        Button3_5 As button:
+            Fill: =RGBA(41, 41, 41, 1)
+            Height: =46
+            OnSelect: =Set(varShowPopupSaveDetails,false)
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
+            Text: ="Cancel"
+            Visible: =varShowPopupSaveDetails
+            Width: =300
+            X: =604
+            Y: =533
+            ZIndex: =155
+
+        Button3_4 As button:
+            Fill: =RGBA(0, 182, 125, 1)
+            Height: =49
+            OnSelect: |
+                =Set(varShowPopupSaveDetails,false);
+            PaddingRight: =6.33
+            PaddingTop: =6.33
+            Size: =18.98
+            Text: ="Continue"
+            Visible: =varShowPopupSaveDetails
+            Width: =300
+            X: =1137
+            Y: =533
+            ZIndex: =156
+
     EP_ResourcesContainer As groupContainer.horizontalAutoLayoutContainer:
         Height: =360
         LayoutMode: =LayoutMode.Auto
@@ -1180,7 +1179,7 @@ EditProject As screen:
         Width: =1760
         X: =110
         Y: =650
-        ZIndex: =143
+        ZIndex: =135
 
         EP_ResourcesTitles As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1742,7 +1741,7 @@ EditProject As screen:
             Width: =45
             X: =1826
             Y: =11
-            ZIndex: =118
+            ZIndex: =110
 
     EP_Epic_List As group:
         Height: =5
@@ -2196,7 +2195,7 @@ EditProject As screen:
             Width: =206.13
             X: =1317
             Y: =767
-            ZIndex: =137
+            ZIndex: =129
 
         Label3_54 As label:
             FontWeight: =FontWeight.Semibold
@@ -2209,7 +2208,7 @@ EditProject As screen:
             Width: =225.10
             X: =1317
             Y: =729
-            ZIndex: =138
+            ZIndex: =130
 
         NP_FeaturesSection_EstimatedValue As text:
             BorderThickness: =1
@@ -2223,7 +2222,7 @@ EditProject As screen:
             Width: =300
             X: =637
             Y: =768
-            ZIndex: =139
+            ZIndex: =131
 
         Label3_59 As label:
             FontWeight: =FontWeight.Semibold
@@ -2236,7 +2235,7 @@ EditProject As screen:
             Width: =225.10
             X: =637
             Y: =729
-            ZIndex: =140
+            ZIndex: =132
 
         NP_FeaturesSection_Currency As dropdown:
             BorderThickness: =1
@@ -2251,7 +2250,7 @@ EditProject As screen:
             Width: =180.84
             X: =1007
             Y: =768
-            ZIndex: =141
+            ZIndex: =133
 
         Label3_60 As label:
             FontWeight: =FontWeight.Semibold
@@ -2264,7 +2263,7 @@ EditProject As screen:
             Width: =147.96
             X: =1007
             Y: =729
-            ZIndex: =142
+            ZIndex: =134
 
     EP_New_Resource As group:
         Height: =5
@@ -2286,7 +2285,7 @@ EditProject As screen:
             Width: =350
             X: =748
             Y: =886
-            ZIndex: =77
+            ZIndex: =76
 
         NP_ResourcesSection_Feature As dropdown:
             BorderThickness: =1
@@ -2301,7 +2300,7 @@ EditProject As screen:
             Width: =318.68
             X: =1200
             Y: =733
-            ZIndex: =78
+            ZIndex: =77
 
         Label3_51 As label:
             FontWeight: =FontWeight.Semibold
@@ -2314,7 +2313,7 @@ EditProject As screen:
             Width: =316.15
             X: =1200
             Y: =851
-            ZIndex: =79
+            ZIndex: =78
 
         Label3_61 As label:
             FontWeight: =FontWeight.Semibold
@@ -2327,7 +2326,7 @@ EditProject As screen:
             Width: =316.15
             X: =1200
             Y: =696
-            ZIndex: =80
+            ZIndex: =79
 
         Label3_49 As label:
             FontWeight: =FontWeight.Semibold
@@ -2340,7 +2339,7 @@ EditProject As screen:
             Width: =211.19
             X: =748
             Y: =697
-            ZIndex: =81
+            ZIndex: =80
 
         Label3_50 As label:
             FontWeight: =FontWeight.Semibold
@@ -2353,7 +2352,7 @@ EditProject As screen:
             Width: =316.15
             X: =748
             Y: =852
-            ZIndex: =82
+            ZIndex: =81
 
         NP_ResourcesSection_EstimatedTime As text:
             BorderThickness: =1
@@ -2368,7 +2367,7 @@ EditProject As screen:
             Width: =400
             X: =191
             Y: =886
-            ZIndex: =83
+            ZIndex: =82
 
         Label3_63 As label:
             FontWeight: =FontWeight.Semibold
@@ -2381,7 +2380,7 @@ EditProject As screen:
             Width: =315
             X: =191
             Y: =849
-            ZIndex: =84
+            ZIndex: =83
 
         NP_ResourcesSection_CreateButton As button:
             Height: =32
@@ -2416,7 +2415,7 @@ EditProject As screen:
             Width: =194.74
             X: =1600
             Y: =683
-            ZIndex: =85
+            ZIndex: =84
 
         NP_ResourcesSection_Type As dropdown:
             BorderThickness: =1
@@ -2432,7 +2431,7 @@ EditProject As screen:
             Width: =400
             X: =191
             Y: =733
-            ZIndex: =86
+            ZIndex: =85
 
         Label3_62 As label:
             FontWeight: =FontWeight.Semibold
@@ -2445,7 +2444,7 @@ EditProject As screen:
             Width: =316.15
             X: =191
             Y: =698
-            ZIndex: =87
+            ZIndex: =86
 
         NP_ResourcesSection_Currency As dropdown:
             BorderThickness: =1
@@ -2460,7 +2459,7 @@ EditProject As screen:
             Width: =318.68
             X: =1200
             Y: =886
-            ZIndex: =88
+            ZIndex: =87
 
         NP_ResourcesSection_Resource As dropdown:
             BorderThickness: =1
@@ -2476,7 +2475,7 @@ EditProject As screen:
             Width: =350
             X: =748
             Y: =733
-            ZIndex: =151
+            ZIndex: =143
 
     EP_GeneralInformation As group:
         Height: =5
@@ -2558,7 +2557,8 @@ EditProject As screen:
                 =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
                 //GM_GlobalGeneralInformation.project_name
             OnSelect: |-
-                =Set(varProjectDetails,
+                =Set(varProjectDetails,First(Filter(GM_GlobalGeneralInformation,project_name =  EP_SelectProject_ComboBox.Selected.project_name)));
+                /*Set(varProjectDetails,
                     {
                         id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
                         global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
@@ -2573,7 +2573,7 @@ EditProject As screen:
                         observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
                         created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
                     });
-                
+                */
                 //Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
                 ClearCollect(CollectionSQL_Features, GM_Features);
@@ -2663,7 +2663,7 @@ EditProject As screen:
             Width: =38
             X: =1520
             Y: =131
-            ZIndex: =119
+            ZIndex: =111
 
         EP_EpicSectionNewEpic As icon.AddDocument:
             Height: =30
@@ -2678,7 +2678,7 @@ EditProject As screen:
             Width: =38
             X: =1648
             Y: =131
-            ZIndex: =120
+            ZIndex: =112
 
         Label2 As label:
             Height: =28
@@ -2690,7 +2690,7 @@ EditProject As screen:
             Width: =166
             X: =1681
             Y: =131
-            ZIndex: =121
+            ZIndex: =113
 
         Label2_1 As label:
             Height: =28
@@ -2702,7 +2702,7 @@ EditProject As screen:
             Width: =100
             X: =1553
             Y: =131
-            ZIndex: =122
+            ZIndex: =114
 
         EP_EpicSectionProjectValueLabel_1 As label:
             FontWeight: =FontWeight.Bold
@@ -2716,7 +2716,7 @@ EditProject As screen:
             Width: =717
             X: =1109
             Y: =110
-            ZIndex: =144
+            ZIndex: =136
 
         EP_EpicSectionSegment_Label_1 As label:
             FontWeight: =FontWeight.Bold
@@ -2729,7 +2729,7 @@ EditProject As screen:
             Width: =200
             X: =100
             Y: =116
-            ZIndex: =145
+            ZIndex: =137
 
     EP_EditProjectGeneralGroup As group:
         Height: =5
@@ -2747,7 +2747,7 @@ EditProject As screen:
             Width: =1790
             X: =100
             Y: =68
-            ZIndex: =96
+            ZIndex: =88
 
         Label3_25 As label:
             FontWeight: =FontWeight.Semibold
@@ -2760,7 +2760,7 @@ EditProject As screen:
             Width: =200
             X: =1027
             Y: =123
-            ZIndex: =97
+            ZIndex: =89
 
         EP_EditGeneral_Name As text:
             BorderThickness: =1
@@ -2773,7 +2773,7 @@ EditProject As screen:
             Width: =500
             X: =110
             Y: =157
-            ZIndex: =98
+            ZIndex: =90
 
         Label3_21 As label:
             FontWeight: =FontWeight.Semibold
@@ -2785,7 +2785,7 @@ EditProject As screen:
             Visible: =varShowEditProjectDetailsPopUp
             X: =110
             Y: =123
-            ZIndex: =99
+            ZIndex: =91
 
         EP_EditGeneral_Segment As text:
             BorderThickness: =1
@@ -2798,7 +2798,7 @@ EditProject As screen:
             Width: =300
             X: =661
             Y: =157
-            ZIndex: =100
+            ZIndex: =92
 
         Label3_31 As label:
             FontWeight: =FontWeight.Semibold
@@ -2811,7 +2811,7 @@ EditProject As screen:
             Width: =110
             X: =661
             Y: =123
-            ZIndex: =101
+            ZIndex: =93
 
         Label3_26 As label:
             FontWeight: =FontWeight.Semibold
@@ -2824,7 +2824,7 @@ EditProject As screen:
             Width: =200
             X: =661
             Y: =227
-            ZIndex: =102
+            ZIndex: =94
 
         EP_EditGeneral_InitialDate As datepicker:
             BorderColor: =RGBA(0, 13, 75, 1)
@@ -2841,7 +2841,7 @@ EditProject As screen:
             Width: =300
             X: =1027
             Y: =274
-            ZIndex: =103
+            ZIndex: =95
 
         Label3_30 As label:
             FontWeight: =FontWeight.Semibold
@@ -2853,7 +2853,7 @@ EditProject As screen:
             Visible: =varShowEditProjectDetailsPopUp
             X: =1027
             Y: =227
-            ZIndex: =104
+            ZIndex: =96
 
         Label3_32 As label:
             FontWeight: =FontWeight.Semibold
@@ -2866,7 +2866,7 @@ EditProject As screen:
             Width: =181
             X: =439
             Y: =227
-            ZIndex: =105
+            ZIndex: =97
 
         EP_EditGeneral_TotalPrice As text:
             BorderThickness: =1
@@ -2880,7 +2880,7 @@ EditProject As screen:
             Width: =284
             X: =110
             Y: =273
-            ZIndex: =106
+            ZIndex: =98
 
         Label3_27 As label:
             FontWeight: =FontWeight.Semibold
@@ -2893,7 +2893,7 @@ EditProject As screen:
             Width: =250
             X: =110
             Y: =227
-            ZIndex: =107
+            ZIndex: =99
 
         Label3_33 As label:
             FontWeight: =FontWeight.Semibold
@@ -2906,7 +2906,7 @@ EditProject As screen:
             Width: =200
             X: =1370
             Y: =123
-            ZIndex: =108
+            ZIndex: =100
 
         EP_EditGeneral_Observations As text:
             BorderThickness: =1
@@ -2919,7 +2919,7 @@ EditProject As screen:
             Width: =1727.44
             X: =110
             Y: =357
-            ZIndex: =109
+            ZIndex: =101
 
         Label3_28 As label:
             FontWeight: =FontWeight.Semibold
@@ -2932,7 +2932,7 @@ EditProject As screen:
             Width: =300
             X: =111
             Y: =320
-            ZIndex: =110
+            ZIndex: =102
 
         EP_EditGeneral_Status As dropdown:
             BorderThickness: =1
@@ -2947,7 +2947,7 @@ EditProject As screen:
             Width: =400
             X: =1370
             Y: =157
-            ZIndex: =111
+            ZIndex: =103
 
         EP_EditGeneral_CurrencyCode As text:
             BorderThickness: =1
@@ -2961,7 +2961,7 @@ EditProject As screen:
             Width: =145
             X: =449
             Y: =276
-            ZIndex: =112
+            ZIndex: =104
 
         EP_EditGeneral_ProjectLink As text:
             BorderThickness: =1
@@ -2974,7 +2974,7 @@ EditProject As screen:
             Width: =467
             X: =1370
             Y: =273
-            ZIndex: =113
+            ZIndex: =105
 
         Label3_29 As label:
             FontWeight: =FontWeight.Semibold
@@ -2987,7 +2987,7 @@ EditProject As screen:
             Width: =200
             X: =1370
             Y: =227
-            ZIndex: =114
+            ZIndex: =106
 
         EP_EditGeneral_LineOfBusiness As dropdown:
             BorderThickness: =1
@@ -3002,7 +3002,7 @@ EditProject As screen:
             Width: =200
             X: =1027
             Y: =157
-            ZIndex: =115
+            ZIndex: =107
 
         Label6 As label:
             FontWeight: =FontWeight.Bold
@@ -3015,7 +3015,7 @@ EditProject As screen:
             Width: =600
             X: =100
             Y: =75
-            ZIndex: =116
+            ZIndex: =108
 
         EP_EditGeneral_SaveButton As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
@@ -3024,7 +3024,7 @@ EditProject As screen:
             OnSelect: |
                 =Set(varShowEditProjectDetailsPopUp, false);
                 Set(varShowEL,true);
-                /*Set(varProjectDetails,
+                Set(varProjectDetails,
                     {
                         id: varProjectDetails.id,
                         global_internal_id: varProjectDetails.global_internal_id,
@@ -3038,14 +3038,14 @@ EditProject As screen:
                         status: EP_EditGeneral_Status.Selected.Value,
                         observations: EP_EditGeneral_Observations.Text,
                         created_date: varProjectDetails.created_date
-                    });*/
+                    });
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =varShowEditProjectDetailsPopUp
             Width: =50
             X: =1819
             Y: =78
-            ZIndex: =117
+            ZIndex: =109
 
         EP_EditGeneral_CreatedDate As datepicker:
             BorderColor: =RGBA(0, 13, 75, 1)
@@ -3062,7 +3062,7 @@ EditProject As screen:
             Width: =300
             X: =661
             Y: =274
-            ZIndex: =146
+            ZIndex: =138
 
     EP_ViewPaymentToggle As group:
         Height: =5
@@ -3084,7 +3084,7 @@ EditProject As screen:
             Width: =38
             X: =1415
             Y: =609
-            ZIndex: =123
+            ZIndex: =115
 
         EP_ViewPaymentToggle_AddButton As icon.AddDocument:
             Color: =RGBA(41, 41, 41, 1)
@@ -3099,7 +3099,7 @@ EditProject As screen:
             Width: =38
             X: =1618
             Y: =609
-            ZIndex: =124
+            ZIndex: =116
 
         EP_ViewTogglePayment_AddLabel As label:
             Color: =RGBA(41, 41, 41, 1)
@@ -3112,7 +3112,7 @@ EditProject As screen:
             Width: =202.33
             X: =1650
             Y: =609
-            ZIndex: =125
+            ZIndex: =117
 
         EP_ViewPaymentToggle_ListLabel As label:
             Color: =RGBA(41, 41, 41, 1)
@@ -3129,7 +3129,7 @@ EditProject As screen:
             Width: =151.74
             X: =1452
             Y: =609
-            ZIndex: =126
+            ZIndex: =118
 
     EP_ViewFeaturesToggle As group:
         Height: =5
@@ -3150,7 +3150,7 @@ EditProject As screen:
             Width: =38
             X: =1415
             Y: =609
-            ZIndex: =127
+            ZIndex: =119
 
         EP_ViewFeaturesToggle_AddButton As icon.AddDocument:
             Height: =30
@@ -3164,7 +3164,7 @@ EditProject As screen:
             Width: =38
             X: =1618
             Y: =609
-            ZIndex: =128
+            ZIndex: =120
 
         EP_ViewFeaturesToggle_AddLabel As label:
             Height: =28
@@ -3176,7 +3176,7 @@ EditProject As screen:
             Width: =202.33
             X: =1650
             Y: =609
-            ZIndex: =129
+            ZIndex: =121
 
         EP_ViewFeaturesToggle_ListLabel As label:
             Height: =28
@@ -3188,7 +3188,7 @@ EditProject As screen:
             Width: =151.74
             X: =1452
             Y: =609
-            ZIndex: =130
+            ZIndex: =122
 
     EP_Delete_PopUp As group:
         Height: =5
@@ -3204,7 +3204,7 @@ EditProject As screen:
             Width: =1855
             X: =63
             Y: =53
-            ZIndex: =152
+            ZIndex: =144
 
         EP_Delete_PopUp_Rectangle_Green As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -3214,7 +3214,7 @@ EditProject As screen:
             Width: =883.96
             X: =535
             Y: =418
-            ZIndex: =153
+            ZIndex: =145
 
         EP_Delete_PopUp_Rectangle_White As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -3224,7 +3224,7 @@ EditProject As screen:
             Width: =883.96
             X: =535
             Y: =474
-            ZIndex: =154
+            ZIndex: =146
 
         EP_Delete_PopUp_Tittle_Label As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -3236,7 +3236,7 @@ EditProject As screen:
             Width: =748
             X: =618
             Y: =424
-            ZIndex: =155
+            ZIndex: =147
 
         EP_Delete_PopUp_Cancel_Button As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -3248,7 +3248,7 @@ EditProject As screen:
             Width: =338
             X: =599
             Y: =503
-            ZIndex: =156
+            ZIndex: =148
 
         EP_Delete_PopUp_Continue_Button As button:
             Fill: =RGBA(58, 87, 255, 1)
@@ -3271,7 +3271,7 @@ EditProject As screen:
             Width: =338
             X: =1032
             Y: =503
-            ZIndex: =157
+            ZIndex: =149
 
     EP_Payments_New_Payment As group:
         Height: =5
@@ -3596,7 +3596,7 @@ EditProject As screen:
             Width: =250
             X: =1046
             Y: =841
-            ZIndex: =147
+            ZIndex: =139
 
         Label3_64 As label:
             FontWeight: =FontWeight.Semibold
@@ -3609,7 +3609,7 @@ EditProject As screen:
             Width: =219
             X: =1046
             Y: =802
-            ZIndex: =148
+            ZIndex: =140
 
         NP_PaymentsSection_RelatedFeature As dropdown:
             BorderThickness: =1
@@ -3623,7 +3623,7 @@ EditProject As screen:
             Width: =250
             X: =1046
             Y: =957
-            ZIndex: =149
+            ZIndex: =141
 
         Label3_65 As label:
             FontWeight: =FontWeight.Semibold
@@ -3636,7 +3636,7 @@ EditProject As screen:
             Width: =219
             X: =1046
             Y: =918
-            ZIndex: =150
+            ZIndex: =142
 
     EP_ViewResourcesToggle As group:
         Height: =5
@@ -3658,7 +3658,7 @@ EditProject As screen:
             Width: =38
             X: =1415
             Y: =609
-            ZIndex: =131
+            ZIndex: =123
 
         EP_ViewResourcesToggle_AddButton As icon.AddDocument:
             Height: =30
@@ -3673,7 +3673,7 @@ EditProject As screen:
             Width: =38
             X: =1618
             Y: =609
-            ZIndex: =132
+            ZIndex: =124
 
         EP_ViewResourcesToggle_AddLabel As label:
             Height: =28
@@ -3685,7 +3685,7 @@ EditProject As screen:
             Width: =207.39
             X: =1650
             Y: =609
-            ZIndex: =133
+            ZIndex: =125
 
         EP_ViewResourcesToggle_ListLabel As label:
             Height: =28
@@ -3697,5 +3697,5 @@ EditProject As screen:
             Width: =151.74
             X: =1452
             Y: =609
-            ZIndex: =134
+            ZIndex: =126
 
