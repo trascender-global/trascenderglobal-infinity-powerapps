@@ -1156,8 +1156,9 @@ EditProject As screen:
         Button3_4 As button:
             Fill: =RGBA(0, 182, 125, 1)
             Height: =49
-            OnSelect: |
+            OnSelect: |-
                 =Set(varShowPopupSaveDetails,false);
+                // Terminar esta parte para terminar esta app de mierda
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
