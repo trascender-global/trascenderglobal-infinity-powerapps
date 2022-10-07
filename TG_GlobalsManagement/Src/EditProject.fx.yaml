@@ -2526,7 +2526,7 @@ EditProject As screen:
             PaddingTop: =6.33
             Size: =22.76
             Text: |
-                ="Project Value:      "&Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+                ="Project Value:      "&Text(varProjectDetails2.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails2.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =600
             X: =915
@@ -2558,25 +2558,8 @@ EditProject As screen:
                 =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
                 //GM_GlobalGeneralInformation.project_name
             OnSelect: |-
-                =Set(varProjectDetails,First(Filter(GM_GlobalGeneralInformation,project_name =  EP_SelectProject_ComboBox.Selected.project_name)));
-                /*Set(varProjectDetails,
-                    {
-                        id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
-                        global_internal_id: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name, id),
-                        line_of_business: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,line_of_business),
-                        segment: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,segment),
-                        start_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,start_date),
-                        project_name: EP_SelectProject_ComboBox.Selected.project_name,
-                        project_link: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,project_link),
-                        currency_code: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,currency_code),
-                        total_price_currency: Value(LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,total_price_currency)),
-                        status: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,status),
-                        observations: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,observations),
-                        created_date: LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name,created_date)
-                    });
-                */
-                //Set(varProjectDetails, LookUp(GM_GlobalGeneralInformation,project_name = EP_SelectProject_ComboBox.Selected.project_name);
-                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = varProjectDetails.id));
+                =Set(varProjectDetails2,First(Filter(GM_GlobalGeneralInformation,project_name =  EP_SelectProject_ComboBox.Selected.project_name)));
+                ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = (varProjectDetails2.id)));
                 ClearCollect(CollectionSQL_Features, GM_Features);
                 Set(varShowEditProjectDetailsPopUp,false);
                 Set(varShowEL,true);
@@ -2712,7 +2695,7 @@ EditProject As screen:
             PaddingTop: =6.33
             Size: =22.76
             Text: |
-                ="Total Payments Value: "&Text(Sum(CollectionSQL_Epics, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails.currency_code
+                ="Total Payments Value: "&Text(Sum(CollectionSQL_Epics, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails2.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =717
             X: =1109
@@ -2765,7 +2748,7 @@ EditProject As screen:
 
         EP_EditGeneral_Name As text:
             BorderThickness: =1
-            Default: =varProjectDetails.project_name
+            Default: =varProjectDetails2.project_name
             Height: =30
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -2790,7 +2773,7 @@ EditProject As screen:
 
         EP_EditGeneral_Segment As text:
             BorderThickness: =1
-            Default: =varProjectDetails.segment
+            Default: =varProjectDetails2.segment
             Height: =30
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -2872,7 +2855,7 @@ EditProject As screen:
         EP_EditGeneral_TotalPrice As text:
             BorderThickness: =1
             Default: |-
-                =Text(varProjectDetails.total_price_currency, "[$-en-US]$ ###,##0 ")
+                =Text(varProjectDetails2.total_price_currency, "[$-en-US]$ ###,##0 ")
             Height: =31
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -2911,7 +2894,7 @@ EditProject As screen:
 
         EP_EditGeneral_Observations As text:
             BorderThickness: =1
-            Default: =varProjectDetails.observations
+            Default: =varProjectDetails2.observations
             Height: =115
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -2938,7 +2921,7 @@ EditProject As screen:
         EP_EditGeneral_Status As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Default: =varProjectDetails.status
+            Default: =varProjectDetails2.status
             Height: =30
             Items: =["Normal", "Delayed", "Disputed", "Finished"]
             PaddingRight: =12.65
@@ -2952,7 +2935,7 @@ EditProject As screen:
 
         EP_EditGeneral_CurrencyCode As text:
             BorderThickness: =1
-            Default: =varProjectDetails.currency_code
+            Default: =varProjectDetails2.currency_code
             Height: =28
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -2966,7 +2949,7 @@ EditProject As screen:
 
         EP_EditGeneral_ProjectLink As text:
             BorderThickness: =1
-            Default: =varProjectDetails.project_link
+            Default: =varProjectDetails2.project_link
             Height: =31
             PaddingRight: =6.33
             PaddingTop: =6.33
@@ -2993,7 +2976,7 @@ EditProject As screen:
         EP_EditGeneral_LineOfBusiness As dropdown:
             BorderThickness: =1
             ChevronBackground: =RGBA(58, 87, 255, 1)
-            Default: =varProjectDetails.line_of_business
+            Default: =varProjectDetails2.line_of_business
             Height: =30
             Items: =["Fit", "Fat"]
             PaddingRight: =12.65
@@ -3025,7 +3008,7 @@ EditProject As screen:
             OnSelect: |
                 =Set(varShowEditProjectDetailsPopUp, false);
                 Set(varShowEL,true);
-                Set(varProjectDetails,
+                /*Set(varProjectDetails2,
                     {
                         id: varProjectDetails.id,
                         global_internal_id: varProjectDetails.global_internal_id,
@@ -3039,7 +3022,7 @@ EditProject As screen:
                         status: EP_EditGeneral_Status.Selected.Value,
                         observations: EP_EditGeneral_Observations.Text,
                         created_date: varProjectDetails.created_date
-                    });
+                    }); */
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =varShowEditProjectDetailsPopUp
@@ -3051,7 +3034,7 @@ EditProject As screen:
         EP_EditGeneral_CreatedDate As datepicker:
             BorderColor: =RGBA(0, 13, 75, 1)
             BorderThickness: =1
-            DefaultDate: =varProjectDetails.created_date
+            DefaultDate: =varProjectDetails2.created_date
             DisabledColor: =RGBA(0, 0, 0, 1)
             Height: =30
             IconBackground: =RGBA(58, 87, 255, 1)
