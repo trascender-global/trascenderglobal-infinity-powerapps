@@ -2287,7 +2287,7 @@ EditProject As screen:
                 ="Project Value:      "&Text(varProjectDetails2.total_price_currency, "[$-en-US]$ ###,##0 ")&" "&varProjectDetails2.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =600
-            X: =915
+            X: =898
             Y: =67
             ZIndex: =31
 
@@ -2448,16 +2448,16 @@ EditProject As screen:
 
         EP_EpicSectionProjectValueLabel_1 As label:
             FontWeight: =FontWeight.Bold
-            Height: =0
+            Height: =34
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =22.76
             Text: |
                 ="Total Payments Value: "&Text(Sum(CollectionSQL_Epics, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails2.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =717
-            X: =1109
-            Y: =110
+            Width: =568
+            X: =899
+            Y: =108
             ZIndex: =136
 
         EP_EpicSectionSegment_Label_1 As label:
@@ -3626,7 +3626,9 @@ EditProject As screen:
                 Reset(NP_EpicsSection_Pokemon);
                 Reset(NP_EpicsSection_Masterchief);
                 
-                
+                Set(varShowEditProjectDetailsPopUp,false);
+                Set(varShowEL,true);
+                Set(varShowNE,false);
                 
             PaddingRight: =6.33
             PaddingTop: =6.33
