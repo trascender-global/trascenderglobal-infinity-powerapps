@@ -1171,36 +1171,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_EpicsSection_Currency.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.NP_EpicsSection_Currency.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditProject",
-                "type": "EditProject.NP_EpicsSection_Currency"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditProject.NP_EpicsSection_EpicName.AccessibleLabel"
                 }
               ],
@@ -1231,6 +1201,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "EditProject.NP_EpicsSection_Currency.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.NP_EpicsSection_Currency.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.NP_EpicsSection_Currency"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "EditProject.NP_EpicsSection_Value.AccessibleLabel"
                 }
               ],
@@ -1244,6 +1244,36 @@
                 "member": "AccessibleLabel",
                 "module": "EditProject",
                 "type": "EditProject.NP_EpicsSection_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditProject.NP_EpicsSection_ExpectedDate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditProject.NP_EpicsSection_ExpectedDate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditProject",
+                "type": "EditProject.NP_EpicsSection_ExpectedDate"
               }
             }
           ],
@@ -1411,19 +1441,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.NP_EpicsSection_ExpectedDate.AccessibleLabel"
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Observations.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditProject.NP_EpicsSection_ExpectedDate.AccessibleLabel",
+                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Observations.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditProject",
-                "type": "EditProject.NP_EpicsSection_ExpectedDate"
+                "type": "EditProject.EP_EditGeneral_Observations"
               }
             }
           ],
@@ -1514,36 +1544,6 @@
                 "member": "AccessibleLabel",
                 "module": "EditProject",
                 "type": "EditProject.NP_EpicsSection_Neo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Observations.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_EditGeneral_Observations.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditProject",
-                "type": "EditProject.EP_EditGeneral_Observations"
               }
             }
           ],

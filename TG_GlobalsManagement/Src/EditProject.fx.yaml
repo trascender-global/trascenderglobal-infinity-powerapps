@@ -1164,12 +1164,10 @@ EditProject As screen:
                 //Patch(GM_GlobalGeneralInformation,varProjectDetails2);
                 ClearCollect(CollectionSQL_PaymentsTable,CollectionSQL_Payments);
                 DropColumns(CollectionSQL_PaymentsTable,"editable");
-                LookUp(CollectionSQL_PaymentsTable,editable="Hola",editable);
                 
+                DropColumns(CollectionSQL_Features,"editable");
                 ClearCollect(CollectionSQL_FeaturesTable,CollectionSQL_Features);
-                DropColumns(CollectionSQL_FeaturesTable,"editable");
-                
-                //Patch(GM_Features,CollectionSQL_FeaturesTable.);
+                //Patch(GM_Features,CollectionSQL_FeaturesTable);
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
