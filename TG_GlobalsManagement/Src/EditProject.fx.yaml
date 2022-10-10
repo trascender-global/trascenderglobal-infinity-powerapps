@@ -2464,7 +2464,7 @@ EditProject As screen:
             Text: |
                 ="Total Payments Value: "&Text(Sum(CollectionSQL_Epics, value_currency), "[$-en-US]$ ###,##0 ")&" "&varProjectDetails2.currency_code
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =568
+            Width: =621
             X: =899
             Y: =108
             ZIndex: =136
