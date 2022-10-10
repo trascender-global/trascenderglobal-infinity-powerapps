@@ -853,7 +853,8 @@ EditProject As screen:
 
             EP_FeaturesGallery_FeatureName As text:
                 BorderThickness: =1
-                Default: =ThisItem.feature_name
+                Default: |
+                    =ThisItem.feature_name
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -2254,9 +2255,15 @@ EditProject As screen:
                 Set(varShowPayments,false);
                 
                 Patch(GM_Epics,CollectionSQL_Epics);
-                Patch(GM_GlobalGeneralInformation,varProjectDetails2);
+                //Patch(GM_GlobalGeneralInformation,varProjectDetails2);
                 ClearCollect(CollectionSQL_PaymentsTable,CollectionSQL_Payments);
                 DropColumns(CollectionSQL_PaymentsTable,"editable");
+                LookUp(CollectionSQL_PaymentsTable,editable="Hola",editable);
+                
+                ClearCollect(CollectionSQL_FeaturesTable,CollectionSQL_Features);
+                DropColumns(CollectionSQL_FeaturesTable,"editable");
+                
+                //Patch(GM_Features,CollectionSQL_FeaturesTable.);
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =Not(varShowEditProjectDetailsPopUp)
