@@ -4861,36 +4861,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditProject.EP_SelectProject_ComboBox.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditProject.EP_SelectProject_ComboBox.OnSelect",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditProject",
-                "type": "EditProject.EP_SelectProject_ComboBox"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-CollectDelegatableDataSource",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditProject"
                 }
               ],
@@ -4913,7 +4883,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 8
+          "ruleIndex": 7
         }
       ],
       "tool": {
@@ -5043,23 +5013,6 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
-              }
-            },
-            {
-              "id": "app-CollectDelegatableDataSource",
-              "messageStrings": {
-                "issue": {
-                  "text": "The rows retrieved from the data source may not be complete."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Limit the data collected from the data source by updating the formula \"ClearCollect(CollectionSQL_Features, GM_Features)\" to include a filtering function, such as 'Filter' or 'Search'."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Using the 'Collect' function to create a collection directly from a connected data source may not load every row if the data source is too large."
               }
             },
             {
