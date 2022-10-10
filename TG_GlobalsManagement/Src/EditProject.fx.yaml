@@ -1171,7 +1171,7 @@ EditProject As screen:
                 ClearCollect(CollectionSQL_Resources_EstimationTable,DropColumns(CollectionSQL_Resources_Estimation,"editable"));
                 Patch(GM_ResourceEstimation,CollectionSQL_Resources_EstimationTable);
                 
-                Notify("Item has been removed", NotificationType.Success);
+                Notify("All the information was succesfully saved", NotificationType.Success);
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
