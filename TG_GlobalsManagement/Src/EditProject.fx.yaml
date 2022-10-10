@@ -1162,12 +1162,12 @@ EditProject As screen:
                 // Terminar esta parte para terminar esta app de mierda
                 Patch(GM_Epics,CollectionSQL_Epics);
                 //Patch(GM_GlobalGeneralInformation,varProjectDetails2);
-                ClearCollect(CollectionSQL_PaymentsTable,CollectionSQL_Payments);
-                DropColumns(CollectionSQL_PaymentsTable,"editable");
+                ClearCollect(CollectionSQL_PaymentsTable,DropColumns(CollectionSQL_Payments,"editable"));
+                Patch(GM_Payments,CollectionSQL_PaymentsTable);
                 
                 DropColumns(CollectionSQL_Features,"editable");
-                ClearCollect(CollectionSQL_FeaturesTable,CollectionSQL_Features);
-                //Patch(GM_Features,CollectionSQL_FeaturesTable);
+                ClearCollect(CollectionSQL_FeaturesTable,DropColumns(CollectionSQL_Features,"editable"));
+                Patch(GM_Features,CollectionSQL_FeaturesTable);
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
