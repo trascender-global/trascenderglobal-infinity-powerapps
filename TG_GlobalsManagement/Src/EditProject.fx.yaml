@@ -1463,15 +1463,15 @@ EditProject As screen:
 
         NP_EpicSectionTitleLabel As label:
             FontWeight: =FontWeight.Bold
-            Height: =30
+            Height: =26
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =16.45
-            Text: ="Project Epics"
+            Text: ="New Epic information"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =171
+            Width: =329
+            X: =110
+            Y: =176
             ZIndex: =13
 
         NP_EpicsSection_EpicName As text:
@@ -1483,9 +1483,9 @@ EditProject As screen:
             PaddingTop: =6.33
             Size: =15.18
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =240
+            Width: =435
+            X: =131
+            Y: =250
             ZIndex: =14
 
         NP_EpicsSection_Value As text:
@@ -1497,9 +1497,9 @@ EditProject As screen:
             PaddingTop: =6.33
             Size: =15.18
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =241
+            Width: =219
+            X: =946
+            Y: =250
             ZIndex: =15
 
         NP_EpicsSection_ExpectedDate As datepicker:
@@ -1510,9 +1510,9 @@ EditProject As screen:
             PaddingTop: =5.06
             Size: =15.18
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =326
+            Width: =251
+            X: =1322
+            Y: =250
             ZIndex: =16
 
         NP_EpicsSection_Currency As dropdown:
@@ -1525,9 +1525,9 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =238
+            Width: =152
+            X: =678
+            Y: =250
             ZIndex: =17
 
         NP_EpicsSection_Pokemon As dropdown:
@@ -1540,9 +1540,9 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =326
+            Width: =350
+            X: =131
+            Y: =369
             ZIndex: =18
 
         NP_EpicsSection_Masterchief As dropdown:
@@ -1554,9 +1554,9 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =326
+            Width: =350
+            X: =678
+            Y: =369
             ZIndex: =19
 
         NP_EpicsSection_Neo As dropdown:
@@ -1568,13 +1568,13 @@ EditProject As screen:
             PaddingTop: =12.65
             Size: =15.18
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =327
+            Width: =350
+            X: =1322
+            Y: =369
             ZIndex: =20
 
         NP_AddEpicButton As icon.Add:
-            Height: =49
+            Height: =53
             Icon: =Icon.Add
             OnSelect: |-
                 =Collect(EpicsCollection,
@@ -1600,100 +1600,100 @@ EditProject As screen:
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =171
+            Width: =190
+            X: =1700
+            Y: =177
             ZIndex: =21
 
         Label3_34 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =30
+            Height: =25
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Text: ="Epic Name"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =210
+            Width: =177
+            X: =131
+            Y: =219
             ZIndex: =22
 
         Label3_35 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =30
+            Height: =25
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Text: ="Value"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =211
+            Width: =122
+            X: =940
+            Y: =219
             ZIndex: =23
 
         Label3_36 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =30
+            Height: =25
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Text: ="Currency"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =205
+            Width: =164
+            X: =678
+            Y: =219
             ZIndex: =24
 
         Label3_37 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =30
+            Height: =25
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Text: ="Expected Date"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =295
+            Width: =190
+            X: =1322
+            Y: =219
             ZIndex: =25
 
         Label3_38 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =30
+            Height: =20
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Text: ="Pokemon"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =297
+            Width: =147
+            X: =131
+            Y: =335
             ZIndex: =26
 
         Label3_39 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =30
+            Height: =20
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Text: ="Neo"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =294
+            Width: =119
+            X: =1322
+            Y: =335
             ZIndex: =27
 
         Label3_40 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =30
+            Height: =20
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Text: ="Masterchief"
             Visible: =varShowNE
-            Width: =1727.44
-            X: =0.00
-            Y: =291
+            Width: =192
+            X: =678
+            Y: =335
             ZIndex: =28
 
     EP_Titles As group:
@@ -3197,21 +3197,20 @@ EditProject As screen:
             Visible: =varShowDelete_PopUp
             Width: =883.96
             X: =535
-            Y: =418
+            Y: =364
             ZIndex: =145
 
         EP_Delete_PopUp_Rectangle_White As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =114
+            Height: =170
             Visible: =varShowDelete_PopUp
             Width: =883.96
             X: =535
-            Y: =474
+            Y: =418
             ZIndex: =146
 
-        EP_Delete_PopUp_Tittle_Label As label:
-            Color: =RGBA(255, 255, 255, 1)
+        EP_Delete_PopUp_Message_Label As label:
             FontWeight: =FontWeight.Bold
             Height: =36
             Size: =25
@@ -3219,7 +3218,7 @@ EditProject As screen:
             Visible: =varShowDelete_PopUp
             Width: =748
             X: =618
-            Y: =424
+            Y: =437
             ZIndex: =147
 
         EP_Delete_PopUp_Cancel_Button As button:
@@ -3256,6 +3255,19 @@ EditProject As screen:
             X: =1032
             Y: =503
             ZIndex: =149
+
+        EP_Delete_PopUp_Tittle_Labe As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Size: =25
+            Text: ="Warning"
+            Visible: =varShowDelete_PopUp
+            Width: =478
+            X: =731
+            Y: =368
+            ZIndex: =157
 
     EP_Payments_New_Payment As group:
         Height: =5

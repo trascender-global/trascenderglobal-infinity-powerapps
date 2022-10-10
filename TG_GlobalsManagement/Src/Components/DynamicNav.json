@@ -26,7 +26,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Galery_Menu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 325,
+            "PublishOrderIndex": 326,
             "Rules": [
               {
                 "Category": "Design",
@@ -142,7 +142,7 @@
             "Name": "MenuItemIcon",
             "Parent": "Galery_Menu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 326,
+            "PublishOrderIndex": 327,
             "Rules": [
               {
                 "Category": "Data",
@@ -415,7 +415,7 @@
         "Name": "Galery_Menu",
         "Parent": "DynamicNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 324,
+        "PublishOrderIndex": 325,
         "Rules": [
           {
             "Category": "Data",
@@ -609,7 +609,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638007557554156159",
+    "LastModifiedTimestamp": "638010336985563240",
     "Name": "DynamicNav",
     "Rules": [
       {
@@ -684,7 +684,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638007557554156159",
+  "LastModifiedTimestamp": "638010336985563240",
   "Name": "51a4282aa30f4cc68c1ee62e75ae9939",
   "OverridableProperties": {},
   "Version": "637893486623742981"

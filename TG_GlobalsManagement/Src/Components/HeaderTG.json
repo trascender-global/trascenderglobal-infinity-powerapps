@@ -117,7 +117,7 @@
         "Name": "AppTitle",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 327,
+        "PublishOrderIndex": 328,
         "Rules": [
           {
             "Category": "Data",
@@ -438,7 +438,7 @@
         "Name": "TGLogo",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 328,
+        "PublishOrderIndex": 329,
         "Rules": [
           {
             "Category": "Data",
@@ -692,7 +692,7 @@
         "Name": "Rectangle6",
         "Parent": "HeaderTG",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 329,
+        "PublishOrderIndex": 330,
         "Rules": [
           {
             "Category": "Design",
@@ -824,7 +824,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638007557554294574",
+    "LastModifiedTimestamp": "638010336985694757",
     "Name": "HeaderTG",
     "Rules": [
       {
@@ -883,7 +883,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638007557554294574",
+  "LastModifiedTimestamp": "638010336985694757",
   "Name": "3bd3cda16e6f498db1fa26e9f6ca986b",
   "OverridableProperties": {},
   "Version": "637805439354025725"
