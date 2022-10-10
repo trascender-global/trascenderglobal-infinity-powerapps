@@ -1157,17 +1157,21 @@ EditProject As screen:
         Button3_4 As button:
             Fill: =RGBA(0, 182, 125, 1)
             Height: =49
-            OnSelect: |
+            OnSelect: |-
                 =Set(varShowPopupSaveDetails,false);
-                // Terminar esta parte para terminar esta app de mierda
+                
                 Patch(GM_Epics,CollectionSQL_Epics);
                 //Patch(GM_GlobalGeneralInformation,varProjectDetails2);
                 ClearCollect(CollectionSQL_PaymentsTable,DropColumns(CollectionSQL_Payments,"editable"));
                 Patch(GM_Payments,CollectionSQL_PaymentsTable);
                 
-                DropColumns(CollectionSQL_Features,"editable");
                 ClearCollect(CollectionSQL_FeaturesTable,DropColumns(CollectionSQL_Features,"editable"));
                 Patch(GM_Features,CollectionSQL_FeaturesTable);
+                
+                ClearCollect(CollectionSQL_Resources_EstimationTable,DropColumns(CollectionSQL_Resources_Estimation,"editable"));
+                Patch(GM_ResourceEstimation,CollectionSQL_Resources_EstimationTable);
+                
+                Notify("Item has been removed", NotificationType.Success);
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
