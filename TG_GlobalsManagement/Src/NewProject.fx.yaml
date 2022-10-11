@@ -4,14 +4,14 @@
         Height: =50
         Width: =1920
         X: =0.00
-        ZIndex: =71
+        ZIndex: =23
 
     DynamicNav_NewProjectView As DynamicNav:
         Height: =1030
         Width: =64
         X: =0.00
         Y: =50
-        ZIndex: =72
+        ZIndex: =24
 
     NP_PopUpNewProjectGroup As group:
         Height: =5
@@ -26,7 +26,7 @@
             Visible: =varShowPopup
             Width: =1727.44
             X: =0.00
-            ZIndex: =107
+            ZIndex: =35
 
         Rectangle4 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
@@ -35,7 +35,7 @@
             Width: =883.96
             X: =448.94
             Y: =218
-            ZIndex: =108
+            ZIndex: =36
 
         Rectangle5 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -45,7 +45,7 @@
             Width: =883.96
             X: =448.94
             Y: =274
-            ZIndex: =109
+            ZIndex: =37
 
         Label5 As label:
             Align: =Align.Center
@@ -59,7 +59,7 @@
             Width: =308.56
             X: =727.14
             Y: =226
-            ZIndex: =110
+            ZIndex: =38
 
         Label5_1 As label:
             Align: =Align.Center
@@ -73,7 +73,7 @@
             Width: =584.24
             X: =605.74
             Y: =294
-            ZIndex: =111
+            ZIndex: =39
 
         Button3 As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -87,7 +87,7 @@
             Width: =271.89
             X: =581.72
             Y: =406
-            ZIndex: =112
+            ZIndex: =40
 
         NP_PopUpNewProject_AcceptButton As button:
             Fill: =RGBA(0, 182, 125, 1)
@@ -201,7 +201,7 @@
             Width: =271.89
             X: =948.45
             Y: =406
-            ZIndex: =113
+            ZIndex: =41
 
     NP_TitlesGroup As group:
         Height: =5
@@ -221,7 +221,7 @@
             Text: ="Create a New Project "
             Width: =351.56
             X: =494
-            ZIndex: =73
+            ZIndex: =25
 
         Rectangle1 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -232,7 +232,7 @@
             Width: =221.31
             X: =0.00
             Y: =138
-            ZIndex: =74
+            ZIndex: =26
 
     NP_GlobalsGeneralInfoGroup As group:
         Height: =5
@@ -240,6 +240,16 @@
         X: =40
         Y: =40
         ZIndex: =165
+
+        NP_GeneralInfo_Rectangle As rectangle:
+            BorderThickness: =1
+            Fill: =RGBA(56, 96, 178, 0)
+            Height: =569
+            Tooltip: =
+            Width: =1785
+            X: =92
+            Y: =466
+            ZIndex: =1
 
         NP_GeneralInfo_CreatedDateInput As datepicker:
             BorderColor: =RGBA(0, 13, 75, 1)
@@ -252,19 +262,9 @@
             StartOfWeek: =StartOfWeek.Monday
             Tooltip: =
             Width: =332.58
-            X: =307.30
-            Y: =453
-            ZIndex: =4
-
-        NP_GeneralInfo_Rectangle As rectangle:
-            BorderThickness: =1
-            Fill: =RGBA(56, 96, 178, 0)
-            Height: =348
-            Tooltip: =
-            Width: =1785
-            X: =92
-            Y: =350
-            ZIndex: =50
+            X: =145
+            Y: =614
+            ZIndex: =2
 
         Label3_12 As label:
             FontWeight: =FontWeight.Bold
@@ -275,9 +275,9 @@
             Text: ="Line of Business"
             Tooltip: =
             Width: =221.31
-            X: =744.85
-            Y: =363
-            ZIndex: =51
+            X: =789
+            Y: =479
+            ZIndex: =3
 
         NP_GeneralInfo_NameInput As text:
             BorderThickness: =1
@@ -288,9 +288,9 @@
             Size: =15.18
             Tooltip: =
             Width: =416.05
-            X: =307.30
-            Y: =396
-            ZIndex: =52
+            X: =140
+            Y: =512
+            ZIndex: =4
 
         Label3_13 As label:
             FontWeight: =FontWeight.Bold
@@ -301,9 +301,9 @@
             Text: ="Name"
             Tooltip: =
             Width: =190.96
-            X: =307.30
-            Y: =363
-            ZIndex: =53
+            X: =140
+            Y: =479
+            ZIndex: =5
 
         NP_GeneralInfo_SegmentInput As text:
             BorderThickness: =1
@@ -314,9 +314,9 @@
             Size: =15.18
             Tooltip: =
             Width: =332.58
-            X: =1165.96
-            Y: =396
-            ZIndex: =54
+            X: =1426
+            Y: =512
+            ZIndex: =6
 
         Label3_14 As label:
             FontWeight: =FontWeight.Bold
@@ -327,9 +327,9 @@
             Text: ="Segment"
             Tooltip: =
             Width: =183.37
-            X: =1165.96
-            Y: =363
-            ZIndex: =55
+            X: =1426
+            Y: =479
+            ZIndex: =7
 
         Label3_15 As label:
             FontWeight: =FontWeight.Bold
@@ -340,9 +340,9 @@
             Text: ="Create Date"
             Tooltip: =
             Width: =190.96
-            X: =307.30
-            Y: =425
-            ZIndex: =56
+            X: =140
+            Y: =577
+            ZIndex: =8
 
         NP_GeneralInfo_ÏnitialDateInput As datepicker:
             BorderColor: =RGBA(0, 13, 75, 1)
@@ -355,9 +355,9 @@
             StartOfWeek: =StartOfWeek.Monday
             Tooltip: =
             Width: =332.58
-            X: =744.85
-            Y: =453
-            ZIndex: =57
+            X: =789
+            Y: =614
+            ZIndex: =9
 
         Label3_16 As label:
             FontWeight: =FontWeight.Bold
@@ -368,9 +368,9 @@
             Text: ="Initial Date"
             Tooltip: =
             Width: =183.37
-            X: =744.85
-            Y: =425
-            ZIndex: =58
+            X: =789
+            Y: =577
+            ZIndex: =10
 
         Label3_17 As label:
             FontWeight: =FontWeight.Bold
@@ -381,9 +381,9 @@
             Text: ="Currency Code"
             Tooltip: =
             Width: =183.37
-            X: =1165.96
-            Y: =425
-            ZIndex: =59
+            X: =1426
+            Y: =577
+            ZIndex: =11
 
         NP_GeneralInfo_PriceInput As text:
             BorderThickness: =1
@@ -394,9 +394,9 @@
             Size: =15.18
             Tooltip: =
             Width: =346.50
-            X: =307.30
-            Y: =509
-            ZIndex: =60
+            X: =140
+            Y: =724
+            ZIndex: =12
 
         Label3_18 As label:
             FontWeight: =FontWeight.Bold
@@ -407,9 +407,9 @@
             Text: ="Total Price Currency"
             Tooltip: =
             Width: =249.12
-            X: =307.30
-            Y: =485
-            ZIndex: =61
+            X: =140
+            Y: =691
+            ZIndex: =13
 
         Label3_19 As label:
             FontWeight: =FontWeight.Bold
@@ -420,22 +420,22 @@
             Text: ="Status"
             Tooltip: =
             Width: =183.37
-            X: =1165.96
-            Y: =486
-            ZIndex: =62
+            X: =1426
+            Y: =691
+            ZIndex: =14
 
         NP_GeneralInfo_ObservationsInput As text:
             BorderThickness: =1
             Default: =""
-            Height: =53
+            Height: =123
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =15.18
             Tooltip: =
-            Width: =1195.04
-            X: =307.30
-            Y: =559
-            ZIndex: =63
+            Width: =1662
+            X: =140
+            Y: =873
+            ZIndex: =15
 
         Label3_20 As label:
             FontWeight: =FontWeight.Bold
@@ -446,9 +446,9 @@
             Text: ="Observations    "
             Tooltip: =
             Width: =249.12
-            X: =307.30
-            Y: =532
-            ZIndex: =64
+            X: =140
+            Y: =828
+            ZIndex: =16
 
         NP_GeneralInfo_SaveButton As icon.Save:
             Color: =RGBA(58, 87, 255, 1)
@@ -463,9 +463,9 @@
             PaddingTop: =0.00
             Tooltip: =
             Width: =72.08
-            X: =1523.84
-            Y: =386
-            ZIndex: =65
+            X: =1788
+            Y: =484
+            ZIndex: =17
 
         NP_GeneralInfo_StatusDropdown As dropdown:
             BorderThickness: =1
@@ -478,9 +478,9 @@
             Size: =15.18
             Tooltip: =
             Width: =332.58
-            X: =1165.96
-            Y: =510
-            ZIndex: =66
+            X: =1426
+            Y: =724
+            ZIndex: =18
 
         NP_GeneralInfo_CurrencyInput As text:
             BorderThickness: =1
@@ -491,9 +491,9 @@
             Size: =15.18
             Tooltip: =
             Width: =332.58
-            X: =1165.96
-            Y: =453
-            ZIndex: =67
+            X: =1426
+            Y: =614
+            ZIndex: =19
 
         NP_GeneralInfo_ProjectLinkInput As text:
             BorderThickness: =1
@@ -504,9 +504,9 @@
             Size: =15.18
             Tooltip: =
             Width: =332.58
-            X: =744.85
-            Y: =510
-            ZIndex: =68
+            X: =789
+            Y: =724
+            ZIndex: =20
 
         Label3_24 As label:
             FontWeight: =FontWeight.Bold
@@ -517,9 +517,9 @@
             Text: ="Project Link "
             Tooltip: =
             Width: =239.00
-            X: =744.85
-            Y: =486
-            ZIndex: =69
+            X: =789
+            Y: =691
+            ZIndex: =21
 
         NP_GeneralInfo_LOBDropdown As dropdown:
             BorderThickness: =1
@@ -532,9 +532,9 @@
             Size: =15.18
             Tooltip: =
             Width: =332.58
-            X: =746.12
-            Y: =396
-            ZIndex: =70
+            X: =789
+            Y: =512
+            ZIndex: =22
 
     NP_DealsTableGroup As group:
         Height: =5
@@ -553,7 +553,7 @@
             Width: =385
             X: =140
             Y: =85
-            ZIndex: =99
+            ZIndex: =27
 
         DealName As label:
             Align: =Align.Center
@@ -567,7 +567,7 @@
             Width: =606
             X: =138
             Y: =123
-            ZIndex: =100
+            ZIndex: =28
 
         LOB As label:
             Align: =Align.Center
@@ -581,7 +581,7 @@
             Width: =161
             X: =744
             Y: =123
-            ZIndex: =101
+            ZIndex: =29
 
         "'Owner Name' As label":
             Align: =Align.Center
@@ -595,7 +595,7 @@
             Width: =280
             X: =1186
             Y: =123
-            ZIndex: =102
+            ZIndex: =30
 
         Segment As label:
             Align: =Align.Center
@@ -609,7 +609,7 @@
             Width: =279
             X: =906
             Y: =123
-            ZIndex: =103
+            ZIndex: =31
 
         CloseDate As label:
             Align: =Align.Center
@@ -623,7 +623,7 @@
             Width: =334
             X: =1468
             Y: =123
-            ZIndex: =104
+            ZIndex: =32
 
         Rectangle2_9 As rectangle:
             BorderThickness: =1
@@ -633,7 +633,7 @@
             Width: =1785
             X: =92
             Y: =85
-            ZIndex: =105
+            ZIndex: =33
 
         NP_ClosedWonDeals_Galery As gallery.galleryVertical:
             Height: =185
@@ -646,7 +646,7 @@
             Width: =1715
             X: =134
             Y: =147
-            ZIndex: =106
+            ZIndex: =34
 
             GalleryDeals_Name As label:
                 BorderThickness: =0.5
@@ -727,7 +727,7 @@
             Width: =31
             X: =1757
             Y: =123
-            ZIndex: =126
+            ZIndex: =49
 
     NP_PopUpAddDetailsGroup As group:
         Height: =5
@@ -742,7 +742,7 @@
             Visible: =varShowPopupDetails
             Width: =1727.44
             X: =0.00
-            ZIndex: =114
+            ZIndex: =42
 
         Rectangle4_2 As rectangle:
             Fill: =RGBA(58, 87, 255, 1)
@@ -751,7 +751,7 @@
             Width: =883.96
             X: =448.94
             Y: =218
-            ZIndex: =115
+            ZIndex: =43
 
         Rectangle5_1 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -761,7 +761,7 @@
             Width: =883.96
             X: =448.94
             Y: =274
-            ZIndex: =116
+            ZIndex: =44
 
         Label5_6 As label:
             Align: =Align.Center
@@ -775,7 +775,7 @@
             Width: =308.56
             X: =727.14
             Y: =226
-            ZIndex: =117
+            ZIndex: =45
 
         Label5_5 As label:
             Align: =Align.Center
@@ -789,7 +789,7 @@
             Width: =584.24
             X: =605.74
             Y: =325
-            ZIndex: =118
+            ZIndex: =46
 
         Button3_3 As button:
             Fill: =RGBA(41, 41, 41, 1)
@@ -803,7 +803,7 @@
             Width: =271.89
             X: =581.72
             Y: =406
-            ZIndex: =119
+            ZIndex: =47
 
         Button3_2 As button:
             Fill: =RGBA(0, 182, 125, 1)
@@ -824,7 +824,7 @@
             Width: =271.89
             X: =948.45
             Y: =406
-            ZIndex: =120
+            ZIndex: =48
 
         Label5_12 As label:
             Align: =Align.Center
@@ -838,5 +838,5 @@
             Width: =584.24
             X: =607.01
             Y: =276
-            ZIndex: =129
+            ZIndex: =50
 
