@@ -39,7 +39,7 @@ Home As screen:
 
     PieChart1 As pieChart:
         Height: =474
-        Items: =Distinct(GM_GlobalGeneralInformation,segment)
+        Items: =GM_GlobalGeneralInformation.segment
         Size: =12.65
         Width: =733.47
         X: =1032

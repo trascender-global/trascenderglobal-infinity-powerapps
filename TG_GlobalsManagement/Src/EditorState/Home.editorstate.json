@@ -441,7 +441,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"Result\",\"Series\":\"Result\"}",
+          "NameMap": "{\"Labels\":\"segment\",\"Series\":\"segment\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
