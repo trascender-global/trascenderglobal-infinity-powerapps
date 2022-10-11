@@ -263,7 +263,7 @@
             Tooltip: =
             Width: =332.58
             X: =145
-            Y: =614
+            Y: =659
             ZIndex: =2
 
         Label3_12 As label:
@@ -276,7 +276,7 @@
             Tooltip: =
             Width: =221.31
             X: =789
-            Y: =479
+            Y: =524
             ZIndex: =3
 
         NP_GeneralInfo_NameInput As text:
@@ -289,7 +289,7 @@
             Tooltip: =
             Width: =416.05
             X: =140
-            Y: =512
+            Y: =557
             ZIndex: =4
 
         Label3_13 As label:
@@ -302,7 +302,7 @@
             Tooltip: =
             Width: =190.96
             X: =140
-            Y: =479
+            Y: =524
             ZIndex: =5
 
         NP_GeneralInfo_SegmentInput As text:
@@ -315,7 +315,7 @@
             Tooltip: =
             Width: =332.58
             X: =1426
-            Y: =512
+            Y: =557
             ZIndex: =6
 
         Label3_14 As label:
@@ -328,7 +328,7 @@
             Tooltip: =
             Width: =183.37
             X: =1426
-            Y: =479
+            Y: =524
             ZIndex: =7
 
         Label3_15 As label:
@@ -341,7 +341,7 @@
             Tooltip: =
             Width: =190.96
             X: =140
-            Y: =577
+            Y: =622
             ZIndex: =8
 
         NP_GeneralInfo_ÏnitialDateInput As datepicker:
@@ -356,7 +356,7 @@
             Tooltip: =
             Width: =332.58
             X: =789
-            Y: =614
+            Y: =659
             ZIndex: =9
 
         Label3_16 As label:
@@ -369,7 +369,7 @@
             Tooltip: =
             Width: =183.37
             X: =789
-            Y: =577
+            Y: =622
             ZIndex: =10
 
         Label3_17 As label:
@@ -382,7 +382,7 @@
             Tooltip: =
             Width: =183.37
             X: =1426
-            Y: =577
+            Y: =622
             ZIndex: =11
 
         NP_GeneralInfo_PriceInput As text:
@@ -395,7 +395,7 @@
             Tooltip: =
             Width: =346.50
             X: =140
-            Y: =724
+            Y: =769
             ZIndex: =12
 
         Label3_18 As label:
@@ -408,7 +408,7 @@
             Tooltip: =
             Width: =249.12
             X: =140
-            Y: =691
+            Y: =736
             ZIndex: =13
 
         Label3_19 As label:
@@ -421,7 +421,7 @@
             Tooltip: =
             Width: =183.37
             X: =1426
-            Y: =691
+            Y: =736
             ZIndex: =14
 
         NP_GeneralInfo_ObservationsInput As text:
@@ -479,7 +479,7 @@
             Tooltip: =
             Width: =332.58
             X: =1426
-            Y: =724
+            Y: =769
             ZIndex: =18
 
         NP_GeneralInfo_CurrencyInput As text:
@@ -492,7 +492,7 @@
             Tooltip: =
             Width: =332.58
             X: =1426
-            Y: =614
+            Y: =659
             ZIndex: =19
 
         NP_GeneralInfo_ProjectLinkInput As text:
@@ -505,7 +505,7 @@
             Tooltip: =
             Width: =332.58
             X: =789
-            Y: =724
+            Y: =769
             ZIndex: =20
 
         Label3_24 As label:
@@ -518,7 +518,7 @@
             Tooltip: =
             Width: =239.00
             X: =789
-            Y: =691
+            Y: =736
             ZIndex: =21
 
         NP_GeneralInfo_LOBDropdown As dropdown:
@@ -533,7 +533,7 @@
             Tooltip: =
             Width: =332.58
             X: =789
-            Y: =512
+            Y: =557
             ZIndex: =22
 
     NP_DealsTableGroup As group:
