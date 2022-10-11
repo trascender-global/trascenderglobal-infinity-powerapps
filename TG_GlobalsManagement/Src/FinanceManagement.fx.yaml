@@ -3,12 +3,14 @@ FinanceManagement As screen:
     Width: =Max(App.Width, 1366)
 
     HeaderTG_HomeView_1 As HeaderTG:
-        Width: =1727.44
+        Height: =50
+        Width: =1920
         X: =0.00
         ZIndex: =5
 
     DynamicNav_HomeView_1 As DynamicNav:
-        Width: =312.36
+        Height: =1030
+        Width: =67
         X: =0.00
         Y: =50
         ZIndex: =6
@@ -24,15 +26,11 @@ FinanceManagement As screen:
         Y: =309
         ZIndex: =7
 
-    Label3_FM As label:
-        FontWeight: =FontWeight.Bold
-        Height: =28
-        PaddingRight: =6.33
-        PaddingTop: =6.33
-        Size: =16.45
-        Text: ="Expected Date Range GM"
-        Width: =317.42
-        X: =312.36
-        Y: =72
-        ZIndex: =11
+    Image1 As image:
+        Height: =844
+        Image: ='Untitled design'
+        Width: =1456
+        X: =264
+        Y: =132
+        ZIndex: =8
 
