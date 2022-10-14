@@ -2326,8 +2326,7 @@ EditProject As screen:
             FocusedBorderThickness: =1
             Height: =30
             IsSearchable: =false
-            Items: |
-                =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name;
+            Items: =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
             OnSelect: |
                 =Set(varProjectDetails2,First(Filter(GM_GlobalGeneralInformation,project_name =  EP_SelectProject_ComboBox.Selected.project_name)));
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = (varProjectDetails2.id)));
