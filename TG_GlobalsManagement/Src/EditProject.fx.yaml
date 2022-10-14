@@ -2333,7 +2333,7 @@ EditProject As screen:
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = (varProjectDetails2.id)));
                 Clear(CollectionSQL_Features);
                 Clear(CollectionSQL_Resources_Estimation);
-                Clear(CollectionSQL_Payments;
+                Clear(CollectionSQL_Payments);
                 Clear(CollectionSQL_Features_WithBlank);
                 Set(varShowEditProjectDetailsPopUp,false);
                 Set(varShowEL,true);
