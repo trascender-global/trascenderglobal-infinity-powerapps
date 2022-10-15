@@ -35,8 +35,8 @@ EditProject As screen:
                 ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =1624
-            X: =103
-            Y: =511
+            X: =146
+            Y: =458
             ZIndex: =42
 
         EP_PFR_PaymentsButton As button:
@@ -385,7 +385,7 @@ EditProject As screen:
             NP_PaymentsGallery_PaymentName As text:
                 BorderThickness: =1
                 Default: |
-                    =ThisItem.payment_name
+                    =ThisItem.payment_name & ThisItem.epic_id
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =ThisItem.editable
                 FocusedBorderThickness: =1
@@ -1648,7 +1648,7 @@ EditProject As screen:
                 PressedColor: =RGBA(166, 166, 166, 1)
                 PressedFill: =Self.DisabledFill
                 Size: =11
-                Text: =ThisItem.epic_name
+                Text: =ThisItem.epic_name & ThisItem.project_id
                 Width: =389
                 X: =0.00
                 ZIndex: =1
@@ -2337,6 +2337,7 @@ EditProject As screen:
                 Set(varShowEditProjectDetailsPopUp,false);
                 Set(varShowEL,true);
                 Set(varShowNE,false);
+                ClearCollect(queryResults,'PowerAppV2->ExecuteaSQLquery(V2)'.Run("Select * FROM GM_Payments"));
             PaddingRight: =6.33
             PaddingTop: =6.33
             SearchFields: =["project_name"]
@@ -3041,6 +3042,12 @@ EditProject As screen:
             X: =731
             Y: =368
             ZIndex: =157
+
+    Label3 As label:
+        Text: =CountRows(queryResults)
+        X: =100
+        Y: =401
+        ZIndex: =159
 
     EP_Payments_New_Payment As group:
         Height: =5

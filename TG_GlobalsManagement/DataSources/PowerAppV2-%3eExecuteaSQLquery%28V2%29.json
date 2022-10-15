@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "c9f56ea9-87d4-401a-9dca-1d7581dec4eb",
+    "Name": "PowerAppV2->ExecuteaSQLquery(V2)",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": null
+  }
+]
