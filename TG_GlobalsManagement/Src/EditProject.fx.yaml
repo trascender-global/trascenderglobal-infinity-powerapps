@@ -2,7 +2,8 @@ EditProject As screen:
     Height: =Max(App.Height,700)
     ImagePosition: =ImagePosition.Fill
     OnVisible: |-
-        =ClearCollect(employeesWithBlank,{full_name:""}); Collect(employeesWithBlank,Sort(Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name),Result))
+        =ClearCollect(employeesWithBlank,{full_name:""}); Collect(employeesWithBlank,Sort(Distinct(Filter(TM_Tegecitos,active = "TRUE"),full_name),Result));
+        ClearCollect(Col_GM_Payments,'PowerAppV2->ExecuteaSQLquery(V2)'.Run("Select * FROM GM_Payments"));
     Width: =Max(App.Width, 1366)
 
     EP_PFRSection_Group As group:
