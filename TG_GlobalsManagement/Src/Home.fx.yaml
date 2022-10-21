@@ -26,19 +26,6 @@ Home As screen:
         Y: =75
         ZIndex: =7
 
-    ColumnChart1 As barChart:
-        GridStyle: =GridStyle.All
-        Height: =802
-        Items: =DropColumns(DropColumns(DropColumns(DropColumns(DropColumns(DropColumns(DropColumns(Filter( GM_GlobalGeneralInformation, status = Init_GeneralStatus_Dropdown.SelectedText.Value &&segment = Init_GeneralSegment_Dropdown.SelectedText.Value),"id"),"global_internal_id"),"observations"),"closure_date"),"currency_code"),"line_of_business"),"project_link")
-        PaddingRight: |
-            =0
-        PaddingTop: =0.00
-        Size: =12.65
-        Width: =953
-        X: =145
-        Y: =180
-        ZIndex: =10
-
     PieChart1 As pieChart:
         Height: =725
         Items: =Filter( GM_GlobalGeneralInformation, status = Init_GeneralStatus_Dropdown.SelectedText.Value &&  segment = Init_GeneralSegment_Dropdown.SelectedText.Value)
@@ -104,4 +91,106 @@ Home As screen:
         X: =145
         Y: =89
         ZIndex: =18
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Items: =queryResults
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        X: =201
+        Y: =321
+        ZIndex: =19
+
+        Image2 As image:
+            Height: =128
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image2.Width - 104
+            X: =Image2.X + Image2.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =Title1.X
+            Y: =Title1.Y + Title1.Height + 4
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+    EP_SelectProject_ComboBox_1 As combobox:
+        BorderThickness: =1
+        DisplayFields: =["project_name"]
+        FocusedBorderThickness: =1
+        Height: =30
+        IsSearchable: =false
+        Items: =Filter( GM_GlobalGeneralInformation, status = Init_GeneralStatus_Dropdown.SelectedText.Value &&  segment = Init_GeneralSegment_Dropdown.SelectedText.Value).project_name
+        OnSelect: =ClearCollect(queryResults,'PowerAppV2->ExecuteaSQLquery(V2)'.Run("Select * FROM GM_Payments"));
+        PaddingRight: =6.33
+        PaddingTop: =6.33
+        SearchFields: =["project_name"]
+        SearchItems: =[]
+        SelectMultiple: =false
+        Size: =17.71
+        Underline: =true
+        Visible: =Not(varShowEditProjectDetailsPopUp)
+        Width: =500
+        X: =355
+        Y: =155
+        ZIndex: =20
+
+    EP_EpicSectionSegment_Label_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        PaddingRight: =6.33
+        PaddingTop: =6.33
+        Size: =18.98
+        Text: ="Select Project"
+        Visible: =Not(varShowEditProjectDetailsPopUp)
+        Width: =200
+        X: =145
+        Y: =155
+        ZIndex: =21
 
