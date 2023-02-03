@@ -1,5 +1,5 @@
 {
-  "03bad8ee-3f2d-4d33-9d26-7b3c017eba2b": {
+  "78dd2111-321c-4cf6-b84f-f72ab2218d6e": {
     "connectionParameters": {
       "database": "TrascenderGlobal",
       "server": "trascenderdatabases.database.windows.net",
@@ -15,11 +15,11 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "bb0de4e9-58e3-480e-8553-2ee71b8234c0"
+      "c880e121-341e-45a7-a3dc-9060cb7bd196"
     ],
-    "id": "03bad8ee-3f2d-4d33-9d26-7b3c017eba2b"
+    "id": "78dd2111-321c-4cf6-b84f-f72ab2218d6e"
   },
-  "bb0de4e9-58e3-480e-8553-2ee71b8234c0": {
+  "c880e121-341e-45a7-a3dc-9060cb7bd196": {
     "connectionParameters": {
       "workFlowCallbackUri": "https://prod-04.brazilsouth.logic.azure.com:443/workflows/d527046c5fd5486ea0149b75d06e6fe9/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=OE9oQvWflwm2cViEjhz0mE44JVV8M2RwzQ_OVBPg8h0",
       "workflowEndpoint": "/subscriptions/ce4eb7c9-9c8b-4133-9141-bac869f4b0a7/resourceGroups/1d9c6699f22140abb23c64eafa46b988-26a993e53a5e467881ad848546ff83a5/providers/Microsoft.Logic/workflows/c9f56ea9-87d4-401a-9dca-1d7581dec4eb",
@@ -28,21 +28,15 @@
     },
     "connectionRef": {
       "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "03bad8ee-3f2d-4d33-9d26-7b3c017eba2b": {
-          "value": "shared_sql"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c9f56ea9-87d4-401a-9dca-1d7581dec4eb"
         }
       },
       "parameterHintsV2": {
-        "shared_sql": {
-          "value": "03bad8ee-3f2d-4d33-9d26-7b3c017eba2b"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c9f56ea9-87d4-401a-9dca-1d7581dec4eb"
@@ -54,10 +48,10 @@
       "PowerAppV2->ExecuteaSQLquery(V2)"
     ],
     "dependencies": {
-      "shared_sql": "03bad8ee-3f2d-4d33-9d26-7b3c017eba2b"
+      "shared_sql": "78dd2111-321c-4cf6-b84f-f72ab2218d6e"
     },
     "dependents": [],
-    "id": "bb0de4e9-58e3-480e-8553-2ee71b8234c0"
+    "id": "c880e121-341e-45a7-a3dc-9060cb7bd196"
   },
   "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": {
     "connectionParameters": {

@@ -26,77 +26,12 @@ Home As screen:
         Y: =75
         ZIndex: =7
 
-    PieChart1 As pieChart:
-        Height: =725
-        Items: =Filter( GM_GlobalGeneralInformation, status = Init_GeneralStatus_Dropdown.SelectedText.Value &&  segment = Init_GeneralSegment_Dropdown.SelectedText.Value)
-        Size: =12.65
-        Width: =792
-        X: =1128
-        Y: =202
-        ZIndex: =14
-
-    Init_GeneralStatus_Dropdown As dropdown:
-        BorderThickness: =1
-        Default: ="Normal"
-        FocusedBorderThickness: =1
-        Height: =30
-        Items: =Distinct(GM_GlobalGeneralInformation,status)
-        OnSelect: =
-        PaddingRight: =12.65
-        PaddingTop: =12.65
-        Size: =16.45
-        Visible: =Not(varShowEditProjectDetailsPopUp)
-        Width: =200
-        X: =653
-        Y: =89
-        ZIndex: =15
-
-    Init_EpicSectionStatus_Label As label:
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        PaddingRight: =6.33
-        PaddingTop: =6.33
-        Size: =18.98
-        Text: ="Status"
-        Visible: =Not(varShowEditProjectDetailsPopUp)
-        Width: =100
-        X: =550
-        Y: =89
-        ZIndex: =16
-
-    Init_GeneralSegment_Dropdown As dropdown:
-        BorderThickness: =1
-        FocusedBorderThickness: =1
-        Height: =30
-        Items: =Distinct(GM_GlobalGeneralInformation,segment)
-        OnSelect: =
-        PaddingRight: =12.65
-        PaddingTop: =12.65
-        Size: =16.45
-        Visible: =Not(varShowEditProjectDetailsPopUp)
-        Width: =200
-        X: =284
-        Y: =89
-        ZIndex: =17
-
-    Init_EpicSectionSegment_Label As label:
-        FontWeight: =FontWeight.Bold
-        Height: =31
-        PaddingRight: =6.33
-        PaddingTop: =6.33
-        Size: =18.98
-        Text: ="Segment"
-        Visible: =Not(varShowEditProjectDetailsPopUp)
-        Width: =200
-        X: =145
-        Y: =89
-        ZIndex: =18
-
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Items: =queryResults
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
+        Width: =1493
         X: =201
         Y: =321
         ZIndex: =19
@@ -160,37 +95,10 @@ Home As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-    EP_SelectProject_ComboBox_1 As combobox:
-        BorderThickness: =1
-        DisplayFields: =["project_name"]
-        FocusedBorderThickness: =1
-        Height: =30
-        IsSearchable: =false
-        Items: =Filter( GM_GlobalGeneralInformation, status = Init_GeneralStatus_Dropdown.SelectedText.Value &&  segment = Init_GeneralSegment_Dropdown.SelectedText.Value).project_name
-        OnSelect: =ClearCollect(queryResults,'PowerAppV2->ExecuteaSQLquery(V2)'.Run("Select * FROM GM_Payments"));
-        PaddingRight: =6.33
-        PaddingTop: =6.33
-        SearchFields: =["project_name"]
-        SearchItems: =[]
-        SelectMultiple: =false
-        Size: =17.71
-        Underline: =true
-        Visible: =Not(varShowEditProjectDetailsPopUp)
-        Width: =500
-        X: =355
-        Y: =155
-        ZIndex: =20
-
-    EP_EpicSectionSegment_Label_2 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        PaddingRight: =6.33
-        PaddingTop: =6.33
-        Size: =18.98
-        Text: ="Select Project"
-        Visible: =Not(varShowEditProjectDetailsPopUp)
-        Width: =200
-        X: =145
-        Y: =155
-        ZIndex: =21
+    Button1 As button:
+        OnSelect: ='PowerAppV2->ExecuteaSQLquery(V2)'.Run("Select * FROM GM_GlobalGeneralInformation")
+        Text: ="Run Flow"
+        X: =183
+        Y: =180
+        ZIndex: =22
 

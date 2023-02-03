@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sql",
     "CdpRevision": {
       "BaseUrl": "/v2",
-      "LastChangedTimeString": "2022-04-26T20:49:09.6440000Z",
+      "LastChangedTimeString": "2023-02-01T18:23:12.2730000Z",
       "RevisionNumber": 2
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -16,7 +16,7 @@
       "observations": "observations",
       "project_link": "project_link",
       "project_name": "project_name",
-      "segment": "segment",
+      "size": "size",
       "start_date": "start_date",
       "status": "status",
       "total_price_currency": "total_price_currency"
