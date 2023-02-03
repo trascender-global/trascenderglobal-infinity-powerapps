@@ -35,7 +35,7 @@ Home As screen:
 
     Label3 As label:
         Height: =857
-        Text: =SQLTable.table
+        Text: =SQLTable.body
         Width: =1605
         X: =183
         Y: =164
