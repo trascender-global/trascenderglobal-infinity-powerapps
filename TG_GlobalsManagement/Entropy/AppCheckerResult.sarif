@@ -5366,6 +5366,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.SQLTable"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.SQLTable",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SQLTable",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],

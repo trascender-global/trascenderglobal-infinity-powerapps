@@ -96,7 +96,7 @@ Home As screen:
             ZIndex: =5
 
     Button1 As button:
-        OnSelect: ='PowerAppV2->ExecuteaSQLquery(V2)'.Run("Select * FROM GM_GlobalGeneralInformation")
+        OnSelect: =Set(SQLTable,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation"))
         Text: ="Run Flow"
         X: =183
         Y: =180

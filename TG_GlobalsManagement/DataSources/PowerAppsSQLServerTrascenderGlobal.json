@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "2ac1f2fc-e7ec-44ea-bc04-c4c82487c877",
+    "Name": "PowerAppsSQLServerTrascenderGlobal",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": null
+  }
+]
