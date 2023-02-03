@@ -502,46 +502,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Gallery1.Title1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.Gallery1.Title1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".table"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home",
-                "type": "Home.Gallery1.Title1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "table"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "NewProject.NP_ClosedWonDeals_Galery.Items"
                 }
               ],
