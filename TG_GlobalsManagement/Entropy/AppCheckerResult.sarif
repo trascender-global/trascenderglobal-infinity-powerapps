@@ -502,32 +502,32 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Gallery1.Subtitle1.Text"
+                  "fullyQualifiedName": "Home.Gallery1.Title1.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Gallery1.Subtitle1.Text",
+                  "fullyQualifiedName": "Home.Gallery1.Title1.Text",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 6,
                   "charOffset": 8,
                   "snippet": {
-                    "text": ".Value"
+                    "text": ".table"
                   }
                 }
               },
               "properties": {
                 "member": "Text",
                 "module": "Home",
-                "type": "Home.Gallery1.Subtitle1"
+                "type": "Home.Gallery1.Title1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Value"
+              "table"
             ],
             "id": "issue"
           },

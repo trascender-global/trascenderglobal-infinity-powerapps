@@ -30,7 +30,7 @@ Home As screen:
         OnSelect: |+
             =//Set(SQLTable,Split((PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation").table),"{"));
             Set(SQLTable,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation"));
-            ClearCollect(Collection_SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation"));
+            ClearCollect(Collection_SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation").table);
             
         Text: ="Run Flow"
         X: =183
