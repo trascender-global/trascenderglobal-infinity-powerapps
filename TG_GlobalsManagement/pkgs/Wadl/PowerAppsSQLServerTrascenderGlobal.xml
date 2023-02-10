@@ -6,10 +6,39 @@
       <object name="ManualTriggerInput">
         <property name="text" type="string" />
       </object>
-      <string name="ResponseActionOutput_table_def" />
-      <object name="ResponseActionOutput">
-        <property name="table" type="string" />
+      <string name="ResponseActionOutput_items_def_ItemInternalId_def" />
+      <integer name="ResponseActionOutput_items_def_global_internal_id_def" />
+      <string name="ResponseActionOutput_items_def_size_def" />
+      <string name="ResponseActionOutput_items_def_line_of_business_def" />
+      <string name="ResponseActionOutput_items_def_start_date_def" />
+      <string name="ResponseActionOutput_items_def_project_name_def" />
+      <string name="ResponseActionOutput_items_def_project_link_def" />
+      <string name="ResponseActionOutput_items_def_currency_code_def" />
+      <integer name="ResponseActionOutput_items_def_total_price_currency_def" />
+      <string name="ResponseActionOutput_items_def_status_def" />
+      <string name="ResponseActionOutput_items_def_observations_def" />
+      <string name="ResponseActionOutput_items_def_created_date_def" />
+      <integer name="ResponseActionOutput_items_def_id_def" />
+      <string name="ResponseActionOutput_items_def_closure_date_def" />
+      <string name="ResponseActionOutput_items_def__ux40_odata_etag_def" />
+      <object name="ResponseActionOutput_items_def">
+        <property name="ItemInternalId" type="string" />
+        <property name="global_internal_id" type="integer" />
+        <property name="size" type="string" />
+        <property name="line_of_business" type="string" />
+        <property name="start_date" type="string" />
+        <property name="project_name" type="string" />
+        <property name="project_link" type="string" />
+        <property name="currency_code" type="string" />
+        <property name="total_price_currency" type="integer" />
+        <property name="status" type="string" />
+        <property name="observations" type="string" />
+        <property name="created_date" type="string" />
+        <property name="id" type="integer" />
+        <property name="closure_date" type="string" />
+        <property name="@odata.etag" type="string" />
       </object>
+      <array typeRef="ResponseActionOutput_items_def" name="ResponseActionOutput" />
       <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
