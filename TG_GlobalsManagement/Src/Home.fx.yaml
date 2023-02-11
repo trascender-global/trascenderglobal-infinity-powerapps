@@ -28,7 +28,7 @@ Home As screen:
 
     Button1 As button:
         OnSelect: |
-            =Set(SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_Payments","pokemon_master_id eq '70'"));
+            =Set(SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_Payments","epic_id eq '303'"));
             //ClearCollect(Table(Collection_SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation")).table);
             //ClearCollect(Collection_SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation").table);
         Text: ="Run Flow"
@@ -54,7 +54,7 @@ Home As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.line_of_business
+            Text: =ThisItem.
             VerticalAlign: =VerticalAlign.Top
             Width: =500
             X: =168

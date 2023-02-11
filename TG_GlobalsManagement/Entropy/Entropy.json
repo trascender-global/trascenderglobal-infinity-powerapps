@@ -352,11 +352,11 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/11/2023 00:42:45",
+  "HeaderLastSavedDateTimeUTC": "02/11/2023 00:50:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "52257adf-998f-419f-9c9e-7646ff347532": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/2ac1f2fce7ec44eabc04c4c82487c877-939d3a367ac082d8\"",
-    "81b12a0c-29ed-405c-bf23-8e63b15dc4d4": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555000\"",
+    "1952cd54-ba52-4c17-89ad-ea01df0e4e71": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555000\"",
+    "2887f897-708e-4654-990e-008053004f94": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/2AC1F2FCE7EC44EABC04C4C82487C877-939D3A367AC082D8\"",
     "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/4c94e1d7-66de-4f2c-9f93-64d101555001\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
@@ -1384,7 +1384,7 @@
       "text": 33
     },
     "DeserializationLoadTime": 3.2633999,
-    "ErrorCount": 19
+    "ErrorCount": 21
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
