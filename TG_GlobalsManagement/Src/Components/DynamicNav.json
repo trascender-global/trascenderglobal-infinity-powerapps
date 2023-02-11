@@ -26,7 +26,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Galery_Menu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 333,
+            "PublishOrderIndex": 332,
             "Rules": [
               {
                 "Category": "Design",
@@ -142,7 +142,7 @@
             "Name": "MenuItemIcon",
             "Parent": "Galery_Menu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 334,
+            "PublishOrderIndex": 333,
             "Rules": [
               {
                 "Category": "Data",
@@ -415,7 +415,7 @@
         "Name": "Galery_Menu",
         "Parent": "DynamicNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 332,
+        "PublishOrderIndex": 331,
         "Rules": [
           {
             "Category": "Data",

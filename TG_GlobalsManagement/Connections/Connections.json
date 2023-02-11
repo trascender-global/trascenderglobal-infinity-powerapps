@@ -1,5 +1,5 @@
 {
-  "62561cfb-3e3c-4f83-9dc2-3b0f9da801a1": {
+  "52257adf-998f-419f-9c9e-7646ff347532": {
     "connectionParameters": {
       "workFlowCallbackUri": "https://prod-15.brazilsouth.logic.azure.com:443/workflows/bfddfa6ee91b4d0e8f21e826dfeb736c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=sdDPle5YgxgLHI3wK-v22fG0MUbU2wsK3FULOP0yVTY",
       "workflowEndpoint": "/subscriptions/ce4eb7c9-9c8b-4133-9141-bac869f4b0a7/resourceGroups/1d9c6699f22140abb23c64eafa46b988-26a993e53a5e467881ad848546ff83a5/providers/Microsoft.Logic/workflows/2ac1f2fc-e7ec-44ea-bc04-c4c82487c877",
@@ -11,7 +11,7 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "acff0f8e-ec7f-4c7e-9096-2df90d5ff39b": {
+        "81b12a0c-29ed-405c-bf23-8e63b15dc4d4": {
           "value": "shared_sql"
         },
         "workflowEntityId": {},
@@ -21,7 +21,7 @@
       },
       "parameterHintsV2": {
         "shared_sql": {
-          "value": "acff0f8e-ec7f-4c7e-9096-2df90d5ff39b"
+          "value": "81b12a0c-29ed-405c-bf23-8e63b15dc4d4"
         },
         "workflowEntityId": {},
         "workflowName": {
@@ -34,12 +34,12 @@
       "PowerAppsSQLServerTrascenderGlobal"
     ],
     "dependencies": {
-      "shared_sql": "acff0f8e-ec7f-4c7e-9096-2df90d5ff39b"
+      "shared_sql": "81b12a0c-29ed-405c-bf23-8e63b15dc4d4"
     },
     "dependents": [],
-    "id": "62561cfb-3e3c-4f83-9dc2-3b0f9da801a1"
+    "id": "52257adf-998f-419f-9c9e-7646ff347532"
   },
-  "acff0f8e-ec7f-4c7e-9096-2df90d5ff39b": {
+  "81b12a0c-29ed-405c-bf23-8e63b15dc4d4": {
     "connectionParameters": {
       "database": "TrascenderGlobal",
       "server": "trascenderdatabases.database.windows.net",
@@ -55,9 +55,9 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "62561cfb-3e3c-4f83-9dc2-3b0f9da801a1"
+      "52257adf-998f-419f-9c9e-7646ff347532"
     ],
-    "id": "acff0f8e-ec7f-4c7e-9096-2df90d5ff39b"
+    "id": "81b12a0c-29ed-405c-bf23-8e63b15dc4d4"
   },
   "fc9e0c5c-6772-4ec0-b9cb-df7aacbc8775": {
     "connectionParameters": {

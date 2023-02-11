@@ -35,7 +35,7 @@ EditProject As screen:
                 ="Selected Epic:  " & LookUp(CollectionSQL_Epics,epic_id=varSelectedEpic,epic_name)
             Visible: =Not(varShowInit) && Not(varShowEditProjectDetailsPopUp)
             Width: =1624
-            X: =146
+            X: =100
             Y: =458
             ZIndex: =42
 
@@ -343,8 +343,8 @@ EditProject As screen:
             FillPortions: =0
             Height: =330
             Items: |-
-                =Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
-                //CollectionSQL_Payments
+                =//Filter(CollectionSQL_Payments,varSelectedEpic=epic_id && Not(IsBlank(payment_name)))
+                CollectionSQL_Payments
                 //Filter(CollectionSQL_Payments,epic_id = varSelectedEpic)
             Layout: =Layout.Vertical
             LayoutMinHeight: =287
@@ -1624,8 +1624,11 @@ EditProject As screen:
                 Height: =24
                 OnSelect: |+
                     =Set(varSelectedEpic,ThisItem.epic_id);
-                    ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
+                    //ClearCollect(CollectionSQL_Payments, AddColumns(Filter(GM_Payments,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
+                    ClearCollect(CollectionSQL_Payments, AddColumns(PowerAppsSQLServerTrascenderGlobal.Run("GM_Payments","epic_id eq '"&varSelectedEpic&"'"),"editable",DisplayMode.Disabled));
+                    //ClearCollect(CollectionSQL_Payments, PowerAppsSQLServerTrascenderGlobal.Run("GM_Payments","epic_id eq '"&varSelectedEpic&"'"));
                     ClearCollect(CollectionSQL_Features, AddColumns(Filter(GM_Features,epic_id = varSelectedEpic),"editable",DisplayMode.Disabled));
+                    //ClearCollect(CollectionSQL_Features, AddColumns(PowerAppsSQLServerTrascenderGlobal.Run("GM_Features","epic_id eq '&varSelectedEpic&'"),"editable",DisplayMode.Disabled));
                     ClearCollect(CollectionSQL_Features_WithBlank,{feature_name:""}); Collect(CollectionSQL_Features_WithBlank,CollectionSQL_Features);
                     ClearCollect(CollectionSQL_Resources_Estimation, AddColumns(GM_ResourceEstimation,"editable",DisplayMode.Disabled));
                     
@@ -2326,7 +2329,7 @@ EditProject As screen:
             FocusedBorderThickness: =1
             Height: =30
             IsSearchable: =false
-            Items: =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  segment = EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
+            Items: =Filter( GM_GlobalGeneralInformation, status = EP_GeneralStatus_Dropdown.SelectedText.Value &&  line_of_business= EP_GeneralSegment_Dropdown.SelectedText.Value).project_name
             OnSelect: |+
                 =Set(varProjectDetails2,First(Filter(GM_GlobalGeneralInformation,project_name =  EP_SelectProject_ComboBox.Selected.project_name)));
                 ClearCollect(CollectionSQL_Epics, Filter(GM_Epics,project_id = (varProjectDetails2.id)));
@@ -2347,7 +2350,7 @@ EditProject As screen:
             Underline: =true
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =500
-            X: =310
+            X: =382
             Y: =112
             ZIndex: =33
 
@@ -2363,7 +2366,7 @@ EditProject As screen:
             Size: =16.45
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =200
-            X: =608
+            X: =680
             Y: =70
             ZIndex: =34
 
@@ -2376,7 +2379,7 @@ EditProject As screen:
             Text: ="Status"
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =100
-            X: =505
+            X: =577
             Y: =70
             ZIndex: =35
 
@@ -2384,28 +2387,27 @@ EditProject As screen:
             BorderThickness: =1
             FocusedBorderThickness: =1
             Height: =30
-            Items: =Distinct(GM_GlobalGeneralInformation,segment)
+            Items: =Distinct(GM_GlobalGeneralInformation,line_of_business)
             OnSelect: =
             PaddingRight: =12.65
             PaddingTop: =12.65
             Size: =16.45
             Visible: =Not(varShowEditProjectDetailsPopUp)
             Width: =200
-            X: =239
+            X: =354
             Y: =70
             ZIndex: =36
 
         EP_EpicSectionSegment_Label As label:
             FontWeight: =FontWeight.Bold
-            Height: =31
             PaddingRight: =6.33
             PaddingTop: =6.33
             Size: =18.98
-            Text: ="Segment"
+            Text: ="Line of Business"
             Visible: =Not(varShowEditProjectDetailsPopUp)
-            Width: =200
+            Width: =326
             X: =100
-            Y: =70
+            Y: =61
             ZIndex: =37
 
         EP_EpicSectionEpicList As icon.ListScrollWatchlist:
@@ -2547,7 +2549,7 @@ EditProject As screen:
 
         EP_EditGeneral_Segment As text:
             BorderThickness: =1
-            Default: =varProjectDetails2.segment
+            Default: =varProjectDetails2.line_of_business
             Height: =30
             PaddingRight: =6.33
             PaddingTop: =6.33

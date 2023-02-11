@@ -28,7 +28,7 @@ Home As screen:
 
     Button1 As button:
         OnSelect: |
-            =Set(SQLTable,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation"));
+            =Set(SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_Payments","pokemon_master_id eq '70'"));
             //ClearCollect(Table(Collection_SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation")).table);
             //ClearCollect(Collection_SQLTable2,PowerAppsSQLServerTrascenderGlobal.Run("GM_GlobalGeneralInformation").table);
         Text: ="Run Flow"
@@ -38,27 +38,27 @@ Home As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =523
-        Items: =SQLTable
+        Items: =SQLTable2
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =253
+        TemplateSize: =78
         Width: =1623
         X: =183
         Y: =469
         ZIndex: =23
 
         Subtitle1 As label:
-            Height: =113
+            Height: =33
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.project_link
+            Text: =ThisItem.line_of_business
             VerticalAlign: =VerticalAlign.Top
             Width: =500
             X: =168
-            Y: =138
+            Y: =39
             ZIndex: =3
 
         NextArrow1 As icon.ChevronRight:
@@ -85,7 +85,7 @@ Home As screen:
             ZIndex: =5
 
         Subtitle1_1 As label:
-            Height: =113
+            Height: =39
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -98,11 +98,11 @@ Home As screen:
             ZIndex: =6
 
     Label3 As label:
-        Height: =335
-        Text: =SQLTable
-        VerticalAlign: =VerticalAlign.Top
-        Width: =1210
-        X: =483
-        Y: =95
+        Height: =95
+        Text: |-
+            ="Count Rows: "&CountRows(SQLTable2)
+        Width: =213
+        X: =476
+        Y: =104
         ZIndex: =24
 
